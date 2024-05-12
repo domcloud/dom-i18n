@@ -1,5 +1,4 @@
 <?php return [
-
 	'invoiceDomainPurchaseOf' => 'Domain Purchase of {0}',
 	'invoiceDomainExtendOf' => 'Domain Extend of {0}',
 	'invoiceDomainTransferOf' => 'Domain Transfer of {0}',

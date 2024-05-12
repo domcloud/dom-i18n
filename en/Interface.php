@@ -17,6 +17,7 @@
 	"reportAbuse" => "Report Abuse Content",
 	"reportDomain" => "Domain to report",
 
+	'ok' => 'OK',
 	'back' => 'Back',
 	'or' => 'Or',
 	'signInWith' => 'Sign in with',
