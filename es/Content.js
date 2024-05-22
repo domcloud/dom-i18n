@@ -141,37 +141,36 @@ export default {
             lo cual está bien pero no es recomendable.`,
         webOkTitle: `El sitio web está bien`,
         webOkContent: `Este sitio web es accesible a través de HTTP y HTTPS.`,
-    },
-    hostFirewall: {
-        title: `Comprobar cortafuegos`,
+    },hostFirewall: {
+        title: `Verificar Firewall`,
         description: `
         <p>
-            El cortafuegos ayuda a que su sitio web no sea explotado en caso de una
-            pirata informático bloqueando todo el tráfico saliente excepto el de la red.
-            <a href="{0}" target="_blank" rel="noreferrer">lista blanca</a>.
+            El firewall ayuda a que tu sitio web no sea explotado en caso de
+            una intrusión de hackers al bloquear todo el tráfico saliente excepto
+            aquellos en la <a href="{0}" target="_blank" rel="noreferrer">lista blanca</a>.
         </p>
         <p>
-            Dependiendo de su uso del sitio web, es posible que desee desactivar el
-            firewall si su sitio web requiere API de terceros u otras formas de 
-            comunicación no incluidas en la lista blanca.
+            Dependiendo del uso de tu sitio web, es posible que desees apagar
+            el firewall si tu sitio web requiere API de terceros u otras formas
+            de comunicación que no están en la lista blanca.
         </p>
-        <p>El cortafuegos se aplica al dominio y a todos los subdominios dentro de.</p>
-        <p><a href="{1}" target="_blank" rel="noreferrer">Seguir leyendo</a></p>
+        <p>El firewall se aplica al dominio y a todos los subdominios dentro del mismo. 
+        Está obligado a estar encendido para usuarios con plan gratuito. Para apagarlo, 
+        debes estar en un plan de suscripción (Lite o superior).</p>
+        <p><a href="{1}" target="_blank" rel="noreferrer">Leer más</a></p>
         `,
-        offTitle: `El cortafuegos está desactivado`,
-        offContent: `
-        <p>
-            No le prohibimos desactivar el Firewall de su alojamiento, siempre que
-            siempre que modere regularmente la seguridad de su propio sitio web.
-            <br/>
-            Ahora usted controla la seguridad de su sitio web. Si el sitio web
-            se ve comprometido, ¡el riesgo de prohibición permanente puede producirse en cualquier momento!
+        offTitle: `El firewall está apagado`,
+        offContent: `<p>
+            Todo el tráfico saliente está permitido. ¡Mantén tu sitio seguro, por favor!
         </p>`,
-        offBtn: `Enciéndelo`,
-        onTitle: `El cortafuegos está activo`,
-        onContent: `<p>Siéntate y relájate. Su sitio web está a salvo de exploits.</p>`,
-        onBtn: `Apágalo`,
-    },
+        offBtn: `Encender`,
+        onTitle: `El firewall está activo`,
+        onContent: `<p>
+            Todas las conexiones salientes de terceros están bloqueadas excepto las de la lista blanca.<br/>
+            Apágalo para eliminar esta limitación.
+        </p>`,
+        onBtn: `Apagar`,
+    },    
     hostNginx: {
         title: `Configurador NGINX`,
         description: `Esta página le ayuda a leer la configuración actual de NGINX y guardar una nueva para su sitio web.`,

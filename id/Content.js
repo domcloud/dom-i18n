@@ -148,31 +148,30 @@ export default {
         title: `Periksa Firewall`,
         description: `
         <p>
-            Firewall membantu website Anda tidak dieksploitasi dalam
-            kejadian penyusupan oleh hacker dengan memblokir semua lalu lintas keluar kecuali yang ada di
-            <a href="{0}" target="_blank" rel="noreferrer">whitelist</a>.
+            Firewall membantu website Anda agar tidak dieksploitasi dalam kasus
+            peretasan dengan memblokir semua lalu lintas keluar kecuali yang ada di
+            <a href="{0}" target="_blank" rel="noreferrer">daftar putih</a>.
         </p>
-        <p
-
->
-            Bergantung pada penggunaan website Anda, Anda mungkin ingin mematikan
-            firewall jika website Anda memerlukan API pihak ketiga atau bentuk komunikasi lain yang tidak terdaftar di whitelist.
+        <p>
+            Tergantung pada penggunaan website Anda, Anda mungkin ingin mematikan
+            firewall jika website Anda memerlukan API pihak ketiga atau bentuk
+            komunikasi lain yang tidak terdaftar di daftar putih.
         </p>
-        <p>Firewall berlaku untuk domain dan semua subdomain di dalamnya.</p>
+        <p>Firewall berlaku untuk domain dan semua subdomain di dalamnya. Firewall 
+        secara wajib dihidupkan untuk pengguna dengan paket gratis. Untuk mematikannya, 
+        Anda harus berada di paket berlangganan (Lite atau lebih tinggi).</p>
         <p><a href="{1}" target="_blank" rel="noreferrer">Baca lebih lanjut</a></p>
         `,
-        offTitle: `Firewall dimatikan`,
-        offContent: `
-        <p>
-            Kami tidak melarang Anda untuk mematikan Firewall untuk hosting Anda, selama
-            Anda mengawasi keamanan website Anda secara teratur.
-            <br/>
-            Anda sekarang memiliki kontrol keamanan website Anda. Jika website
-            terpengaruh, risiko ban permanen dapat terjadi kapan saja!
+        offTitle: `Firewall mati`,
+        offContent: `<p>
+            Semua lalu lintas keluar diizinkan. Jaga situs Anda tetap aman, tolong!
         </p>`,
         offBtn: `Hidupkan`,
         onTitle: `Firewall aktif`,
-        onContent: `<p>Duduk dan bersantai. Website Anda aman dari eksploitasi.</p>`,
+        onContent: `<p>
+            Semua koneksi keluar pihak ketiga diblokir kecuali yang ada di daftar putih.<br/>
+            Matikan untuk menghapus batasan ini.
+        </p>`,
         onBtn: `Matikan`,
     },
     hostNginx: {
