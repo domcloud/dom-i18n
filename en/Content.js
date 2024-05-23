@@ -183,6 +183,20 @@ export default {
         errorFetch: "There was an error fetching the nginx config",
         notExist: `ERROR: no configuration exists for {0}`,
     },
+    hostDNS: {
+        title: `DNS Server Configurator`,
+        description: `<p>This page helps you change DNS records if you point your domain name server to us. 
+        </p> <p>Alternatively, you can also edit DNS records via Webmin.</p>`,
+        helpText: `Help on configuration`,
+        error: `ERROR: no configuration exists for {0}`,
+        errorFetch: "There was an error fetching the dns config",
+        notExist: `ERROR: no configuration exists for {0}`,
+        tabCurrent: `Current DNS Settings`,
+        tabEdit: `Edit DNS Interactively`,
+        tabPreview: `Preview Changes`,
+        existingRecords: `Existing DNS Records`,
+        addedRecords: `Added DNS Records`,
+    },
     hostLog: {
         runningList: 'Running processes list',
         logTypeError: 'NGINX Error Log',

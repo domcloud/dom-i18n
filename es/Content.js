@@ -180,6 +180,33 @@ export default {
         errorFetch: "Hubo un error al recuperar la configuración de nginx",
         notExist: `ERROR: no existe configuración para {0}`,
     },
+    hostDNS: {
+        title: `Configurador de Servidor DNS`,
+        description: `<p>Esta página te ayuda a cambiar los registros DNS si apuntas tu servidor de nombres de dominio a nosotros.
+        </p> <p>Alternativamente, también puedes editar los registros DNS a través de Webmin.</p>`,
+        helpText: `Ayuda sobre configuración`,
+        error: `ERROR: no existe configuración para {0}`,
+        errorFetch: "Hubo un error al obtener la configuración DNS",
+        notExist: `ERROR: no existe configuración para {0}`,
+        tabCurrent: `Configuración DNS Actual`,
+        tabEdit: `Editar DNS Interactivamente`,
+        tabPreview: `Vista Previa de Cambios`,
+        existingRecords: `Registros DNS Existentes`,
+        addedRecords: `Registros DNS Añadidos`,
+    },
+    hostLog: {
+        runningList: 'Lista de procesos en ejecución',
+        logTypeError: 'Log de Errores de NGINX',
+        logTypeAccess: 'Log de Acceso de NGINX',
+        logTypePassenger: 'Log de la Aplicación Passenger',
+        logTypeErrorHint: 'Este log contiene los logs de errores de NGINX y PHP del día actual',
+        logTypeAccessHint: 'Este log contiene los logs de acceso de NGINX del día actual',
+        logTypePassengerHint: 'Este log contiene el log de la Aplicación Passenger que está en ejecución',
+        errorFetch: "Hubo un error al obtener el archivo de log",
+        subdomain: `Subdominio`,
+        maxLines: `Líneas Máximas`,
+        emptyLog: `Este log está vacío en este momento`,
+    },    
     hostManage: {
         title: `Gestionar el acceso al sitio web`,
         description: `

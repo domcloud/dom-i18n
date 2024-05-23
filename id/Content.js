@@ -183,6 +183,33 @@ export default {
         errorFetch: "Ada kesalahan saat mengambil konfigurasi nginx",
         notExist: `KESALAHAN: tidak ada konfigurasi untuk {0}`,
     },
+    hostDNS: {
+        title: `Konfigurator Server DNS`,
+        description: `<p>Halaman ini membantu Anda mengubah catatan DNS jika Anda mengarahkan server nama domain Anda ke kami.
+        </p> <p>Alternatifnya, Anda juga dapat mengedit catatan DNS melalui Webmin.</p>`,
+        helpText: `Bantuan tentang konfigurasi`,
+        error: `ERROR: tidak ada konfigurasi untuk {0}`,
+        errorFetch: "Terjadi kesalahan saat mengambil konfigurasi dns",
+        notExist: `ERROR: tidak ada konfigurasi untuk {0}`,
+        tabCurrent: `Pengaturan DNS Saat Ini`,
+        tabEdit: `Edit DNS Secara Interaktif`,
+        tabPreview: `Pratinjau Perubahan`,
+        existingRecords: `Catatan DNS yang Ada`,
+        addedRecords: `Catatan DNS yang Ditambahkan`,
+    },
+    hostLog: {
+        runningList: 'Daftar proses yang berjalan',
+        logTypeError: 'Log Kesalahan NGINX',
+        logTypeAccess: 'Log Akses NGINX',
+        logTypePassenger: 'Log Aplikasi Passenger',
+        logTypeErrorHint: 'Log ini berisi log kesalahan NGINX dan PHP untuk hari ini',
+        logTypeAccessHint: 'Log ini berisi log akses NGINX untuk hari ini',
+        logTypePassengerHint: 'Log ini berisi log Aplikasi Passenger yang sedang berjalan',
+        errorFetch: "Terjadi kesalahan saat mengambil file log",
+        subdomain: `Subdomain`,
+        maxLines: `Baris Maksimal`,
+        emptyLog: `Log ini kosong saat ini`,
+    },    
     hostManage: {
         title: `Kelola Akses Website`,
         description: `

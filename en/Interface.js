@@ -41,7 +41,6 @@ export default {
     "phppgadmin": "phpPgAdmin",
     "webssh": "WebSSH",
     "vscode": "Visual Studio Code",
-    "loading": "Currently gathering data...",
     // Help section
     "help": "Help",
     "helpDocs": "Docs",
@@ -148,6 +147,7 @@ export default {
     "back": "Back",
     "add": "Add",
     "addMember": "Add Member",
+    "edit": "Edit",
     "save": "Save",
     "clear": "Clear",
     "update": "Update",
@@ -164,7 +164,8 @@ export default {
     "pay": "Pay",
     "payAccept": "We accept payments through",
     // Errors
-    "errorTitle": "Error!",
+    "loading": "Gathering data...",
+    "fetchError": "Error fetching data! try again later",
     "notFound": "Not Found",
     "notFoundDescription": "The page you are looking for does not exist.",
     "notFoundLink": "Go back to the homepage",

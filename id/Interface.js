@@ -41,7 +41,6 @@ export default {
     "phppgadmin": "phpPgAdmin",
     "webssh": "WebSSH",
     "vscode": "Visual Studio Code",
-    "loading": "Sedang mengumpulkan data...",
     // Bagian Bantuan
     "help": "Bantuan",
     "helpDocs": "Dokumen",
@@ -147,6 +146,7 @@ export default {
     "back": "Kembali",
     "add": "Tambahkan",
     "addMember": "Tambahkan Anggota",
+    "edit": "Sunting",
     "save": "Simpan",
     "clear": "Bersihkan",
     "update": "Perbarui",
@@ -163,7 +163,8 @@ export default {
     "pay": "Bayar",
     "payAccept": "Kami menerima pembayaran melalui",
     // Kesalahan
-    "errorTitle": "Kesalahan!",
+    "loading": "Mengumpulkan data ...",
+    "fetchError": "Kesalahan mengambil data! Coba lagi nanti",
     "notFound": "Tidak Ditemukan",
     "notFoundDescription": "Halaman yang Anda cari tidak ada.",
     "notFoundLink": "Kembali ke beranda",

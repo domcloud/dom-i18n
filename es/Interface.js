@@ -41,7 +41,6 @@ export default {
     "phppgadmin": "phpPgAdmin",
     "webssh": "WebSSH",
     "vscode": "Visual Studio Code",
-    "loading": "Recopilando datos actualmente...",
     // Sección de ayuda
     "help": "Ayuda",
     "helpDocs": "Documentos",
@@ -147,6 +146,7 @@ export default {
     "back": "Atrás",
     "add": "Agregar",
     "addMember": "Agregar miembro",
+    "edit": "Editar",
     "save": "Guardar",
     "clear": "Limpiar",
     "update": "Actualizar",
@@ -163,7 +163,8 @@ export default {
     "pay": "Pagar",
     "payAccept": "Aceptamos pagos a través de",
     // Errores
-    "errorTitle": "¡Error!",
+    "loading": "Recopilando datos...",
+    "fetchError": "¡Error al buscar datos! Inténtelo de nuevo más tarde",
     "notFound": "No encontrado",
     "notFoundDescription": "La página que buscas no existe.",
     "notFoundLink": "Volver a la página de inicio",
