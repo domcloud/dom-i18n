@@ -175,16 +175,36 @@ export default {
         onBtn: `Turn it off`,
     },
     hostNginx: {
-        title: `NGINX Configurator`,
-        description: `This page helps you read current NGINX settings and save new one for your website.`,
+        title: `Check NGINX Config`,
+        description: `
+        <p>
+            NGINX is our main server gateway that serves HTTP ports (80 and 443).
+            To make your website works, your web app must be correctly configured
+            here. Here you can view your current configuration and make changes 
+            either via preconfigured UI or full-blown NGINX config as YAML script. 
+        </p>
+        <p>
+            NGINX typically serves static content first that's configured via <code>root</code>
+            path, or forward the request dynamically to your App via PHP-FPM <code>fastcgi</code> 
+            or Passenger <code>passenger</code> if such file doesn't exist.
+        </p>
+        <p>
+            NGINX config is different for subdomains. If your subdomain content happens 
+            to live inside this website, please enter the subdomain name below to configure it. 
+            Also, please take a moment to read <a href="{0}" target="_blank" rel="noreferrer">
+            our NGINX Configuration</a> or contact us in case you came into a problem.
+        </p>
+        `,
         subdomain: `Subdomain`,
-        helpText: `Help on configuration`,
         error: `ERROR: no configuration exists for {0}`,
         errorFetch: "There was an error fetching the nginx config",
         notExist: `ERROR: no configuration exists for {0}`,
+        tabCurrent: `Current NGINX Config`,
+        tabEdit: `Edit Interactively`,
+        tabPreview: `Preview Changes`,
     },
     hostDNS: {
-        title: `DNS Server Configurator`,
+        title: `Check DNS Config`,
         description: `<p>This page helps you change DNS records if you point your domain name server to us. 
         </p> <p>Alternatively, you can also edit DNS records via Webmin.</p>`,
         helpText: `Help on configuration`,
