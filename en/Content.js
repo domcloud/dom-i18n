@@ -202,6 +202,26 @@ export default {
         tabCurrent: `Current NGINX Config`,
         tabEdit: `Edit Interactively`,
         tabPreview: `Preview Changes`,
+        hints: {
+            root: "Static files from {0} will be resolved to {1}",
+            socat: "Forward client requests to port {0}",
+            app: "Invoke {0} script from {1} using {2} from {3}",
+            gls: "Run \"{0}\" from {1} with given $PORT",
+            staticModes: {
+                default: 'Serve static files',
+                smart: 'Attempt to find HTML file if possible',
+                index: 'Serve root index.html if no file found',
+                autoindex: 'Allow listing server files if index.html is not found',
+                with404: 'or show custom 404 error page'
+            },
+            phpModes: {
+                default: 'Serve index.php or php files that ends with .php',
+                smart: 'Attempt to find PHP file without .php',
+                "index-safe": 'Serve root index.php but don\'t try if client looks for a file',
+                index: 'Serve root index.php when static file is not found',
+                always: 'Allow PATH_INFO style requests handled to PHP',
+            }
+        }
     },
     hostDNS: {
         title: `Check DNS Config`,
