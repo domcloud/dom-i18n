@@ -28,7 +28,7 @@
         Desk</a> can help you up.<br>
       You can also participate in <a href="https://github.com/domcloud/domcloud/discussions">community discussions</a> if you like to.
     </div>
-    <p class="unsub">Not registering through domcloud.id? Ignore this email.</p>
+    <p class="unsub">Not registering through domcloud.co? Ignore this email.</p>
   </div>
 </body>
 

@@ -25,7 +25,7 @@
       ¿Necesitas ayuda para configurar tu alojamiento? Nuestro <a href="mailto:support@domcloud.co?subject=Necesito ayuda para configurar el alojamiento&amp;body=Hola, quiero preguntarte....">Servicio de Soporte</a> puede ayudarte.<br>
       También puedes participar en <a href="https://github.com/domcloud/domcloud/discussions">discusiones de la comunidad</a> si así lo deseas.
     </div>
-    <p class="unsub">¿No te registraste a través de domcloud.id? Ignora este correo electrónico.</p>
+    <p class="unsub">¿No te registraste a través de domcloud.co? Ignora este correo electrónico.</p>
   </div>
 </body>
 

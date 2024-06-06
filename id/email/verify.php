@@ -28,7 +28,7 @@
         Desk</a> kami dapat membantu anda.<br>
       Anda juga dapat berpartisipasi dalam <a href="https://github.com/domcloud/domcloud-id/discussions">diskusi komunitas kami</a> jika anda suka.
     </div>
-    <p class="unsub">Tidak mendaftar melalui domcloud.id? Abaikan email ini.</p>
+    <p class="unsub">Tidak mendaftar melalui domcloud.co? Abaikan email ini.</p>
   </div>
 </body>
 
