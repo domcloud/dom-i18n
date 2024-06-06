@@ -147,6 +147,7 @@ export default {
     "add": "Agregar",
     "addMember": "Agregar miembro",
     "edit": "Editar",
+    "apply": "Aplicar",
     "save": "Guardar",
     "clear": "Limpiar",
     "update": "Actualizar",

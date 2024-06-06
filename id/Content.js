@@ -173,18 +173,103 @@ export default {
             Matikan untuk menghapus batasan ini.
         </p>`,
         onBtn: `Matikan`,
-    },
-    hostNginx: {
-        title: `Konfigurator NGINX`,
-        description: `Halaman ini membantu Anda membaca pengaturan NGINX saat ini dan menyimpan yang baru untuk website Anda.`,
+    }, hostNginx: {
+        title: `Periksa Konfigurasi NGINX`,
+        description: `
+        <p>
+            NGINX adalah gerbang server utama kami yang melayani port HTTP (80 dan 443).
+            Untuk membuat situs web Anda berfungsi, aplikasi web Anda harus dikonfigurasi dengan benar
+            di sini. Di sini Anda dapat melihat konfigurasi saat ini dan melakukan perubahan
+            baik melalui UI yang telah dikonfigurasi sebelumnya atau konfigurasi NGINX penuh sebagai skrip YAML.
+        </p>
+        <p>
+            NGINX biasanya melayani konten statis terlebih dahulu yang dikonfigurasi melalui path <code>root</code>,
+            atau meneruskan permintaan secara dinamis ke Aplikasi Anda melalui PHP-FPM <code>fastcgi</code>
+            atau Passenger <code>passenger</code> jika file tersebut tidak ada.
+        </p>
+        <p>
+            Konfigurasi NGINX berbeda untuk subdomain. Jika konten subdomain Anda kebetulan
+            berada di dalam situs web ini, silakan masukkan nama subdomain di bawah ini untuk mengonfigurasinya.
+            Juga, silakan luangkan waktu untuk membaca <a href="{0}" target="_blank" rel="noreferrer">
+            Konfigurasi NGINX kami</a> atau hubungi kami jika Anda mengalami masalah.
+        </p>
+        `,
         subdomain: `Subdomain`,
-        helpText: `Bantuan pada konfigurasi`,
-        error: `KESALAHAN: tidak ada konfigurasi untuk {0}`,
-        errorFetch: "Ada kesalahan saat mengambil konfigurasi nginx",
-        notExist: `KESALAHAN: tidak ada konfigurasi untuk {0}`,
+        error: `ERROR: tidak ada konfigurasi untuk {0}`,
+        errorFetch: "Terjadi kesalahan saat mengambil konfigurasi NGINX",
+        notExist: `ERROR: tidak ada konfigurasi untuk {0}`,
+        tabCurrent: `Konfigurasi NGINX Saat Ini`,
+        tabEdit: `Edit Secara Interaktif`,
+        tabPreview: `Pratinjau Perubahan`,
+        labels: {
+            subfolderConfig: "Konfigurasi Subfolder",
+            rootConfig: "Konfigurasi Root",
+            rootPath: "Jalur Root",
+            rootIsAlias: "Root adalah Alias",
+            resolveType: "Jenis Penyelesaian",
+            resolveTypes: {
+                static: "Statis",
+                php: "PHP-FPM",
+                app: "Aplikasi Phusion",
+                gls: "Aplikasi Umum",
+                socat: "Meneruskan Port",
+                deny: "Tolak Permintaan",
+            },
+            staticMode: "Mode Statis",
+            staticModes: {
+                default: "Default",
+                smart: "Cerdas",
+                autoindex: "Auto-indeks",
+                index: "Indeks Root",
+            },
+            static404Path: "Jalur File HTML 404",
+            phpMode: "Mode PHP",
+            phpModes: {
+                default: 'Default',
+                smart: 'Cerdas',
+                indexSafe: 'Indeks Root - Aman',
+                index: 'Indeks Root - Standar',
+                always: 'Indeks Root - Selalu',
+            },
+            socatPort: 'Meneruskan ke Port',
+            appMode: 'Mode Aplikasi',
+            appEntry: 'File Startup Aplikasi',
+            appBin: 'Jalur Biner Aplikasi',
+            appModes: {
+                default: 'Otomatis',
+                node: 'Node',
+                python: 'Python',
+                ruby: 'Ruby',
+            },
+            glsCmd: 'Perintah Aplikasi',
+            appEnv: 'Kunci Lingkungan',
+            appDev: 'Mode Pengembangan?',
+            appRoot: 'Direktori Kerja',
+            addSubfolderConfig: 'Tambahkan konfigurasi subfolder',
+        },
+        hints: {
+            root: "File statis dari {0} akan diselesaikan ke {1}",
+            socat: "Meneruskan permintaan klien ke port {0}",
+            app: "Jalankan skrip {0} dari {1} menggunakan {2} dari {3}",
+            gls: "Jalankan \"{0}\" dari {1} dengan $PORT yang diberikan",
+            staticModes: {
+                default: 'Layani file statis',
+                smart: 'Cobalah untuk menemukan file HTML jika memungkinkan',
+                index: 'Layani root index.html jika tidak ada file yang ditemukan',
+                autoindex: 'Izinkan daftar file server jika index.html tidak ditemukan',
+                with404: 'atau tampilkan halaman kesalahan 404 khusus'
+            },
+            phpModes: {
+                default: 'Layani index.php atau file php yang berakhir dengan .php',
+                smart: 'Cobalah untuk menemukan file PHP tanpa .php',
+                indexSafe: 'Layani root index.php tetapi jangan coba jika klien mencari file',
+                index: 'Layani root index.php ketika file statis tidak ditemukan',
+                always: 'Izinkan permintaan dengan gaya PATH_INFO ditangani oleh PHP',
+            }
+        }
     },
     hostDNS: {
-        title: `Konfigurator Server DNS`,
+        title: `Periksa Konfigurasi DNS`,
         description: `<p>Halaman ini membantu Anda mengubah catatan DNS jika Anda mengarahkan server nama domain Anda ke kami.
         </p> <p>Alternatifnya, Anda juga dapat mengedit catatan DNS melalui Webmin.</p>`,
         helpText: `Bantuan tentang konfigurasi`,
@@ -209,7 +294,7 @@ export default {
         subdomain: `Subdomain`,
         maxLines: `Baris Maksimal`,
         emptyLog: `Log ini kosong saat ini`,
-    },    
+    },
     hostManage: {
         title: `Kelola Akses Website`,
         description: `
@@ -297,7 +382,7 @@ export default {
         member: `Anggota tidak dapat mengubah kata sandi website ini.`,
         action: `Perbarui kata sandi ini!`,
     },
-    
+
     hostCheck: {
         'title': `Pemeriksaan DNS Wajib`,
         'prompt': `Ini memeriksa apakah {0} dapat diresolusi melalui DNS Google sebelum ditambahkan ke server kami.`,

@@ -141,7 +141,8 @@ export default {
             lo cual está bien pero no es recomendable.`,
         webOkTitle: `El sitio web está bien`,
         webOkContent: `Este sitio web es accesible a través de HTTP y HTTPS.`,
-    },hostFirewall: {
+    },
+    hostFirewall: {
         title: `Verificar Firewall`,
         description: `
         <p>
@@ -170,15 +171,101 @@ export default {
             Apágalo para eliminar esta limitación.
         </p>`,
         onBtn: `Apagar`,
-    },    
+    },
     hostNginx: {
-        title: `Configurador NGINX`,
-        description: `Esta página le ayuda a leer la configuración actual de NGINX y guardar una nueva para su sitio web.`,
+        title: `Verificar Configuración de NGINX`,
+        description: `
+        <p>
+            NGINX es nuestra puerta de enlace principal del servidor que sirve los puertos HTTP (80 y 443).
+            Para que su sitio web funcione, su aplicación web debe estar configurada correctamente
+            aquí. Aquí puede ver su configuración actual y realizar cambios
+            ya sea a través de la interfaz de usuario preconfigurada o la configuración completa de NGINX como script YAML.
+        </p>
+        <p>
+            NGINX normalmente sirve contenido estático primero que está configurado a través de la ruta <code>root</code>,
+            o redirige la solicitud dinámicamente a su aplicación a través de PHP-FPM <code>fastcgi</code>
+            o Passenger <code>passenger</code> si dicho archivo no existe.
+        </p>
+        <p>
+            La configuración de NGINX es diferente para subdominios. Si el contenido de su subdominio se encuentra
+            dentro de este sitio web, ingrese el nombre del subdominio a continuación para configurarlo.
+            Además, tómese un momento para leer <a href="{0}" target="_blank" rel="noreferrer">
+            nuestra Configuración de NGINX</a> o contáctenos si tiene algún problema.
+        </p>
+        `,
         subdomain: `Subdominio`,
-        helpText: `Ayuda para la configuración`,
         error: `ERROR: no existe configuración para {0}`,
-        errorFetch: "Hubo un error al recuperar la configuración de nginx",
+        errorFetch: "Hubo un error al obtener la configuración de NGINX",
         notExist: `ERROR: no existe configuración para {0}`,
+        tabCurrent: `Configuración Actual de NGINX`,
+        tabEdit: `Editar Interactivamente`,
+        tabPreview: `Vista Previa de los Cambios`,
+        labels: {
+            subfolderConfig: "Configuración de Subcarpeta",
+            rootConfig: "Configuración de Root",
+            rootPath: "Ruta de Root",
+            rootIsAlias: "Root es Alias",
+            resolveType: "Tipo de Resolución",
+            resolveTypes: {
+                static: "Estático",
+                php: "PHP-FPM",
+                app: "Aplicación Phusion",
+                gls: "Aplicación Genérica",
+                socat: "Reenviar Puerto",
+                deny: "Denegar Solicitudes",
+            },
+            staticMode: "Modo Estático",
+            staticModes: {
+                default: "Predeterminado",
+                smart: "Inteligente",
+                autoindex: "Auto-índice",
+                index: "Índice Root",
+            },
+            static404Path: "Ruta del Archivo HTML 404",
+            phpMode: "Modo PHP",
+            phpModes: {
+                default: 'Predeterminado',
+                smart: 'Inteligente',
+                indexSafe: 'Índice Root - Seguro',
+                index: 'Índice Root - Estándar',
+                always: 'Índice Root - Siempre',
+            },
+            socatPort: 'Reenviar al Puerto',
+            appMode: 'Modo de Aplicación',
+            appEntry: 'Archivo de Inicio de la Aplicación',
+            appBin: 'Ruta Binaria de la Aplicación',
+            appModes: {
+                default: 'Automático',
+                node: 'Node',
+                python: 'Python',
+                ruby: 'Ruby',
+            },
+            glsCmd: 'Comando de la Aplicación',
+            appEnv: 'Claves de Entorno',
+            appDev: '¿Modo de Desarrollo?',
+            appRoot: 'Directorio de Trabajo',
+            addSubfolderConfig: 'Agregar configuración de subcarpeta',
+        },
+        hints: {
+            root: "Los archivos estáticos desde {0} se resolverán a {1}",
+            socat: "Reenviar solicitudes de cliente al puerto {0}",
+            app: "Invocar el script {0} desde {1} usando {2} desde {3}",
+            gls: "Ejecutar \"{0}\" desde {1} con $PORT dado",
+            staticModes: {
+                default: 'Servir archivos estáticos',
+                smart: 'Intentar encontrar el archivo HTML si es posible',
+                index: 'Servir root index.html si no se encuentra ningún archivo',
+                autoindex: 'Permitir listado de archivos del servidor si no se encuentra index.html',
+                with404: 'o mostrar página de error 404 personalizada'
+            },
+            phpModes: {
+                default: 'Servir index.php o archivos php que terminen en .php',
+                smart: 'Intentar encontrar archivo PHP sin .php',
+                indexSafe: 'Servir root index.php pero no intente si el cliente busca un archivo',
+                index: 'Servir root index.php cuando no se encuentre un archivo estático',
+                always: 'Permitir solicitudes de estilo PATH_INFO manejadas por PHP',
+            }
+        }
     },
     hostDNS: {
         title: `Configurador de Servidor DNS`,
@@ -206,7 +293,7 @@ export default {
         subdomain: `Subdominio`,
         maxLines: `Líneas Máximas`,
         emptyLog: `Este log está vacío en este momento`,
-    },    
+    },
     hostManage: {
         title: `Gestionar el acceso al sitio web`,
         description: `
@@ -287,7 +374,7 @@ export default {
         warn: `¡Esto también cambiará la contraseña de la base de datos! Tu sitio web puede no estar disponible hasta que lo cambies en la configuración de tu sitio web.`,
         member: `Los miembros no pueden cambiar la contraseña de este sitio web.`,
         action: `¡Actualizar esta contraseña!`,
-    },    
+    },
     hostCheck: {
         'title': `Revisión DNS Obligatoria`,
         'prompt': `Esto comprueba si {0} se puede resolver a través del DNS de Google antes de ser agregado a nuestro servidor.`,

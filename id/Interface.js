@@ -147,6 +147,7 @@ export default {
     "add": "Tambahkan",
     "addMember": "Tambahkan Anggota",
     "edit": "Sunting",
+    "apply": "Terapkan",
     "save": "Simpan",
     "clear": "Bersihkan",
     "update": "Perbarui",

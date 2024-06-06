@@ -148,6 +148,7 @@ export default {
     "add": "Add",
     "addMember": "Add Member",
     "edit": "Edit",
+    "apply": "Apply",
     "save": "Save",
     "clear": "Clear",
     "update": "Update",
