@@ -1,7 +1,6 @@
 <?php return [
 	'code' => 'id',
 	'codename' => 'Indonesia',
-	'codeI8LN' => 'id-ID',
 	'currency' => 'idr',
 	'login' => 'Masuk',
 	'register' => 'Daftar',

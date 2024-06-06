@@ -1,7 +1,6 @@
 export default {
     "code": "id",
     "codename": "Bahasa Indonesia",
-    "codeI8LN": "id-ID",
     "appTitle": "DOM Cloud",
     "appTitleLong": "DOM Cloud Hosting",
     // Kata-kata umum

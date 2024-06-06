@@ -266,7 +266,11 @@ export default {
                 indexSafe: 'Serve root index.php but don\'t try if client looks for a file',
                 index: 'Serve root index.php when static file is not found',
                 always: 'Allow PATH_INFO style requests handled to PHP',
-            }
+            },
+            deleteSubfolderPrompt: "Are you sure want to delete subfolder config for {0}",
+            inputSubfolderPrompt: "Please input subfolder (must start with '/' and no spaces)",
+            inputSubfolderNotValid: "Subfolder input is not valid",
+            inputSubfolderNotUnique: "Subfolder value must unique with other subfolder entries",
         }
     },
     hostDNS: {

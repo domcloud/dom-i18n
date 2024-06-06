@@ -1,7 +1,6 @@
 export default {
     "code": "en",
     "codename": "English",
-    "codeI8LN": "en-US",
     "appTitle": "DOM Cloud",
     "appTitleLong": "DOM Cloud Hosting",
     // Generic words

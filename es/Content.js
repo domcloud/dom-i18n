@@ -136,6 +136,8 @@ export default {
         webBadRedirectTitle: `El sitio web tiene redirecciones incorrectas`,
         webBadRedirectContent: `Este sitio web está redirigiendo a los visitantes fuera del dominio,
             es posible que no esté configurado correctamente (¡verifique la configuración de la URL base!).`,
+        webBadWwwTitle: `El subdominio www.* no es accesible`,
+        webBadWwwContent: `El subdominio www de este sitio web no es accesible o está devolviendo un error.`,
         webInsecureTitle: `El sitio web no es totalmente seguro`,
         webInsecureContent: ` Este sitio web no redirige HTTP a HTTPS,
             lo cual está bien pero no es recomendable.`,
@@ -264,7 +266,11 @@ export default {
                 indexSafe: 'Servir root index.php pero no intente si el cliente busca un archivo',
                 index: 'Servir root index.php cuando no se encuentre un archivo estático',
                 always: 'Permitir solicitudes de estilo PATH_INFO manejadas por PHP',
-            }
+            },
+            deleteSubfolderPrompt: "¿Está seguro de que desea eliminar la configuración de subcarpeta para {0}",
+            inputSubfolderPrompt: "Por favor, ingrese la subcarpeta (debe comenzar con '/' y no tener espacios)",
+            inputSubfolderNotValid: "La entrada de subcarpeta no es válida",
+            inputSubfolderNotUnique: "El valor de la subcarpeta debe ser único en comparación con otras entradas de subcarpeta",
         }
     },
     hostDNS: {
@@ -309,6 +315,12 @@ export default {
             mediante una interfaz web.
         </p>
         <p>Serás autolocalizado.</p>`,
+        filestashInfo: `<p>
+        Filestash se utiliza para gestionar los archivos de su servidor 
+        utilizando la interfaz web de la conexión SFTP.
+        (para subir archivos, use arrastrar y soltar).
+        </p>
+        <p>Se iniciará sesión automáticamente.</p>`,
         phpMyAdminInfo: ` <p>
         phpMyAdmin se utiliza para gestionar la base de datos MySQL
         mediante una interfaz web.

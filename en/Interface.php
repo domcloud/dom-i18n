@@ -1,7 +1,6 @@
 <?php return [
 	'code' => 'en',
 	'codename' => 'English',
-	'codeI8LN' => 'en-US',
 	'currency' => 'usd',
 	'login' => 'Sign In',
 	'register' => 'Register',

@@ -173,7 +173,8 @@ export default {
             Matikan untuk menghapus batasan ini.
         </p>`,
         onBtn: `Matikan`,
-    }, hostNginx: {
+    }, 
+    hostNginx: {
         title: `Periksa Konfigurasi NGINX`,
         description: `
         <p>
@@ -265,7 +266,11 @@ export default {
                 indexSafe: 'Layani root index.php tetapi jangan coba jika klien mencari file',
                 index: 'Layani root index.php ketika file statis tidak ditemukan',
                 always: 'Izinkan permintaan dengan gaya PATH_INFO ditangani oleh PHP',
-            }
+            },
+            deleteSubfolderPrompt: "Apakah Anda yakin ingin menghapus konfigurasi subfolder untuk {0}",
+            inputSubfolderPrompt: "Silakan masukkan subfolder (harus dimulai dengan '/' dan tidak ada spasi)",
+            inputSubfolderNotValid: "Masukan subfolder tidak valid",
+            inputSubfolderNotUnique: "Nilai subfolder harus unik dibandingkan dengan entri subfolder lainnya",
         }
     },
     hostDNS: {
