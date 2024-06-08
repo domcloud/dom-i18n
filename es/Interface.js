@@ -130,7 +130,7 @@ export default {
     "dataTransfer": "Transferencia de datos",
     "expires": "Vence {0}",
     "expiresAt": "Vence el {0}",
-    "expriresFreeHint": `
+    "expireFreeHint": `
   Las fechas de vencimiento se renuevan automáticamente (se extienden por 3 meses)
   cada vez que inicia sesión o sus sitios web tienen suficiente tráfico de red (> 50 MB)
   al final del mes.

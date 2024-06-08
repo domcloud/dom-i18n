@@ -126,7 +126,7 @@ export default {
     "dataTransfer": "数据传输",
     "expires": "到期时间 {0}",
     "expiresAt": "到期时间 {0}",
-    "expriresFreeHint": `
+    "expireFreeHint": `
   到期日期会自动延长（每次您登录时或您的网站具有足够的网络流量（> 50 MB）时）
   每月末。
   `,

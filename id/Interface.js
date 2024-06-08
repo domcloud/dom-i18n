@@ -129,7 +129,7 @@ export default {
     "dataTransfer": "Transfer Data",
     "expires": "Kadaluarsa {0}",
     "expiresAt": "Kadaluarsa pada {0}",
-    "expriresFreeHint": `
+    "expireFreeHint": `
     Tanggal kadaluarsa secara otomatis diperpanjang (diperpanjang selama 2 bulan) 
     setiap kali Anda login atau situs web Anda memiliki cukup lalu lintas jaringan (>50 MB)
     pada akhir bulan.

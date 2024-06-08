@@ -126,7 +126,7 @@ export default {
   "dataTransfer": "Datenübertragung",
   "expires": "Läuft ab {0}",
   "expiresAt": "Läuft ab am {0}",
-  "expriresFreeHint": `
+  "expireFreeHint": `
 Ablaufdaten werden automatisch verlängert (um 3 Monate verlängert) 
 jedes Mal, wenn Sie sich einloggen oder Ihre Webseiten genügend Netzwerkverkehr haben (>50 MB)
 am Monatsende.

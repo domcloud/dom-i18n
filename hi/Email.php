@@ -1,5 +1,5 @@
 <?php return [
-    'accountNoticeTitle' => 'Account Notice',
-    'verifyTitle' => 'Confirm Your Email',
-    'receiptTitle' => 'Transaction Succeeded',
+    'accountNoticeTitle' => 'खाता सूचना',
+    'verifyTitle' => 'अपना ईमेल सत्यापित करें',
+    'receiptTitle' => 'लेन-देन सफल हुआ',
 ];

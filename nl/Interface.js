@@ -126,7 +126,7 @@ export default {
 "dataTransfer": "Gegevensoverdracht",
 "expires": "Vervalt {0}",
 "expiresAt": "Vervalt op {0}",
-"expriresFreeHint": `
+"expireFreeHint": `
 Vervaldatums worden automatisch verlengd (met 3 maanden) 
 telkens wanneer je inlogt of je websites voldoende netwerkverkeer hebben (> 50 MB) 
 aan het einde van de maand.`,

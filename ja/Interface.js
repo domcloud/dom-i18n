@@ -126,7 +126,7 @@ export default {
   "dataTransfer": "データ転送",
   "expires": "{0}に期限切れ",
   "expiresAt": "{0}に期限切れ",
-  "expriresFreeHint": `
+  "expireFreeHint": `
 有効期限は自動的に更新されます（3か月延長） 
 ログインするたびに、または月末に十分なネットワークトラフィック（>50 MB）が 
 あなたのウェブサイトにあるとき。

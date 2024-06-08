@@ -11,8 +11,8 @@
     'accountRecountTooFast' => 'Please wait for a moment before recounting',
     'accountDeleteNotDangling' => 'Please delete all hosts, domains and backup first',
 
-    'inviteUserNotFound' => 'User not found',
-    'inviteQuotaFull' => 'Team is full, please upgrade',
+    'inviteUserNotFound' => 'This user is not found',
+    'inviteQuotaFull' => 'Team members count is at maximum , please upgrade',
     'inviteNewFail' => 'Failed to invite, maybe they already been added?',
     'inviteRemoveFail' => 'Failed to remove member, maybe they already been removed?',
 

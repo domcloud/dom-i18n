@@ -1,5 +1,5 @@
 <?php return [
-    'accountNoticeTitle' => 'Account Notice',
-    'verifyTitle' => 'Confirm Your Email',
-    'receiptTitle' => 'Transaction Succeeded',
+    'accountNoticeTitle' => 'Kontobenachrichtigung',
+    'verifyTitle' => 'Bestätigen Sie Ihre E-Mail',
+    'receiptTitle' => 'Transaktion Erfolgreich',
 ];

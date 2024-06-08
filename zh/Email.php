@@ -1,5 +1,5 @@
 <?php return [
-    'accountNoticeTitle' => 'Account Notice',
-    'verifyTitle' => 'Confirm Your Email',
-    'receiptTitle' => 'Transaction Succeeded',
+    'accountNoticeTitle' => '账户通知',
+    'verifyTitle' => '确认您的邮箱',
+    'receiptTitle' => '交易成功',
 ];

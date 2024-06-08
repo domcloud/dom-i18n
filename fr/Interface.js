@@ -126,7 +126,7 @@ export default {
   "dataTransfer": "Transfert de données",
   "expires": "Expire le {0}",
   "expiresAt": "Expire à {0}",
-  "expriresFreeHint": `
+  "expireFreeHint": `
 Les dates d'expiration sont automatiquement renouvelées (prolongées de 3 mois) 
 chaque fois que vous vous connectez ou que vos sites web ont suffisamment de trafic réseau (>50 MB)
 à la fin du mois.

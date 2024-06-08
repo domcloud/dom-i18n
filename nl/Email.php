@@ -1,5 +1,5 @@
 <?php return [
-    'accountNoticeTitle' => 'Account Notice',
-    'verifyTitle' => 'Confirm Your Email',
-    'receiptTitle' => 'Transaction Succeeded',
+    'accountNoticeTitle' => 'Accountmelding',
+    'verifyTitle' => 'Bevestig Uw E-mail',
+    'receiptTitle' => 'Transactie Geslaagd',
 ];
