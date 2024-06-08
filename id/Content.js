@@ -1,7 +1,7 @@
 export default {
     footer: {
         help: `Ada yang tidak berfungsi? Tanyakan bantuan di 
-        <a href="{0}">forum</a> atau <a href="{1}">email</a> atau
+        <a href="{0}" target="_blank">forum</a> atau <a href="{1}">email</a> atau
         <a href="{2}">chat</a>.`,
         credit: `{0}, dibuat oleh <a href="{1}">{2}</a>`,
     },
@@ -56,7 +56,7 @@ export default {
         uploadError: `Upload gagal dengan kode status {0}`,
         emptyZipFile: `Tidak ada file yang ditemukan dalam zip`,
         noFileSelected: `Tidak ada file yang dipilih`,
-        exceededFileSizeLimit: `Ukuran file ini ({0}) melebihi batas ({1}), coba unggah nanti menggunakan Webmin.`,
+        exceededFileSizeLimit: 'Ukuran file ini ({0}) melebihi batas ({1}), coba unggah ke GitHub terlebih dahulu dan letakkan tautannya di sini.',
         missingTemplate: `Gagal mengambil template data. Mungkin file masih hilang.`,
         checkingRepo: `Memeriksa repo ini...`,
         cloneWithDeployKey: `Repo akan di-clone dengan kunci deploy.`,
@@ -305,11 +305,11 @@ export default {
         description: `
         <p>
             Gunakan akses login berikut untuk mengunggah atau mengedit konten website Anda.
-            <a href="{0}">Pelajari lebih lanjut</a>.
+            <a href="{0}" target="_blank">Pelajari lebih lanjut</a>.
         </p>`,
-        openPorts: `Buka Port`,
-        openPortsDescription: `Buka port untuk mengedit server Anda`,
-        onlineEditor: `Editor Online dan Alat`,
+        openPorts: `Port Terbuka`,
+        openPortsDescription: `Port Terbuka untuk mengedit server Anda`,
+        onlineEditor: `Editor Online`,
         webminInfo: `<p>
             Webmin digunakan untuk mengelola file server Anda dan
             konfigurasi menggunakan antarmuka web.
@@ -400,7 +400,7 @@ export default {
     },
     domain: {
         createInfo: `Ingatlah bahwa Anda hanya mendaftarkan domain. Jika Anda ingin
-            mengelola situs web, <a href="{0}">buat situs web di sini</a>`,
+            mengelola situs web, <a href="{0}" target="_blank">buat situs web di sini</a>`,
         transferInfo: `Pastikan Anda memiliki hak akses untuk mentransfer
             domain dari layanan lain. Kami akan menghubungi Anda jika
             transfer domain gagal setelah pembayaran, tetapi jika Anda gagal

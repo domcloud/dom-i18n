@@ -1,7 +1,7 @@
 export default {
     footer: {
         help: `Something doesn't work? Ask for help in 
-        <a href="{0}">forum</a> or <a href="{1}">email</a> or
+        <a href="{0}" target="_blank">forum</a> or <a href="{1}">email</a> or
         <a href="{2}">chat</a>.`,
         credit: `{0}, built by <a href="{1}">{2}</a>`,
     },
@@ -305,11 +305,11 @@ export default {
         description: `
         <p>
             Use the following login access to upload or edit your website
-            content. <a href="{0}">Learn more</a>.
+            content. <a href="{0}" target="_blank">Learn more</a>.
         </p>`,
-        openPorts: `Open Ports`,
-        openPortsDescription: `Open ports for editing your server`,
-        onlineEditor: `Online Editor and Tools`,
+        openPorts: `Opened Ports`,
+        openPortsDescription: `Opened Ports for editing your server`,
+        onlineEditor: `Online Editors`,
         webminInfo: `<p>
             Webmin is used to manage your server files and
             configurations using web interface.
@@ -399,7 +399,7 @@ export default {
     },
     domain: {
         createInfo: `Keep in mind you are only registering a domain. If you want
-            to manage the website, <a href="{0}">create the website here</a>`,
+            to manage the website, <a href="{0}" target="_blank">create the website here</a>`,
         transferInfo: `Make sure that you have access rights to transfer the
             domain from another service. We will reach out to you if the
             domain transfer fails after payment, but if you fail to

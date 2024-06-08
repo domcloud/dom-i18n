@@ -1,7 +1,7 @@
 export default {
     footer: {
         help: `Something doesn't work? Ask for help in 
-        <a href="{0}">forum</a> or <a href="{1}">email</a> or
+        <a href="{0}" target="_blank">forum</a> or <a href="{1}">email</a> or
         <a href="{2}">chat</a>.`,
         credit: `{0}, built by <a href="{1}">{2}</a>`,
     },
@@ -28,6 +28,15 @@ export default {
         emailConfirmationHint: `Email hasn't arrived yet?`,
         emailConfirmationBtn: `Send Confirmation Email Again`,
         changeCountryBtn: `Change country`,
+    },
+    notification: {
+        freeUserGuideTitle: `Welcome Abroad!`,
+        freeUserGuideHint: `Thank you for choosing us as your cloud platform 🥳 If you haven't
+          already, try reading our <a href="{0}" target="_blank">Getting Started</a>
+          Guide. Need our fullest experience? Try <a href="{1}">upgrading your plan</a> to unlock 
+          more features such as free customizable domain, full 3rd party API access, 
+          docker and custom background services <a href={2} target="_blank">and much more</a>!`,
+        empty: 'Nothing to see here',
     },
     purchaseConfirmation: {
         purchasedHint: "Thank you. If our system has verified your payment, a confirmation email will be sent to your email.",
@@ -56,7 +65,7 @@ export default {
         uploadError: `Upload failed with status code {0}`,
         emptyZipFile: `No file found in the zip`,
         noFileSelected: `No file selected`,
-        exceededFileSizeLimit: `This file size ({0}) exceeds the limit ({1}), try upload it later using Webmin.`,
+        exceededFileSizeLimit: `This file size ({0}) exceeds the limit ({1}), try upload it to GitHub first and put the link here instead.`,
         missingTemplate: `Failed to fetch the data template. Maybe the file still missing.`,
         checkingRepo: `Checking this repo...`,
         cloneWithDeployKey: `Repo will be cloned with a deploy key.`,
@@ -305,11 +314,11 @@ export default {
         description: `
         <p>
             Use the following login access to upload or edit your website
-            content. <a href="{0}">Learn more</a>.
+            content. <a href="{0}" target="_blank">Learn more</a>.
         </p>`,
-        openPorts: `Open Ports`,
-        openPortsDescription: `Open ports for editing your server`,
-        onlineEditor: `Online Editor and Tools`,
+        openPorts: `Opened Ports`,
+        openPortsDescription: `Opened Ports for editing your server`,
+        onlineEditor: `Online Editors`,
         webminInfo: `<p>
             Webmin is used to manage your server files and
             configurations using web interface.
@@ -399,7 +408,7 @@ export default {
     },
     domain: {
         createInfo: `Keep in mind you are only registering a domain. If you want
-            to manage the website, <a href="{0}">create the website here</a>`,
+            to manage the website, <a href="{0}" target="_blank">create the website here</a>`,
         transferInfo: `Make sure that you have access rights to transfer the
             domain from another service. We will reach out to you if the
             domain transfer fails after payment, but if you fail to

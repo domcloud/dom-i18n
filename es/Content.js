@@ -1,7 +1,7 @@
 export default {
     footer: {
         help: `¿Algo no funciona? Pida ayuda en 
-        <a href="{0}">forum</a> o <a href="{1}">email</a> o
+        <a href="{0}" target="_blank">forum</a> o <a href="{1}">email</a> o
         <a href="{2}">chat</a>.`,
         credit: `{0}, construido por <a href="{1}">{2}</a>`,
     },
@@ -56,7 +56,7 @@ export default {
         uploadError: `Error al cargar con el código de estado {0}`,
         emptyZipFile: `No se encontró ningún archivo en el zip`,
         noFileSelected: `No se seleccionó ningún archivo`,
-        exceededFileSizeLimit: `Este tamaño de archivo ({0}) excede el límite ({1}), intente subirlo más tarde usando Webmin.`,
+        exceededFileSizeLimit: 'El tamaño de este archivo ({0}) supera el límite ({1}), intente subirlo a GitHub primero y ponga el enlace aquí en su lugar.',
         missingTemplate: `Error al recuperar la plantilla de datos. Tal vez el archivo aún falta.`,
         checkingRepo: `Verificando este repositorio...`,
         cloneWithDeployKey: `El repositorio se clonará con una clave de implementación.`,
@@ -305,7 +305,7 @@ export default {
         description: `
         <p>
             Utilice el siguiente acceso para cargar o editar el contenido de su sitio web
-            contenido. <a href="{0}">Más información</a>.
+            contenido. <a href="{0}" target="_blank">Más información</a>.
         </p>`,
         openPorts: `Puertos abiertos`,
         openPortsDescription: `Puertos abiertos para editar su servidor`,
@@ -399,7 +399,7 @@ export default {
     },
     domain: {
         createInfo: `Tenga en cuenta que sólo está registrando un dominio. Si desea
-            gestionar el sitio web, <a href="{0}">crear el sitio web aquí</a>`,
+            gestionar el sitio web, <a href="{0}" target="_blank">crear el sitio web aquí</a>`,
         transferInfo: `Asegúrese de que dispone de derechos de acceso para transferir el
             dominio desde otro servicio. Nos pondremos en contacto con usted si
             transferencia de dominio falla después del pago, pero si no puede
