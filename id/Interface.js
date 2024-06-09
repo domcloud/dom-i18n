@@ -145,6 +145,7 @@ export default {
     "back": "Kembali",
     "add": "Tambahkan",
     "addMember": "Tambahkan Anggota",
+    "confirmRemoveMember": "Apakah Anda yakin ingin menghapus anggota ini?",
     "edit": "Sunting",
     "apply": "Terapkan",
     "save": "Simpan",

@@ -141,6 +141,7 @@ chaque fois que vous vous connectez ou que vos sites web ont suffisamment de tra
   "back": "Retour",
   "add": "Ajouter",
   "addMember": "Ajouter un membre",
+  "confirmRemoveMember": "Êtes-vous sûr de vouloir supprimer ce membre?",
   "edit": "Éditer",
   "apply": "Appliquer",
   "save": "Enregistrer",

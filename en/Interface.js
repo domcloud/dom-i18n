@@ -3,7 +3,6 @@ export default {
     "codename": "English",
     "appTitle": "DOM Cloud",
     "appTitleLong": "DOM Cloud Hosting",
-    // Generic words
     "logout": "Sign out",
     "profile": "Profile",
     "status": "Status",
@@ -40,7 +39,6 @@ export default {
     "phppgadmin": "phpPgAdmin",
     "webssh": "WebSSH",
     "vscode": "Visual Studio Code",
-    // Help section
     "help": "Help",
     "helpDocs": "Docs",
     "helpDocsLink": "https://domcloud.co/docs/intro/",
@@ -50,7 +48,6 @@ export default {
     "helpChatLink": "https://t.me/WIIIN0DE",
     "helpUpdates": "Updates",
     "helpUpdatesLink": "https://twitter.com/domcloud_co",
-    // Profile section
     "country": "Country",
     "chooseCountry": "Choose a country",
     "expiration": "Expiration",
@@ -91,7 +88,6 @@ export default {
     "passwordSetInput": "Enter new password, must at least 8 characters",
     "passwordSetCancel": "Setting password for this account has been cancelled",
     "passwordSetCancelLength": "Setting password cancelled, must be at least 8 characters",
-    // Team management
     "yearDuration": "Duration in years",
     "monthDuration": "Duration in months",
     "annualSaving": "Save 16%",
@@ -140,12 +136,12 @@ export default {
     "usersLimitHint": "{0} {0, plural, one {user} other {users}} in this team, {1} {1, plural, one {user} other {users}} can be added more",
     "emailToInvite": "Email to invite",
     "selectRole": "Select role",
-    // Buttons
     "info": "Info",
     "total": "Total",
     "back": "Back",
     "add": "Add",
     "addMember": "Add Member",
+    "confirmRemoveMember": "Are you sure you want to remove this member?",
     "edit": "Edit",
     "apply": "Apply",
     "save": "Save",
@@ -163,7 +159,6 @@ export default {
     "why": "Why?",
     "pay": "Pay",
     "payAccept": "We accept payments through",
-    // Errors
     "loading": "Gathering data...",
     "fetchError": "Error fetching data! try again later",
     "notFound": "Not Found",

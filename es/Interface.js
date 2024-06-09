@@ -146,6 +146,7 @@ export default {
     "back": "Atrás",
     "add": "Agregar",
     "addMember": "Agregar miembro",
+    "confirmRemoveMember": "¿Estás seguro de que quieres eliminar a este miembro?",
     "edit": "Editar",
     "apply": "Aplicar",
     "save": "Guardar",

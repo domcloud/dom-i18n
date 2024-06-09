@@ -16,7 +16,7 @@
 	'or' => 'O',
 	'signInWith' => 'Iniciar sesión con',
 	'wrongLogin' => 'Correo electrónico o contraseña incorrectos',
-	'registerAgreement' => 'Al registrarte, aceptas nuestros <a href="//domcloud.co/service">Términos de servicio</a>.',
+	'registerAgreement' => 'Al registrarte, aceptas nuestros <a href="//domcloud.co/service" target="_blank">Términos de servicio</a>.',
 	'emailSent' => 'El correo electrónico de verificación ha sido enviado, por favor revisa tu bandeja de entrada (y la de correo no deseado) antes de iniciar sesión.',
 	'oAuthFail' => 'Parece que su intento con el inicio de sesión de terceros falló. Esto suele deberse a que se agotó el tiempo de espera o al correo electrónico principal vinculado a esa cuenta que aún no se ha verificado.',
 	'passReset' => 'Su contraseña se ha restablecido con éxito. Inicie sesión con su nueva contraseña.',

@@ -27,6 +27,7 @@ export default {
         `,
         emailConfirmationHint: `Email hasn't arrived yet?`,
         emailConfirmationBtn: `Send Confirmation Email Again`,
+        emailConfirmationSent: "Email confirmation to <strong>{0}</strong> has been sent!",
         changeCountryBtn: `Change country`,
     },
     notification: {
@@ -41,10 +42,6 @@ export default {
     purchaseConfirmation: {
         purchasedHint: "Thank you. If our system has verified your payment, a confirmation email will be sent to your email.",
         purchaseCancel: "Your payment has been canceled.",
-    },
-    emailConfirmation: {
-        hint: `IMPORTANT! You need to confirm your email to start creating websites. Please check your inbox (or spam box) at {0}`,
-        prompt: `Are you sure you want to resend the email? This action logs out your session. Please check your inbox (and spam box) after this moment.`,
     },
     accountDeletion: {
         title: `Deleting your Account`,

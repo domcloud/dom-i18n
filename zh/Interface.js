@@ -140,6 +140,7 @@ export default {
     "back": "返回",
     "add": "添加",
     "addMember": "添加成员",
+    "confirmRemoveMember": "您确定要删除此成员吗？",
     "edit": "编辑",
     "apply": "应用",
     "save": "保存",

@@ -21,7 +21,7 @@
 	'or' => 'Or',
 	'signInWith' => 'Sign in with',
 	'wrongLogin' => 'Wrong email or password',
-	'registerAgreement' => 'By registering you agree to our <a href="//domcloud.co/service">Terms of Service</a>.',
+	'registerAgreement' => 'By registering you agree to our <a href="//domcloud.co/service" target="_blank">Terms of Service</a>.',
 	'emailSent' => 'The email for verification has been sent, please check your inbox (and spam box) before login.',
 	'oAuthFail' => 'It seems that your attempt with third-party login is failed. This is commonly caused by timeout or primary email tied with that account is not verified yet.',
 	'passReset' => 'Your password has been successfully reset. Please login with your new password.',

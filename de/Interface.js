@@ -141,6 +141,7 @@ am Monatsende.
   "back": "Zurück",
   "add": "Hinzufügen",
   "addMember": "Mitglied hinzufügen",
+  "confirmRemoveMember": "Sind Sie sicher, dass Sie dieses Mitglied entfernen möchten?",
   "edit": "Bearbeiten",
   "apply": "Anwenden",
   "save": "Speichern",

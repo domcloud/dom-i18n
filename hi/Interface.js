@@ -141,6 +141,7 @@ export default {
   "back": "वापस",
   "add": "जोड़ें",
   "addMember": "सदस्य जोड़ें",
+  "confirmRemoveMember": "क्या आप इस सदस्य को हटाना चाहते हैं?",
   "edit": "संपादित करें",
   "apply": "लागू करें",
   "save": "सहेजें",
