@@ -45,7 +45,7 @@ export default {
     },
     hostCreate: {
         chooseTemplate: `Pilih template untuk memulai`,
-        startFromScratch: `Tidak, saya ingin memulai dari awal`,
+        startFromScratch: `Mulai dari awal`,
         uploadFileHint: `Unggah atau masukkan URL untuk menganalisis kontennya`,
         readingTheFile: `Membaca file...`,
         readingFiles: `Membaca {0} dari {1} file...`,

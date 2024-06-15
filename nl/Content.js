@@ -45,7 +45,7 @@ export default {
     },
     hostCreate: {
         chooseTemplate: `Choose a template to start with`,
-        startFromScratch: `No, I want to start from scratch`,
+        startFromScratch: `Start from scratch`,
         uploadFileHint: `Upload or enter the URL to analyze the content`,
         readingTheFile: `Reading the file...`,
         readingFiles: `Reading {0} of {1} file(s)...`,

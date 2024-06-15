@@ -45,7 +45,7 @@ export default {
     },
     hostCreate: {
         chooseTemplate: `Elige una plantilla para comenzar`,
-        startFromScratch: `No, quiero empezar desde cero`,
+        startFromScratch: `Empezar desde el principio`,
         uploadFileHint: `Sube o ingresa la URL para analizar el contenido`,
         readingTheFile: `Leyendo el archivo...`,
         readingFiles: `Leyendo {0} de {1} archivo(s)...`,
