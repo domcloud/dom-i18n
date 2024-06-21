@@ -40,7 +40,7 @@ export default {
     accountDeletion: {
         title: `Eliminar su cuenta`,
         hint: `!ATENCIÓN! La eliminación de la cuenta es permanente y no podemos revertir la acción. Si tiene un host o un dominio registrados, debe eliminarlos previamente. Contacte con nosotros si necesita ayuda.`,
-        prompt: `Escriba "Y" para aceptar la eliminación de la cuenta.`,
+        prompt: `Por favor, escriba su correo electrónico para aceptar la eliminación de la cuenta.`,
         disabled: `No puede eliminar esta cuenta si todavía hay alojamiento o un dominio registrado.`,
     },
     hostCreate: {

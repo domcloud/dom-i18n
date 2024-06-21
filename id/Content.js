@@ -40,7 +40,7 @@ export default {
     accountDeletion: {
         title: `Menghapus Akun Anda`,
         hint: `PERHATIAN! Penghapusan akun bersifat permanen dan kami tidak dapat mengembalikan tindakan tersebut. Jika Anda memiliki host atau domain terdaftar, Anda perlu menghapusnya terlebih dahulu. Hubungi kami jika Anda membutuhkan bantuan.`,
-        prompt: `Silakan tulis "YA" untuk menyetujui penghapusan akun.`,
+        prompt: `Silakan tulis email Anda untuk menyetujui penghapusan akun.`,
         disabled: `Anda tidak dapat menghapus akun ini jika masih ada hosting atau domain terdaftar.`,
     },
     hostCreate: {

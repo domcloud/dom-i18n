@@ -40,7 +40,7 @@ export default {
     accountDeletion: {
         title: `Deleting your Account`,
         hint: `ATTENTION! Account deletion is permanent and we cannot reverse the action. If you have a host or domain registered, you need to delete them beforehand. Contact us if you need help.`,
-        prompt: `Please write "YES" to agree to account deletion.`,
+        prompt: `Please write your email to agree for account deletion.`,
         disabled: `You cannot delete this account if there is still hosting or a registered domain.`,
     },
     hostCreate: {
