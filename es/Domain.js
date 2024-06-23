@@ -23,7 +23,7 @@ export default {
     "domainName": "Dominio Nama",
     "domainStatus": "Estado Dominio",
     "formatInvoice": "Pago de dominio {0} a precio de {1}",
-    "fillBiodata": "Rellenar los Biodatos de Dominio",
+    "enterContact": "Rellenar los Biodatos de Dominio",
     "myOwn": "El dominio que pedí es mío",
     "enterBio": "Introducir datos personales",
     "publicBio": "Biodatos públicos / Propietario del dominio",

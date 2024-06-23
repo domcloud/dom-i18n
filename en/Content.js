@@ -415,20 +415,11 @@ export default {
             circumstances.`,
         eppTransferInfo: `You can transfer your domain to another registrar by
             using this EPP code. The transfer works if the domain is not locked`,
-    },
-    invoiceDescription: {
-        domainPurchaseOf: "Domain Purchase of {0}",
-        domainExtendOf: "Domain Extend of {0}",
-        domainTransferOf: "Domain Transfer of {0}",
-        hostPurchase: "Host Purchase",
-        hostRenew: "Host Renew",
-        hostUpgrade: "Host Upgrade",
-        hostExtend: "Host Extend",
-        withPlan: " with {0} Plan",
-        forMonths: " for {0} months",
-        forYears: " for {0} years",
-        forYearsAndMonths: " for {0} years and {1} months",
-        dataTransferAddonsFor: "Additional Data transfer for {0} GB",
-        tip: "Convenience Fee",
+        dnsManagedHint: `We don't provide UI for custom DNS records. <br />
+          If your nameservers are set to <b>{0}</b> then DNS are handled by
+          <a href="{1}" target="_blank">the respective website DNS</a>.`,
+        dnsManagedOpen: `If you want to change it anyway please manage it via our
+        <a href="{0}" target="_blank">Registrar UI</a>. Click forgot password
+        and enter your current email to set your password the first time.`
     },
 }
