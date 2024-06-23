@@ -17,7 +17,7 @@
     'ok' => '好的',
     'back' => '返回',
     'or' => '或',
-    'signInWith' => '登录方式',
+    'signInWith' => '登录方式 {0}',
     'wrongLogin' => '错误的电子邮件或密码',
     'registerAgreement' => '注册即表示您同意我们的<a href="//domcloud.co/service" target="_blank">服务条款</a>。',
     'emailSent' => '验证邮件已发送，请在登录前检查您的收件箱（和垃圾邮件箱）。',

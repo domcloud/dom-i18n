@@ -17,7 +17,7 @@
     'ok' => 'OK',
     'back' => 'Terug',
     'or' => 'Of',
-    'signInWith' => 'Inloggen met',
+    'signInWith' => 'Inloggen met {0}',
     'wrongLogin' => 'Verkeerd e-mailadres of wachtwoord',
     'registerAgreement' => 'Door te registreren gaat u akkoord met onze <a href="//domcloud.co/service" target="_blank">Servicevoorwaarden</a>.',
     'emailSent' => 'De verificatiemail is verzonden, controleer uw inbox (en spambox) voordat u inlogt.',

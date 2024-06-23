@@ -19,7 +19,7 @@
 	'ok' => 'OK',
 	'back' => 'Back',
 	'or' => 'Or',
-	'signInWith' => 'Sign in with',
+	'signInWith' => 'Sign in with {0}',
 	'wrongLogin' => 'Wrong email or password',
 	'registerAgreement' => 'By registering you agree to our <a href="//domcloud.co/service" target="_blank">Terms of Service</a>.',
 	'emailSent' => 'The email for verification has been sent, please check your inbox (and spam box) before login.',

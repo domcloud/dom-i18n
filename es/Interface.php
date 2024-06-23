@@ -14,7 +14,7 @@
 
 	'back' => 'Volver',
 	'or' => 'O',
-	'signInWith' => 'Iniciar sesión con',
+	'signInWith' => 'Iniciar sesión con {0}',
 	'wrongLogin' => 'Correo electrónico o contraseña incorrectos',
 	'registerAgreement' => 'Al registrarte, aceptas nuestros <a href="//domcloud.co/service" target="_blank">Términos de servicio</a>.',
 	'emailSent' => 'El correo electrónico de verificación ha sido enviado, por favor revisa tu bandeja de entrada (y la de correo no deseado) antes de iniciar sesión.',

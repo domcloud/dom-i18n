@@ -17,7 +17,7 @@
     'ok' => 'OK',
     'back' => 'Zurück',
     'or' => 'Oder',
-    'signInWith' => 'Anmelden mit',
+    'signInWith' => 'Anmelden mit {0}',
     'wrongLogin' => 'Falsche E-Mail oder falsches Passwort',
     'registerAgreement' => 'Durch die Registrierung stimmen Sie unseren <a href="//domcloud.co/service" target="_blank">Nutzungsbedingungen</a> zu.',
     'emailSent' => 'Die Bestätigungs-E-Mail wurde gesendet, bitte überprüfen Sie Ihr Postfach (und den Spam-Ordner), bevor Sie sich anmelden.',

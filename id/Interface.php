@@ -14,7 +14,7 @@
 
 	'back' => 'Kembali',
 	'or' => 'Atau',
-	'signInWith' => 'Masuk dengan',
+	'signInWith' => 'Masuk dengan {0}',
 	'wrongLogin' => 'Salah email atau password',
 	'wrongEmail' => 'Salah email?',
 	'registerAgreement' => 'Dengan mendaftar anda menyetujui <a href="//domcloud.co/service" target="_blank">Kebijakan Layanan</a> Kami',

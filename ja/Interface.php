@@ -17,7 +17,7 @@
     'ok' => 'OK',
     'back' => '戻る',
     'or' => 'または',
-    'signInWith' => 'でサインイン',
+    'signInWith' => 'でサインイン {0}',
     'wrongLogin' => '間違ったメールまたはパスワード',
     'registerAgreement' => '登録することにより、あなたは私たちの<a href="//domcloud.co/service" target="_blank">サービス規約</a>に同意したことになります。',
     'emailSent' => '確認のためのメールが送信されました。ログインする前に受信箱（およびスパムボックス）を確認してください。',

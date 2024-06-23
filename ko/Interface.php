@@ -18,7 +18,7 @@
     'ok' => '확인',
     'back' => '뒤로',
     'or' => '또는',
-    'signInWith' => '로그인 방법',
+    'signInWith' => '로그인 방법 {0}',
     'wrongLogin' => '잘못된 이메일 또는 비밀번호입니다',
     'registerAgreement' => '가입함으로써 귀하는 당사의 <a href="//domcloud.co/service" target="_blank">이용약관</a>에 동의하게 됩니다.',
     'emailSent' => '확인 이메일이 발송되었습니다. 로그인 전에 받은 편지함(및 스팸 편지함)을 확인해 주세요.',

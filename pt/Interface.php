@@ -17,7 +17,7 @@
     'ok' => 'OK',
     'back' => 'Voltar',
     'or' => 'Ou',
-    'signInWith' => 'Entrar com',
+    'signInWith' => 'Entrar com {0}',
     'wrongLogin' => 'E-mail ou senha incorretos',
     'registerAgreement' => 'Ao se registrar, você concorda com nossos <a href="//domcloud.co/service" target="_blank">Termos de Serviço</a>.',
     'emailSent' => 'O e-mail de verificação foi enviado, verifique sua caixa de entrada (e a caixa de spam) antes de fazer login.',
