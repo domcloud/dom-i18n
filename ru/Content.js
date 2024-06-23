@@ -1,84 +1,84 @@
 export default {
     footer: {
-        help: `Something doesn't work? Ask for help in 
-        <a href="{0}" target="_blank">forum</a> or <a href="{1}">email</a> or
-        <a href="{2}">chat</a>.`,
-        credit: `{0}, built by <a href="{1}">{2}</a>`,
+        help: `Что-то не работает? Обратитесь за помощью на 
+        <a href="{0}" target="_blank">форум</a> или по <a href="{1}">электронной почте</a> или в 
+        <a href="{2}">чат</a>.`,
+        credit: `{0}, создано <a href="{1}">{2}</a>`,
     },
     welcome: {
-        title: `Welcome to DOM Cloud! 🎉`,
-        description: ` <p>Hi, {0}</p>
+        title: `Добро пожаловать в DOM Cloud! 🎉`,
+        description: ` <p>Привет, {0}</p>
         <p>
-          Thank you for joining the DOM Cloud fleet to reach the freedom to
-          achieve success on the Internet!
+          Спасибо, что присоединились к флоту DOM Cloud, чтобы достичь успеха в Интернете!
         </p>
         <p>
-          To be able to serve you optimally, we need confirm the region you
-          currently occupy. This also affects your payment options and the
-          default server location which you can change later:
+          Для оптимального обслуживания нам нужно подтвердить регион, в котором вы находитесь. 
+          Это также влияет на ваши варианты оплаты и местоположение сервера по умолчанию, которое вы можете изменить позже:
         </p>
         `,
-        createWebsiteHint: `Ready? Let's make your first website.`,
-        createWebsiteBtn: `Create a website`,
+        createWebsiteHint: `Готовы? Давайте создадим ваш первый веб-сайт.`,
+        createWebsiteBtn: `Создать веб-сайт`,
         emailConfirmation: `
-            Looks like you need to verify email <strong>{0}</strong>
-            before continuing.<br />
-            Please check your email (and spam) inbox.
+            Похоже, вам нужно подтвердить электронную почту <strong>{0}</strong>
+            прежде чем продолжить.<br />
+            Пожалуйста, проверьте ваш почтовый ящик (и папку со спамом).
         `,
-        emailConfirmationHint: `Email hasn't arrived yet?`,
-        emailConfirmationBtn: `Send Confirmation Email Again`,
-        changeCountryBtn: `Change country`,
+        emailConfirmationHint: `Письмо не пришло?`,
+        emailConfirmationBtn: `Отправить подтверждающее письмо снова`,
+        emailConfirmationSent: "Подтверждающее письмо на <strong>{0}</strong> было отправлено!",
+        changeCountryBtn: `Изменить страну`,
+    },
+    notification: {
+        freeUserGuideTitle: `Добро пожаловать!`,
+        freeUserGuideHint: `Спасибо, что выбрали нас в качестве вашей облачной платформы 🥳 Если вы еще не сделали этого, попробуйте прочитать наше 
+          <a href="{0}" target="_blank">Руководство для начинающих</a>. Хотите полный опыт? Попробуйте <a href="{1}">обновить ваш план</a>, чтобы разблокировать 
+          больше функций, таких как бесплатный настраиваемый домен, полный доступ к API третьих сторон, 
+          docker и настраиваемые фоновые сервисы <a href={2} target="_blank">и многое другое</a>!`,
+        empty: 'Здесь пока ничего нет',
     },
     purchaseConfirmation: {
-        purchasedHint: "Thank you. If our system has verified your payment, a confirmation email will be sent to your email.",
-        purchaseCancel: "Your payment has been canceled.",
-    },
-    emailConfirmation: {
-        hint: `IMPORTANT! You need to confirm your email to start creating websites. Please check your inbox (or spam box) at {0}`,
-        prompt: `Are you sure you want to resend the email? This action logs out your session. Please check your inbox (and spam box) after this moment.`,
+        purchasedHint: "Спасибо. Если наша система подтвердила ваш платеж, подтверждающее письмо будет отправлено на вашу электронную почту.",
+        purchaseCancel: "Ваш платеж был отменен.",
     },
     accountDeletion: {
-        title: `Deleting your Account`,
-        hint: `ATTENTION! Account deletion is permanent and we cannot reverse the action. If you have a host or domain registered, you need to delete them beforehand. Contact us if you need help.`,
-        prompt: `Please write your email to agree for account deletion.`,
-        disabled: `You cannot delete this account if there is still hosting or a registered domain.`,
+        title: `Удаление аккаунта`,
+        hint: `ВНИМАНИЕ! Удаление аккаунта является постоянным и не может быть отменено. Если у вас есть зарегистрированные хостинг или домен, сначала необходимо их удалить. Свяжитесь с нами, если вам нужна помощь.`,
+        prompt: `Пожалуйста, введите вашу электронную почту, чтобы подтвердить удаление аккаунта.`,
+        disabled: `Вы не можете удалить этот аккаунт, если у вас все еще есть хостинг или зарегистрированный домен.`,
     },
     hostCreate: {
-        chooseTemplate: `Choose a template to start with`,
-        startFromScratch: `Start from scratch`,
-        uploadFileHint: `Upload or enter the URL to analyze the content`,
-        readingTheFile: `Reading the file...`,
-        readingFiles: `Reading {0} of {1} file(s)...`,
-        readingZipFile: `Reading the zip file...`,
-        compressingZipFile: `Compressing into a zip file...`,
-        uploadingFiles: `Uploading files... ({0} of {1})`,
-        uploadCompleted: `Upload complete ({0} file(s) with total size {1}}`,
-        uploadError: `Upload failed with status code {0}`,
-        emptyZipFile: `No file found in the zip`,
-        noFileSelected: `No file selected`,
-        exceededFileSizeLimit: `This file size ({0}) exceeds the limit ({1}), try upload it later using Webmin.`,
-        missingTemplate: `Failed to fetch the data template. Maybe the file still missing.`,
-        checkingRepo: `Checking this repo...`,
-        cloneWithDeployKey: `Repo will be cloned with a deploy key.`,
-        uploadDirectory: `Upload a directory`,
-        uploadZipFile: `Upload a zip file`,
-        dropDirectory: `Drop that directory...`,
-        dropZipFile: `Drop that zip file...`,
-        dropWhatsThat: `That ain't a zip file or directory...`,
-        dropMultiple: `(Please only drop one file or directory)`,
-        readingDroppedDirectory: `Reading the dropped directory...`,
-        readingDroppedZipFile: `Reading the dropped zip file...`,
-        orPasteUrl: "... or paste Git Repo/Zip URL",
-        attachDeployKey: `Attach deploy key`,
-        selectFramework: `Tell us the framework or language`,
-        applyFramework: `Apply this template`,
-        attachDeployKeyHint: `If your repository is set private, you can use
-            deploy keys to access it. We created an asymmetric deploy key
-            for you, you need to add this public key to your repository. `,
-        attachDeployKeyLearnMore: `Learn more about GitHub integration 
-            with deploy keys.`,
-        attachDeployKeyOpenConfig: `Open repository's deploy key configuration`,
-        attachDeployKeyConfirm: `I have added this public key`,
+        chooseTemplate: `Выберите шаблон для начала`,
+        startFromScratch: `Начать с нуля`,
+        uploadFileHint: `Загрузите файл или введите URL для анализа содержимого`,
+        readingTheFile: `Чтение файла...`,
+        readingFiles: `Чтение {0} из {1} файла(ов)...`,
+        readingZipFile: `Чтение zip-файла...`,
+        compressingZipFile: `Сжатие в zip-файл...`,
+        uploadingFiles: `Загрузка файлов... ({0} из {1})`,
+        uploadCompleted: `Загрузка завершена ({0} файл(ов) общим размером {1})`,
+        uploadError: `Ошибка загрузки с кодом состояния {0}`,
+        emptyZipFile: `В zip-файле не найдено файлов`,
+        noFileSelected: `Файл не выбран`,
+        exceededFileSizeLimit: `Размер этого файла ({0}) превышает лимит ({1}), попробуйте сначала загрузить его на GitHub и вставьте ссылку здесь.`,
+        missingTemplate: `Не удалось получить шаблон данных. Возможно, файл все еще отсутствует.`,
+        checkingRepo: `Проверка репозитория...`,
+        cloneWithDeployKey: `Репозиторий будет клонирован с помощью ключа развёртывания.`,
+        uploadDirectory: `Загрузить каталог`,
+        uploadZipFile: `Загрузить zip-файл`,
+        dropDirectory: `Перетащите этот каталог...`,
+        dropZipFile: `Перетащите этот zip-файл...`,
+        dropWhatsThat: `Это не zip-файл и не каталог...`,
+        dropMultiple: `(Пожалуйста, перетащите только один файл или каталог)`,
+        readingDroppedDirectory: `Чтение перетащенного каталога...`,
+        readingDroppedZipFile: `Чтение перетащенного zip-файла...`,
+        orPasteUrl: "... или вставьте URL Git репозитория/zip-файла",
+        attachDeployKey: `Прикрепить ключ развёртывания`,
+        selectFramework: `Укажите нам фреймворк или язык`,
+        applyFramework: `Применить этот шаблон`,
+        attachDeployKeyHint: `Если ваш репозиторий установлен как приватный, вы можете использовать ключи развёртывания для доступа. Мы создали асимметричный ключ развёртывания для вас, вам нужно добавить этот публичный ключ в ваш репозиторий.`,
+        attachDeployKeyLearnMore: `Узнайте больше о интеграции GitHub с ключами развёртывания.`,
+        attachDeployKeyOpenConfig: `Открыть конфигурацию ключа развёртывания репозитория`,
+        attachDeployKeyConfirm: `Я добавил этот публичный ключ`,
     },
     hostConnection: {
         title: `Check Connection`,

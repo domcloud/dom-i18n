@@ -1,84 +1,87 @@
 export default {
     footer: {
-        help: `Something doesn't work? Ask for help in 
-        <a href="{0}" target="_blank">forum</a> or <a href="{1}">email</a> or
+        help: `Werkt iets niet? Vraag om hulp op
+        <a href="{0}" target="_blank">het forum</a> of via <a href="{1}">email</a> of
         <a href="{2}">chat</a>.`,
-        credit: `{0}, built by <a href="{1}">{2}</a>`,
+        credit: `{0}, gemaakt door <a href="{1}">{2}</a>`,
     },
     welcome: {
-        title: `Welcome to DOM Cloud! 🎉`,
-        description: ` <p>Hi, {0}</p>
+        title: `Welkom bij DOM Cloud! 🎉`,
+        description: ` <p>Hallo, {0}</p>
         <p>
-          Thank you for joining the DOM Cloud fleet to reach the freedom to
-          achieve success on the Internet!
+          Bedankt dat je je hebt aangesloten bij de DOM Cloud vloot om de vrijheid te bereiken
+          om succes te behalen op het internet!
         </p>
         <p>
-          To be able to serve you optimally, we need confirm the region you
-          currently occupy. This also affects your payment options and the
-          default server location which you can change later:
+          Om je optimaal van dienst te kunnen zijn, moeten we bevestigen in welke regio je je momenteel bevindt.
+          Dit heeft ook invloed op je betalingsopties en de standaard serverlocatie, die je later kunt wijzigen:
         </p>
         `,
-        createWebsiteHint: `Ready? Let's make your first website.`,
-        createWebsiteBtn: `Create a website`,
+        createWebsiteHint: `Klaar? Laten we je eerste website maken.`,
+        createWebsiteBtn: `Maak een website`,
         emailConfirmation: `
-            Looks like you need to verify email <strong>{0}</strong>
-            before continuing.<br />
-            Please check your email (and spam) inbox.
+            Het lijkt erop dat je de email <strong>{0}</strong> moet verifiëren
+            voordat je verder kunt gaan.<br />
+            Controleer je email (en spam) inbox.
         `,
-        emailConfirmationHint: `Email hasn't arrived yet?`,
-        emailConfirmationBtn: `Send Confirmation Email Again`,
-        changeCountryBtn: `Change country`,
+        emailConfirmationHint: `Email nog niet ontvangen?`,
+        emailConfirmationBtn: `Verificatie-email opnieuw verzenden`,
+        emailConfirmationSent: "Verificatie-email naar <strong>{0}</strong> is verzonden!",
+        changeCountryBtn: `Land wijzigen`,
+    },
+    notification: {
+        freeUserGuideTitle: `Welkom aan boord!`,
+        freeUserGuideHint: `Bedankt dat je voor ons als je cloudplatform hebt gekozen 🥳 Als je dat nog niet hebt gedaan,
+          probeer dan onze <a href="{0}" target="_blank">Aan de slag</a> Gids te lezen.
+          Wil je onze volledige ervaring? Probeer dan je plan <a href="{1}">te upgraden</a> om
+          meer functies te ontgrendelen zoals gratis aanpasbaar domein, volledige toegang tot API van derden,
+          docker en aangepaste achtergrondservices <a href={2} target="_blank">en nog veel meer</a>!`,
+        empty: 'Niets te zien hier',
     },
     purchaseConfirmation: {
-        purchasedHint: "Thank you. If our system has verified your payment, a confirmation email will be sent to your email.",
-        purchaseCancel: "Your payment has been canceled.",
-    },
-    emailConfirmation: {
-        hint: `IMPORTANT! You need to confirm your email to start creating websites. Please check your inbox (or spam box) at {0}`,
-        prompt: `Are you sure you want to resend the email? This action logs out your session. Please check your inbox (and spam box) after this moment.`,
+        purchasedHint: "Bedankt. Als ons systeem je betaling heeft bevestigd, wordt er een bevestigings-email naar je emailadres gestuurd.",
+        purchaseCancel: "Je betaling is geannuleerd.",
     },
     accountDeletion: {
-        title: `Deleting your Account`,
-        hint: `ATTENTION! Account deletion is permanent and we cannot reverse the action. If you have a host or domain registered, you need to delete them beforehand. Contact us if you need help.`,
-        prompt: `Please write your email to agree for account deletion.`,
-        disabled: `You cannot delete this account if there is still hosting or a registered domain.`,
+        title: `Je account verwijderen`,
+        hint: `LET OP! Het verwijderen van het account is permanent en we kunnen de actie niet ongedaan maken. Als je een host of geregistreerd domein hebt, moet je deze eerst verwijderen. Neem contact met ons op als je hulp nodig hebt.`,
+        prompt: `Schrijf je email om akkoord te gaan met het verwijderen van het account.`,
+        disabled: `Je kunt dit account niet verwijderen als er nog een hosting of geregistreerd domein is.`,
     },
     hostCreate: {
-        chooseTemplate: `Choose a template to start with`,
-        startFromScratch: `Start from scratch`,
-        uploadFileHint: `Upload or enter the URL to analyze the content`,
-        readingTheFile: `Reading the file...`,
-        readingFiles: `Reading {0} of {1} file(s)...`,
-        readingZipFile: `Reading the zip file...`,
-        compressingZipFile: `Compressing into a zip file...`,
-        uploadingFiles: `Uploading files... ({0} of {1})`,
-        uploadCompleted: `Upload complete ({0} file(s) with total size {1}}`,
-        uploadError: `Upload failed with status code {0}`,
-        emptyZipFile: `No file found in the zip`,
-        noFileSelected: `No file selected`,
-        exceededFileSizeLimit: `This file size ({0}) exceeds the limit ({1}), try upload it later using Webmin.`,
-        missingTemplate: `Failed to fetch the data template. Maybe the file still missing.`,
-        checkingRepo: `Checking this repo...`,
-        cloneWithDeployKey: `Repo will be cloned with a deploy key.`,
-        uploadDirectory: `Upload a directory`,
-        uploadZipFile: `Upload a zip file`,
-        dropDirectory: `Drop that directory...`,
-        dropZipFile: `Drop that zip file...`,
-        dropWhatsThat: `That ain't a zip file or directory...`,
-        dropMultiple: `(Please only drop one file or directory)`,
-        readingDroppedDirectory: `Reading the dropped directory...`,
-        readingDroppedZipFile: `Reading the dropped zip file...`,
-        orPasteUrl: "... or paste Git Repo/Zip URL",
-        attachDeployKey: `Attach deploy key`,
-        selectFramework: `Tell us the framework or language`,
-        applyFramework: `Apply this template`,
-        attachDeployKeyHint: `If your repository is set private, you can use
-            deploy keys to access it. We created an asymmetric deploy key
-            for you, you need to add this public key to your repository. `,
-        attachDeployKeyLearnMore: `Learn more about GitHub integration 
-            with deploy keys.`,
-        attachDeployKeyOpenConfig: `Open repository's deploy key configuration`,
-        attachDeployKeyConfirm: `I have added this public key`,
+        chooseTemplate: `Kies een sjabloon om mee te beginnen`,
+        startFromScratch: `Begin vanaf nul`,
+        uploadFileHint: `Upload een bestand of voer de URL in om de inhoud te analyseren`,
+        readingTheFile: `Het bestand lezen...`,
+        readingFiles: `{1} bestanden lezen van {0}...`,
+        readingZipFile: `De zip-bestand lezen...`,
+        compressingZipFile: `In een zip-bestand comprimeren...`,
+        uploadingFiles: `Bestanden uploaden... ({1} van {0})`,
+        uploadCompleted: `Upload voltooid ({1} bestand(en) met een totale grootte van {0})`,
+        uploadError: `Upload mislukt met statuscode {0}`,
+        emptyZipFile: `Geen bestand gevonden in de zip`,
+        noFileSelected: `Geen bestand geselecteerd`,
+        exceededFileSizeLimit: `De bestandsgrootte ({0}) overschrijdt de limiet ({1}), probeer het eerst naar GitHub te uploaden en plaats hier de link.`,
+        missingTemplate: `Het ophalen van het gegevenssjabloon is mislukt. Misschien ontbreekt het bestand nog steeds.`,
+        checkingRepo: `Deze repo controleren...`,
+        cloneWithDeployKey: `Repo wordt gekloond met een implementatiesleutel.`,
+        uploadDirectory: `Upload een map`,
+        uploadZipFile: `Upload een zip-bestand`,
+        dropDirectory: `Laat die map vallen...`,
+        dropZipFile: `Laat dat zip-bestand vallen...`,
+        dropWhatsThat: `Dat is geen zip-bestand of map...`,
+        dropMultiple: `(Laat alsjeblieft slechts één bestand of map vallen)`,
+        readingDroppedDirectory: `De neergezette map lezen...`,
+        readingDroppedZipFile: `Het neergezette zip-bestand lezen...`,
+        orPasteUrl: "... of plak Git Repo/Zip URL",
+        attachDeployKey: `Koppel implementatiesleutel`,
+        selectFramework: `Vertel ons het framework of de taal`,
+        applyFramework: `Dit sjabloon toepassen`,
+        attachDeployKeyHint: `Als je repository privé is ingesteld, kun je
+            implementatiesleutels gebruiken om toegang te krijgen. We hebben een asymmetrische implementatiesleutel voor je gemaakt, je moet deze publieke sleutel toevoegen aan je repository.`,
+        attachDeployKeyLearnMore: `Meer weten over GitHub-integratie met implementatiesleutels.`,
+        attachDeployKeyOpenConfig: `Open de implementatiesleutelconfiguratie van de repository`,
+        attachDeployKeyConfirm: `Ik heb deze publieke sleutel toegevoegd`,
     },
     hostConnection: {
         title: `Check Connection`,

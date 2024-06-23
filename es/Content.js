@@ -13,9 +13,8 @@ export default {
           ¡alcanzar el éxito en Internet!
         </p>
         <p>
-          Para poder atenderle de forma óptima, necesitamos confirmarle la región que
-          actualmente. Esto también afecta a sus opciones de pago y a la
-          ubicación predeterminada del servidor, que podrá cambiar más adelante:
+          Para poder atenderle de forma óptima, necesitamos confirmarle la región que actualmente. 
+          Esto también afecta a sus opciones de pago y a la ubicación predeterminada del servidor, que podrá cambiar más adelante:
         </p>
         `,
         createWebsiteHint: `¿Preparado? Hagamos tu primer sitio web.`,
@@ -27,15 +26,21 @@ export default {
         `,
         emailConfirmationHint: `¿Aún no ha llegado el correo electrónico?`,
         emailConfirmationBtn: `Volver a enviar el correo de confirmación`,
+        emailConfirmationSent: "¡La confirmación de correo electrónico a <strong>{0}</strong> ha sido enviada!",
         changeCountryBtn: `Cambiar de país`,
+    },
+    notification: {
+        freeUserGuideTitle: `¡Bienvenido a Bordo!`,
+        freeUserGuideHint: `Gracias por elegirnos como su plataforma en la nube 🥳 Si aún no lo ha hecho,
+            intente leer nuestra <a href="{0}" target="_blank">Guía de Inicio</a>.
+            ¿Necesita nuestra experiencia completa? Intente <a href="{1}">actualizar su plan</a> para desbloquear
+            más funciones como dominio personalizable gratuito, acceso completo a la API de terceros,
+            Docker y servicios de fondo personalizados <a href={2} target="_blank">¡y mucho más!</a>`,
+        empty: 'No hay nada que ver aquí',
     },
     purchaseConfirmation: {
         purchasedHint: "Gracias. Si nuestro sistema ha verificado su pago, un correo electrónico de confirmación será enviado a su correo electrónico.",
         purchaseCancel: "Su pago ha sido cancelado.",
-    },
-    emailConfirmation: {
-        hint: `¡IMPORTANTE! Debe confirmar su correo electrónico para empezar a crear sitios web. Compruebe su bandeja de entrada (o de correo no deseado) en {0}`,
-        prompt: `¿Está seguro de que desea reenviar el correo electrónico? Esta acción cierra tu sesión. Por favor, compruebe su bandeja de entrada (y su buzón de spam) después de este momento..`,
     },
     accountDeletion: {
         title: `Eliminar su cuenta`,
@@ -398,31 +403,22 @@ export default {
         'retrying': '...',
     },
     domain: {
-        createInfo: `Tenga en cuenta que sólo está registrando un dominio. Si desea
-            gestionar el sitio web, <a href="{0}" target="_blank">crear el sitio web aquí</a>`,
-        transferInfo: `Asegúrese de que dispone de derechos de acceso para transferir el
-            dominio desde otro servicio. Nos pondremos en contacto con usted si
-            transferencia de dominio falla después del pago, pero si no puede
-            demostrar la propiedad del dominio mediante el código EPP o los
-            no podremos ayudarle. Por ToS usted
-            no obtendrá reembolso en la compra de un dominio bajo ninguna
+        createInfo: `Tenga en cuenta que solo está registrando un dominio. Si desea
+            gestionar el sitio web, <a href="{0}" target="_blank">cree el sitio web aquí</a>`,
+        transferInfo: `Asegúrese de tener derechos de acceso para transferir el
+            dominio desde otro servicio. Nos pondremos en contacto con usted si la
+            transferencia del dominio falla después del pago, pero si no puede
+            demostrar la propiedad del dominio mediante el código EPP o los requisitos
+            de documentos existentes, no podemos ayudarlo. Según los Términos de Servicio,
+            no recibirá un reembolso en la compra de un dominio bajo ninguna
             circunstancia.`,
-        eppTransferInfo: `Puede transferir su dominio a otro registrador
-            utilizando este código EPP. La transferencia funciona si el dominio no está bloqueado`,
-    },
-    invoiceDescription: {
-        domainPurchaseOf: "Dominio Compra de {0}",
-        domainExtendOf: "Dominio Extender de {0}",
-        domainTransferOf: "Transferencia de dominio de {0}",
-        hostPurchase: "Compra de Host",
-        hostRenew: "Renovar Host",
-        hostUpgrade: "Actualizar Host",
-        hostExtend: "Host Extend",
-        withPlan: " con {0} Plan",
-        forMonths: " por {0} meses",
-        forYears: " por {0} años",
-        forYearsAndMonths: " por {0} años y {1} meses",
-        dataTransferAddonsFor: "Transferencia adicional de datos para {0} GB",
-        tip: "Tasa por comodidad",
-    },
+        eppTransferInfo: `Puede transferir su dominio a otro registrador usando
+            este código EPP. La transferencia funciona si el dominio no está bloqueado`,
+        dnsManagedHint: `No proporcionamos una interfaz de usuario para registros DNS personalizados. <br />
+            Si sus servidores de nombres están configurados en <b>{0}</b>, los DNS son manejados por
+            <a href="{1}" target="_blank">el sitio web correspondiente de DNS</a>.`,
+        dnsManagedOpen: `Si de todos modos desea cambiarlo, por favor adminístrelo a través de nuestro
+            <a href="{0}" target="_blank">interfaz de usuario del registrador</a>. Haga clic en "olvidó su contraseña"
+            e ingrese su correo electrónico actual para establecer su contraseña por primera vez.`
+    }
 }

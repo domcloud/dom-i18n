@@ -1,84 +1,87 @@
 export default {
     footer: {
-        help: `Something doesn't work? Ask for help in 
-        <a href="{0}" target="_blank">forum</a> or <a href="{1}">email</a> or
+        help: `Algo não está funcionando? Peça ajuda no
+        <a href="{0}" target="_blank">fórum</a> ou por <a href="{1}">email</a> ou
         <a href="{2}">chat</a>.`,
-        credit: `{0}, built by <a href="{1}">{2}</a>`,
+        credit: `{0}, construído por <a href="{1}">{2}</a>`,
     },
     welcome: {
-        title: `Welcome to DOM Cloud! 🎉`,
-        description: ` <p>Hi, {0}</p>
+        title: `Bem-vindo ao DOM Cloud! 🎉`,
+        description: ` <p>Olá, {0}</p>
         <p>
-          Thank you for joining the DOM Cloud fleet to reach the freedom to
-          achieve success on the Internet!
+          Obrigado por se juntar à frota DOM Cloud para alcançar a liberdade de
+          ter sucesso na Internet!
         </p>
         <p>
-          To be able to serve you optimally, we need confirm the region you
-          currently occupy. This also affects your payment options and the
-          default server location which you can change later:
+          Para podermos atendê-lo de forma ideal, precisamos confirmar a região em que você se encontra atualmente.
+          Isso também afeta suas opções de pagamento e a localização padrão do servidor, que você pode alterar posteriormente:
         </p>
         `,
-        createWebsiteHint: `Ready? Let's make your first website.`,
-        createWebsiteBtn: `Create a website`,
+        createWebsiteHint: `Pronto? Vamos criar seu primeiro site.`,
+        createWebsiteBtn: `Criar um site`,
         emailConfirmation: `
-            Looks like you need to verify email <strong>{0}</strong>
-            before continuing.<br />
-            Please check your email (and spam) inbox.
+            Parece que você precisa verificar o email <strong>{0}</strong>
+            antes de continuar.<br />
+            Por favor, verifique sua caixa de entrada de email (e spam).
         `,
-        emailConfirmationHint: `Email hasn't arrived yet?`,
-        emailConfirmationBtn: `Send Confirmation Email Again`,
-        changeCountryBtn: `Change country`,
+        emailConfirmationHint: `O email ainda não chegou?`,
+        emailConfirmationBtn: `Reenviar Email de Confirmação`,
+        emailConfirmationSent: "Email de confirmação para <strong>{0}</strong> foi enviado!",
+        changeCountryBtn: `Mudar de país`,
+    },
+    notification: {
+        freeUserGuideTitle: `Bem-vindo a bordo!`,
+        freeUserGuideHint: `Obrigado por nos escolher como sua plataforma de nuvem 🥳 Se você ainda não fez,
+          tente ler nosso <a href="{0}" target="_blank">Guia de Início</a>.
+          Quer a experiência completa? Tente <a href="{1}">atualizar seu plano</a> para desbloquear
+          mais recursos, como domínio personalizável gratuito, acesso completo a API de terceiros,
+          docker e serviços de fundo personalizados <a href={2} target="_blank">e muito mais</a>!`,
+        empty: 'Nada para ver aqui',
     },
     purchaseConfirmation: {
-        purchasedHint: "Thank you. If our system has verified your payment, a confirmation email will be sent to your email.",
-        purchaseCancel: "Your payment has been canceled.",
-    },
-    emailConfirmation: {
-        hint: `IMPORTANT! You need to confirm your email to start creating websites. Please check your inbox (or spam box) at {0}`,
-        prompt: `Are you sure you want to resend the email? This action logs out your session. Please check your inbox (and spam box) after this moment.`,
+        purchasedHint: "Obrigado. Se nosso sistema verificou seu pagamento, um email de confirmação será enviado para seu email.",
+        purchaseCancel: "Seu pagamento foi cancelado.",
     },
     accountDeletion: {
-        title: `Deleting your Account`,
-        hint: `ATTENTION! Account deletion is permanent and we cannot reverse the action. If you have a host or domain registered, you need to delete them beforehand. Contact us if you need help.`,
-        prompt: `Please write your email to agree for account deletion.`,
-        disabled: `You cannot delete this account if there is still hosting or a registered domain.`,
+        title: `Exclusão da sua Conta`,
+        hint: `ATENÇÃO! A exclusão da conta é permanente e não podemos reverter a ação. Se você tiver um host ou domínio registrado, precisará excluí-los primeiro. Entre em contato conosco se precisar de ajuda.`,
+        prompt: `Por favor, escreva seu email para concordar com a exclusão da conta.`,
+        disabled: `Você não pode excluir esta conta se ainda houver hospedagem ou domínio registrado.`,
     },
     hostCreate: {
-        chooseTemplate: `Choose a template to start with`,
-        startFromScratch: `Start from scratch`,
-        uploadFileHint: `Upload or enter the URL to analyze the content`,
-        readingTheFile: `Reading the file...`,
-        readingFiles: `Reading {0} of {1} file(s)...`,
-        readingZipFile: `Reading the zip file...`,
-        compressingZipFile: `Compressing into a zip file...`,
-        uploadingFiles: `Uploading files... ({0} of {1})`,
-        uploadCompleted: `Upload complete ({0} file(s) with total size {1}}`,
-        uploadError: `Upload failed with status code {0}`,
-        emptyZipFile: `No file found in the zip`,
-        noFileSelected: `No file selected`,
-        exceededFileSizeLimit: `This file size ({0}) exceeds the limit ({1}), try upload it later using Webmin.`,
-        missingTemplate: `Failed to fetch the data template. Maybe the file still missing.`,
-        checkingRepo: `Checking this repo...`,
-        cloneWithDeployKey: `Repo will be cloned with a deploy key.`,
-        uploadDirectory: `Upload a directory`,
-        uploadZipFile: `Upload a zip file`,
-        dropDirectory: `Drop that directory...`,
-        dropZipFile: `Drop that zip file...`,
-        dropWhatsThat: `That ain't a zip file or directory...`,
-        dropMultiple: `(Please only drop one file or directory)`,
-        readingDroppedDirectory: `Reading the dropped directory...`,
-        readingDroppedZipFile: `Reading the dropped zip file...`,
-        orPasteUrl: "... or paste Git Repo/Zip URL",
-        attachDeployKey: `Attach deploy key`,
-        selectFramework: `Tell us the framework or language`,
-        applyFramework: `Apply this template`,
-        attachDeployKeyHint: `If your repository is set private, you can use
-            deploy keys to access it. We created an asymmetric deploy key
-            for you, you need to add this public key to your repository. `,
-        attachDeployKeyLearnMore: `Learn more about GitHub integration 
-            with deploy keys.`,
-        attachDeployKeyOpenConfig: `Open repository's deploy key configuration`,
-        attachDeployKeyConfirm: `I have added this public key`,
+        chooseTemplate: `Escolha um modelo para começar`,
+        startFromScratch: `Começar do zero`,
+        uploadFileHint: `Envie ou insira a URL para analisar o conteúdo`,
+        readingTheFile: `Lendo o arquivo...`,
+        readingFiles: `Lendo {0} de {1} arquivo(s)...`,
+        readingZipFile: `Lendo o arquivo zip...`,
+        compressingZipFile: `Compactando em um arquivo zip...`,
+        uploadingFiles: `Enviando arquivos... ({0} de {1})`,
+        uploadCompleted: `Upload concluído ({0} arquivo(s) com tamanho total de {1})`,
+        uploadError: `Falha no upload com o código de status {0}`,
+        emptyZipFile: `Nenhum arquivo encontrado no zip`,
+        noFileSelected: `Nenhum arquivo selecionado`,
+        exceededFileSizeLimit: `O tamanho do arquivo ({0}) excede o limite ({1}), tente enviá-lo primeiro para o GitHub e coloque o link aqui.`,
+        missingTemplate: `Falha ao obter o modelo de dados. O arquivo ainda pode estar ausente.`,
+        checkingRepo: `Verificando este repositório...`,
+        cloneWithDeployKey: `Repositório será clonado com uma chave de implantação.`,
+        uploadDirectory: `Enviar um diretório`,
+        uploadZipFile: `Enviar um arquivo zip`,
+        dropDirectory: `Solte esse diretório...`,
+        dropZipFile: `Solte esse arquivo zip...`,
+        dropWhatsThat: `Isso não é um arquivo zip ou diretório...`,
+        dropMultiple: `(Por favor, solte apenas um arquivo ou diretório)`,
+        readingDroppedDirectory: `Lendo o diretório solto...`,
+        readingDroppedZipFile: `Lendo o arquivo zip solto...`,
+        orPasteUrl: "... ou cole a URL do Git Repo/Zip",
+        attachDeployKey: `Anexar chave de implantação`,
+        selectFramework: `Diga-nos o framework ou linguagem`,
+        applyFramework: `Aplicar este modelo`,
+        attachDeployKeyHint: `Se o seu repositório estiver definido como privado, você pode usar
+            chaves de implantação para acessar. Criamos uma chave de implantação assimétrica para você, você precisará adicionar esta chave pública ao seu repositório.`,
+        attachDeployKeyLearnMore: `Saiba mais sobre integração GitHub com chaves de implantação.`,
+        attachDeployKeyOpenConfig: `Abrir configuração de chave de implantação do repositório`,
+        attachDeployKeyConfirm: `Adicionei esta chave pública`,
     },
     hostConnection: {
         title: `Check Connection`,

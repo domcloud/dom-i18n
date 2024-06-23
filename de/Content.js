@@ -1,428 +1,407 @@
 export default {
     footer: {
-        help: `Something doesn't work? Ask for help in 
-        <a href="{0}" target="_blank">forum</a> or <a href="{1}">email</a> or
-        <a href="{2}">chat</a>.`,
-        credit: `{0}, built by <a href="{1}">{2}</a>`,
+        help: `Etwas funktioniert nicht? Fragen Sie im 
+        <a href="{0}" target="_blank">Forum</a> oder per <a href="{1}">E-Mail</a> oder
+        im <a href="{2}">Chat</a> um Hilfe.`,
+        credit: `{0}, erstellt von <a href="{1}">{2}</a>`,
     },
     welcome: {
-        title: `Welcome to DOM Cloud! 🎉`,
-        description: ` <p>Hi, {0}</p>
+        title: `Willkommen bei DOM Cloud! 🎉`,
+        description: ` <p>Hallo, {0}</p>
         <p>
-          Thank you for joining the DOM Cloud fleet to reach the freedom to
-          achieve success on the Internet!
+          Vielen Dank, dass Sie der DOM Cloud Flotte beigetreten sind, um die Freiheit zu erreichen,
+          im Internet erfolgreich zu sein!
         </p>
         <p>
-          To be able to serve you optimally, we need confirm the region you
-          currently occupy. This also affects your payment options and the
-          default server location which you can change later:
+          Um Sie optimal bedienen zu können, müssen wir die Region bestätigen, in der Sie sich derzeit befinden.
+          Dies beeinflusst auch Ihre Zahlungsoptionen und den Standardserverstandort, den Sie später ändern können:
         </p>
         `,
-        createWebsiteHint: `Ready? Let's make your first website.`,
-        createWebsiteBtn: `Create a website`,
+        createWebsiteHint: `Bereit? Lass uns deine erste Website erstellen.`,
+        createWebsiteBtn: `Erstelle eine Website`,
         emailConfirmation: `
-            Looks like you need to verify email <strong>{0}</strong>
-            before continuing.<br />
-            Please check your email (and spam) inbox.
+            Es sieht so aus, als müssten Sie die E-Mail <strong>{0}</strong> verifizieren,
+            bevor Sie fortfahren können.<br />
+            Bitte überprüfen Sie Ihren E-Mail-Posteingang (und den Spam-Ordner).
         `,
-        emailConfirmationHint: `Email hasn't arrived yet?`,
-        emailConfirmationBtn: `Send Confirmation Email Again`,
-        changeCountryBtn: `Change country`,
+        emailConfirmationHint: `E-Mail ist noch nicht angekommen?`,
+        emailConfirmationBtn: `Bestätigungs-E-Mail erneut senden`,
+        emailConfirmationSent: "E-Mail-Bestätigung an <strong>{0}</strong> wurde gesendet!",
+        changeCountryBtn: `Land ändern`,
+    },
+    notification: {
+        freeUserGuideTitle: `Willkommen an Bord!`,
+        freeUserGuideHint: `Vielen Dank, dass Sie uns als Ihre Cloud-Plattform gewählt haben 🥳 Wenn Sie es noch nicht getan haben,
+          lesen Sie unsere <a href="{0}" target="_blank">Einstiegshilfe</a>.
+          Möchten Sie das volle Erlebnis? Versuchen Sie <a href="{1}">Ihren Plan zu aktualisieren</a>, um mehr Funktionen freizuschalten,
+          wie z.B. kostenlos anpassbare Domains, vollständiger Zugriff auf Drittanbieter-APIs,
+          Docker und benutzerdefinierte Hintergrunddienste <a href={2} target="_blank">und vieles mehr</a>!`,
+        empty: 'Nichts zu sehen hier',
     },
     purchaseConfirmation: {
-        purchasedHint: "Thank you. If our system has verified your payment, a confirmation email will be sent to your email.",
-        purchaseCancel: "Your payment has been canceled.",
-    },
-    emailConfirmation: {
-        hint: `IMPORTANT! You need to confirm your email to start creating websites. Please check your inbox (or spam box) at {0}`,
-        prompt: `Are you sure you want to resend the email? This action logs out your session. Please check your inbox (and spam box) after this moment.`,
+        purchasedHint: "Vielen Dank. Wenn unser System Ihre Zahlung verifiziert hat, wird eine Bestätigungs-E-Mail an Ihre E-Mail gesendet.",
+        purchaseCancel: "Ihre Zahlung wurde storniert.",
     },
     accountDeletion: {
-        title: `Deleting your Account`,
-        hint: `ATTENTION! Account deletion is permanent and we cannot reverse the action. If you have a host or domain registered, you need to delete them beforehand. Contact us if you need help.`,
-        prompt: `Please write your email to agree for account deletion.`,
-        disabled: `You cannot delete this account if there is still hosting or a registered domain.`,
+        title: `Löschen Ihres Kontos`,
+        hint: `ACHTUNG! Das Löschen des Kontos ist dauerhaft und wir können die Aktion nicht rückgängig machen. Wenn Sie einen Host oder eine Domain registriert haben, müssen Sie diese vorher löschen. Kontaktieren Sie uns, wenn Sie Hilfe benötigen.`,
+        prompt: `Bitte geben Sie Ihre E-Mail-Adresse ein, um das Löschen des Kontos zu bestätigen.`,
+        disabled: `Sie können dieses Konto nicht löschen, wenn noch ein Hosting oder eine registrierte Domain vorhanden ist.`,
     },
     hostCreate: {
-        chooseTemplate: `Choose a template to start with`,
-        startFromScratch: `Start from scratch`,
-        uploadFileHint: `Upload or enter the URL to analyze the content`,
-        readingTheFile: `Reading the file...`,
-        readingFiles: `Reading {0} of {1} file(s)...`,
-        readingZipFile: `Reading the zip file...`,
-        compressingZipFile: `Compressing into a zip file...`,
-        uploadingFiles: `Uploading files... ({0} of {1})`,
-        uploadCompleted: `Upload complete ({0} file(s) with total size {1}}`,
-        uploadError: `Upload failed with status code {0}`,
-        emptyZipFile: `No file found in the zip`,
-        noFileSelected: `No file selected`,
-        exceededFileSizeLimit: `This file size ({0}) exceeds the limit ({1}), try upload it later using Webmin.`,
-        missingTemplate: `Failed to fetch the data template. Maybe the file still missing.`,
-        checkingRepo: `Checking this repo...`,
-        cloneWithDeployKey: `Repo will be cloned with a deploy key.`,
-        uploadDirectory: `Upload a directory`,
-        uploadZipFile: `Upload a zip file`,
-        dropDirectory: `Drop that directory...`,
-        dropZipFile: `Drop that zip file...`,
-        dropWhatsThat: `That ain't a zip file or directory...`,
-        dropMultiple: `(Please only drop one file or directory)`,
-        readingDroppedDirectory: `Reading the dropped directory...`,
-        readingDroppedZipFile: `Reading the dropped zip file...`,
-        orPasteUrl: "... or paste Git Repo/Zip URL",
-        attachDeployKey: `Attach deploy key`,
-        selectFramework: `Tell us the framework or language`,
-        applyFramework: `Apply this template`,
-        attachDeployKeyHint: `If your repository is set private, you can use
-            deploy keys to access it. We created an asymmetric deploy key
-            for you, you need to add this public key to your repository. `,
-        attachDeployKeyLearnMore: `Learn more about GitHub integration 
-            with deploy keys.`,
-        attachDeployKeyOpenConfig: `Open repository's deploy key configuration`,
-        attachDeployKeyConfirm: `I have added this public key`,
+        chooseTemplate: `Wählen Sie eine Vorlage, um zu beginnen`,
+        startFromScratch: `Von Grund auf neu beginnen`,
+        uploadFileHint: `Laden Sie eine Datei hoch oder geben Sie die URL ein, um den Inhalt zu analysieren`,
+        readingTheFile: `Datei wird gelesen...`,
+        readingFiles: `Lese {0} von {1} Datei(en)...`,
+        readingZipFile: `Zip-Datei wird gelesen...`,
+        compressingZipFile: `In eine Zip-Datei komprimieren...`,
+        uploadingFiles: `Dateien werden hochgeladen... ({0} von {1})`,
+        uploadCompleted: `Upload abgeschlossen ({0} Datei(en) mit einer Gesamtgröße von {1}}`,
+        uploadError: `Upload fehlgeschlagen mit Statuscode {0}`,
+        emptyZipFile: `Keine Datei in der Zip gefunden`,
+        noFileSelected: `Keine Datei ausgewählt`,
+        exceededFileSizeLimit: `Die Dateigröße ({0}) überschreitet das Limit ({1}), versuchen Sie, sie zuerst auf GitHub hochzuladen und geben Sie den Link hier ein.`,
+        missingTemplate: `Das Abrufen der Datavorlage ist fehlgeschlagen. Möglicherweise fehlt die Datei noch.`,
+        checkingRepo: `Dieses Repo wird überprüft...`,
+        cloneWithDeployKey: `Repo wird mit einem Deploy-Schlüssel geklont.`,
+        uploadDirectory: `Laden Sie ein Verzeichnis hoch`,
+        uploadZipFile: `Laden Sie eine Zip-Datei hoch`,
+        dropDirectory: `Legen Sie das Verzeichnis hier ab...`,
+        dropZipFile: `Legen Sie die Zip-Datei hier ab...`,
+        dropWhatsThat: `Das ist keine Zip-Datei oder kein Verzeichnis...`,
+        dropMultiple: `(Bitte nur eine Datei oder ein Verzeichnis ablegen)`,
+        readingDroppedDirectory: `Das abgelegte Verzeichnis wird gelesen...`,
+        readingDroppedZipFile: `Die abgelegte Zip-Datei wird gelesen...`,
+        orPasteUrl: "... oder fügen Sie Git-Repo/Zip-URL ein",
+        attachDeployKey: `Deploy-Schlüssel anhängen`,
+        selectFramework: `Nennen Sie uns das Framework oder die Sprache`,
+        applyFramework: `Diese Vorlage anwenden`,
+        attachDeployKeyHint: `Wenn Ihr Repository privat eingestellt ist, können Sie Deploy-Schlüssel verwenden, um darauf zuzugreifen. Wir haben einen asymmetrischen Deploy-Schlüssel für Sie erstellt, Sie müssen diesen öffentlichen Schlüssel zu Ihrem Repository hinzufügen. `,
+        attachDeployKeyLearnMore: `Erfahren Sie mehr über die GitHub-Integration 
+            mit Deploy-Schlüsseln.`,
+        attachDeployKeyOpenConfig: `Öffnen Sie die Deploy-Schlüssel-Konfiguration des Repositorys`,
+        attachDeployKeyConfirm: `Ich habe diesen öffentlichen Schlüssel hinzugefügt`,
     },
     hostConnection: {
-        title: `Check Connection`,
+        title: `Verbindung prüfen`,
         description: `
         <p>
-            This page checks if this website is accessible from the
-            internet.
+            Diese Seite überprüft, ob diese Website vom
+            Internet aus zugänglich ist.
         </p>
         <p>
-            There are three prerequisites for a website to be accessible
-            from the internet:
+            Es gibt drei Voraussetzungen, damit eine Website vom
+            Internet aus zugänglich ist:
         </p>
         <ul>
-            <li>The DNS server must be available</li>
-            <li>The returned IP address must be correct</li>
-            <li>The server's content must be accessible</li>
+            <li>Der DNS-Server muss verfügbar sein</li>
+            <li>Die zurückgegebene IP-Adresse muss korrekt sein</li>
+            <li>Der Inhalt des Servers muss zugänglich sein</li>
         </ul>
         <p>
-            If one of the prerequisites above fails, this website may
-            not be accessible from the internet.
+            Wenn eine der oben genannten Voraussetzungen fehlschlägt, ist diese Website möglicherweise
+            nicht vom Internet aus zugänglich.
         </p>`,
-        dnsOffTitle: `No name server`,
-        dnsOffContent: `This website does not have a name server. It maybe externally configured.`,
-        dnsManagedTitle: `DNS managed`,
-        dnsManagedContent: `This website's DNS is managed by DOM Cloud.`,
-        dnsMixedTitle: `DNS is mixed`,
-        dnsMixedContent: `This website's DNS has a mixed
-            configuration. Ensure that the name server
-            is configured properly. Do not mix our
-            records with other records!`,
-        dnsExternalTitle: `DNS managed externally`,
-        dnsExternalContent: `This website's DNS is handled by a third party.`,
-        pingNoIpTitle: `IP Address not found`,
-        pingNoIpContent: `The DNS server does not return an IP address.`,
-        pingNoIp6Title: `No IPv6`,
-        pingNoIp6Content: ` This website's DNS has no IPv6 address. It maybe unavailable for IPv6 users.`,
-        pingWrongIpTitle: `Incorrect IP Address`,
-        pingWrongIpContent: `This website's DNS returned an incorrect IP address. 
-            It may not serve the correct content, or it's behind a proxy.`,
-        pingNoWwwTitle: `www.* subdomain IP address not found`,
+        dnsOffTitle: `Kein Namensserver`,
+        dnsOffContent: `Diese Website hat keinen Namensserver. Es ist möglicherweise extern konfiguriert.`,
+        dnsManagedTitle: `DNS verwaltet`,
+        dnsManagedContent: `Das DNS dieser Website wird von DOM Cloud verwaltet.`,
+        dnsMixedTitle: `DNS ist gemischt`,
+        dnsMixedContent: `Das DNS dieser Website hat eine gemischte
+            Konfiguration. Stellen Sie sicher, dass der Namensserver
+            richtig konfiguriert ist. Mischen Sie unsere
+            Einträge nicht mit anderen Einträgen!`,
+        dnsExternalTitle: `DNS extern verwaltet`,
+        dnsExternalContent: `Das DNS dieser Website wird von einem Drittanbieter verwaltet.`,
+        pingNoIpTitle: `IP-Adresse nicht gefunden`,
+        pingNoIpContent: `Der DNS-Server gibt keine IP-Adresse zurück.`,
+        pingNoIp6Title: `Kein IPv6`,
+        pingNoIp6Content: `Das DNS dieser Website hat keine IPv6-Adresse. Es ist möglicherweise für IPv6-Benutzer nicht verfügbar.`,
+        pingWrongIpTitle: `Falsche IP-Adresse`,
+        pingWrongIpContent: `Das DNS dieser Website gibt eine falsche IP-Adresse zurück. 
+            Es könnte den falschen Inhalt liefern oder hinter einem Proxy stehen.`,
+        pingNoWwwTitle: `www.* Subdomain IP-Adresse nicht gefunden`,
         pingNoWwwContent: ` 
-            Some people may not be able to access this
-            website if they prefix it with www. Setup a
-            www subdomain redirect is recommended.`,
-        pingOkTitle: `IP Address OK`,
-        pingOkContent: `This website's DNS returned the correct IP address.`,
-        webNoHttpTitle: `Website is not accessible`,
-        webNoHttpContent: `This website is not accessible via HTTP.`,
-        webNoHttpsTitle: `HTTPS not available`,
-        webNoHttpsContent: `This website may not have HTTPS certificate
-            installed, or it's expired, or not configured properly.`,
-        webBadHttpTitle: `Website is returning an error`,
-        webBadHttpContent: `This website returns 500 or 403 error, 
-            it may not be configured properly (check NGINX/App settings!).`,
-        webBadRedirectTitle: `Website is has bad redirects`,
-        webBadRedirectContent: `This website is redirecting visitors to outside the domain, 
-            it may not be configured properly (check Base URL settings!).`,
-        webBadWwwTitle: `www.* subdomain is not accessible`,
-        webBadWwwContent: `This website's www subdomain is either not accessible or returning error.`,
-        webInsecureTitle: `Website is not fully secure`,
-        webInsecureContent: ` This website doesn't redirect HTTP to HTTPS,
-            which is fine but not recommended.`,
-        webOkTitle: `Website is OK`,
-        webOkContent: `This website is accessible via HTTP and HTTPS.`,
+            Einige Personen können möglicherweise nicht auf diese
+            Website zugreifen, wenn sie sie mit www. voranstellen. Eine
+            Weiterleitung der www-Subdomain einzurichten, wird empfohlen.`,
+        pingOkTitle: `IP-Adresse OK`,
+        pingOkContent: `Das DNS dieser Website gibt die korrekte IP-Adresse zurück.`,
+        webNoHttpTitle: `Website ist nicht zugänglich`,
+        webNoHttpContent: `Diese Website ist über HTTP nicht zugänglich.`,
+        webNoHttpsTitle: `HTTPS nicht verfügbar`,
+        webNoHttpsContent: `Diese Website hat möglicherweise kein HTTPS-Zertifikat
+            installiert, oder es ist abgelaufen oder nicht richtig konfiguriert.`,
+        webBadHttpTitle: `Website gibt einen Fehler zurück`,
+        webBadHttpContent: `Diese Website gibt einen 500- oder 403-Fehler zurück, 
+            sie ist möglicherweise nicht richtig konfiguriert (überprüfen Sie die NGINX/App-Einstellungen!).`,
+        webBadRedirectTitle: `Website hat schlechte Weiterleitungen`,
+        webBadRedirectContent: `Diese Website leitet Besucher außerhalb der Domain weiter, 
+            sie ist möglicherweise nicht richtig konfiguriert (überprüfen Sie die Basis-URL-Einstellungen!).`,
+        webBadWwwTitle: `www.* Subdomain ist nicht zugänglich`,
+        webBadWwwContent: `Die www-Subdomain dieser Website ist entweder nicht zugänglich 
+            oder gibt eine andere IP-Adresse zurück. Es wird empfohlen, www und non-www 
+            Subdomains zu konsolidieren.`,
+        webOkTitle: `Website OK`,
+        webOkContent: `Diese Website ist für HTTP und HTTPS zugänglich und gibt keine Fehler zurück.`,
     },
     hostFirewall: {
-        title: `Check Firewall`,
+        title: `Firewall überprüfen`,
         description: `
         <p>
-            Firewall helps your website not to be exploited in the event of a
-            hacker break-in by blocking all outgoing traffic except those on the
-            <a href="{0}" target="_blank" rel="noreferrer">whitelist</a>.
+            Eine Firewall hilft, Ihre Website vor Ausnutzung im Falle eines
+            Hackerangriffs zu schützen, indem sie den gesamten ausgehenden Datenverkehr blockiert, 
+            außer denjenigen, die auf der <a href="{0}" target="_blank" rel="noreferrer">Whitelist</a> stehen.
         </p>
         <p>
-            Depending on your use of the website, you may want to turn off the
-            firewall if your website requires third party API or other forms of 
-            communication not listed in the whitelist.
+            Abhängig von der Nutzung Ihrer Website möchten Sie möglicherweise die Firewall ausschalten,
+            wenn Ihre Website eine API eines Drittanbieters oder andere Formen der Kommunikation benötigt,
+            die nicht in der Whitelist aufgeführt sind.
         </p>
-        <p>The firewall applies to the domain and all subdomains within. It is 
-        mandatorily turned on for users with free plan. To turn it off, you 
-        have to be in subscribing plan (Lite or above).</p>
-        <p><a href="{1}" target="_blank" rel="noreferrer">Read more</a></p>
+        <p>Die Firewall gilt für die Domain und alle Subdomains. Sie ist 
+        zwingend eingeschaltet für Benutzer mit dem kostenlosen Plan. Um sie auszuschalten, 
+        müssen Sie einen Abonnementplan (Lite oder höher) haben.</p>
+        <p><a href="{1}" target="_blank" rel="noreferrer">Mehr erfahren</a></p>
         `,
-        offTitle: `Firewall is off`,
+        offTitle: `Firewall ist ausgeschaltet`,
         offContent: `<p>
-            All outgoing traffic is allowed. Keep your site secure, please!
+            Der gesamte ausgehende Datenverkehr ist erlaubt. Halten Sie Ihre Seite bitte sicher!
         </p>`,
-        offBtn: `Turn it on`,
-        onTitle: `Firewall is active`,
+        offBtn: `Einschalten`,
+        onTitle: `Firewall ist aktiv`,
         onContent: `<p>
-            All third-party outgoing connection is blocked except for whitelists.<br/>
-            Turn it off to remove this limitation.
+            Alle ausgehenden Verbindungen von Drittanbietern sind außer für Whitelist-Einträge blockiert.<br/>
+            Schalten Sie sie aus, um diese Einschränkung zu entfernen.
         </p>`,
-        onBtn: `Turn it off`,
+        onBtn: `Ausschalten`,
     },
     hostNginx: {
-        title: `Check NGINX Config`,
+        title: `NGINX-Konfiguration überprüfen`,
         description: `
         <p>
-            NGINX is our main server gateway that serves HTTP ports (80 and 443).
-            To make your website works, your web app must be correctly configured
-            here. Here you can view your current configuration and make changes 
-            either via preconfigured UI or full-blown NGINX config as YAML script. 
+            NGINX ist unser Hauptserver-Gateway, das HTTP-Ports (80 und 443) bedient.
+            Damit Ihre Website funktioniert, muss Ihre Web-App hier korrekt konfiguriert sein.
+            Hier können Sie Ihre aktuelle Konfiguration anzeigen und Änderungen entweder 
+            über die vorkonfigurierte Benutzeroberfläche oder eine vollständige NGINX-Konfiguration als YAML-Skript vornehmen.
         </p>
         <p>
-            NGINX typically serves static content first that's configured via <code>root</code>
-            path, or forward the request dynamically to your App via PHP-FPM <code>fastcgi</code> 
-            or Passenger <code>passenger</code> if such file doesn't exist.
+            NGINX bedient typischerweise statische Inhalte zuerst, die über den <code>root</code>-Pfad konfiguriert sind, oder leitet die Anfrage dynamisch über PHP-FPM <code>fastcgi</code> oder Passenger <code>passenger</code> an Ihre App weiter, wenn eine solche Datei nicht existiert.
         </p>
         <p>
-            NGINX config is different for subdomains. If your subdomain content happens 
-            to live inside this website, please enter the subdomain name below to configure it. 
-            Also, please take a moment to read <a href="{0}" target="_blank" rel="noreferrer">
-            our NGINX Configuration</a> or contact us in case you came into a problem.
+            Die NGINX-Konfiguration ist für Subdomains unterschiedlich. Wenn Ihre Subdomain-Inhalte innerhalb dieser Website liegen, geben Sie bitte den Subdomain-Namen unten ein, um sie zu konfigurieren. 
+            Nehmen Sie sich auch einen Moment Zeit, um unsere <a href="{0}" target="_blank" rel="noreferrer">NGINX-Konfiguration</a> zu lesen oder kontaktieren Sie uns, falls Sie auf ein Problem stoßen.
         </p>
         `,
         subdomain: `Subdomain`,
-        error: `ERROR: no configuration exists for {0}`,
-        errorFetch: "There was an error fetching the NGINX config",
-        notExist: `ERROR: no configuration exists for {0}`,
-        tabCurrent: `Current NGINX Config`,
-        tabEdit: `Edit Interactively`,
-        tabPreview: `Preview Changes`,
+        error: `FEHLER: Keine Konfiguration vorhanden für {0}`,
+        errorFetch: "Fehler beim Abrufen der NGINX-Konfiguration",
+        notExist: `FEHLER: Keine Konfiguration vorhanden für {0}`,
+        tabCurrent: `Aktuelle NGINX-Konfiguration`,
+        tabEdit: `Interaktiv bearbeiten`,
+        tabPreview: `Änderungen Vorschau`,
         labels: {
-            subfolderConfig: "Subfolder Config",
-            rootConfig: "Root Config",
-            rootPath: "Root Path",
-            rootIsAlias: "Root is Alias",
-            resolveType: "Resolve Type",
+            subfolderConfig: "Unterordner-Konfiguration",
+            rootConfig: "Root-Konfiguration",
+            rootPath: "Root-Pfad",
+            rootIsAlias: "Root ist Alias",
+            resolveType: "Auflösungstyp",
             resolveTypes: {
-                static: "Static",
+                static: "Statisch",
                 php: "PHP-FPM",
                 app: "Phusion App",
-                gls: "Generic App",
-                socat: "Forward Port",
-                deny: "Deny Requests",
+                gls: "Generische App",
+                socat: "Port weiterleiten",
+                deny: "Anfragen verweigern",
             },
-            staticMode: "Static Mode",
+            staticMode: "Statischer Modus",
             staticModes: {
-                default: "Default",
-                smart: "Smart",
-                autoindex: "Auto-index",
-                index: "Root Index",
+                default: "Standard",
+                smart: "Intelligent",
+                autoindex: "Auto-Index",
+                index: "Root-Index",
             },
-            static404Path: "404 HTML File Path",
-            phpMode: "PHP Mode",
+            static404Path: "404 HTML-Dateipfad",
+            phpMode: "PHP-Modus",
             phpModes: {
-                default: 'Default',
-                smart: 'Smart',
-                indexSafe: 'Root Index - Safe',
-                index: 'Root Index - Standard',
-                always: 'Root Index - Always',
+                default: 'Standard',
+                smart: 'Intelligent',
+                indexSafe: 'Root-Index - Sicher',
+                index: 'Root-Index - Standard',
+                always: 'Root-Index - Immer',
             },
-            socatPort: 'Forward to Port',
-            appMode: 'App Mode',
-            appEntry: 'App Startup File',
-            appBin: 'App Binary Path',
+            socatPort: 'Weiterleiten zu Port',
+            appMode: 'App-Modus',
+            appEntry: 'App-Startdatei',
+            appBin: 'App-Binärpfad',
             appModes: {
                 default: 'Auto',
                 node: 'Node',
                 python: 'Python',
                 ruby: 'Ruby',
             },
-            glsCmd: 'App Command',
-            appEnv: 'Environment Keys',
-            appDev: 'Development Mode?',
-            appRoot: 'Working Directory',
-            addSubfolderConfig: 'Add subfolder config',
+            glsCmd: 'App-Befehl',
+            appEnv: 'Umgebungsschlüssel',
+            appDev: 'Entwicklungsmodus?',
+            appRoot: 'Arbeitsverzeichnis',
+            addSubfolderConfig: 'Unterordner-Konfiguration hinzufügen',
         },
         hints: {
-            root: "Static files from {0} will be resolved to {1}",
-            socat: "Forward client requests to port {0}",
-            app: "Invoke {0} script from {1} using {2} from {3}",
-            gls: "Run \"{0}\" from {1} with given $PORT",
+            root: "Statische Dateien von {0} werden nach {1} aufgelöst",
+            socat: "Leite Kundenanfragen an Port {0} weiter",
+            app: "Führe {0}-Skript aus {1} mit {2} von {3} aus",
+            gls: "Führe \"{0}\" aus {1} mit gegebenem $PORT aus",
             staticModes: {
-                default: 'Serve static files',
-                smart: 'Attempt to find HTML file if possible',
-                index: 'Serve root index.html if no file found',
-                autoindex: 'Allow listing server files if index.html is not found',
-                with404: 'or show custom 404 error page'
+                default: 'Statische Dateien bedienen',
+                smart: 'Versuche, HTML-Datei zu finden, wenn möglich',
+                index: 'Root-Index.html bedienen, wenn keine Datei gefunden wird',
+                autoindex: 'Serverdateien auflisten, wenn index.html nicht gefunden wird',
+                with404: 'oder benutzerdefinierte 404-Fehlerseite anzeigen'
             },
             phpModes: {
-                default: 'Serve index.php or php files that ends with .php',
-                smart: 'Attempt to find PHP file without .php',
-                indexSafe: 'Serve root index.php but don\'t try if client looks for a file',
-                index: 'Serve root index.php when static file is not found',
-                always: 'Allow PATH_INFO style requests handled to PHP',
+                default: 'Index.php oder php-Dateien bedienen, die mit .php enden',
+                smart: 'Versuche, PHP-Datei ohne .php zu finden',
+                indexSafe: 'Root-Index.php bedienen, aber nicht versuchen, wenn Kunde nach einer Datei sucht',
+                index: 'Root-Index.php bedienen, wenn keine statische Datei gefunden wird',
+                always: 'Erlaube PATH_INFO-Anfragen an PHP weiterzugeben',
             },
-            deleteSubfolderPrompt: "Are you sure want to delete subfolder config for {0}",
-            inputSubfolderPrompt: "Please input subfolder (must start with '/' and no spaces)",
-            inputSubfolderNotValid: "Subfolder input is not valid",
-            inputSubfolderNotUnique: "Subfolder value must unique with other subfolder entries",
+            deleteSubfolderPrompt: "Sind Sie sicher, dass Sie die Unterordner-Konfiguration für {0} löschen möchten?",
+            inputSubfolderPrompt: "Bitte Unterordner eingeben (muss mit '/' beginnen und keine Leerzeichen enthalten)",
+            inputSubfolderNotValid: "Unterordner-Eingabe ist nicht gültig",
+            inputSubfolderNotUnique: "Unterordner-Wert muss eindeutig sein gegenüber anderen Unterordner-Einträgen",
         }
     },
     hostDNS: {
-        title: `Check DNS Config`,
-        description: `<p>This page helps you change DNS records if you point your domain name server to us. 
-        </p> <p>Alternatively, you can also edit DNS records via Webmin.</p>`,
-        helpText: `Help on configuration`,
-        error: `ERROR: no configuration exists for {0}`,
-        errorFetch: "There was an error fetching the dns config",
-        notExist: `ERROR: no configuration exists for {0}`,
-        tabCurrent: `Current DNS Settings`,
-        tabEdit: `Edit DNS Interactively`,
-        tabPreview: `Preview Changes`,
-        existingRecords: `Existing DNS Records`,
-        addedRecords: `Added DNS Records`,
+        title: `DNS-Konfiguration überprüfen`,
+        description: `<p>Diese Seite hilft Ihnen dabei, DNS-Einträge zu ändern, wenn Sie Ihren Domain-Name-Server auf uns verweisen. 
+        </p> <p>Alternativ können Sie auch DNS-Einträge über Webmin bearbeiten.</p>`,
+        helpText: `Hilfe bei der Konfiguration`,
+        error: `FEHLER: Keine Konfiguration vorhanden für {0}`,
+        errorFetch: "Fehler beim Abrufen der DNS-Konfiguration",
+        notExist: `FEHLER: Keine Konfiguration vorhanden für {0}`,
+        tabCurrent: `Aktuelle DNS-Einstellungen`,
+        tabEdit: `DNS interaktiv bearbeiten`,
+        tabPreview: `Änderungen Vorschau`,
+        existingRecords: `Bestehende DNS-Einträge`,
+        addedRecords: `Hinzugefügte DNS-Einträge`,
     },
     hostLog: {
-        runningList: 'Running processes list',
-        logTypeError: 'NGINX Error Log',
-        logTypeAccess: 'NGINX Access Log',
-        logTypePassenger: 'Passenger App Log',
-        logTypeErrorHint: 'This log contains NGINX and PHP error logs for the current day',
-        logTypeAccessHint: 'This log contains NGINX access logs for the current day',
-        logTypePassengerHint: 'This log contains Passenger App log that\'s currently running',
-        errorFetch: "There was an error fetching the log file",
+        runningList: 'Liste der laufenden Prozesse',
+        logTypeError: 'NGINX-Fehlerprotokoll',
+        logTypeAccess: 'NGINX-Zugriffsprotokoll',
+        logTypePassenger: 'Passenger-App-Protokoll',
+        logTypeErrorHint: 'Dieses Protokoll enthält NGINX- und PHP-Fehlerprotokolle des aktuellen Tages',
+        logTypeAccessHint: 'Dieses Protokoll enthält NGINX-Zugriffsprotokolle des aktuellen Tages',
+        logTypePassengerHint: 'Dieses Protokoll enthält Passenger-App-Protokoll der aktuell laufenden App',
+        errorFetch: "Fehler beim Abrufen der Protokolldatei",
         subdomain: `Subdomain`,
-        maxLines: `Max Lines`,
-        emptyLog: `This log is empty right now`,
+        maxLines: `Maximale Zeilen`,
+        emptyLog: `Dieses Protokoll ist derzeit leer`,
     },
     hostManage: {
-        title: `Manage Website Access`,
+        title: `Website-Zugriff verwalten`,
         description: `
         <p>
-            Use the following login access to upload or edit your website
-            content. <a href="{0}" target="_blank">Learn more</a>.
+            Verwenden Sie die folgenden Login-Daten, um Inhalte Ihrer Website hochzuladen oder zu bearbeiten.
+            <a href="{0}" target="_blank">Mehr erfahren</a>.
         </p>`,
-        openPorts: `Opened Ports`,
-        openPortsDescription: `Opened Ports for editing your server`,
-        onlineEditor: `Online Editors`,
+        openPorts: `Geöffnete Ports`,
+        openPortsDescription: `Geöffnete Ports zum Bearbeiten Ihres Servers`,
+        onlineEditor: `Online-Editoren`,
         webminInfo: `<p>
-            Webmin is used to manage your server files and
-            configurations using web interface.
+            Webmin wird verwendet, um Ihre Serverdateien und
+            Konfigurationen über die Weboberfläche zu verwalten.
         </p>
-        <p>You'll be autologged in.</p>`,
+        <p>Sie werden automatisch eingeloggt.</p>`,
         filestashInfo: `<p>
-            Filestash is used to manage your server files 
-            using web-interface of SFTP connection.
-            (to upload files, use drag-and-drop).
+            Filestash wird verwendet, um Ihre Serverdateien 
+            über eine Weboberfläche der SFTP-Verbindung zu verwalten.
+            (Zum Hochladen von Dateien verwenden Sie Drag-and-Drop).
         </p>
-        <p>You'll be autologged in.</p>`,
+        <p>Sie werden automatisch eingeloggt.</p>`,
         phpMyAdminInfo: ` <p>
-        phpMyAdmin is used to manage MySQL database
-        using web interface.
+        phpMyAdmin wird verwendet, um MySQL-Datenbanken
+        über die Weboberfläche zu verwalten.
         </p>
         <p class="mb-0">
-            You need to enter credentials manually.
+            Sie müssen die Anmeldedaten manuell eingeben.
         </p>`,
         phpPgAdminInfo: `  <p>
-        phpPgAdmin is used to manage PostgreSQL database
-        using web interface.
+        phpPgAdmin wird verwendet, um PostgreSQL-Datenbanken
+        über die Weboberfläche zu verwalten.
         </p>
         <p class="mb-0">
-            You need to enter credentials manually.
+            Sie müssen die Anmeldedaten manuell eingeben.
         </p>`,
         websshInfo: `<p>
-            WebSSH is used to open SSH connection using web
-            interface.
+            WebSSH wird verwendet, um eine SSH-Verbindung über die Weboberfläche herzustellen.
             </p>
-            <p class="mb-0">You'll be autologged in.</p>`,
+            <p class="mb-0">Sie werden automatisch eingeloggt.</p>`,
         vscodeInfo: ` <p>
-            Open VS Code to edit files and run commands
-            directly on your server.<br />
-            Make sure you already have installed VS Code and
-            its Remote SSH Extension.
+            Öffnen Sie VS Code, um Dateien zu bearbeiten und Befehle
+            direkt auf Ihrem Server auszuführen.<br />
+            Stellen Sie sicher, dass Sie VS Code und
+            die Remote-SSH-Erweiterung bereits installiert haben.
         </p>
         <p>
-            If you want to open another folder, enter here
-            and press return:
+            Wenn Sie einen anderen Ordner öffnen möchten, geben Sie diesen hier ein
+            und drücken Sie die Eingabetaste:
         </p>`,
     },
     hostTransfer: {
-        warn: `ATTENTION! Website transfer means moving it to another account. You will lose access to your data because the owner has changed!`,
-        currentOwner: `Current owner: {0}`,
-        hint: `Please enter the email of the account you wish to receive:`,
-        disabled: `You cannot transfer this website while it's not active.`,
-        member: `Members cannot transfer this website.`,
-        action: `Transfer!`,
+        warn: `ACHTUNG! Website-Übertragung bedeutet, sie auf ein anderes Konto zu verschieben. Sie werden den Zugriff auf Ihre Daten verlieren, da der Eigentümer gewechselt hat!`,
+        currentOwner: `Aktueller Eigentümer: {0}`,
+        hint: `Bitte geben Sie die E-Mail-Adresse des Kontos ein, das Sie erhalten möchten:`,
+        disabled: `Sie können diese Website nicht übertragen, während sie nicht aktiv ist.`,
+        member: `Mitglieder können diese Website nicht übertragen.`,
+        action: `Übertragen!`,
     },
     hostDelete: {
-        warn: `ATTENTION! Host deletions are permanent and we can't reverse the action. Please be certain.`,
-        hint: `Please enter your website username to agree to host deletion.`,
-        member: `Members cannot delete this website.`,
-        action: `Delete!`,
+        warn: `ACHTUNG! Host-Löschungen sind dauerhaft und können nicht rückgängig gemacht werden. Bitte seien Sie sicher.`,
+        hint: `Bitte geben Sie Ihren Website-Benutzernamen ein, um der Host-Löschung zuzustimmen.`,
+        member: `Mitglieder können diese Website nicht löschen.`,
+        action: `Löschen!`,
     },
     hostCname: {
-        disabled: `You cannot change the domain name when this website is not active.`,
-        curHint: `Current domain name: `,
-        hint: `You can change the main domain name website here. Enter the new domain name:`,
-        warn: `This will make your website unusable for current domain! Please update DNS in new domain beforehand for minimal downtime.`,
-        member: `Members cannot change the domain of this website.`,
-        action: `Change domain name!`,
+        disabled: `Sie können den Domainnamen nicht ändern, während diese Website nicht aktiv ist.`,
+        curHint: `Aktueller Domainname: `,
+        hint: `Sie können hier den Hauptdomainnamen der Website ändern. Geben Sie den neuen Domainnamen ein:`,
+        warn: `Dies wird Ihre Website für die aktuelle Domain unbrauchbar machen! Bitte aktualisieren Sie DNS im neuen Domainnamen vorher, um minimale Ausfallzeiten zu gewährleisten.`,
+        member: `Mitglieder können die Domain dieser Website nicht ändern.`,
+        action: `Domainnamen ändern!`,
     },
     hostRename: {
-        disabled: `You cannot change the username when this website is not active.`,
-        hint: `You can change your website username here. Enter the new username:`,
-        warn: `This will also change database username! Your website may be unusable until you change it in your website config.`,
-        member: `Members cannot change the username of this website.`,
-        action: `Rename this username!`,
+        disabled: `Sie können den Benutzernamen nicht ändern, während diese Website nicht aktiv ist.`,
+        hint: `Sie können hier Ihren Website-Benutzernamen ändern. Geben Sie den neuen Benutzernamen ein:`,
+        warn: `Dies wird auch den Datenbankbenutzernamen ändern! Ihre Website kann unbrauchbar sein, bis Sie es in Ihrer Website-Konfiguration ändern.`,
+        member: `Mitglieder können den Benutzernamen dieser Website nicht ändern.`,
+        action: `Diesen Benutzernamen umbenennen!`,
     },
     hostPasswd: {
-        disabled: `You cannot change the password when this website is not active.`,
-        hint: `You can change your website password here. Enter the new password:`,
-        warn: `This will also change database password! Your website may be unusable until you change it in your website config.`,
-        member: `Members cannot change the password this website.`,
-        action: `Update this password!`,
+        disabled: `Sie können das Passwort nicht ändern, während diese Website nicht aktiv ist.`,
+        hint: `Sie können hier Ihr Website-Passwort ändern. Geben Sie das neue Passwort ein:`,
+        warn: `Dies wird auch das Datenbankpasswort ändern! Ihre Website kann unbrauchbar sein, bis Sie es in Ihrer Website-Konfiguration ändern.`,
+        member: `Mitglieder können das Passwort dieser Website nicht ändern.`,
+        action: `Dieses Passwort aktualisieren!`,
     },
     hostCheck: {
-        'title': `Mandatory DNS Checkup`,
-        'prompt': `This checks whether {0} can be resolved via Google's DNS before get added into our server.`,
-        'valid': `This domain is resolvable`,
-        'valid-note': `This domain will be resolvable once additional configs added automatically for you`,
-        'incorrect': 'Incorrect A/CNAME record to this domain, please configure it first before continue.',
-        'missing': 'Missing A/CNAME record to this domain, please configure it first before continue.',
-        'loading': '...',
-        'retrying': '...',
+        title: `Obligatorische DNS-Überprüfung`,
+        prompt: `Dies überprüft, ob {0} über Googles DNS aufgelöst werden kann, bevor es zu unserem Server hinzugefügt wird.`,
+        valid: `Diese Domain ist auflösbar`,
+        validNote: `Diese Domain wird auflösbar sein, sobald zusätzliche Konfigurationen automatisch für Sie hinzugefügt werden`,
+        incorrect: `Falscher A/CNAME-Eintrag für diese Domain, bitte konfigurieren Sie es zuerst, bevor Sie fortfahren.`,
+        missing: `Fehlender A/CNAME-Eintrag für diese Domain, bitte konfigurieren Sie es zuerst, bevor Sie fortfahren.`,
+        loading: `...`,
+        retrying: `...`,
     },
     domain: {
-        createInfo: `Keep in mind you are only registering a domain. If you want
-            to manage the website, <a href="{0}" target="_blank">create the website here</a>`,
-        transferInfo: `Make sure that you have access rights to transfer the
-            domain from another service. We will reach out to you if the
-            domain transfer fails after payment, but if you fail to
-            prove domain ownership through the EPP code or existing
-            document requirements, we cannot help you. By ToS you will
-            not get a refund in the purchase of a domain under any
-            circumstances.`,
-        eppTransferInfo: `You can transfer your domain to another registrar by
-            using this EPP code. The transfer works if the domain is not locked`,
+        createInfo: `Denken Sie daran, dass Sie nur eine Domain registrieren. Wenn Sie die Website verwalten möchten, <a href="{0}" target="_blank">erstellen Sie die Website hier</a>`,
+        transferInfo: `Stellen Sie sicher, dass Sie die Zugriffsrechte haben, um die Domain von einem anderen Dienst zu übertragen. Wir werden uns mit Ihnen in Verbindung setzen, wenn der Domaintransfer nach der Zahlung fehlschlägt, aber wenn Sie das Domain-Eigentum nicht durch den EPP-Code oder vorhandene Dokumentanforderungen nachweisen können, können wir nicht helfen. Laut AGB erhalten Sie unter keinen Umständen eine Rückerstattung beim Kauf einer Domain.`,
+        eppTransferInfo: `Sie können Ihre Domain zu einem anderen Registrar übertragen, indem Sie diesen EPP-Code verwenden. Der Transfer funktioniert, wenn die Domain nicht gesperrt ist.`,
+        dnsManagedHint: `Wir bieten keine Benutzeroberfläche für benutzerdefinierte DNS-Einträge. <br />
+        Wenn Ihre Nameserver auf <b>{0}</b> gesetzt sind, werden die DNS von
+        <a href="{1}" target="_blank">der jeweiligen Website-DNS</a> verwaltet.`,
+        dnsManagedOpen: `Wenn Sie es trotzdem ändern möchten, verwalten Sie es bitte über unsere
+        <a href="{0}" target="_blank">Registrar-Benutzeroberfläche</a>. Klicken Sie auf Passwort vergessen und geben Sie Ihre aktuelle E-Mail-Adresse ein, um Ihr Passwort zum ersten Mal festzulegen.`
     },
-    invoiceDescription: {
-        domainPurchaseOf: "Domain Purchase of {0}",
-        domainExtendOf: "Domain Extend of {0}",
-        domainTransferOf: "Domain Transfer of {0}",
-        hostPurchase: "Host Purchase",
-        hostRenew: "Host Renew",
-        hostUpgrade: "Host Upgrade",
-        hostExtend: "Host Extend",
-        withPlan: " with {0} Plan",
-        forMonths: " for {0} months",
-        forYears: " for {0} years",
-        forYearsAndMonths: " for {0} years and {1} months",
-        dataTransferAddonsFor: "Additional Data transfer for {0} GB",
-        tip: "Convenience Fee",
-    },
-}
+};

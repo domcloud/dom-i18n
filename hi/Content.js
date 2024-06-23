@@ -1,84 +1,87 @@
 export default {
     footer: {
-        help: `Something doesn't work? Ask for help in 
-        <a href="{0}" target="_blank">forum</a> or <a href="{1}">email</a> or
-        <a href="{2}">chat</a>.`,
-        credit: `{0}, built by <a href="{1}">{2}</a>`,
+        help: `कुछ काम नहीं कर रहा? सहायता के लिए पूछें
+        <a href="{0}" target="_blank">फोरम</a> या <a href="{1}">ईमेल</a> या
+        <a href="{2}">चैट</a> में।`,
+        credit: `{0}, बनाया गया <a href="{1}">{2}</a> द्वारा`,
     },
     welcome: {
-        title: `Welcome to DOM Cloud! 🎉`,
-        description: ` <p>Hi, {0}</p>
+        title: `DOM क्लाउड में आपका स्वागत है! 🎉`,
+        description: ` <p>नमस्ते, {0}</p>
         <p>
-          Thank you for joining the DOM Cloud fleet to reach the freedom to
-          achieve success on the Internet!
+          इंटरनेट पर सफलता पाने की स्वतंत्रता तक पहुँचने के लिए DOM क्लाउड बेड़े में शामिल होने के लिए धन्यवाद!
         </p>
         <p>
-          To be able to serve you optimally, we need confirm the region you
-          currently occupy. This also affects your payment options and the
-          default server location which you can change later:
+          आपको सर्वोत्तम सेवा देने के लिए, हमें आपकी वर्तमान स्थिति की पुष्टि करनी होगी।
+          इससे आपकी भुगतान विकल्पों और डिफ़ॉल्ट सर्वर स्थान पर भी प्रभाव पड़ता है, जिसे आप बाद में बदल सकते हैं:
         </p>
         `,
-        createWebsiteHint: `Ready? Let's make your first website.`,
-        createWebsiteBtn: `Create a website`,
+        createWebsiteHint: `तैयार? आइए आपका पहला वेबसाइट बनाएं।`,
+        createWebsiteBtn: `एक वेबसाइट बनाएं`,
         emailConfirmation: `
-            Looks like you need to verify email <strong>{0}</strong>
-            before continuing.<br />
-            Please check your email (and spam) inbox.
+            ऐसा लगता है कि आपको ईमेल <strong>{0}</strong> को सत्यापित करने की आवश्यकता है
+            जारी रखने से पहले।<br />
+            कृपया अपना ईमेल (और स्पैम) इनबॉक्स चेक करें।
         `,
-        emailConfirmationHint: `Email hasn't arrived yet?`,
-        emailConfirmationBtn: `Send Confirmation Email Again`,
-        changeCountryBtn: `Change country`,
+        emailConfirmationHint: `ईमेल अभी तक नहीं आया?`,
+        emailConfirmationBtn: `पुष्टिकरण ईमेल पुनः भेजें`,
+        emailConfirmationSent: "पुष्टिकरण ईमेल <strong>{0}</strong> पर भेजा गया है!",
+        changeCountryBtn: `देश बदलें`,
+    },
+    notification: {
+        freeUserGuideTitle: `स्वागत है!`,
+        freeUserGuideHint: `हमारे क्लाउड प्लेटफॉर्म के रूप में हमें चुनने के लिए धन्यवाद 🥳 यदि आपने पहले से नहीं किया है,
+          तो हमारा <a href="{0}" target="_blank">शुरू करने के लिए गाइड</a> पढ़ने का प्रयास करें।
+          हमारी पूर्णतम अनुभव चाहते हैं? अधिक सुविधाओं को अनलॉक करने के लिए अपने योजना को <a href="{1}">अपग्रेड करने का प्रयास करें</a>
+          जैसे कि मुफ्त अनुकूलन योग्य डोमेन, पूर्ण तृतीय पक्ष API एक्सेस, 
+          डॉकर और कस्टम बैकग्राउंड सेवाएं <a href={2} target="_blank">और भी बहुत कुछ</a> !`,
+        empty: 'यहां देखने के लिए कुछ नहीं',
     },
     purchaseConfirmation: {
-        purchasedHint: "Thank you. If our system has verified your payment, a confirmation email will be sent to your email.",
-        purchaseCancel: "Your payment has been canceled.",
-    },
-    emailConfirmation: {
-        hint: `IMPORTANT! You need to confirm your email to start creating websites. Please check your inbox (or spam box) at {0}`,
-        prompt: `Are you sure you want to resend the email? This action logs out your session. Please check your inbox (and spam box) after this moment.`,
+        purchasedHint: "धन्यवाद। यदि हमारे सिस्टम ने आपके भुगतान को सत्यापित किया है, तो एक पुष्टिकरण ईमेल आपके ईमेल पर भेजा जाएगा।",
+        purchaseCancel: "आपका भुगतान रद्द कर दिया गया है।",
     },
     accountDeletion: {
-        title: `Deleting your Account`,
-        hint: `ATTENTION! Account deletion is permanent and we cannot reverse the action. If you have a host or domain registered, you need to delete them beforehand. Contact us if you need help.`,
-        prompt: `Please write your email to agree for account deletion.`,
-        disabled: `You cannot delete this account if there is still hosting or a registered domain.`,
+        title: `अपने खाते को हटाना`,
+        hint: `ध्यान दें! खाता हटाना स्थायी है और हम इस कार्रवाई को उलट नहीं सकते। यदि आपके पास कोई होस्ट या पंजीकृत डोमेन है, तो आपको उन्हें पहले हटाना होगा। यदि आपको सहायता की आवश्यकता हो, तो हमसे संपर्क करें।`,
+        prompt: `खाते को हटाने के लिए सहमति देने के लिए कृपया अपना ईमेल लिखें।`,
+        disabled: `यदि अभी भी होस्टिंग या पंजीकृत डोमेन है, तो आप इस खाते को हटा नहीं सकते।`,
     },
     hostCreate: {
-        chooseTemplate: `Choose a template to start with`,
-        startFromScratch: `Start from scratch`,
-        uploadFileHint: `Upload or enter the URL to analyze the content`,
-        readingTheFile: `Reading the file...`,
-        readingFiles: `Reading {0} of {1} file(s)...`,
-        readingZipFile: `Reading the zip file...`,
-        compressingZipFile: `Compressing into a zip file...`,
-        uploadingFiles: `Uploading files... ({0} of {1})`,
-        uploadCompleted: `Upload complete ({0} file(s) with total size {1}}`,
-        uploadError: `Upload failed with status code {0}`,
-        emptyZipFile: `No file found in the zip`,
-        noFileSelected: `No file selected`,
-        exceededFileSizeLimit: `This file size ({0}) exceeds the limit ({1}), try upload it later using Webmin.`,
-        missingTemplate: `Failed to fetch the data template. Maybe the file still missing.`,
-        checkingRepo: `Checking this repo...`,
-        cloneWithDeployKey: `Repo will be cloned with a deploy key.`,
-        uploadDirectory: `Upload a directory`,
-        uploadZipFile: `Upload a zip file`,
-        dropDirectory: `Drop that directory...`,
-        dropZipFile: `Drop that zip file...`,
-        dropWhatsThat: `That ain't a zip file or directory...`,
-        dropMultiple: `(Please only drop one file or directory)`,
-        readingDroppedDirectory: `Reading the dropped directory...`,
-        readingDroppedZipFile: `Reading the dropped zip file...`,
-        orPasteUrl: "... or paste Git Repo/Zip URL",
-        attachDeployKey: `Attach deploy key`,
-        selectFramework: `Tell us the framework or language`,
-        applyFramework: `Apply this template`,
-        attachDeployKeyHint: `If your repository is set private, you can use
-            deploy keys to access it. We created an asymmetric deploy key
-            for you, you need to add this public key to your repository. `,
-        attachDeployKeyLearnMore: `Learn more about GitHub integration 
-            with deploy keys.`,
-        attachDeployKeyOpenConfig: `Open repository's deploy key configuration`,
-        attachDeployKeyConfirm: `I have added this public key`,
+        chooseTemplate: `शुरू करने के लिए एक टेम्पलेट चुनें`,
+        startFromScratch: `शुरुआत से शुरू करें`,
+        uploadFileHint: `सामग्री का विश्लेषण करने के लिए फ़ाइल अपलोड करें या URL दर्ज करें`,
+        readingTheFile: `फ़ाइल पढ़ रहा है...`,
+        readingFiles: `{1} फ़ाइलों में से {0} पढ़ रहा है...`,
+        readingZipFile: `ज़िप फ़ाइल पढ़ रहा है...`,
+        compressingZipFile: `ज़िप फ़ाइल में संपीड़ित कर रहा है...`,
+        uploadingFiles: `फ़ाइलें अपलोड कर रहा है... ({1} में से {0})`,
+        uploadCompleted: `अपलोड पूरा हुआ ({1} की कुल आकार के साथ {0} फ़ाइलें)`,
+        uploadError: `स्थिति कोड {0} के साथ अपलोड विफल हुआ`,
+        emptyZipFile: `ज़िप में कोई फ़ाइल नहीं मिली`,
+        noFileSelected: `कोई फ़ाइल चयनित नहीं है`,
+        exceededFileSizeLimit: `इस फ़ाइल का आकार ({0}) सीमा ({1}) से अधिक है, पहले इसे GitHub पर अपलोड करने का प्रयास करें और यहां लिंक डालें।`,
+        missingTemplate: `डेटा टेम्पलेट प्राप्त करने में विफल रहा। हो सकता है कि फ़ाइल अभी भी गायब हो।`,
+        checkingRepo: `इस रिपॉजिटरी की जाँच कर रहा है...`,
+        cloneWithDeployKey: `रिपॉजिटरी को एक डिप्लॉय की के साथ क्लोन किया जाएगा।`,
+        uploadDirectory: `एक डायरेक्टरी अपलोड करें`,
+        uploadZipFile: `एक ज़िप फ़ाइल अपलोड करें`,
+        dropDirectory: `उस डायरेक्टरी को छोड़ें...`,
+        dropZipFile: `उस ज़िप फ़ाइल को छोड़ें...`,
+        dropWhatsThat: `यह कोई ज़िप फ़ाइल या डायरेक्टरी नहीं है...`,
+        dropMultiple: `(कृपया केवल एक फ़ाइल या डायरेक्टरी छोड़ें)`,
+        readingDroppedDirectory: `छोड़ी गई डायरेक्टरी पढ़ रहा है...`,
+        readingDroppedZipFile: `छोड़ी गई ज़िप फ़ाइल पढ़ रहा है...`,
+        orPasteUrl: "... या Git रिपॉजिटरी/ज़िप URL पेस्ट करें",
+        attachDeployKey: `डिप्लॉय की संलग्न करें`,
+        selectFramework: `हमें फ्रेमवर्क या भाषा बताएं`,
+        applyFramework: `इस टेम्पलेट को लागू करें`,
+        attachDeployKeyHint: `यदि आपकी रिपॉजिटरी प्राइवेट है, तो आप इसे एक्सेस करने के लिए
+            डिप्लॉय की का उपयोग कर सकते हैं। हमने आपके लिए एक असिमेट्रिक डिप्लॉय की बनाई है,
+            आपको इस सार्वजनिक की को अपनी रिपॉजिटरी में जोड़ने की आवश्यकता है।`,
+        attachDeployKeyLearnMore: `डिप्लॉय की के साथ GitHub एकीकरण के बारे में अधिक जानें।`,
+        attachDeployKeyOpenConfig: `रिपॉजिटरी की डिप्लॉय की कॉन्फ़िगरेशन खोलें`,
+        attachDeployKeyConfirm: `मैंने इस सार्वजनिक की को जोड़ दिया है`,
     },
     hostConnection: {
         title: `Check Connection`,

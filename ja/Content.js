@@ -1,84 +1,82 @@
 export default {
     footer: {
-        help: `Something doesn't work? Ask for help in 
-        <a href="{0}" target="_blank">forum</a> or <a href="{1}">email</a> or
-        <a href="{2}">chat</a>.`,
-        credit: `{0}, built by <a href="{1}">{2}</a>`,
+        help: `何かがうまく動かない？<a href="{0}" target="_blank">フォーラム</a>や<a href="{1}">メール</a>や<a href="{2}">チャット</a>で助けを求めてください。`,
+        credit: `{0}、作成者 <a href="{1}">{2}</a>`,
     },
     welcome: {
-        title: `Welcome to DOM Cloud! 🎉`,
-        description: ` <p>Hi, {0}</p>
+        title: `DOM Cloudへようこそ！ 🎉`,
+        description: ` <p>こんにちは、{0}</p>
         <p>
-          Thank you for joining the DOM Cloud fleet to reach the freedom to
-          achieve success on the Internet!
+          インターネットでの成功を達成する自由を得るためにDOM Cloudの艦隊に参加していただき、ありがとうございます！
         </p>
         <p>
-          To be able to serve you optimally, we need confirm the region you
-          currently occupy. This also affects your payment options and the
-          default server location which you can change later:
+          最適なサービスを提供するために、現在あなたがいる地域を確認する必要があります。
+          これは、後で変更可能な支払いオプションやデフォルトのサーバーの場所にも影響します：
         </p>
         `,
-        createWebsiteHint: `Ready? Let's make your first website.`,
-        createWebsiteBtn: `Create a website`,
+        createWebsiteHint: `準備はできましたか？最初のウェブサイトを作りましょう。`,
+        createWebsiteBtn: `ウェブサイトを作成`,
         emailConfirmation: `
-            Looks like you need to verify email <strong>{0}</strong>
-            before continuing.<br />
-            Please check your email (and spam) inbox.
+            続行する前に<strong>{0}</strong>のメールを確認する必要があるようです。<br />
+            メール（およびスパム）受信箱を確認してください。
         `,
-        emailConfirmationHint: `Email hasn't arrived yet?`,
-        emailConfirmationBtn: `Send Confirmation Email Again`,
-        changeCountryBtn: `Change country`,
+        emailConfirmationHint: `メールがまだ届いていませんか？`,
+        emailConfirmationBtn: `確認メールを再送信`,
+        emailConfirmationSent: "<strong>{0}</strong>への確認メールが送信されました！",
+        changeCountryBtn: `国を変更`,
+    },
+    notification: {
+        freeUserGuideTitle: `ようこそ！`,
+        freeUserGuideHint: `私たちのクラウドプラットフォームを選んでいただきありがとうございます 🥳 まだの場合は、
+          <a href="{0}" target="_blank">開始ガイド</a>を読んでみてください。
+          完全な体験が必要ですか？<a href="{1}">プランのアップグレード</a>を試して、
+          無料のカスタマイズ可能なドメイン、フルサードパーティAPIアクセス、
+          ドッカーおよびカスタムバックグラウンドサービス<a href={2} target="_blank">などの機能をアンロックしましょう！</a>`,
+        empty: 'ここには何もありません',
     },
     purchaseConfirmation: {
-        purchasedHint: "Thank you. If our system has verified your payment, a confirmation email will be sent to your email.",
-        purchaseCancel: "Your payment has been canceled.",
-    },
-    emailConfirmation: {
-        hint: `IMPORTANT! You need to confirm your email to start creating websites. Please check your inbox (or spam box) at {0}`,
-        prompt: `Are you sure you want to resend the email? This action logs out your session. Please check your inbox (and spam box) after this moment.`,
+        purchasedHint: "ありがとうございます。支払いが確認された場合、確認メールがあなたのメールに送信されます。",
+        purchaseCancel: "支払いがキャンセルされました。",
     },
     accountDeletion: {
-        title: `Deleting your Account`,
-        hint: `ATTENTION! Account deletion is permanent and we cannot reverse the action. If you have a host or domain registered, you need to delete them beforehand. Contact us if you need help.`,
-        prompt: `Please write your email to agree for account deletion.`,
-        disabled: `You cannot delete this account if there is still hosting or a registered domain.`,
+        title: `アカウントの削除`,
+        hint: `注意！アカウントの削除は永久的であり、この操作を元に戻すことはできません。ホストや登録されたドメインがある場合は、事前に削除する必要があります。助けが必要な場合はお問い合わせください。`,
+        prompt: `アカウント削除に同意するには、メールアドレスを入力してください。`,
+        disabled: `ホスティングや登録されたドメインがまだある場合、このアカウントを削除することはできません。`,
     },
     hostCreate: {
-        chooseTemplate: `Choose a template to start with`,
-        startFromScratch: `Start from scratch`,
-        uploadFileHint: `Upload or enter the URL to analyze the content`,
-        readingTheFile: `Reading the file...`,
-        readingFiles: `Reading {0} of {1} file(s)...`,
-        readingZipFile: `Reading the zip file...`,
-        compressingZipFile: `Compressing into a zip file...`,
-        uploadingFiles: `Uploading files... ({0} of {1})`,
-        uploadCompleted: `Upload complete ({0} file(s) with total size {1}}`,
-        uploadError: `Upload failed with status code {0}`,
-        emptyZipFile: `No file found in the zip`,
-        noFileSelected: `No file selected`,
-        exceededFileSizeLimit: `This file size ({0}) exceeds the limit ({1}), try upload it later using Webmin.`,
-        missingTemplate: `Failed to fetch the data template. Maybe the file still missing.`,
-        checkingRepo: `Checking this repo...`,
-        cloneWithDeployKey: `Repo will be cloned with a deploy key.`,
-        uploadDirectory: `Upload a directory`,
-        uploadZipFile: `Upload a zip file`,
-        dropDirectory: `Drop that directory...`,
-        dropZipFile: `Drop that zip file...`,
-        dropWhatsThat: `That ain't a zip file or directory...`,
-        dropMultiple: `(Please only drop one file or directory)`,
-        readingDroppedDirectory: `Reading the dropped directory...`,
-        readingDroppedZipFile: `Reading the dropped zip file...`,
-        orPasteUrl: "... or paste Git Repo/Zip URL",
-        attachDeployKey: `Attach deploy key`,
-        selectFramework: `Tell us the framework or language`,
-        applyFramework: `Apply this template`,
-        attachDeployKeyHint: `If your repository is set private, you can use
-            deploy keys to access it. We created an asymmetric deploy key
-            for you, you need to add this public key to your repository. `,
-        attachDeployKeyLearnMore: `Learn more about GitHub integration 
-            with deploy keys.`,
-        attachDeployKeyOpenConfig: `Open repository's deploy key configuration`,
-        attachDeployKeyConfirm: `I have added this public key`,
+        chooseTemplate: `開始するテンプレートを選択`,
+        startFromScratch: `最初から始める`,
+        uploadFileHint: `コンテンツを分析するためにファイルをアップロードまたはURLを入力`,
+        readingTheFile: `ファイルを読み込んでいます...`,
+        readingFiles: `{1}ファイル中{0}を読み込み中...`,
+        readingZipFile: `Zipファイルを読み込み中...`,
+        compressingZipFile: `Zipファイルに圧縮中...`,
+        uploadingFiles: `ファイルをアップロード中... ({1}のうち{0})`,
+        uploadCompleted: `アップロード完了 ({1}の合計サイズの{0}ファイル)`,
+        uploadError: `ステータスコード{0}でアップロード失敗`,
+        emptyZipFile: `Zipにファイルが見つかりません`,
+        noFileSelected: `ファイルが選択されていません`,
+        exceededFileSizeLimit: `このファイルのサイズ({0})は制限({1})を超えています。最初にGitHubにアップロードして、ここにリンクを入れてみてください。`,
+        missingTemplate: `データテンプレートの取得に失敗しました。ファイルがまだ見つからないかもしれません。`,
+        checkingRepo: `このリポジトリをチェック中...`,
+        cloneWithDeployKey: `リポジトリはデプロイキーでクローンされます。`,
+        uploadDirectory: `ディレクトリをアップロード`,
+        uploadZipFile: `Zipファイルをアップロード`,
+        dropDirectory: `そのディレクトリをドロップ...`,
+        dropZipFile: `そのZipファイルをドロップ...`,
+        dropWhatsThat: `それはZipファイルでもディレクトリでもありません...`,
+        dropMultiple: `(一つのファイルまたはディレクトリのみをドロップしてください)`,
+        readingDroppedDirectory: `ドロップされたディレクトリを読み込み中...`,
+        readingDroppedZipFile: `ドロップされたZipファイルを読み込み中...`,
+        orPasteUrl: "... またはGitリポジトリ/Zip URLを貼り付け",
+        attachDeployKey: `デプロイキーを添付`,
+        selectFramework: `フレームワークまたは言語を教えてください`,
+        applyFramework: `このテンプレートを適用`,
+        attachDeployKeyHint: `リポジトリがプライベートに設定されている場合は、デプロイキーを使用してアクセスできます。非対称デプロイキーを作成しましたので、この公開キーをリポジトリに追加してください。`,
+        attachDeployKeyLearnMore: `デプロイキーでのGitHub統合について詳しく知る`,
+        attachDeployKeyOpenConfig: `リポジトリのデプロイキー設定を開く`,
+        attachDeployKeyConfirm: `この公開キーを追加しました`,
     },
     hostConnection: {
         title: `Check Connection`,

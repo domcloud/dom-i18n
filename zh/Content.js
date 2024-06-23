@@ -1,84 +1,86 @@
 export default {
     footer: {
-        help: `Something doesn't work? Ask for help in 
-        <a href="{0}" target="_blank">forum</a> or <a href="{1}">email</a> or
-        <a href="{2}">chat</a>.`,
-        credit: `{0}, built by <a href="{1}">{2}</a>`,
+        help: `有什么问题吗？在<a href="{0}" target="_blank">论坛</a>或通过
+        <a href="{1}">电子邮件</a>或
+        <a href="{2}">聊天</a>请求帮助。`,
+        credit: `{0}, 由<a href="{1}">{2}</a>创建`,
     },
     welcome: {
-        title: `Welcome to DOM Cloud! 🎉`,
-        description: ` <p>Hi, {0}</p>
+        title: `欢迎来到DOM Cloud！ 🎉`,
+        description: ` <p>你好，{0}</p>
         <p>
-          Thank you for joining the DOM Cloud fleet to reach the freedom to
-          achieve success on the Internet!
+          感谢你加入DOM Cloud舰队，获得在互联网上取得成功的自由！
         </p>
         <p>
-          To be able to serve you optimally, we need confirm the region you
-          currently occupy. This also affects your payment options and the
-          default server location which you can change later:
+          为了能为你提供最佳服务，我们需要确认你当前所在的区域。
+          这也会影响你的支付选项和默认服务器位置，之后你可以更改：
         </p>
         `,
-        createWebsiteHint: `Ready? Let's make your first website.`,
-        createWebsiteBtn: `Create a website`,
+        createWebsiteHint: `准备好了吗？我们来创建你的第一个网站吧。`,
+        createWebsiteBtn: `创建网站`,
         emailConfirmation: `
-            Looks like you need to verify email <strong>{0}</strong>
-            before continuing.<br />
-            Please check your email (and spam) inbox.
+            似乎你需要先验证电子邮件 <strong>{0}</strong>
+            才能继续。<br />
+            请检查你的电子邮件（和垃圾邮件）收件箱。
         `,
-        emailConfirmationHint: `Email hasn't arrived yet?`,
-        emailConfirmationBtn: `Send Confirmation Email Again`,
-        changeCountryBtn: `Change country`,
+        emailConfirmationHint: `还没有收到电子邮件？`,
+        emailConfirmationBtn: `重新发送确认电子邮件`,
+        emailConfirmationSent: "确认电子邮件已发送到 <strong>{0}</strong>！",
+        changeCountryBtn: `更改国家`,
+    },
+    notification: {
+        freeUserGuideTitle: `欢迎加入！`,
+        freeUserGuideHint: `感谢你选择我们作为你的云平台 🥳 如果你还没有，
+          尝试阅读我们的<a href="{0}" target="_blank">入门指南</a>。
+          想要获得完整体验？ 尝试<a href="{1}">升级你的计划</a>以解锁
+          更多功能，如免费自定义域名、第三方API的完全访问、
+          docker和自定义后台服务<a href={2} target="_blank">等更多功能</a>！`,
+        empty: '这里没什么可看的',
     },
     purchaseConfirmation: {
-        purchasedHint: "Thank you. If our system has verified your payment, a confirmation email will be sent to your email.",
-        purchaseCancel: "Your payment has been canceled.",
-    },
-    emailConfirmation: {
-        hint: `IMPORTANT! You need to confirm your email to start creating websites. Please check your inbox (or spam box) at {0}`,
-        prompt: `Are you sure you want to resend the email? This action logs out your session. Please check your inbox (and spam box) after this moment.`,
+        purchasedHint: "谢谢。如果我们的系统确认了你的付款，确认电子邮件将发送到你的电子邮件地址。",
+        purchaseCancel: "你的付款已取消。",
     },
     accountDeletion: {
-        title: `Deleting your Account`,
-        hint: `ATTENTION! Account deletion is permanent and we cannot reverse the action. If you have a host or domain registered, you need to delete them beforehand. Contact us if you need help.`,
-        prompt: `Please write your email to agree for account deletion.`,
-        disabled: `You cannot delete this account if there is still hosting or a registered domain.`,
+        title: `删除你的账户`,
+        hint: `注意！删除账户是永久性的，我们无法撤消操作。如果你有主机或已注册域名，你需要先删除它们。如果需要帮助，请联系我们。`,
+        prompt: `请写下你的电子邮件以同意删除账户。`,
+        disabled: `如果仍有主机或已注册域名，则无法删除此账户。`,
     },
     hostCreate: {
-        chooseTemplate: `Choose a template to start with`,
-        startFromScratch: `Start from scratch`,
-        uploadFileHint: `Upload or enter the URL to analyze the content`,
-        readingTheFile: `Reading the file...`,
-        readingFiles: `Reading {0} of {1} file(s)...`,
-        readingZipFile: `Reading the zip file...`,
-        compressingZipFile: `Compressing into a zip file...`,
-        uploadingFiles: `Uploading files... ({0} of {1})`,
-        uploadCompleted: `Upload complete ({0} file(s) with total size {1}}`,
-        uploadError: `Upload failed with status code {0}`,
-        emptyZipFile: `No file found in the zip`,
-        noFileSelected: `No file selected`,
-        exceededFileSizeLimit: `This file size ({0}) exceeds the limit ({1}), try upload it later using Webmin.`,
-        missingTemplate: `Failed to fetch the data template. Maybe the file still missing.`,
-        checkingRepo: `Checking this repo...`,
-        cloneWithDeployKey: `Repo will be cloned with a deploy key.`,
-        uploadDirectory: `Upload a directory`,
-        uploadZipFile: `Upload a zip file`,
-        dropDirectory: `Drop that directory...`,
-        dropZipFile: `Drop that zip file...`,
-        dropWhatsThat: `That ain't a zip file or directory...`,
-        dropMultiple: `(Please only drop one file or directory)`,
-        readingDroppedDirectory: `Reading the dropped directory...`,
-        readingDroppedZipFile: `Reading the dropped zip file...`,
-        orPasteUrl: "... or paste Git Repo/Zip URL",
-        attachDeployKey: `Attach deploy key`,
-        selectFramework: `Tell us the framework or language`,
-        applyFramework: `Apply this template`,
-        attachDeployKeyHint: `If your repository is set private, you can use
-            deploy keys to access it. We created an asymmetric deploy key
-            for you, you need to add this public key to your repository. `,
-        attachDeployKeyLearnMore: `Learn more about GitHub integration 
-            with deploy keys.`,
-        attachDeployKeyOpenConfig: `Open repository's deploy key configuration`,
-        attachDeployKeyConfirm: `I have added this public key`,
+        chooseTemplate: `选择一个模板开始`,
+        startFromScratch: `从头开始`,
+        uploadFileHint: `上传或输入URL以分析内容`,
+        readingTheFile: `读取文件中...`,
+        readingFiles: `读取{1}中的{0}个文件...`,
+        readingZipFile: `读取ZIP文件中...`,
+        compressingZipFile: `压缩到ZIP文件中...`,
+        uploadingFiles: `上传文件中... ({1}中的{0})`,
+        uploadCompleted: `上传完成 ({0}个文件，总大小{1})`,
+        uploadError: `上传失败，状态代码{0}`,
+        emptyZipFile: `ZIP中未找到文件`,
+        noFileSelected: `未选择文件`,
+        exceededFileSizeLimit: `文件大小({0})超过限制({1})，尝试先上传到GitHub并在此处放置链接。`,
+        missingTemplate: `无法获取数据模板。该文件可能仍然丢失。`,
+        checkingRepo: `检查此存储库...`,
+        cloneWithDeployKey: `将使用部署密钥克隆存储库。`,
+        uploadDirectory: `上传目录`,
+        uploadZipFile: `上传ZIP文件`,
+        dropDirectory: `拖放目录...`,
+        dropZipFile: `拖放ZIP文件...`,
+        dropWhatsThat: `那不是ZIP文件或目录...`,
+        dropMultiple: `(请只拖放一个文件或目录)`,
+        readingDroppedDirectory: `读取拖放的目录中...`,
+        readingDroppedZipFile: `读取拖放的ZIP文件中...`,
+        orPasteUrl: "... 或粘贴Git Repo/Zip URL",
+        attachDeployKey: `附加部署密钥`,
+        selectFramework: `告诉我们框架或语言`,
+        applyFramework: `应用此模板`,
+        attachDeployKeyHint: `如果你的存储库设置为私有，你可以
+            使用部署密钥进行访问。我们为你创建了一个非对称部署密钥，你需要将此公钥添加到你的存储库中。`,
+        attachDeployKeyLearnMore: `了解更多关于使用部署密钥进行GitHub集成的信息。`,
+        attachDeployKeyOpenConfig: `打开存储库部署密钥配置`,
+        attachDeployKeyConfirm: `我添加了这个公钥`,
     },
     hostConnection: {
         title: `Check Connection`,

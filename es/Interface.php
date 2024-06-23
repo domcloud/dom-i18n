@@ -1,6 +1,6 @@
 <?php return [
 	'code' => 'es',
-	'codename' => 'Spanish',
+	'codename' => 'Español',
 	'currency' => 'usd',
 	'login' => 'Iniciar sesión',
 	'register' => 'Registrarse',

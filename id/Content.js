@@ -13,9 +13,8 @@ export default {
           mencapai kesuksesan di Internet!
         </p>
         <p>
-          Untuk melayani Anda secara optimal, kami perlu konfirmasi wilayah tempat Anda
-          saat ini berada. Ini juga mempengaruhi opsi pembayaran dan lokasi server default 
-          yang dapat Anda ubah nanti:
+          Untuk dapat melayani Anda secara optimal, kami perlu konfirmasi negara Anda saat ini berada. 
+          Ini juga mempengaruhi opsi pembayaran dan lokasi server default yang dapat Anda ubah nanti:
         </p>
         `,
         createWebsiteHint: `Siap? Mari buat website pertama Anda.`,
@@ -27,15 +26,21 @@ export default {
         `,
         emailConfirmationHint: `Email belum sampai?`,
         emailConfirmationBtn: `Kirim Ulang Email Konfirmasi`,
+        emailConfirmationSent: "Konfirmasi email ke <strong>{0}</strong> telah dikirim!",
         changeCountryBtn: `Ubah negara`,
     },
+    notification: {
+        freeUserGuideTitle: `Selamat Datang!`,
+        freeUserGuideHint: `Terima kasih telah memilih kami sebagai platform cloud Anda 🥳 Jika Anda belum melakukannya,
+            cobalah membaca <a href="{0}" target="_blank">Panduan Memulai</a> kami.
+            Ingin pengalaman penuh dari kami? Cobalah <a href="{1}">meningkatkan paket Anda</a> untuk membuka
+            lebih banyak fitur seperti domain yang dapat disesuaikan secara gratis, akses penuh ke API pihak ketiga,
+            Docker, dan layanan latar belakang khusus <a href={2} target="_blank">dan masih banyak lagi</a>!`,
+        empty: 'Tidak ada yang bisa dilihat di sini',
+    },    
     purchaseConfirmation: {
         purchasedHint: "Terima kasih. Jika sistem kami telah memverifikasi pembayaran Anda, email konfirmasi akan dikirim ke email Anda.",
         purchaseCancel: "Pembayaran Anda telah dibatalkan.",
-    },
-    emailConfirmation: {
-        hint: `PENTING! Anda perlu mengonfirmasi email Anda untuk mulai membuat website. Silakan cek inbox Anda (atau kotak spam) di {0}`,
-        prompt: `Apakah Anda yakin ingin mengirim ulang email? Tindakan ini akan logout dari sesi Anda. Harap cek inbox Anda (dan kotak spam) setelah ini.`,
     },
     accountDeletion: {
         title: `Menghapus Akun Anda`,
@@ -387,7 +392,6 @@ export default {
         member: `Anggota tidak dapat mengubah kata sandi website ini.`,
         action: `Perbarui kata sandi ini!`,
     },
-
     hostCheck: {
         'title': `Pemeriksaan DNS Wajib`,
         'prompt': `Ini memeriksa apakah {0} dapat diresolusi melalui DNS Google sebelum ditambahkan ke server kami.`,
@@ -399,30 +403,22 @@ export default {
         'retrying': '...',
     },
     domain: {
-        createInfo: `Ingatlah bahwa Anda hanya mendaftarkan domain. Jika Anda ingin
+        createInfo: `Perhatikan bahwa Anda hanya mendaftarkan domain. Jika Anda ingin
             mengelola situs web, <a href="{0}" target="_blank">buat situs web di sini</a>`,
         transferInfo: `Pastikan Anda memiliki hak akses untuk mentransfer
             domain dari layanan lain. Kami akan menghubungi Anda jika
             transfer domain gagal setelah pembayaran, tetapi jika Anda gagal
-            membuktikan kepemilikan domain melalui kode EPP atau dokumen
-            yang ada, kami tidak dapat membantu Anda. Sesuai dengan ToS,
-            Anda tidak akan mendapatkan pengembalian dana dalam pembelian
-            domain dalam keadaan apapun.`,
+            membuktikan kepemilikan domain melalui kode EPP atau persyaratan
+            dokumen yang ada, kami tidak dapat membantu Anda. Berdasarkan Ketentuan Layanan,
+            Anda tidak akan mendapatkan pengembalian dana dalam pembelian domain dalam
+            keadaan apapun.`,
         eppTransferInfo: `Anda dapat mentransfer domain Anda ke registrar lain dengan
-            menggunakan kode EPP ini. Transfer berfungsi jika domain tidak terkunci`,
-    },
-    invoiceDescription: {
-        domainPurchaseOf: "Pembelian Domain {0}",
-        domainExtendOf: "Perpanjangan Domain {0}",
-        domainTransferOf: "Transfer Domain {0}",
-        hostPurchase: "Pembelian Host",
-        hostRenew: "Perpanjangan Host",
-        hostUpgrade: "Pembaruan Host",
-        hostExtend: "Perpanjangan Host",
-        withPlan: " dengan Rencana {0}",
-        forMonths: " selama {0} bulan",
-        forYears: " selama {0} tahun",
-        forYearsAndMonths: " selama {0} tahun dan {1} bulan",
-        dataTransferAddonsFor: "Transfer Data Tambahan untuk {0} GB",
-    },
+            menggunakan kode EPP ini. Transfer berhasil jika domain tidak terkunci`,
+        dnsManagedHint: `Kami tidak menyediakan antarmuka pengguna untuk catatan DNS kustom. <br />
+            Jika nameserver Anda disetel ke <b>{0}</b>, maka DNS dikelola oleh
+            <a href="{1}" target="_blank">situs web DNS terkait</a>.`,
+        dnsManagedOpen: `Jika Anda tetap ingin mengubahnya, silakan kelola melalui
+            <a href="{0}" target="_blank">antarmuka pengguna Registrar kami</a>. Klik "lupa kata sandi"
+            dan masukkan email Anda saat ini untuk mengatur kata sandi Anda untuk pertama kalinya.`
+    }
 }
