@@ -1,7 +1,6 @@
 <?php return [
     'code' => 'ko',
     'codename' => '한국어',
-    'currency' => 'krw',
     'login' => '로그인',
     'register' => '가입하기',
     'email' => '이메일',
