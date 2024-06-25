@@ -1,6 +1,7 @@
 export default {
     "code": "ko",
     "codename": "한국어",
+    "codedir":"ltr",
     "appTitle": "DOM Cloud",
     "appTitleLong": "DOM Cloud Hosting",
     "logout": "로그아웃",

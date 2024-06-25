@@ -1,6 +1,7 @@
 export default {
     "code": "es",
     "codename": "Spanish",
+    "codedir":"ltr",
     "appTitle": "DOM Cloud",
     "appTitleLong": "DOM Cloud Hosting",
     "codeI8LN": "es-ES",

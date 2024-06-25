@@ -1,6 +1,7 @@
 <?php return [
     'code' => 'hi',
     'codename' => 'हिन्दी',
+    'codedir' => 'ltr',
     'login' => 'साइन इन करें',
     'register' => 'पंजीकरण करें',
     'email' => 'ईमेल',

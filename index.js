@@ -1,3 +1,4 @@
+import ar from './ar';
 import de from './de';
 import en from './en';
 import id from './id';
@@ -12,7 +13,7 @@ import pt from './pt';
 import ru from './ru';
 import zh from './zh';
 
-export const locales = { de, en, id, fr, hi, es, it, ja, ko, nl, pt, ru, zh };
+export const locales = { ar, de, en, id, fr, hi, es, it, ja, ko, nl, pt, ru, zh };
 export const localeConfig = {
     fallbackLocale: 'en',
     initialLocale: 'en',

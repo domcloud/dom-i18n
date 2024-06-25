@@ -1,6 +1,7 @@
 <?php return [
     'code' => 'ja',
     'codename' => '日本語',
+    'codedir' => 'ltr',
     'login' => 'サインイン',
     'register' => '登録',
     'email' => 'メール',

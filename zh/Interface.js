@@ -1,6 +1,7 @@
 export default {
     "code": "zh",
     "codename": "中文",
+    "codedir":"ltr",
     "appTitle": "DOM云",
     "appTitleLong": "DOM云托管",
     "logout": "登出",

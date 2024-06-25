@@ -1,6 +1,7 @@
 export default {
     "code": "pt",
     "codename": "Português",
+    "codedir":"ltr",
     "appTitle": "DOM Cloud",
     "appTitleLong": "Hospedagem DOM Cloud",
     "logout": "Sair",

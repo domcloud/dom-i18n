@@ -1,6 +1,7 @@
 <?php return [
     'code' => 'ar',
     'codename' => 'العربية',
+    'codedir' => 'rtl',
     'login' => 'تسجيل الدخول',
     'register' => 'تسجيل',
     'email' => 'البريد الإلكتروني',

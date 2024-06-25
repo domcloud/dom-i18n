@@ -1,6 +1,7 @@
 export default {
     "code": "ar",
     "codename": "العربية",
+    "codedir":"rtl",
     "appTitle": "DOM Cloud",
     "appTitleLong": "DOM Cloud Hosting",
     "logout": "تسجيل الخروج",

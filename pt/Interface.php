@@ -1,6 +1,7 @@
 <?php return [
     'code' => 'pt',
     'codename' => 'Português',
+    'codedir' => 'ltr',
     'login' => 'Entrar',
     'register' => 'Registrar',
     'email' => 'E-mail',

@@ -1,6 +1,7 @@
 <?php return [
     'code' => 'ru',
     'codename' => 'Русский',
+    'codedir' => 'ltr',
     'login' => 'Войти',
     'register' => 'Зарегистрироваться',
     'email' => 'Электронная почта',

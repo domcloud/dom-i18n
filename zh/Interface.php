@@ -1,6 +1,7 @@
 <?php return [
     'code' => 'zh',
     'codename' => '中文',
+    'codedir' => 'ltr',
     'login' => '登录',
     'register' => '注册',
     'email' => '电子邮件',
