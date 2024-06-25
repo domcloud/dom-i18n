@@ -22,7 +22,6 @@ export default {
     "companyName": "Company / Organization Name",
     "domainName": "Domain name",
     "domainStatus": "Domain status",
-    "formatInvoice": "Domain payment {0} priced at {1}",
     "enterContact": "Enter Domain Contact",
     "contactEntered": "Domain Contact entered",
     "myOwn": "The domain I ordered is my own",

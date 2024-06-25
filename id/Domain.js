@@ -22,7 +22,6 @@ export default {
     "companyName": "Nama Perusahaan / Organisasi",
     "domainName": "Nama Domain",
     "domainStatus": "Status Domain",
-    "formatInvoice": "Pembayaran domain {0} dengan harga {1}",
     "enterContact": "Masukkan Kontak Domain",
     "contactEntered": "Kontak Domain dimasukkan",
     "myOwn": "Domain yang saya pesan adalah milik saya",

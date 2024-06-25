@@ -22,7 +22,6 @@ export default {
     "companyName": "Nombre de la Empresa / Organización",
     "domainName": "Nombre del Dominio",
     "domainStatus": "Estado del Dominio",
-    "formatInvoice": "Pago de dominio {0} con un precio de {1}",
     "enterContact": "Ingresar Contacto del Dominio",
     "contactEntered": "Contacto del Dominio ingresado",
     "myOwn": "El dominio que ordené es mío",
