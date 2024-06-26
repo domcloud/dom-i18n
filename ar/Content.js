@@ -86,224 +86,222 @@ export default {
         attachDeployKeyConfirm: `I have added this public key`,
     },
     hostConnection: {
-        title: `Check Connection`,
+        title: `تحقق من الاتصال`,
         description: `
         <p>
-            This page checks if this website is accessible from the
-            internet.
+            تتحقق هذه الصفحة مما إذا كان هذا الموقع يمكن الوصول إليه من
+            الإنترنت.
         </p>
         <p>
-            There are three prerequisites for a website to be accessible
-            from the internet:
+            هناك ثلاثة متطلبات مسبقة لكي يكون الموقع قابلاً للوصول
+            من الإنترنت:
         </p>
         <ul>
-            <li>The DNS server must be available</li>
-            <li>The returned IP address must be correct</li>
-            <li>The server's content must be accessible</li>
+            <li>يجب أن يكون خادم DNS متاحًا</li>
+            <li>يجب أن يكون عنوان IP المرتجع صحيحًا</li>
+            <li>يجب أن يكون محتوى الخادم قابلاً للوصول</li>
         </ul>
         <p>
-            If one of the prerequisites above fails, this website may
-            not be accessible from the internet.
+            إذا فشل أحد المتطلبات المذكورة أعلاه، قد لا يكون هذا الموقع
+            قابلاً للوصول من الإنترنت.
         </p>`,
-        dnsOffTitle: `No name server`,
-        dnsOffContent: `This website does not have a name server. It maybe externally configured.`,
-        dnsManagedTitle: `DNS managed`,
-        dnsManagedContent: `This website's DNS is managed by DOM Cloud.`,
-        dnsMixedTitle: `DNS is mixed`,
-        dnsMixedContent: `This website's DNS has a mixed
-            configuration. Ensure that the name server
-            is configured properly. Do not mix our
-            records with other records!`,
-        dnsExternalTitle: `DNS managed externally`,
-        dnsExternalContent: `This website's DNS is handled by a third party.`,
-        pingNoIpTitle: `IP Address not found`,
-        pingNoIpContent: `The DNS server does not return an IP address.`,
-        pingNoIp6Title: `No IPv6`,
-        pingNoIp6Content: ` This website's DNS has no IPv6 address. It maybe unavailable for IPv6 users.`,
-        pingWrongIpTitle: `Incorrect IP Address`,
-        pingWrongIpContent: `This website's DNS returned an incorrect IP address. 
-            It may not serve the correct content, or it's behind a proxy.`,
-        pingNoWwwTitle: `www.* subdomain IP address not found`,
-        pingNoWwwContent: ` 
-            Some people may not be able to access this
-            website if they prefix it with www. Setup a
-            www subdomain redirect is recommended.`,
-        pingOkTitle: `IP Address OK`,
-        pingOkContent: `This website's DNS returned the correct IP address.`,
-        webNoHttpTitle: `Website is not accessible`,
-        webNoHttpContent: `This website is not accessible via HTTP.`,
-        webNoHttpsTitle: `HTTPS not available`,
-        webNoHttpsContent: `This website may not have HTTPS certificate
-            installed, or it's expired, or not configured properly.`,
-        webBadHttpTitle: `Website is returning an error`,
-        webBadHttpContent: `This website returns 500 or 403 error, 
-            it may not be configured properly (check NGINX/App settings!).`,
-        webBadRedirectTitle: `Website is has bad redirects`,
-        webBadRedirectContent: `This website is redirecting visitors to outside the domain, 
-            it may not be configured properly (check Base URL settings!).`,
-        webBadWwwTitle: `www.* subdomain is not accessible`,
-        webBadWwwContent: `This website's www subdomain is either not accessible or returning error.`,
-        webInsecureTitle: `Website is not fully secure`,
-        webInsecureContent: ` This website doesn't redirect HTTP to HTTPS,
-            which is fine but not recommended.`,
-        webOkTitle: `Website is OK`,
-        webOkContent: `This website is accessible via HTTP and HTTPS.`,
+        dnsOffTitle: `لا يوجد خادم أسماء`,
+        dnsOffContent: `هذا الموقع لا يحتوي على خادم أسماء. قد يكون مهيأ خارجيًا.`,
+        dnsManagedTitle: `DNS مُدار`,
+        dnsManagedContent: `يتم إدارة DNS لهذا الموقع بواسطة DOM Cloud.`,
+        dnsMixedTitle: `DNS مختلط`,
+        dnsMixedContent: `DNS لهذا الموقع يحتوي على تكوين مختلط. تأكد من
+            تكوين خادم الأسماء بشكل صحيح. لا تخلط سجلاتنا مع السجلات الأخرى!`,
+        dnsExternalTitle: `DNS مُدار خارجيًا`,
+        dnsExternalContent: `يتم التعامل مع DNS لهذا الموقع من قبل طرف ثالث.`,
+        pingNoIpTitle: `لم يتم العثور على عنوان IP`,
+        pingNoIpContent: `لا يقوم خادم DNS بإرجاع عنوان IP.`,
+        pingNoIp6Title: `لا يوجد IPv6`,
+        pingNoIp6Content: `لا يحتوي DNS لهذا الموقع على عنوان IPv6. قد يكون غير متاح لمستخدمي IPv6.`,
+        pingWrongIpTitle: `عنوان IP غير صحيح`,
+        pingWrongIpContent: `قام DNS لهذا الموقع بإرجاع عنوان IP غير صحيح.
+            قد لا يخدم المحتوى الصحيح، أو أنه خلف وكيل.`,
+        pingNoWwwTitle: `لم يتم العثور على عنوان IP لنطاق www.*`,
+        pingNoWwwContent: `
+            قد لا يتمكن بعض الأشخاص من الوصول إلى هذا
+            الموقع إذا قاموا ببدءه بـ www. يوصى بإعداد
+            إعادة توجيه نطاق www.`,
+        pingOkTitle: `عنوان IP صحيح`,
+        pingOkContent: `قام DNS لهذا الموقع بإرجاع عنوان IP صحيح.`,
+        webNoHttpTitle: `الموقع غير متاح`,
+        webNoHttpContent: `هذا الموقع غير متاح عبر HTTP.`,
+        webNoHttpsTitle: `HTTPS غير متاح`,
+        webNoHttpsContent: `قد لا يحتوي هذا الموقع على شهادة HTTPS
+            مثبتة، أو قد انتهت صلاحيتها، أو لم يتم تكوينها بشكل صحيح.`,
+        webBadHttpTitle: `الموقع يعيد خطأ`,
+        webBadHttpContent: `هذا الموقع يعيد خطأ 500 أو 403،
+            قد لا يكون مهيأ بشكل صحيح (تحقق من إعدادات NGINX/التطبيق!).`,
+        webBadRedirectTitle: `الموقع يحتوي على عمليات إعادة توجيه سيئة`,
+        webBadRedirectContent: `يقوم هذا الموقع بإعادة توجيه الزوار إلى خارج النطاق،
+            قد لا يكون مهيأ بشكل صحيح (تحقق من إعدادات عنوان URL الأساسي!).`,
+        webBadWwwTitle: `النطاق الفرعي www.* غير متاح`,
+        webBadWwwContent: `النطاق الفرعي www لهذا الموقع إما غير متاح أو يعيد خطأ.`,
+        webInsecureTitle: `الموقع غير آمن بالكامل`,
+        webInsecureContent: `لا يقوم هذا الموقع بإعادة توجيه HTTP إلى HTTPS،
+            وهذا أمر جيد ولكن غير موصى به.`,
+        webOkTitle: `الموقع جيد`,
+        webOkContent: `يمكن الوصول إلى هذا الموقع عبر HTTP و HTTPS.`,
     },
     hostFirewall: {
-        title: `Check Firewall`,
+        title: `تحقق من جدار الحماية`,
         description: `
         <p>
-            Firewall helps your website not to be exploited in the event of a
-            hacker break-in by blocking all outgoing traffic except those on the
-            <a href="{0}" target="_blank" rel="noreferrer">whitelist</a>.
+            يساعد جدار الحماية موقعك على عدم التعرض للاختراق في حالة
+            اختراقه عن طريق حظر كل حركة المرور الصادرة باستثناء تلك الموجودة في
+            <a href="{0}" target="_blank" rel="noreferrer">القائمة البيضاء</a>.
         </p>
         <p>
-            Depending on your use of the website, you may want to turn off the
-            firewall if your website requires third party API or other forms of 
-            communication not listed in the whitelist.
+            بناءً على استخدامك للموقع، قد ترغب في إيقاف تشغيل
+            جدار الحماية إذا كان موقعك يتطلب API لطرف ثالث أو أشكال أخرى من
+            الاتصال غير المدرجة في القائمة البيضاء.
         </p>
-        <p>The firewall applies to the domain and all subdomains within. It is 
-        mandatorily turned on for users with free plan. To turn it off, you 
-        have to be in subscribing plan (Lite or above).</p>
-        <p><a href="{1}" target="_blank" rel="noreferrer">Read more</a></p>
+        <p>ينطبق جدار الحماية على النطاق وجميع النطاقات الفرعية بداخله. يتم
+        تشغيله بشكل إلزامي للمستخدمين ذوي الخطة المجانية. لإيقاف تشغيله، يجب أن
+        تكون في خطة اشتراك (Lite أو أعلى).</p>
+        <p><a href="{1}" target="_blank" rel="noreferrer">اقرأ المزيد</a></p>
         `,
-        offTitle: `Firewall is off`,
+        offTitle: `جدار الحماية متوقف`,
         offContent: `<p>
-            All outgoing traffic is allowed. Keep your site secure, please!
+            يتم السماح بكل حركة المرور الصادرة. حافظ على موقعك آمنًا، من فضلك!
         </p>`,
-        offBtn: `Turn it on`,
-        onTitle: `Firewall is active`,
+        offBtn: `تشغيله`,
+        onTitle: `جدار الحماية نشط`,
         onContent: `<p>
-            All third-party outgoing connection is blocked except for whitelists.<br/>
-            Turn it off to remove this limitation.
+            يتم حظر كل الاتصال الصادر للطرف الثالث باستثناء القوائم البيضاء.<br/>
+            قم بإيقاف تشغيله لإزالة هذا القيد.
         </p>`,
-        onBtn: `Turn it off`,
+        onBtn: `إيقافه`,
     },
     hostNginx: {
-        title: `Check NGINX Config`,
+        title: `تحقق من تكوين NGINX`,
         description: `
         <p>
-            NGINX is our main server gateway that serves HTTP ports (80 and 443).
-            To make your website works, your web app must be correctly configured
-            here. Here you can view your current configuration and make changes 
-            either via preconfigured UI or full-blown NGINX config as YAML script. 
+            NGINX هو بوابة الخادم الرئيسية لدينا التي تخدم المنافذ HTTP (80 و 443).
+            لجعل موقعك يعمل، يجب تكوين تطبيق الويب الخاص بك بشكل صحيح
+            هنا. هنا يمكنك عرض تكوينك الحالي وإجراء التغييرات
+            إما عبر واجهة مستخدم مهيأة مسبقًا أو تكوين NGINX بالكامل كسيناريو YAML.
         </p>
         <p>
-            NGINX typically serves static content first that's configured via <code>root</code>
-            path, or forward the request dynamically to your App via PHP-FPM <code>fastcgi</code> 
-            or Passenger <code>passenger</code> if such file doesn't exist.
+            يقوم NGINX عادةً بخدمة المحتوى الثابت أولاً الذي يتم تكوينه عبر مسار <code>root</code>
+            ، أو إعادة توجيه الطلب ديناميكيًا إلى تطبيقك عبر PHP-FPM <code>fastcgi</code>
+            أو Passenger <code>passenger</code> إذا لم يكن هذا الملف موجودًا.
         </p>
         <p>
-            NGINX config is different for subdomains. If your subdomain content happens 
-            to live inside this website, please enter the subdomain name below to configure it. 
-            Also, please take a moment to read <a href="{0}" target="_blank" rel="noreferrer">
-            our NGINX Configuration</a> or contact us in case you came into a problem.
+            يختلف تكوين NGINX للنطاقات الفرعية. إذا كان محتوى نطاقك الفرعي
+            يقع داخل هذا الموقع، يرجى إدخال اسم النطاق الفرعي أدناه لتكوينه.
+            أيضًا، يرجى أخذ لحظة لقراءة <a href="{0}" target="_blank" rel="noreferrer">
+            تكوين NGINX الخاص بنا</a> أو الاتصال بنا في حالة مواجهتك لمشكلة.
         </p>
         `,
-        subdomain: `Subdomain`,
-        error: `ERROR: no configuration exists for {0}`,
-        errorFetch: "There was an error fetching the NGINX config",
-        notExist: `ERROR: no configuration exists for {0}`,
-        tabCurrent: `Current NGINX Config`,
-        tabEdit: `Edit Interactively`,
-        tabPreview: `Preview Changes`,
+        subdomain: `النطاق الفرعي`,
+        error: `خطأ: لا يوجد تكوين لـ {0}`,
+        errorFetch: "حدث خطأ أثناء جلب تكوين NGINX",
+        notExist: `خطأ: لا يوجد تكوين لـ {0}`,
+        tabCurrent: `تكوين NGINX الحالي`,
+        tabEdit: `تحرير بشكل تفاعلي`,
+        tabPreview: `معاينة التغييرات`,
         labels: {
-            subfolderConfig: "Subfolder Config",
-            rootConfig: "Root Config",
-            rootPath: "Root Path",
-            rootIsAlias: "Root is Alias",
-            resolveType: "Resolve Type",
+            subfolderConfig: "تكوين المجلد الفرعي",
+            rootConfig: "تكوين الجذر",
+            rootPath: "مسار الجذر",
+            rootIsAlias: "الجذر هو الاسم المستعار",
+            resolveType: "نوع الحل",
             resolveTypes: {
-                static: "Static",
+                static: "ثابت",
                 php: "PHP-FPM",
-                app: "Phusion App",
-                gls: "Generic App",
-                socat: "Forward Port",
-                deny: "Deny Requests",
+                app: "تطبيق Phusion",
+                gls: "تطبيق عام",
+                socat: "إعادة توجيه المنفذ",
+                deny: "رفض الطلبات",
             },
-            staticMode: "Static Mode",
+            staticMode: "وضع الثابت",
             staticModes: {
-                default: "Default",
-                smart: "Smart",
-                autoindex: "Auto-index",
-                index: "Root Index",
+                default: "افتراضي",
+                smart: "ذكي",
+                autoindex: "الفهرسة التلقائية",
+                index: "فهرس الجذر",
             },
-            static404Path: "404 HTML File Path",
-            phpMode: "PHP Mode",
+            static404Path: "مسار ملف 404 HTML",
+            phpMode: "وضع PHP",
             phpModes: {
-                default: 'Default',
-                smart: 'Smart',
-                indexSafe: 'Root Index - Safe',
-                index: 'Root Index - Standard',
-                always: 'Root Index - Always',
+                default: 'افتراضي',
+                smart: 'ذكي',
+                indexSafe: 'فهرس الجذر - آمن',
+                index: 'فهرس الجذر - قياسي',
+                always: 'فهرس الجذر - دائمًا',
             },
-            socatPort: 'Forward to Port',
-            appMode: 'App Mode',
-            appEntry: 'App Startup File',
-            appBin: 'App Binary Path',
+            socatPort: 'إعادة التوجيه إلى المنفذ',
+            appMode: 'وضع التطبيق',
+            appEntry: 'ملف بدء التشغيل للتطبيق',
+            appBin: 'مسار البرنامج الثنائي للتطبيق',
             appModes: {
-                default: 'Auto',
+                default: 'تلقائي',
                 node: 'Node',
                 python: 'Python',
                 ruby: 'Ruby',
             },
-            glsCmd: 'App Command',
-            appEnv: 'Environment Keys',
-            appDev: 'Development Mode?',
-            appRoot: 'Working Directory',
-            addSubfolderConfig: 'Add subfolder config',
+            glsCmd: 'أمر التطبيق',
+            appEnv: 'مفاتيح البيئة',
+            appDev: 'وضع التطوير؟',
+            appRoot: 'دليل العمل',
+            addSubfolderConfig: 'إضافة تكوين المجلد الفرعي',
         },
         hints: {
-            root: "Static files from {0} will be resolved to {1}",
-            socat: "Forward client requests to port {0}",
-            app: "Invoke {0} script from {1} using {2} from {3}",
-            gls: "Run \"{0}\" from {1} with given $PORT",
+            root: "سيتم حل الملفات الثابتة من {0} إلى {1}",
+            socat: "إعادة توجيه طلبات العميل إلى المنفذ {0}",
+            app: "تشغيل سيناريو {0} من {1} باستخدام {2} من {3}",
+            gls: "تشغيل \"{0}\" من {1} باستخدام $PORT المعطاة",
             staticModes: {
-                default: 'Serve static files',
-                smart: 'Attempt to find HTML file if possible',
-                index: 'Serve root index.html if no file found',
-                autoindex: 'Allow listing server files if index.html is not found',
-                with404: 'or show custom 404 error page'
+                default: 'خدمة الملفات الثابتة',
+                smart: 'محاولة العثور على ملف HTML إن أمكن',
+                index: 'خدمة ملف index.html الجذر إذا لم يتم العثور على ملف',
+                autoindex: 'السماح بإدراج ملفات الخادم إذا لم يتم العثور على ملف index.html',
+                with404: 'أو عرض صفحة خطأ 404 مخصصة'
             },
             phpModes: {
-                default: 'Serve index.php or php files that ends with .php',
-                smart: 'Attempt to find PHP file without .php',
-                indexSafe: 'Serve root index.php but don\'t try if client looks for a file',
-                index: 'Serve root index.php when static file is not found',
-                always: 'Allow PATH_INFO style requests handled to PHP',
+                default: 'خدمة ملف index.php أو ملفات PHP التي تنتهي بـ .php',
+                smart: 'محاولة العثور على ملف PHP بدون .php',
+                indexSafe: 'خدمة ملف index.php الجذر ولكن لا تحاول إذا كان العميل يبحث عن ملف',
+                index: 'خدمة ملف index.php الجذر عندما لا يتم العثور على ملف ثابت',
+                always: 'السماح بطلبات نمط PATH_INFO التي يتم توجيهها إلى PHP',
             },
-            deleteSubfolderPrompt: "Are you sure want to delete subfolder config for {0}",
-            inputSubfolderPrompt: "Please input subfolder (must start with '/' and no spaces)",
-            inputSubfolderNotValid: "Subfolder input is not valid",
-            inputSubfolderNotUnique: "Subfolder value must unique with other subfolder entries",
+            deleteSubfolderPrompt: "هل أنت متأكد من رغبتك في حذف تكوين المجلد الفرعي لـ {0}",
+            inputSubfolderPrompt: "يرجى إدخال المجلد الفرعي (يجب أن يبدأ بـ '/' وبدون مسافات)",
+            inputSubfolderNotValid: "إدخال المجلد الفرعي غير صالح",
+            inputSubfolderNotUnique: "يجب أن تكون قيمة المجلد الفرعي فريدة مع إدخالات المجلد الفرعي الأخرى",
         }
     },
     hostDNS: {
-        title: `Check DNS Config`,
-        description: `<p>This page helps you change DNS records if you point your domain name server to us. 
-        </p> <p>Alternatively, you can also edit DNS records via Webmin.</p>`,
-        helpText: `Help on configuration`,
-        error: `ERROR: no configuration exists for {0}`,
-        errorFetch: "There was an error fetching the dns config",
-        notExist: `ERROR: no configuration exists for {0}`,
-        tabCurrent: `Current DNS Settings`,
-        tabEdit: `Edit DNS Interactively`,
-        tabPreview: `Preview Changes`,
-        existingRecords: `Existing DNS Records`,
-        addedRecords: `Added DNS Records`,
+        title: `تحقق من تكوين DNS`,
+        description: `<p>تساعدك هذه الصفحة على تغيير سجلات DNS إذا قمت بتوجيه خادم اسم النطاق الخاص بك إلينا.
+        </p> <p>بدلاً من ذلك، يمكنك أيضًا تحرير سجلات DNS عبر Webmin.</p>`,
+        helpText: `مساعدة في التكوين`,
+        error: `خطأ: لا يوجد تكوين لـ {0}`,
+        errorFetch: "حدث خطأ أثناء جلب تكوين dns",
+        notExist: `خطأ: لا يوجد تكوين لـ {0}`,
+        tabCurrent: `إعدادات DNS الحالية`,
+        tabEdit: `تحرير DNS بشكل تفاعلي`,
+        tabPreview: `معاينة التغييرات`,
+        existingRecords: `سجلات DNS الموجودة`,
+        addedRecords: `سجلات DNS المضافة`,
     },
     hostLog: {
-        runningList: 'Running processes list',
-        logTypeError: 'NGINX Error Log',
-        logTypeAccess: 'NGINX Access Log',
-        logTypePassenger: 'Passenger App Log',
-        logTypeErrorHint: 'This log contains NGINX and PHP error logs for the current day',
-        logTypeAccessHint: 'This log contains NGINX access logs for the current day',
-        logTypePassengerHint: 'This log contains Passenger App log that\'s currently running',
-        errorFetch: "There was an error fetching the log file",
-        subdomain: `Subdomain`,
-        maxLines: `Max Lines`,
-        emptyLog: `This log is empty right now`,
+        runningList: 'قائمة العمليات الجارية',
+        logTypeError: 'سجل أخطاء NGINX',
+        logTypeAccess: 'سجل وصول NGINX',
+        logTypePassenger: 'سجل تطبيق Passenger',
+        logTypeErrorHint: 'يتضمن هذا السجل سجلات أخطاء NGINX و PHP لليوم الحالي',
+        logTypeAccessHint: 'يتضمن هذا السجل سجلات وصول NGINX لليوم الحالي',
+        logTypePassengerHint: 'يتضمن هذا السجل سجل تطبيق Passenger الجاري',
+        errorFetch: "حدث خطأ أثناء جلب ملف السجل",
+        subdomain: `النطاق الفرعي`,
+        maxLines: `الحد الأقصى لعدد السطور`,
+        emptyLog: `هذا السجل فارغ حاليًا`,
     },
     hostManage: {
         title: `Manage Website Access`,

@@ -84,224 +84,196 @@ export default {
         attachDeployKeyConfirm: `Ik heb deze publieke sleutel toegevoegd`,
     },
     hostConnection: {
-        title: `Check Connection`,
+        title: `Verbinding controleren`,
         description: `
-        <p>
-            This page checks if this website is accessible from the
-            internet.
-        </p>
-        <p>
-            There are three prerequisites for a website to be accessible
-            from the internet:
-        </p>
-        <ul>
-            <li>The DNS server must be available</li>
-            <li>The returned IP address must be correct</li>
-            <li>The server's content must be accessible</li>
-        </ul>
-        <p>
-            If one of the prerequisites above fails, this website may
-            not be accessible from the internet.
-        </p>`,
-        dnsOffTitle: `No name server`,
-        dnsOffContent: `This website does not have a name server. It maybe externally configured.`,
-        dnsManagedTitle: `DNS managed`,
-        dnsManagedContent: `This website's DNS is managed by DOM Cloud.`,
-        dnsMixedTitle: `DNS is mixed`,
-        dnsMixedContent: `This website's DNS has a mixed
-            configuration. Ensure that the name server
-            is configured properly. Do not mix our
-            records with other records!`,
-        dnsExternalTitle: `DNS managed externally`,
-        dnsExternalContent: `This website's DNS is handled by a third party.`,
-        pingNoIpTitle: `IP Address not found`,
-        pingNoIpContent: `The DNS server does not return an IP address.`,
-        pingNoIp6Title: `No IPv6`,
-        pingNoIp6Content: ` This website's DNS has no IPv6 address. It maybe unavailable for IPv6 users.`,
-        pingWrongIpTitle: `Incorrect IP Address`,
-        pingWrongIpContent: `This website's DNS returned an incorrect IP address. 
-            It may not serve the correct content, or it's behind a proxy.`,
-        pingNoWwwTitle: `www.* subdomain IP address not found`,
-        pingNoWwwContent: ` 
-            Some people may not be able to access this
-            website if they prefix it with www. Setup a
-            www subdomain redirect is recommended.`,
-        pingOkTitle: `IP Address OK`,
-        pingOkContent: `This website's DNS returned the correct IP address.`,
-        webNoHttpTitle: `Website is not accessible`,
-        webNoHttpContent: `This website is not accessible via HTTP.`,
-        webNoHttpsTitle: `HTTPS not available`,
-        webNoHttpsContent: `This website may not have HTTPS certificate
-            installed, or it's expired, or not configured properly.`,
-        webBadHttpTitle: `Website is returning an error`,
-        webBadHttpContent: `This website returns 500 or 403 error, 
-            it may not be configured properly (check NGINX/App settings!).`,
-        webBadRedirectTitle: `Website is has bad redirects`,
-        webBadRedirectContent: `This website is redirecting visitors to outside the domain, 
-            it may not be configured properly (check Base URL settings!).`,
-        webBadWwwTitle: `www.* subdomain is not accessible`,
-        webBadWwwContent: `This website's www subdomain is either not accessible or returning error.`,
-        webInsecureTitle: `Website is not fully secure`,
-        webInsecureContent: ` This website doesn't redirect HTTP to HTTPS,
-            which is fine but not recommended.`,
+            <p>
+                Deze pagina controleert of deze website toegankelijk is vanaf het internet.
+            </p>
+            <p>
+                Er zijn drie voorwaarden voor een website om toegankelijk te zijn vanaf het internet:
+            </p>
+            <ul>
+                <li>De DNS-server moet beschikbaar zijn</li>
+                <li>Het geretourneerde IP-adres moet correct zijn</li>
+                <li>De inhoud van de server moet toegankelijk zijn</li>
+            </ul>
+            <p>
+                Als een van de bovenstaande voorwaarden niet wordt voldaan, is deze website mogelijk niet toegankelijk vanaf het internet.
+            </p>`,
+        dnsOffTitle: `Geen naamserver`,
+        dnsOffContent: `Deze website heeft geen naamserver. Het kan extern worden geconfigureerd.`,
+        dnsManagedTitle: `DNS beheerd`,
+        dnsManagedContent: `De DNS van deze website wordt beheerd door DOM Cloud.`,
+        dnsMixedTitle: `DNS is gemengd`,
+        dnsMixedContent: `De DNS van deze website heeft een gemengde configuratie. Zorg ervoor dat de naamserver correct is geconfigureerd. Meng onze records niet met andere records!`,
+        dnsExternalTitle: `Extern beheerde DNS`,
+        dnsExternalContent: `De DNS van deze website wordt beheerd door een derde partij.`,
+        pingNoIpTitle: `IP-adres niet gevonden`,
+        pingNoIpContent: `De DNS-server retourneert geen IP-adres.`,
+        pingNoIp6Title: `Geen IPv6`,
+        pingNoIp6Content: `De DNS van deze website heeft geen IPv6-adres. Het kan niet beschikbaar zijn voor IPv6-gebruikers.`,
+        pingWrongIpTitle: `Onjuist IP-adres`,
+        pingWrongIpContent: `De DNS van deze website retourneert een onjuist IP-adres. Het kan de juiste inhoud niet leveren of het bevindt zich achter een proxy.`,
+        pingNoWwwTitle: `IP-adres voor www.* subdomein niet gevonden`,
+        pingNoWwwContent: `
+                Sommige mensen kunnen deze website mogelijk niet bereiken als ze www ervoor plaatsen. Het is aanbevolen om een www subdomein omleiding in te stellen.`,
+        pingOkTitle: `IP-adres OK`,
+        pingOkContent: `De DNS van deze website retourneert het juiste IP-adres.`,
+        webNoHttpTitle: `Website is niet toegankelijk`,
+        webNoHttpContent: `Deze website is niet toegankelijk via HTTP.`,
+        webNoHttpsTitle: `HTTPS niet beschikbaar`,
+        webNoHttpsContent: `Deze website heeft mogelijk geen HTTPS-certificaat geïnstalleerd, of het is verlopen of niet correct geconfigureerd.`,
+        webBadHttpTitle: `Website retourneert een fout`,
+        webBadHttpContent: `Deze website retourneert een 500 of 403 fout. Het is mogelijk niet correct geconfigureerd (controleer NGINX/App instellingen!).`,
+        webBadRedirectTitle: `Website heeft slechte omleidingen`,
+        webBadRedirectContent: `Deze website leidt bezoekers om naar buiten het domein. Het is mogelijk niet correct geconfigureerd (controleer de Basis URL instellingen!).`,
+        webBadWwwTitle: `www.* subdomein is niet toegankelijk`,
+        webBadWwwContent: `Het www subdomein van deze website is niet toegankelijk of retourneert een fout.`,
+        webInsecureTitle: `Website is niet volledig beveiligd`,
+        webInsecureContent: `Deze website leidt HTTP niet om naar HTTPS. Dit is prima maar wordt niet aanbevolen.`,
         webOkTitle: `Website is OK`,
-        webOkContent: `This website is accessible via HTTP and HTTPS.`,
+        webOkContent: `Deze website is toegankelijk via HTTP en HTTPS.`,
     },
     hostFirewall: {
-        title: `Check Firewall`,
+        title: `Firewall controleren`,
         description: `
-        <p>
-            Firewall helps your website not to be exploited in the event of a
-            hacker break-in by blocking all outgoing traffic except those on the
-            <a href="{0}" target="_blank" rel="noreferrer">whitelist</a>.
-        </p>
-        <p>
-            Depending on your use of the website, you may want to turn off the
-            firewall if your website requires third party API or other forms of 
-            communication not listed in the whitelist.
-        </p>
-        <p>The firewall applies to the domain and all subdomains within. It is 
-        mandatorily turned on for users with free plan. To turn it off, you 
-        have to be in subscribing plan (Lite or above).</p>
-        <p><a href="{1}" target="_blank" rel="noreferrer">Read more</a></p>
-        `,
-        offTitle: `Firewall is off`,
+            <p>
+                Een firewall helpt uw website te beschermen tegen misbruik in geval van een hackerinbraak door al het uitgaande verkeer te blokkeren behalve dat op de <a href="{0}" target="_blank" rel="noreferrer">witte lijst</a>.
+            </p>
+            <p>
+                Afhankelijk van uw gebruik van de website, wilt u mogelijk de firewall uitschakelen als uw website derde partij API's of andere vormen van communicatie vereist die niet op de witte lijst staan.
+            </p>
+            <p>De firewall is van toepassing op het domein en alle subdomeinen. Het wordt verplicht ingeschakeld voor gebruikers met een gratis plan. Om het uit te schakelen moet u een abonnement hebben (Lite of hoger).</p>
+            <p><a href="{1}" target="_blank" rel="noreferrer">Meer lezen</a></p>
+            `,
+        offTitle: `Firewall is uitgeschakeld`,
         offContent: `<p>
-            All outgoing traffic is allowed. Keep your site secure, please!
-        </p>`,
-        offBtn: `Turn it on`,
-        onTitle: `Firewall is active`,
+                Al het uitgaande verkeer is toegestaan. Houd uw site veilig, alstublieft!
+            </p>`,
+        offBtn: `Zet het aan`,
+        onTitle: `Firewall is actief`,
         onContent: `<p>
-            All third-party outgoing connection is blocked except for whitelists.<br/>
-            Turn it off to remove this limitation.
-        </p>`,
-        onBtn: `Turn it off`,
+                Alle uitgaande verbindingen van derden zijn geblokkeerd behalve voor de witte lijst.<br/>
+                Zet het uit om deze beperking te verwijderen.
+            </p>`,
+        onBtn: `Zet het uit`,
     },
     hostNginx: {
-        title: `Check NGINX Config`,
+        title: `NGINX Configuratie controleren`,
         description: `
-        <p>
-            NGINX is our main server gateway that serves HTTP ports (80 and 443).
-            To make your website works, your web app must be correctly configured
-            here. Here you can view your current configuration and make changes 
-            either via preconfigured UI or full-blown NGINX config as YAML script. 
-        </p>
-        <p>
-            NGINX typically serves static content first that's configured via <code>root</code>
-            path, or forward the request dynamically to your App via PHP-FPM <code>fastcgi</code> 
-            or Passenger <code>passenger</code> if such file doesn't exist.
-        </p>
-        <p>
-            NGINX config is different for subdomains. If your subdomain content happens 
-            to live inside this website, please enter the subdomain name below to configure it. 
-            Also, please take a moment to read <a href="{0}" target="_blank" rel="noreferrer">
-            our NGINX Configuration</a> or contact us in case you came into a problem.
-        </p>
-        `,
-        subdomain: `Subdomain`,
-        error: `ERROR: no configuration exists for {0}`,
-        errorFetch: "There was an error fetching the NGINX config",
-        notExist: `ERROR: no configuration exists for {0}`,
-        tabCurrent: `Current NGINX Config`,
-        tabEdit: `Edit Interactively`,
-        tabPreview: `Preview Changes`,
+            <p>
+                NGINX is onze hoofdserver gateway die HTTP poorten (80 en 443) bedient. Om uw website te laten werken, moet uw webapp hier correct worden geconfigureerd. Hier kunt u uw huidige configuratie bekijken en wijzigingen aanbrengen via een vooraf geconfigureerde UI of volledige NGINX-configuratie als YAML-script.
+            </p>
+            <p>
+                NGINX bedient doorgaans eerst statische inhoud die is geconfigureerd via het <code>root</code> pad, of stuurt het verzoek dynamisch door naar uw app via PHP-FPM <code>fastcgi</code> of Passenger <code>passenger</code> als een dergelijk bestand niet bestaat.
+            </p>
+            <p>
+                NGINX-configuratie is anders voor subdomeinen. Als uw subdomeininhoud zich binnen deze website bevindt, voer dan hieronder de naam van het subdomein in om het te configureren. Neem ook een moment om onze <a href="{0}" target="_blank" rel="noreferrer">NGINX-configuratie</a> te lezen en neem contact met ons op als u problemen ondervindt.
+            </p>
+            `,
+        subdomain: `Subdomein`,
+        error: `Fout: er is geen configuratie voor {0}`,
+        errorFetch: "Er is een fout opgetreden bij het ophalen van de NGINX-configuratie",
+        notExist: `Fout: er is geen configuratie voor {0}`,
+        tabCurrent: `Huidige NGINX-configuratie`,
+        tabEdit: `Interactief bewerken`,
+        tabPreview: `Voorvertoning wijzigingen`,
         labels: {
-            subfolderConfig: "Subfolder Config",
-            rootConfig: "Root Config",
-            rootPath: "Root Path",
-            rootIsAlias: "Root is Alias",
-            resolveType: "Resolve Type",
+            subfolderConfig: "Submapconfiguratie",
+            rootConfig: "Hoofdconfiguratie",
+            rootPath: "Rootpad",
+            rootIsAlias: "Root is een alias",
+            resolveType: "Resolutietype",
             resolveTypes: {
-                static: "Static",
+                static: "Statisch",
                 php: "PHP-FPM",
                 app: "Phusion App",
-                gls: "Generic App",
-                socat: "Forward Port",
-                deny: "Deny Requests",
+                gls: "Algemene App",
+                socat: "Poortdoorsturing",
+                deny: "Verzoek weigeren",
             },
-            staticMode: "Static Mode",
+            staticMode: "Statische modus",
             staticModes: {
-                default: "Default",
-                smart: "Smart",
-                autoindex: "Auto-index",
-                index: "Root Index",
+                default: "Standaard",
+                smart: "Slim",
+                autoindex: "Autoindex",
+                index: "Rootindex",
             },
-            static404Path: "404 HTML File Path",
-            phpMode: "PHP Mode",
+            static404Path: "404 HTML-bestandspad",
+            phpMode: "PHP-modus",
             phpModes: {
-                default: 'Default',
-                smart: 'Smart',
-                indexSafe: 'Root Index - Safe',
-                index: 'Root Index - Standard',
-                always: 'Root Index - Always',
+                default: 'Standaard',
+                smart: 'Slim',
+                indexSafe: 'Rootindex - Veilig',
+                index: 'Rootindex - Standaard',
+                always: 'Rootindex - Altijd',
             },
-            socatPort: 'Forward to Port',
-            appMode: 'App Mode',
-            appEntry: 'App Startup File',
-            appBin: 'App Binary Path',
+            socatPort: 'Poortdoorsturing',
+            appMode: 'App-modus',
+            appEntry: 'App startbestand',
+            appBin: 'App-binary pad',
             appModes: {
-                default: 'Auto',
+                default: 'Automatisch',
                 node: 'Node',
                 python: 'Python',
                 ruby: 'Ruby',
             },
-            glsCmd: 'App Command',
-            appEnv: 'Environment Keys',
-            appDev: 'Development Mode?',
-            appRoot: 'Working Directory',
-            addSubfolderConfig: 'Add subfolder config',
+            glsCmd: 'App-opdracht',
+            appEnv: 'Omgevingssleutels',
+            appDev: 'Ontwikkelmodus?',
+            appRoot: 'Werkdirectory',
+            addSubfolderConfig: 'Submapconfiguratie toevoegen',
         },
         hints: {
-            root: "Static files from {0} will be resolved to {1}",
-            socat: "Forward client requests to port {0}",
-            app: "Invoke {0} script from {1} using {2} from {3}",
-            gls: "Run \"{0}\" from {1} with given $PORT",
+            root: "Lost {1} op naar statische bestanden vanaf {0}",
+            socat: "Stuurt klantverzoeken door naar poort {0}",
+            app: "Voert {0} script uit vanaf {1} met {2} vanuit {3}",
+            gls: "Voert \"{0}\" uit vanuit {1} naar gespecificeerde $PORT",
             staticModes: {
-                default: 'Serve static files',
-                smart: 'Attempt to find HTML file if possible',
-                index: 'Serve root index.html if no file found',
-                autoindex: 'Allow listing server files if index.html is not found',
-                with404: 'or show custom 404 error page'
+                default: 'Biedt statische bestanden aan',
+                smart: 'Probeert indien mogelijk HTML-bestanden te vinden',
+                index: 'Biedt root index.html aan als geen bestand wordt gevonden',
+                autoindex: 'Staat serverbestandlijst toe als index.html niet wordt gevonden',
+                with404: 'Of toont aangepaste 404 foutpagina'
             },
             phpModes: {
-                default: 'Serve index.php or php files that ends with .php',
-                smart: 'Attempt to find PHP file without .php',
-                indexSafe: 'Serve root index.php but don\'t try if client looks for a file',
-                index: 'Serve root index.php when static file is not found',
-                always: 'Allow PATH_INFO style requests handled to PHP',
+                default: 'Biedt PHP-bestanden aan die eindigen op .php of index.php',
+                smart: 'Probeert PHP-bestanden te vinden zonder .php',
+                indexSafe: 'Biedt root index.php aan maar probeert het niet als het bestand door de klant wordt gezocht',
+                index: 'Biedt root index.php aan als geen statisch bestand wordt gevonden',
+                always: 'Staat PATH_INFO-stijlverzoeken toe om PHP te verwerken',
             },
-            deleteSubfolderPrompt: "Are you sure want to delete subfolder config for {0}",
-            inputSubfolderPrompt: "Please input subfolder (must start with '/' and no spaces)",
-            inputSubfolderNotValid: "Subfolder input is not valid",
-            inputSubfolderNotUnique: "Subfolder value must unique with other subfolder entries",
+            deleteSubfolderPrompt: "Weet u zeker dat u de submapconfiguratie voor {0} wilt verwijderen?",
+            inputSubfolderPrompt: "Voer submap in (beginnend met '/' en geen spaties)",
+            inputSubfolderNotValid: "Submapinvoer is niet geldig",
+            inputSubfolderNotUnique: "Submapwaarde moet uniek zijn ten opzichte van andere submapitems",
         }
     },
     hostDNS: {
-        title: `Check DNS Config`,
-        description: `<p>This page helps you change DNS records if you point your domain name server to us. 
-        </p> <p>Alternatively, you can also edit DNS records via Webmin.</p>`,
-        helpText: `Help on configuration`,
-        error: `ERROR: no configuration exists for {0}`,
-        errorFetch: "There was an error fetching the dns config",
-        notExist: `ERROR: no configuration exists for {0}`,
-        tabCurrent: `Current DNS Settings`,
-        tabEdit: `Edit DNS Interactively`,
-        tabPreview: `Preview Changes`,
-        existingRecords: `Existing DNS Records`,
-        addedRecords: `Added DNS Records`,
+        title: `DNS Configuratie controleren`,
+        description: `<p>Deze pagina helpt u bij het wijzigen van DNS-records als u uw domeinnaamservers naar ons verwijst.</p> <p>U kunt ook DNS-records bewerken via Webmin.</p>`,
+        helpText: `Configuratiehulp`,
+        error: `Fout: er is geen configuratie voor {0}`,
+        errorFetch: "Er is een fout opgetreden bij het ophalen van de DNS-configuratie",
+        notExist: `Fout: er is geen configuratie voor {0}`,
+        tabCurrent: `Huidige DNS-instellingen`,
+        tabEdit: `DNS interactief bewerken`,
+        tabPreview: `Voorvertoning wijzigingen`,
+        existingRecords: `Bestaande DNS-records`,
+        addedRecords: `Toegevoegde DNS-records`,
     },
     hostLog: {
-        runningList: 'Running processes list',
-        logTypeError: 'NGINX Error Log',
-        logTypeAccess: 'NGINX Access Log',
-        logTypePassenger: 'Passenger App Log',
-        logTypeErrorHint: 'This log contains NGINX and PHP error logs for the current day',
-        logTypeAccessHint: 'This log contains NGINX access logs for the current day',
-        logTypePassengerHint: 'This log contains Passenger App log that\'s currently running',
-        errorFetch: "There was an error fetching the log file",
-        subdomain: `Subdomain`,
-        maxLines: `Max Lines`,
-        emptyLog: `This log is empty right now`,
+        runningList: 'Lijst met actieve processen',
+        logTypeError: 'NGINX-foutenlog',
+        logTypeAccess: 'NGINX-toegangslog',
+        logTypePassenger: 'Passenger-app-log',
+        logTypeErrorHint: 'Deze log bevat de NGINX- en PHP-foutenlogs van de huidige datum',
+        logTypeAccessHint: 'Deze log bevat de NGINX-toegangslogs van de huidige datum',
+        logTypePassengerHint: 'Deze log bevat de actieve logs van uw Passenger-app',
+        errorFetch: "Er is een fout opgetreden bij het ophalen van de logbestanden",
+        subdomain: `Subdomein`,
+        maxLines: `Maximaal aantal regels`,
+        emptyLog: `Deze log is momenteel leeg`,
     },
     hostManage: {
         title: `Manage Website Access`,

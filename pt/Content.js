@@ -84,224 +84,196 @@ export default {
         attachDeployKeyConfirm: `Adicionei esta chave pública`,
     },
     hostConnection: {
-        title: `Check Connection`,
+        title: `Verificação de Conexão`,
         description: `
-        <p>
-            This page checks if this website is accessible from the
-            internet.
-        </p>
-        <p>
-            There are three prerequisites for a website to be accessible
-            from the internet:
-        </p>
-        <ul>
-            <li>The DNS server must be available</li>
-            <li>The returned IP address must be correct</li>
-            <li>The server's content must be accessible</li>
-        </ul>
-        <p>
-            If one of the prerequisites above fails, this website may
-            not be accessible from the internet.
-        </p>`,
-        dnsOffTitle: `No name server`,
-        dnsOffContent: `This website does not have a name server. It maybe externally configured.`,
-        dnsManagedTitle: `DNS managed`,
-        dnsManagedContent: `This website's DNS is managed by DOM Cloud.`,
-        dnsMixedTitle: `DNS is mixed`,
-        dnsMixedContent: `This website's DNS has a mixed
-            configuration. Ensure that the name server
-            is configured properly. Do not mix our
-            records with other records!`,
-        dnsExternalTitle: `DNS managed externally`,
-        dnsExternalContent: `This website's DNS is handled by a third party.`,
-        pingNoIpTitle: `IP Address not found`,
-        pingNoIpContent: `The DNS server does not return an IP address.`,
-        pingNoIp6Title: `No IPv6`,
-        pingNoIp6Content: ` This website's DNS has no IPv6 address. It maybe unavailable for IPv6 users.`,
-        pingWrongIpTitle: `Incorrect IP Address`,
-        pingWrongIpContent: `This website's DNS returned an incorrect IP address. 
-            It may not serve the correct content, or it's behind a proxy.`,
-        pingNoWwwTitle: `www.* subdomain IP address not found`,
-        pingNoWwwContent: ` 
-            Some people may not be able to access this
-            website if they prefix it with www. Setup a
-            www subdomain redirect is recommended.`,
-        pingOkTitle: `IP Address OK`,
-        pingOkContent: `This website's DNS returned the correct IP address.`,
-        webNoHttpTitle: `Website is not accessible`,
-        webNoHttpContent: `This website is not accessible via HTTP.`,
-        webNoHttpsTitle: `HTTPS not available`,
-        webNoHttpsContent: `This website may not have HTTPS certificate
-            installed, or it's expired, or not configured properly.`,
-        webBadHttpTitle: `Website is returning an error`,
-        webBadHttpContent: `This website returns 500 or 403 error, 
-            it may not be configured properly (check NGINX/App settings!).`,
-        webBadRedirectTitle: `Website is has bad redirects`,
-        webBadRedirectContent: `This website is redirecting visitors to outside the domain, 
-            it may not be configured properly (check Base URL settings!).`,
-        webBadWwwTitle: `www.* subdomain is not accessible`,
-        webBadWwwContent: `This website's www subdomain is either not accessible or returning error.`,
-        webInsecureTitle: `Website is not fully secure`,
-        webInsecureContent: ` This website doesn't redirect HTTP to HTTPS,
-            which is fine but not recommended.`,
-        webOkTitle: `Website is OK`,
-        webOkContent: `This website is accessible via HTTP and HTTPS.`,
+            <p>
+                Esta página verifica se este site é acessível a partir da internet.
+            </p>
+            <p>
+                Existem três pré-requisitos para um site ser acessível a partir da internet:
+            </p>
+            <ul>
+                <li>O servidor DNS deve estar disponível</li>
+                <li>O endereço IP retornado deve estar correto</li>
+                <li>O conteúdo do servidor deve ser acessível</li>
+            </ul>
+            <p>
+                Se qualquer um dos pré-requisitos acima falhar, este site pode não ser acessível a partir da internet.
+            </p>`,
+        dnsOffTitle: `Nenhum servidor de nomes`,
+        dnsOffContent: `Este site não possui um servidor de nomes. Pode ser configurado externamente.`,
+        dnsManagedTitle: `DNS gerenciado`,
+        dnsManagedContent: `O DNS deste site é gerenciado pela DOM Cloud.`,
+        dnsMixedTitle: `DNS misturado`,
+        dnsMixedContent: `O DNS deste site tem uma configuração mista. Certifique-se de que o servidor de nomes esteja configurado corretamente. Não misture nossos registros com outros!`,
+        dnsExternalTitle: `DNS gerenciado externamente`,
+        dnsExternalContent: `O DNS deste site é gerenciado por terceiros.`,
+        pingNoIpTitle: `Endereço IP não encontrado`,
+        pingNoIpContent: `O servidor DNS não retorna um endereço IP.`,
+        pingNoIp6Title: `Sem IPv6`,
+        pingNoIp6Content: `O DNS deste site não tem um endereço IPv6. Pode não estar disponível para usuários de IPv6.`,
+        pingWrongIpTitle: `Endereço IP incorreto`,
+        pingWrongIpContent: `O DNS deste site retorna um endereço IP incorreto. Pode não entregar o conteúdo correto ou estar por trás de um proxy.`,
+        pingNoWwwTitle: `Endereço IP para subdomínio www.* não encontrado`,
+        pingNoWwwContent: `
+                Algumas pessoas podem não conseguir acessar este site ao prefixá-lo com www. É recomendado configurar um redirecionamento de subdomínio www.`,
+        pingOkTitle: `Endereço IP correto`,
+        pingOkContent: `O DNS deste site retorna o endereço IP correto.`,
+        webNoHttpTitle: `Site inacessível`,
+        webNoHttpContent: `Este site não é acessível via HTTP.`,
+        webNoHttpsTitle: `HTTPS não disponível`,
+        webNoHttpsContent: `Este site pode não ter um certificado HTTPS instalado, ou pode estar expirado ou configurado incorretamente.`,
+        webBadHttpTitle: `Site retorna um erro`,
+        webBadHttpContent: `Este site retorna um erro 500 ou 403. Pode não estar configurado corretamente (verifique as configurações do NGINX/App!).`,
+        webBadRedirectTitle: `Site com redirecionamentos incorretos`,
+        webBadRedirectContent: `Este site redireciona visitantes para fora do domínio. Pode não estar configurado corretamente (verifique as configurações do URL base!).`,
+        webBadWwwTitle: `Subdomínio www.* inacessível`,
+        webBadWwwContent: `O subdomínio www deste site está inacessível ou retorna um erro.`,
+        webInsecureTitle: `Site não totalmente seguro`,
+        webInsecureContent: `Este site não redireciona HTTP para HTTPS. Isso é aceitável, mas não é recomendado.`,
+        webOkTitle: `Site OK`,
+        webOkContent: `Este site é acessível via HTTP e HTTPS.`,
     },
     hostFirewall: {
-        title: `Check Firewall`,
+        title: `Verificação de Firewall`,
         description: `
-        <p>
-            Firewall helps your website not to be exploited in the event of a
-            hacker break-in by blocking all outgoing traffic except those on the
-            <a href="{0}" target="_blank" rel="noreferrer">whitelist</a>.
-        </p>
-        <p>
-            Depending on your use of the website, you may want to turn off the
-            firewall if your website requires third party API or other forms of 
-            communication not listed in the whitelist.
-        </p>
-        <p>The firewall applies to the domain and all subdomains within. It is 
-        mandatorily turned on for users with free plan. To turn it off, you 
-        have to be in subscribing plan (Lite or above).</p>
-        <p><a href="{1}" target="_blank" rel="noreferrer">Read more</a></p>
-        `,
-        offTitle: `Firewall is off`,
+            <p>
+                Um firewall ajuda a proteger seu site de abuso em caso de invasão de hackers, bloqueando todo o tráfego de saída, exceto para a <a href="{0}" target="_blank" rel="noreferrer">lista de permissões</a>.
+            </p>
+            <p>
+                Dependendo do uso do site, você pode querer desativar o firewall se o seu site precisar se comunicar com APIs de terceiros ou outras formas de comunicação que não estão na lista de permissões.
+            </p>
+            <p>O firewall se aplica ao domínio e a todos os subdomínios. Ele é obrigatório para usuários com um plano gratuito. Para desativá-lo, você deve ter uma assinatura (Lite ou superior).</p>
+            <p><a href="{1}" target="_blank" rel="noreferrer">Leia mais</a></p>
+            `,
+        offTitle: `Firewall está desativado`,
         offContent: `<p>
-            All outgoing traffic is allowed. Keep your site secure, please!
-        </p>`,
-        offBtn: `Turn it on`,
-        onTitle: `Firewall is active`,
+                Todo o tráfego de saída é permitido. Por favor, mantenha seu site seguro!
+            </p>`,
+        offBtn: `Ativar`,
+        onTitle: `Firewall está ativo`,
         onContent: `<p>
-            All third-party outgoing connection is blocked except for whitelists.<br/>
-            Turn it off to remove this limitation.
-        </p>`,
-        onBtn: `Turn it off`,
+                Todas as conexões de saída de terceiros estão bloqueadas, exceto para a lista de permissões.<br/>
+                Desative-o para remover essa restrição.
+            </p>`,
+        onBtn: `Desativar`,
     },
     hostNginx: {
-        title: `Check NGINX Config`,
+        title: `Verificação de Configuração NGINX`,
         description: `
-        <p>
-            NGINX is our main server gateway that serves HTTP ports (80 and 443).
-            To make your website works, your web app must be correctly configured
-            here. Here you can view your current configuration and make changes 
-            either via preconfigured UI or full-blown NGINX config as YAML script. 
-        </p>
-        <p>
-            NGINX typically serves static content first that's configured via <code>root</code>
-            path, or forward the request dynamically to your App via PHP-FPM <code>fastcgi</code> 
-            or Passenger <code>passenger</code> if such file doesn't exist.
-        </p>
-        <p>
-            NGINX config is different for subdomains. If your subdomain content happens 
-            to live inside this website, please enter the subdomain name below to configure it. 
-            Also, please take a moment to read <a href="{0}" target="_blank" rel="noreferrer">
-            our NGINX Configuration</a> or contact us in case you came into a problem.
-        </p>
-        `,
-        subdomain: `Subdomain`,
-        error: `ERROR: no configuration exists for {0}`,
-        errorFetch: "There was an error fetching the NGINX config",
-        notExist: `ERROR: no configuration exists for {0}`,
-        tabCurrent: `Current NGINX Config`,
-        tabEdit: `Edit Interactively`,
-        tabPreview: `Preview Changes`,
+            <p>
+                NGINX é nossa principal gateway de servidor que serve as portas HTTP (80 e 443). Para que seu site funcione, seu aplicativo da web deve ser configurado corretamente aqui. Aqui, você pode visualizar sua configuração atual e fazer alterações através de uma IU pré-configurada ou uma configuração completa de NGINX como script YAML.
+            </p>
+            <p>
+                NGINX geralmente serve conteúdo estático configurado através do caminho <code>root</code> primeiro, ou roteia a solicitação dinamicamente para o seu aplicativo via PHP-FPM <code>fastcgi</code> ou Passenger <code>passenger</code> se tal arquivo não existir.
+            </p>
+            <p>
+                A configuração do NGINX é diferente para subdomínios. Se o conteúdo do seu subdomínio estiver contido neste site, insira o nome do subdomínio abaixo para configurá-lo. Reserve também um momento para ler nossa <a href="{0}" target="_blank" rel="noreferrer">documentação de configuração NGINX</a> e entre em contato conosco se tiver problemas.
+            </p>
+            `,
+        subdomain: `Subdomínio`,
+        error: `Erro: configuração para {0} não encontrada`,
+        errorFetch: "Ocorreu um erro ao buscar a configuração NGINX",
+        notExist: `Erro: configuração para {0} não encontrada`,
+        tabCurrent: `Configuração NGINX Atual`,
+        tabEdit: `Editar Interativamente`,
+        tabPreview: `Pré-visualizar Alterações`,
         labels: {
-            subfolderConfig: "Subfolder Config",
-            rootConfig: "Root Config",
-            rootPath: "Root Path",
-            rootIsAlias: "Root is Alias",
-            resolveType: "Resolve Type",
+            subfolderConfig: "Configuração de Subpasta",
+            rootConfig: "Configuração Principal",
+            rootPath: "Caminho Root",
+            rootIsAlias: "Root é um alias",
+            resolveType: "Tipo de Resolução",
             resolveTypes: {
-                static: "Static",
+                static: "Estático",
                 php: "PHP-FPM",
-                app: "Phusion App",
-                gls: "Generic App",
-                socat: "Forward Port",
-                deny: "Deny Requests",
+                app: "Aplicativo Phusion",
+                gls: "Aplicativo Genérico",
+                socat: "Encaminhamento de Porta",
+                deny: "Negar Solicitação",
             },
-            staticMode: "Static Mode",
+            staticMode: "Modo Estático",
             staticModes: {
-                default: "Default",
-                smart: "Smart",
-                autoindex: "Auto-index",
+                default: "Padrão",
+                smart: "Inteligente",
+                autoindex: "Autoindex",
                 index: "Root Index",
             },
-            static404Path: "404 HTML File Path",
-            phpMode: "PHP Mode",
+            static404Path: "Caminho do Arquivo HTML 404",
+            phpMode: "Modo PHP",
             phpModes: {
-                default: 'Default',
-                smart: 'Smart',
-                indexSafe: 'Root Index - Safe',
-                index: 'Root Index - Standard',
-                always: 'Root Index - Always',
+                default: 'Padrão',
+                smart: 'Inteligente',
+                indexSafe: 'Root Index - Seguro',
+                index: 'Root Index - Padrão',
+                always: 'Root Index - Sempre',
             },
-            socatPort: 'Forward to Port',
-            appMode: 'App Mode',
-            appEntry: 'App Startup File',
-            appBin: 'App Binary Path',
+            socatPort: 'Encaminhamento de Porta',
+            appMode: 'Modo Aplicativo',
+            appEntry: 'Arquivo de Entrada do Aplicativo',
+            appBin: 'Caminho binário do Aplicativo',
             appModes: {
-                default: 'Auto',
+                default: 'Automático',
                 node: 'Node',
                 python: 'Python',
                 ruby: 'Ruby',
             },
-            glsCmd: 'App Command',
-            appEnv: 'Environment Keys',
-            appDev: 'Development Mode?',
-            appRoot: 'Working Directory',
-            addSubfolderConfig: 'Add subfolder config',
+            glsCmd: 'Comando do Aplicativo',
+            appEnv: 'Chaves de Ambiente',
+            appDev: 'Modo de Desenvolvimento?',
+            appRoot: 'Diretório de Trabalho',
+            addSubfolderConfig: 'Adicionar Configuração de Subpasta',
         },
         hints: {
-            root: "Static files from {0} will be resolved to {1}",
-            socat: "Forward client requests to port {0}",
-            app: "Invoke {0} script from {1} using {2} from {3}",
-            gls: "Run \"{0}\" from {1} with given $PORT",
+            root: "Resolve {1} para arquivos estáticos de {0}",
+            socat: "Encaminha solicitações do cliente para a porta {0}",
+            app: "Executa o script {0} de {1} com {2} de {3}",
+            gls: "Executa \"{0}\" de {1} para a porta especificada $PORT",
             staticModes: {
-                default: 'Serve static files',
-                smart: 'Attempt to find HTML file if possible',
-                index: 'Serve root index.html if no file found',
-                autoindex: 'Allow listing server files if index.html is not found',
-                with404: 'or show custom 404 error page'
+                default: 'Servir arquivos estáticos',
+                smart: 'Tentar encontrar arquivos HTML, se possível',
+                index: 'Servir root index.html, se nenhum arquivo for encontrado',
+                autoindex: 'Permitir listagem de arquivos do servidor, se index.html não for encontrado',
+                with404: 'Ou exibir uma página de erro 404 personalizada'
             },
             phpModes: {
-                default: 'Serve index.php or php files that ends with .php',
-                smart: 'Attempt to find PHP file without .php',
-                indexSafe: 'Serve root index.php but don\'t try if client looks for a file',
-                index: 'Serve root index.php when static file is not found',
-                always: 'Allow PATH_INFO style requests handled to PHP',
+                default: 'Servir arquivos PHP terminando com .php ou index.php',
+                smart: 'Tentar encontrar arquivos PHP sem .php',
+                indexSafe: 'Servir root index.php mas não tentar quando o arquivo for buscado pelo cliente',
+                index: 'Servir root index.php se nenhum arquivo estático for encontrado',
+                always: 'Permitir solicitações no estilo PATH_INFO para processar PHP',
             },
-            deleteSubfolderPrompt: "Are you sure want to delete subfolder config for {0}",
-            inputSubfolderPrompt: "Please input subfolder (must start with '/' and no spaces)",
-            inputSubfolderNotValid: "Subfolder input is not valid",
-            inputSubfolderNotUnique: "Subfolder value must unique with other subfolder entries",
+            deleteSubfolderPrompt: "Tem certeza de que deseja excluir a configuração de subpasta para {0}?",
+            inputSubfolderPrompt: "Insira a subpasta (começando com '/' e sem espaços)",
+            inputSubfolderNotValid: "Entrada de subpasta não é válida",
+            inputSubfolderNotUnique: "O valor da subpasta deve ser exclusivo em relação a outros itens de subpasta",
         }
     },
     hostDNS: {
-        title: `Check DNS Config`,
-        description: `<p>This page helps you change DNS records if you point your domain name server to us. 
-        </p> <p>Alternatively, you can also edit DNS records via Webmin.</p>`,
-        helpText: `Help on configuration`,
-        error: `ERROR: no configuration exists for {0}`,
-        errorFetch: "There was an error fetching the dns config",
-        notExist: `ERROR: no configuration exists for {0}`,
-        tabCurrent: `Current DNS Settings`,
-        tabEdit: `Edit DNS Interactively`,
-        tabPreview: `Preview Changes`,
-        existingRecords: `Existing DNS Records`,
-        addedRecords: `Added DNS Records`,
+        title: `Verificação de Configuração DNS`,
+        description: `<p>Esta página ajuda a alterar os registros DNS se você apontar os servidores de nomes do seu domínio para nós.</p> <p>Você também pode editar registros DNS através do Webmin.</p>`,
+        helpText: `Ajuda de Configuração`,
+        error: `Erro: configuração para {0} não encontrada`,
+        errorFetch: "Ocorreu um erro ao buscar a configuração DNS",
+        notExist: `Erro: configuração para {0} não encontrada`,
+        tabCurrent: `Configurações DNS Atuais`,
+        tabEdit: `Editar DNS Interativamente`,
+        tabPreview: `Pré-visualizar Alterações`,
+        existingRecords: `Registros DNS Existentes`,
+        addedRecords: `Registros DNS Adicionados`,
     },
     hostLog: {
-        runningList: 'Running processes list',
-        logTypeError: 'NGINX Error Log',
-        logTypeAccess: 'NGINX Access Log',
-        logTypePassenger: 'Passenger App Log',
-        logTypeErrorHint: 'This log contains NGINX and PHP error logs for the current day',
-        logTypeAccessHint: 'This log contains NGINX access logs for the current day',
-        logTypePassengerHint: 'This log contains Passenger App log that\'s currently running',
-        errorFetch: "There was an error fetching the log file",
-        subdomain: `Subdomain`,
-        maxLines: `Max Lines`,
-        emptyLog: `This log is empty right now`,
+        runningList: 'Lista de Processos Ativos',
+        logTypeError: 'Log de Erros NGINX',
+        logTypeAccess: 'Log de Acesso NGINX',
+        logTypePassenger: 'Log de Aplicativo Passenger',
+        logTypeErrorHint: 'Este log contém os logs de erros NGINX e PHP da data atual',
+        logTypeAccessHint: 'Este log contém os logs de acesso NGINX da data atual',
+        logTypePassengerHint: 'Este log contém os logs ativos do seu aplicativo Passenger',
+        errorFetch: "Ocorreu um erro ao buscar os arquivos de log",
+        subdomain: `Subdomínio`,
+        maxLines: `Máximo de Linhas`,
+        emptyLog: `Este log está atualmente vazio`,
     },
     hostManage: {
         title: `Manage Website Access`,
