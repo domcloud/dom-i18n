@@ -11,19 +11,19 @@
 
 <body>
   <div class="container">
-    <p></p>
-    <img class="logo" width="150" height="150" alt="" src="http://cdn.mcauto-images-production.sendgrid.net/a29c06201af03bf0/70219a8f-d353-4098-bd3d-7e05101cff9d/1000x1000.png">
-    <div><br></div>
-    <div>Kami mengirimkan email ini untuk memberi tahu Anda tentang pemberitahuan ini&nbsp;:</div>
-    <h2><?= $head ?>&nbsp;</h2>
-    <div></div>
-    <p><?= $body ?>&nbsp;</p>
-    <div></div>
-    <p>Jika Anda merasa pemberitahuan ini agak mengganggu, Anda dapat mempertimbangkan untuk mengupgrade akun Anda :)</p>
-    <div></div>
+	<p></p>
+	<img class="logo" width="150" height="150" alt="" src="http://cdn.mcauto-images-production.sendgrid.net/a29c06201af03bf0/70219a8f-d353-4098-bd3d-7e05101cff9d/1000x1000.png">
+	<div><br></div>
+	<div>Kami mengirimkan email ini untuk memberi tahu Anda tentang pemberitahuan ini&nbsp;:</div>
+	<h2><?= $head ?>&nbsp;</h2>
+	<div></div>
+	<p><?= $body ?>&nbsp;</p>
+	<div></div>
+	<p>Jika Anda merasa pemberitahuan ini agak mengganggu, Anda dapat mempertimbangkan untuk mengupgrade akun Anda :)</p>
+	<div></div>
   </div>
   <div class="button">
-    <a href="https://my.domcloud.co/login" target="_blank">Periksa akun Anda</a>
+	<a href="https://my.domcloud.co/login" target="_blank">Periksa akun Anda</a>
   </div>
   <div class="section">Terima kasih atas perhatian Anda<br>Butuh bantuan? Anda selalu dapat membalas email ini
   </div>

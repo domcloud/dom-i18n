@@ -1,7 +1,7 @@
 <?php return [
 	'code' => 'en',
 	'codename' => 'English',
-	'currency' => 'usd',
+	'codedir' => 'ltr',
 	'login' => 'Sign In',
 	'register' => 'Register',
 	'email' => 'Email',
