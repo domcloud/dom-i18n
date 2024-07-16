@@ -44,13 +44,9 @@ export default {
     // Bagian Bantuan
     "help": "Bantuan",
     "helpDocs": "Dokumen",
-    "helpDocsLink": "https://domcloud.co/docs/intro/",
     "helpEmail": "Email",
-    "helpEmailLink": "mailto:support@domcloud.co",
     "helpChat": "Obrolan",
-    "helpChatLink": "https://t.me/WIIIN0DE",
     "helpUpdates": "Pembaruan",
-    "helpUpdatesLink": "https://twitter.com/domcloud_co",
     // Bagian Profil
     "country": "Negara",
     "chooseCountry": "Pilih negara",

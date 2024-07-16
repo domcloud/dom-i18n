@@ -45,13 +45,9 @@ export default {
     // Sección de ayuda
     "help": "Ayuda",
     "helpDocs": "Documentos",
-    "helpDocsLink": "https://domcloud.co/docs/intro/",
     "helpEmail": "Correo electrónico",
-    "helpEmailLink": "mailto:support@domcloud.co",
     "helpChat": "Chat",
-    "helpChatLink": "https://t.me/WIIIN0DE",
     "helpUpdates": "Actualizaciones",
-    "helpUpdatesLink": "https://twitter.com/domcloud_co",
     // Sección de perfil
     "country": "País",
     "chooseCountry": "Elija un país",
