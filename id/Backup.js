@@ -8,7 +8,10 @@ export default {
     "emptyList": "Tidak ada cadangan yang terdaftar",
     "seeCreationProgress": "Lihat kemajuan pembuatan cadangan di runner host",
     "noProgressAvailable": "Log cadangan ini tidak lagi ditemukan",
-    "restoreWip": "Untuk mengembalikan cadangan ini, silakan minta melalui obrolan atau email",
+    "restore": "Pulihkan cadangan ini",
+    "restoreTitle": "Pulihkan cadangan",
+    "restoreTitleHint": "Pilih domain untuk dipulihkan. Hati-hati! Data mungkin akan ditimpa.",
+    "restoreTitleConfirm": "Anda akan memulihkan cadangan ini ke {0}. Lanjutkan?",
     "createTitle": "Buat Cadangan Baru",
     "createTitleHint": "Pilih host untuk membuat cadangan."
 }
