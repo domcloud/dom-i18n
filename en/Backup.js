@@ -8,7 +8,10 @@ export default {
     "emptyList": "No backups listed",
     "seeCreationProgress": "See backup creation progress in host's runner",
     "noProgressAvailable": "This backup log is no longer found",
-    "restoreWip": "To restore this backup, please ask via chat or email",
+    "restore": "Restore this backup",
+    "restoreTitle": "Restore a backup",
+    "restoreTitleHint": "Select a domain to restore into. Be careful! The data may get overriden.",    
+    "restoreTitleConfirm": "You're about to restore this backup to {0}. Proceed?",    
     "createTitle": "Create a new backup",
     "createTitleHint": "Select a host to create backup.",
 }
