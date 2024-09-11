@@ -11,13 +11,3 @@ This repo is set as submodule to main portal platform (not open sourced). Change
 This repo contains JS and PHP files. JS is for frontend. PHP is for backend. The canonical language is english.
 
 If you ask us what our tech stack, it's CodeIgniter and Svelte.
-
-## Contributors
-
-List of major contributors (sorted by code)
-
-| Language | Code | Contributors |
-| :-- | :-- | :-- |
-| English | `en` | [@willnode](https://github.com/willnode) | 
-| Espanol | `es` | [@avidevs](https://github.com/avidevs) | 
-| Indonesia | `id` | [@willnode](https://github.com/willnode) | 
