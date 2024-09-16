@@ -26,6 +26,7 @@ export default {
     "tabRename": "Changer le nom d'utilisateur",
     "tabCname": "Changer le domaine",
     "tabPasswd": "Changer le mot de passe",
+    "tabRegion": "Changer de région",
     "tabTransfer": "Transférer le site web",
     "tabDelete": "Supprimer le site web",
     "startFromTemplate": "Commencer par un modèle",

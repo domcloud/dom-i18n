@@ -26,6 +26,7 @@ export default {
     "tabRename": "ユーザー名を変更",
     "tabCname": "ドメインを変更",
     "tabPasswd": "パスワードを変更",
+    "tabRegion": "地域を変更",
     "tabTransfer": "ウェブサイトを転送",
     "tabDelete": "ウェブサイトを削除",
     "startFromTemplate": "テンプレートから始める",

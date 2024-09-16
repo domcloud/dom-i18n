@@ -26,6 +26,7 @@ export default {
     "tabRename": "사용자 이름 변경",
     "tabCname": "도메인 변경",
     "tabPasswd": "비밀번호 변경",
+    "tabRegion": "지역 변경",
     "tabTransfer": "웹사이트 이전",
     "tabDelete": "웹사이트 삭제",
     "startFromTemplate": "템플릿에서 시작",

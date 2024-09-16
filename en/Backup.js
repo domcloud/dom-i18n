@@ -10,7 +10,7 @@ export default {
     "noProgressAvailable": "This backup log is no longer found",
     "restore": "Restore this backup",
     "restoreTitle": "Restore a backup",
-    "restoreTitleHint": "Select a domain to restore into. Be careful! The data may get overriden.",    
+    "restoreTitleHint": "Select a domain to restore into. Be careful! The data will be overriden.",    
     "restoreTitleConfirm": "You're about to restore this backup to {0}. Proceed?",    
     "createTitle": "Create a new backup",
     "createTitleHint": "Select a host to create backup.",

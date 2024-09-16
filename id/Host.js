@@ -26,6 +26,7 @@ export default {
     "tabRename": "Ubah Username",
     "tabCname": "Ubah Domain",
     "tabPasswd": "Ubah Password",
+    "tabRegion": "Ubah Wilayah",
     "tabTransfer": "Transfer Website",
     "tabDelete": "Hapus Website",
     "startFromTemplate": "Mulai dari template",

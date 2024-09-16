@@ -26,6 +26,7 @@ export default {
     "tabRename": "更改用户名",
     "tabCname": "更改域名",
     "tabPasswd": "更改密码",
+    "tabRegion": "更改地区",
     "tabTransfer": "转移网站",
     "tabDelete": "删除网站",
     "startFromTemplate": "从模板开始",
