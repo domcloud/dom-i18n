@@ -186,17 +186,17 @@ export default {
             NGINX is our main server gateway that serves HTTP ports (80 and 443).
             To make your website works, your web app must be correctly configured
             here. Here you can view your current configuration and make changes 
-            either via preconfigured UI or full-blown NGINX config as YAML script. 
+            either via raw NGINX config (with certain limitation) or interactive generator. 
         </p>
         <p>
             NGINX typically serves static content first that's configured via <code>root</code>
-            path, or forward the request dynamically to your App via PHP-FPM <code>fastcgi</code> 
-            or Passenger <code>passenger</code> if such file doesn't exist.
+            path. If it doesn't exist it will forward the request dynamically to your App via 
+            <code>fastcgi</code> or <code>passenger</code>. You may add more special routes
+            and rewrites depending on your website needs.
         </p>
         <p>
-            NGINX config is different for subdomains. If your subdomain content happens 
-            to live inside this website, please enter the subdomain name below to configure it. 
-            Also, please take a moment to read <a href="{0}" target="_blank" rel="noreferrer">
+            NGINX is different for domain and subdomains. Please enter the subdomain name below to configure it
+            if you wish. Also, please take a moment to read <a href="{0}" target="_blank" rel="noreferrer">
             our NGINX Configuration</a> or contact us in case you came into a problem.
         </p>
         `,
@@ -204,7 +204,7 @@ export default {
         error: `ERROR: no configuration exists for {0}`,
         errorFetch: "There was an error fetching the NGINX config",
         notExist: `ERROR: no configuration exists for {0}`,
-        tabCurrent: `Current NGINX Config`,
+        tabCurrent: `Edit NGINX Config`,
         tabEdit: `Edit Interactively`,
         tabPreview: `Preview Changes`,
         labels: {
