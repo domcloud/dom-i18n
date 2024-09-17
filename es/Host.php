@@ -3,7 +3,7 @@
 	'invoiceDomainPurchaseOf' => 'Compra de dominio de {0}',
 	'invoiceDomainExtendOf' => 'Renovación de dominio de {0}',
 	'invoiceDomainTransferOf' => 'Transferencia de dominio de {0}',
-	'invoiceTeamPurchaseOf' => 'Compra de equipo del plan {0}',
+	'invoiceTeamPurchaseOf' => 'Compra del plan web {0}',
 	'invoiceTeamAddons' => 'Complementos del equipo',
 	'invoiceForMonths' => ' durante {0} meses',
 	'invoiceForYears' => ' durante {0} años',

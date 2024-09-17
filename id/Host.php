@@ -3,7 +3,7 @@
 	'invoiceDomainPurchaseOf' => 'Pembelian Domain {0}',
 	'invoiceDomainExtendOf' => 'Perpanjangan Domain {0}',
 	'invoiceDomainTransferOf' => 'Transfer Domain {0}',
-	'invoiceTeamPurchaseOf' => 'Team Purchase of {0} plan',
+	'invoiceTeamPurchaseOf' => 'Pembelian Paket Web {0}',
 	'invoiceTeamAddons' => 'Team Add-ons',
 	'invoiceForMonths' => ' untuk {0} bulan',
 	'invoiceForYears' => ' untuk {0} tahun',
