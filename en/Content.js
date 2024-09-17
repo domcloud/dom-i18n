@@ -126,8 +126,9 @@ export default {
         pingNoWwwTitle: `www.* subdomain IP address not found`,
         pingNoWwwContent: ` 
             Some people may not be able to access this
-            website if they prefix it with www. Setup a
-            www subdomain redirect is recommended.`,
+            website if they prefix it with www. It's recommended
+            to redirect www.* subdomain to current site domain.`,
+        pingNoWwwFix: `Setup www.* subdomain redirect`,
         pingOkTitle: `IP Address OK`,
         pingOkContent: `This website's DNS returned the correct IP address.`,
         webNoHttpTitle: `Website is not accessible`,
@@ -135,49 +136,55 @@ export default {
         webNoHttpsTitle: `HTTPS not available`,
         webNoHttpsContent: `This website may not have HTTPS certificate
             installed, or it's expired, or not configured properly.`,
+        pingNoHttpsFix: "Install HTTPS certificate",
         webBadHttpTitle: `Website is returning an error`,
         webBadHttpContent: `This website returns 500 or 403 error, 
-            it may not be configured properly (check NGINX/App settings!).`,
-        webBadRedirectTitle: `Website is has bad redirects`,
-        webBadRedirectContent: `This website is redirecting visitors to outside the domain, 
+            it may not be configured properly (check NGINX/App logs!).`,
+        webBadRedirectTitle: `Website has bad redirects`,
+        webBadRedirectContent: `This website redirects visitor to outside the domain, 
             it may not be configured properly (check Base URL settings!).`,
+        webInfiniteRedirectTitle: `Website has infinite redirects`,
+        webInfiniteRedirectContent: `This website currently serving infinite HTTPS requests, 
+            it may already behind a HTTPS proxy.`,
+        webInfiniteRedirectFix: "Disable HTTPS redirect",
         webBadWwwTitle: `www.* subdomain is not accessible`,
-        webBadWwwContent: `This website's www subdomain is either not accessible or returning error.`,
-        webInsecureTitle: `Website is not fully secure`,
-        webInsecureContent: ` This website doesn't redirect HTTP to HTTPS,
-            which is fine but not recommended.`,
+        webBadWwwContent: `The www subdomain is either not accessible or returning error.`,
+        webInsecureTitle: `Website is serving insecure HTTP requests`,
+        webInsecureContent: `This website doesn't redirect to HTTPS protocol,
+            it is not recommended and can lead to cookie issues.`,
+        webInsecureContentFix: "Force HTTPS redirect",
         webOkTitle: `Website is OK`,
-        webOkContent: `This website is accessible via HTTP and HTTPS.`,
+        webOkContent: `This website can be accessed via HTTP/HTTPS securely.`,
     },
     hostFirewall: {
         title: `Check Firewall`,
         description: `
         <p>
-            Firewall helps your website not to be exploited in the event of a
-            hacker break-in by blocking all outgoing traffic except those on the
-            <a href="{0}" target="_blank" rel="noreferrer">whitelist</a>.
+            Firewall helps reduce damage on your website in case your
+            website got compromised by hackers. It works by blocking all 
+            outgoing traffic except those listed on the <a href="{0}" target="_blank" rel="noreferrer">whitelist</a>.
         </p>
         <p>
             Depending on your use of the website, you may want to turn off the
             firewall if your website requires third party API or other forms of 
             communication not listed in the whitelist.
         </p>
-        <p>The firewall applies to the domain and all subdomains within. It is 
-        mandatorily turned on for users with free plan. To turn it off, you 
-        have to be in subscribing plan (Lite or above).</p>
+        <p>Firewall applies to the domain and all subdomains within. It is 
+        mandatorily turned on for users with free plan to avoid exploitation. 
+        To turn it off, you have to be in subscribing plan (Lite or above).</p>
         <p><a href="{1}" target="_blank" rel="noreferrer">Read more</a></p>
         `,
-        offTitle: `Firewall is off`,
+        offTitle: `Firewall is disabled`,
         offContent: `<p>
             All outgoing traffic is allowed. Keep your site secure, please!
         </p>`,
-        offBtn: `Turn it on`,
+        offBtn: `Activate Firewall`,
         onTitle: `Firewall is active`,
         onContent: `<p>
-            All third-party outgoing connection is blocked except for whitelists.<br/>
-            Turn it off to remove this limitation.
+            All third-party outgoing connection is blocked except listed in the whitelists.<br/>
+            Disable the firewall to remove this limitation!
         </p>`,
-        onBtn: `Turn it off`,
+        onBtn: `Disable Firewall`,
     },
     hostNginx: {
         title: `Check NGINX Config`,
