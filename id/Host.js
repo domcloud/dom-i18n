@@ -58,7 +58,7 @@ export default {
     "openWebsite": "Buka Website",
     "openPortal": "Buka Portal",
     "hostStatus": "Status Hosting",
-    "creationDate": "Tanggal Pembelian",
+    "creationDate": "Tanggal Pembuatan",
     "usernameHost": "Username Hosting",
     "domainHost": "Domain Hosting",
     "manageHostLogin": "Atur Login Hosting",
