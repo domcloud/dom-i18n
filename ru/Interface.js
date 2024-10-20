@@ -1,9 +1,4 @@
 export default {
-    "code": "ru",
-    "codename": "Русский",
-    "codedir":"ltr",
-    "appTitle": "DOM Cloud",
-    "appTitleLong": "Хостинг DOM Cloud",
     "logout": "Выйти",
     "profile": "Профиль",
     "status": "Статус",

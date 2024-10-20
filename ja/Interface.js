@@ -1,9 +1,4 @@
 export default {
-    "code": "ja",
-    "codename": "日本語",
-    "codedir":"ltr",
-    "appTitle": "DOM Cloud",
-    "appTitleLong": "DOM Cloud Hosting",
     "logout": "ログアウト",
     "profile": "プロフィール",
     "status": "ステータス",

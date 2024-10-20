@@ -1,9 +1,4 @@
 export default {
-    "code": "de",
-    "codename": "Deutsch",
-    "codedir": "ltr",
-    "appTitle": "DOM Cloud",
-    "appTitleLong": "DOM Cloud Hosting",
     "logout": "Abmelden",
     "profile": "Profil",
     "status": "Status",

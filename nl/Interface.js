@@ -1,9 +1,4 @@
 export default {
-    "code": "nl",
-    "codename": "Nederlands",
-    "codedir":"ltr",
-    "appTitle": "DOM Cloud",
-    "appTitleLong": "DOM Cloud Hosting",
     "logout": "Uitloggen",
     "profile": "Profiel",
     "status": "Status",

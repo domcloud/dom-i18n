@@ -1,11 +1,4 @@
 export default {
-    "code": "es",
-    "codename": "Spanish",
-    "codedir":"ltr",
-    "appTitle": "DOM Cloud",
-    "appTitleLong": "DOM Cloud Hosting",
-    "codeI8LN": "es-ES",
-    // Palabras genéricas
     "logout": "Cerrar sesión",
     "profile": "Perfil",
     "status": "Estado",

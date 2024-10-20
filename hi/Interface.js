@@ -1,9 +1,4 @@
 export default {
-    "code": "hi",
-    "codename": "हिन्दी",
-    "codedir": "ltr",
-    "appTitle": "DOM Cloud",
-    "appTitleLong": "DOM Cloud Hosting",
     "logout": "साइन आउट करें",
     "profile": "प्रोफ़ाइल",
     "status": "स्थिति",

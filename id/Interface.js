@@ -1,10 +1,4 @@
 export default {
-    "code": "id",
-    "codename": "Bahasa Indonesia",
-    "codedir":"ltr",
-    "appTitle": "DOM Cloud",
-    "appTitleLong": "DOM Cloud Hosting",
-    // Kata-kata umum
     "logout": "Keluar",
     "profile": "Profil",
     "status": "Status",
