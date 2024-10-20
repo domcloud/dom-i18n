@@ -1,4 +1,12 @@
 export default {
+    status: {
+        active: 'Activo',
+        starting: 'Iniciando',
+        suspended: 'Suspendido',
+        moving: 'Moviendo',
+        removing: 'Eliminando',
+        removed: 'Eliminado',
+    },
     'invoiceDomainPurchaseOf': 'Compra de dominio {0}',
     'invoiceDomainExtendOf': 'Renovación de dominio {0}',
     'invoiceDomainTransferOf': 'Transferencia de dominio {0}',
@@ -26,7 +34,7 @@ export default {
     "tabRename": "Cambiar nombre de usuario",
     "tabCname": "Cambiar dominio",
     "tabPasswd": "Cambiar contraseña",
-    "tabRegion": "Cambiar región",
+    "tabServer": "Cambiar región",
     "tabTransfer": "Sitio web de transferencias",
     "tabDelete": "Borrar sitio web",
     "startFromTemplate": "Partir de una plantilla",

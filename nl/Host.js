@@ -26,7 +26,7 @@ export default {
     "tabRename": "Wijzig gebruikersnaam",
     "tabCname": "Wijzig domein",
     "tabPasswd": "Wijzig wachtwoord",
-    "tabRegion": "Regio wijzigen",
+    "tabServer": "Regio wijzigen",
     "tabTransfer": "Website overdragen",
     "tabDelete": "Website verwijderen",
     "startFromTemplate": "Begin met een sjabloon",

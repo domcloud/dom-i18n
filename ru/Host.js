@@ -26,7 +26,7 @@ export default {
     "tabRename": "Переименовать пользователя",
     "tabCname": "Изменить домен",
     "tabPasswd": "Изменить пароль",
-    "tabRegion": "Изменить регион",
+    "tabServer": "Изменить регион",
     "tabTransfer": "Перенос сайта",
     "tabDelete": "Удалить сайт",
     "startFromTemplate": "Начать с шаблона",

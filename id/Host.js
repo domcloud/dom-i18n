@@ -1,4 +1,12 @@
 export default {
+    status: {
+        active: 'Aktif',
+        starting: 'Mulai',
+        suspended: 'Ditangguhkan',
+        moving: 'Bergerak',
+        removing: 'Menghapus',
+        removed: 'Dihapus',
+    },
     'invoiceDomainPurchaseOf': 'Pembelian Domain {0}',
     'invoiceDomainExtendOf': 'Perpanjangan Domain {0}',
     'invoiceDomainTransferOf': 'Transfer Domain {0}',
@@ -26,7 +34,7 @@ export default {
     "tabRename": "Ubah Username",
     "tabCname": "Ubah Domain",
     "tabPasswd": "Ubah Password",
-    "tabRegion": "Ubah Wilayah",
+    "tabServer": "Ubah Wilayah",
     "tabTransfer": "Transfer Website",
     "tabDelete": "Hapus Website",
     "startFromTemplate": "Mulai dari template",

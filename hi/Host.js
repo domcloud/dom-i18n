@@ -26,7 +26,7 @@ export default {
     "tabRename": "उपयोगकर्ता नाम बदलें",
     "tabCname": "डोमेन बदलें",
     "tabPasswd": "पासवर्ड बदलें",
-    "tabRegion": "क्षेत्र बदलें",
+    "tabServer": "क्षेत्र बदलें",
     "tabTransfer": "वेबसाइट ट्रांसफर करें",
     "tabDelete": "वेबसाइट हटाएं",
     "startFromTemplate": "एक टेम्पलेट से शुरू करें",

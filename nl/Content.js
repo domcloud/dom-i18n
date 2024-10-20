@@ -366,7 +366,7 @@ export default {
         'title': `Mandatory DNS Checkup`,
         'prompt': `This checks whether {0} can be resolved via Google's DNS before get added into our server.`,
         'valid': `This domain is resolvable`,
-        'valid-note': `This domain will be resolvable once additional configs added automatically for you`,
+        'valid_with_note': `This domain will be resolvable once additional configs added automatically for you`,
         'incorrect': 'Incorrect A+AAAA/CNAME record to this domain, please configure it first before continue.',
         'missing': 'Missing A+AAAA/CNAME record to this domain, please configure it first before continue.',
         'loading': '...',
