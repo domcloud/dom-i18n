@@ -16,6 +16,9 @@
 	'inviteNewFail' => 'Failed to invite, maybe they already been added?',
 	'inviteRemoveFail' => 'Failed to remove member, maybe they already been removed?',
 
+	'inviteCodeInvalid' => 'Invite Code Invalid',
+	'inviteCodeExpired' => 'Invite Code Expired',
+
 	'unknownAction' => 'Unknown Action',
 	'hostIsNotActive' => 'Unable to apply task while this host is not active',
 	'needVerifyEmail' => 'Please verify your email first',

@@ -1,0 +1,17 @@
+export default {
+    "listTitle": "Self-Hosted Server List",
+    "newOrder": "Add a server",
+    "name": "Backup Filename",
+    "size": "Backup Size",
+    "download": "Download Backup",
+    "openHost": "Open Host Settings",
+    "emptyList": "No backups listed",
+    "seeCreationProgress": "See backup creation progress in host's runner",
+    "noProgressAvailable": "This backup log is no longer found",
+    "restore": "Restore this backup",
+    "restoreTitle": "Restore a backup",
+    "restoreTitleHint": "Select a domain to restore into. Be careful! The data will be overriden.",    
+    "restoreTitleConfirm": "You're about to restore this backup to {0}. Proceed?",    
+    "createTitle": "Create a new backup",
+    "createTitleHint": "Select a host to create backup.",
+}

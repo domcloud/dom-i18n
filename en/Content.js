@@ -28,6 +28,7 @@ export default {
         emailConfirmationBtn: `Send Confirmation Email Again`,
         emailConfirmationSent: "Email confirmation to <strong>{0}</strong> has been sent!",
         changeCountryBtn: `Change country`,
+        keepUsingEnglish: `Keep using English`,
     },
     notification: {
         freeUserGuideTitle: `Welcome Abroad!`,
@@ -36,6 +37,9 @@ export default {
           Guide. Need our fullest experience? Try <a href="{1}">upgrading your plan</a> to unlock 
           more features such as free customizable domain, full 3rd party API access, 
           docker and custom background services <a href={2} target="_blank">and much more</a>!`,
+        lockedUserGuideTitle: `Welcome Abroad!`,
+        lockedUserGuideHint: `Thank you for choosing us as your cloud platform 🥳 Unfortunately, as of Oct 31 2024 Free plan are now invite only! 
+          Please <a href="{1}">upgrade</a> or join our <a href="{0}" target="_blank">Discord Community Forum</a> to get one!`,
         empty: 'Nothing to see here',
     },
     purchaseConfirmation: {
@@ -47,6 +51,13 @@ export default {
         hint: `ATTENTION! Account deletion is permanent and we cannot reverse the action. If you have a host or domain registered, you need to delete them beforehand. Contact us if you need help.`,
         prompt: `Please write your email to agree for account deletion.`,
         disabled: `You cannot delete this account if there is still hosting or a registered domain.`,
+    },
+    hostNeedInvite: {
+        title: `Invite Code Needed`,
+        hint: `Hello 👋 To enjoy DOM Cloud free plan we need you to provide an invitation code. The invitation code comes from 
+        who recommends you this platform. Ask for one in our <a href="{0}" target="_blank">Discord Community Forum</a> if you haven't yet.`,
+        altHint: `If you wish to not ask for code, you can <a href="{0}">Upgrade at least once</a>. 
+        Upgrading verifies you that you're truly human and can be trusted without an invitation code 😄.`
     },
     hostCreate: {
         chooseTemplate: `Choose a template to start with`,

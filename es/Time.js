@@ -13,7 +13,7 @@ export default {
     "hours": "{0, plural, =1{# hora} other{# horas}}",
     "minutes": "{0, plural, =1{# minuto} other{# minutos}}",
     "seconds": "{0, plural, =1{# segundo} other{# segundos}}",
-    "ago": "{0} ago",
+    "ago": "Hace {0}",
     "inFuture": "en {0}",
     "yesterday": "Ayer",
     "tomorrow": "Mañana",
