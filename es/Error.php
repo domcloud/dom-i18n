@@ -16,6 +16,9 @@
 	'inviteNewFail' => 'Error al invitar, ¿tal vez ya han sido agregados?',
 	'inviteRemoveFail' => 'Error al eliminar miembro, ¿tal vez ya han sido eliminados?',
 
+	'inviteCodeInvalid' => 'Código de invitación no válido',
+	'inviteCodeExpired' => 'Código de invitación vencido',
+
 	'unknownAction' => 'Acción desconocida',
 	'hostIsNotActive' => 'No se puede aplicar la tarea mientras este host no está activo',
 	'needVerifyEmail' => 'Por favor, verifica tu correo electrónico primero',

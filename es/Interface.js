@@ -19,6 +19,7 @@ export default {
     "members": "Miembros",
     "upgrade": "Actualizar",
     "otherTeams": "Otros Equipos",
+    "inviteCode": "Código de invitación",
     "hostname": "Nombre de host",
     "port": "Puerto",
     "username": "Nombre de usuario",

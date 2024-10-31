@@ -48,6 +48,13 @@ export default {
         prompt: `Por favor, escriba su correo electrónico para aceptar la eliminación de la cuenta.`,
         disabled: `No puede eliminar esta cuenta si todavía hay alojamiento o un dominio registrado.`,
     },
+    hostNeedInvite: {
+        title: `Se necesita un código de invitación`,
+        hint: `Hola 👋 Para disfrutar del plan gratuito de DOM Cloud, necesitamos que nos proporciones un código de invitación. El código de invitación proviene de
+        quien te recomienda esta plataforma. Solicita uno en nuestro <a href="{0}" target="_blank">Foro de la comunidad de Discord</a> si aún no lo has hecho.`,
+        altHint: `Si no deseas solicitar un código, puedes <a href="{0}">actualizar al menos una vez</a>.
+        La actualización verifica que eres realmente humano y que se puede confiar en ti sin un código de invitación 😄.`
+    },
     hostCreate: {
         chooseTemplate: `Elige una plantilla para comenzar`,
         startFromScratch: `Empezar desde el principio`,
