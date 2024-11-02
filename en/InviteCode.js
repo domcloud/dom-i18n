@@ -16,4 +16,8 @@ export default {
     "noInvitees": "No recorded signups yet",
     "inviteeCode": "Signup Code",
     "inviteeJoinTime": "Join Time",
+    "cooldownIn": "Cooldown: {0}",
+    "quotaOffHint": "Turn off invite code",
+    "quotaSmallHint": "For inviting a friend or someone at a public chat",
+    "quotaLargeHint": "For creating events and private online tutorials",
 }

@@ -118,6 +118,8 @@ export default {
     "remainingNetwork": "Datos de red restantes",
     "remainingInstance": "Instancia restante",
     "dataTransfer": "Transferencia de datos",
+    "copied": "¡Copiado!",
+    "reloading": "Recargando {0}",
     "expires": "Vence {0}",
     "expiresAt": "Vence el {0}",
     "expireFreeHint": `

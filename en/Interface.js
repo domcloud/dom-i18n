@@ -118,6 +118,8 @@ export default {
     "remainingNetwork": "Network Data",
     "remainingInstance": "Remaining Instance",
     "dataTransfer": "Data Transfer",
+    "copied": "Copied!",
+    "reloading": "Reloading {0}",
     "expires": "Expires {0}",
     "expiresAt": "Expires at {0}",
     "expireFreeHint": `
