@@ -34,7 +34,7 @@
 	'parentNotFound' => 'Parent domain is not found',
 	'invalidDeployYaml' => 'Your deployment script is not a valid YAML: {0}',
 	'deploymentFailedToReach' => 'We failed to contact the server {0} for this deployment: {1}',
-	'invalidDeleteState' => 'Can\'t delete while deployments are currently running! Please wait for a moment.',
+	'hostRunnerProgressing' => 'Too fast! Can\'t apply while deployments are currently running! Please wait for a moment.',
 	'backupNeedSubscribe' => 'Sorry, you need to upgrade your plan to create backups',
 	'backupIsNotActive' => 'Backup status is not active, maybe it\'s gone already',
 ];

@@ -30,7 +30,7 @@
 	'tooShortUsername' => 'Nama pengguna terlalu pendek',
 	'parentNotFound' => 'Domain induk tidak ditemukan',
 	'invalidDeployYaml' => 'Skrip deployment Anda bukan YAML yang valid',
-	'invalidDeleteState' => 'Tidak bisa menghapus saat deployment sedang berjalan! Harap tunggu sebentar.',
+	'hostRunnerProgressing' => 'Terlalu cepat! Tidak dapat diterapkan saat deployment sedang berjalan! Harap tunggu sebentar.',
 	'backupNeedSubscribe' => 'Maaf, Anda perlu meningkatkan paket Anda untuk membuat cadangan',
 	'backupIsNotActive' => 'Status cadangan tidak aktif, mungkin sudah hilang',
 ];

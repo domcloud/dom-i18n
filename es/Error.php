@@ -33,7 +33,7 @@
 	'tooShortUsername' => 'El nombre de usuario es demasiado corto',
 	'parentNotFound' => 'Dominio principal no encontrado',
 	'invalidDeployYaml' => 'Tu script de implementación no es un YAML válido',
-	'invalidDeleteState' => '¡No se puede eliminar mientras las implementaciones están en curso! Por favor, espera un momento.',
+	'hostRunnerProgressing' => '¡Demasiado rápido! No se puede aplicar mientras las implementaciones se están ejecutando actualmente. Espere un momento.',
 	'backupNeedSubscribe' => 'Lo siento, necesitas actualizar tu plan para crear copias de seguridad',
 	'backupIsNotActive' => 'El estado de la copia de seguridad no está activo, tal vez ya se ha ido',
 ];

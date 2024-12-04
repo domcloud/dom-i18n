@@ -30,7 +30,7 @@
 	'tooShortUsername' => 'User name is too short',
 	'parentNotFound' => 'Parent domain is not found',
 	'invalidDeployYaml' => 'Your deployment script is not a valid YAML: {0}',
-	'invalidDeleteState' => 'Can\'t delete while deployments are currently running! Please wait for a moment.',
+	'hostRunnerProgressing' => 'Too fast! Can\'t apply while deployments are currently running! Please wait for a moment.',
 	'backupNeedSubscribe' => 'Sorry, you need to upgrade your plan to create backups',
 	'backupIsNotActive' => 'Backup status is not active, maybe it\'s gone already',
 ];
