@@ -118,6 +118,8 @@ export default {
         </p>`,
         dnsOffTitle: `No name server`,
         dnsOffContent: `This website does not have a name server. It maybe externally configured.`,
+        dnsNotExistTitle: `Domain not exist`,
+        dnsNotExistContent: `This domain is not found or may not be registered. Have you purchase it?`,
         dnsManagedTitle: `DNS managed`,
         dnsManagedContent: `This website's DNS is managed by DOM Cloud.`,
         dnsMixedTitle: `DNS is mixed`,
