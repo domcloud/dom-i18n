@@ -1,7 +1,7 @@
 export default {
     "listTitle": "Invite Code",
     "startingHint": "Have a friend want to tryout our service? Send your friend an invite code! You might get rewarded when your friend upgraded.", 
-    "freePlanHint": "Sorry! Free users can't create a new code. Please upgrade or ask an invite code from our Discord Community Forum.", 
+    "freePlanHint": "Sorry! Free users can't create a new code. Please upgrade to create a new code.", 
     "newOrder": "Create a new Invite Code",
     "code": "Invite Code",
     "credit": "Current Credit",

@@ -54,10 +54,12 @@ export default {
     },
     hostNeedInvite: {
         title: `Invite Code Needed`,
-        hint: `Hello 👋 To enjoy DOM Cloud free plan we need you to provide an invitation code. The invitation code comes from 
-        who recommends you this platform. Ask for one in our <a href="{0}" target="_blank">Discord Community Forum</a> if you haven't yet.`,
-        altHint: `If you wish to not ask for code, you can <a href="{0}">Upgrade at least once</a>. 
-        Upgrading verifies you that you're truly human and can be trusted without an invitation code 😄.`
+        hint: `Hello 👋 To enjoy DOM Cloud free plan we need to trust you either via invite code or Linking to GitHub account. The invitation code comes from 
+        who recommends you this platform.`,
+        hintGitHub: `Alternatively, you can link your GitHub account. Your GitHub account must <b>be six months or older and has one or more followers</b>.`,
+        githubFail: `Sorry! Your linked GitHub account is not trusted yet. You can try re-linking the correct account that matches our requirements.`,
+        altHint: `If you wish to avoid this step, you can <a href="{0}">Upgrade at least once</a>. 
+        Upgrading verifies you that you're truly human and can be trusted without an invitation code or linking extra accounts 😄.`
     },
     hostCreate: {
         chooseTemplate: `Choose a template to start with`,
