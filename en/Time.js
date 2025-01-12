@@ -1,11 +1,4 @@
 export default {
-    "invalidFormat": "\"{0}\" is not a valid datetime format",
-    "invalidMonth": "Months must be between 1 and 12. Given: {0}",
-    "invalidDay": "Days must be between 1 and 31. Given: {0}",
-    "invalidOverDay": "Days must be between 1 and {0}. Given: {1}",
-    "invalidHours": "Hours must be between 0 and 23. Given: {0}",
-    "invalidMinutes": "Minutes must be between 0 and 59. Given: {0}",
-    "invalidSeconds": "Seconds must be between 0 and 59. Given: {0}",
     "years": "{0, plural, =1{# year} other{# years}}",
     "months": "{0, plural, =1{# month} other{# months}}",
     "weeks": "{0, plural, =1{# week} other{# weeks}}",

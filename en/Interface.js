@@ -3,6 +3,7 @@ export default {
     "profile": "Profile",
     "status": "Status",
     "verifyStatus": "Verification status",
+    "bannedHint": "Your account is banned, sorry.",
     "hosting": "Website",
     "domain": "Domain",
     "backup": "Backup",
