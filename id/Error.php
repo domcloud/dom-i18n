@@ -16,6 +16,9 @@
 	'inviteNewFail' => 'Gagal mengundang, mungkin mereka sudah ditambahkan?',
 	'inviteRemoveFail' => 'Gagal menghapus anggota, mungkin mereka sudah dihapus?',
 
+	'inviteCodeInvalid' => 'Invite Code Tidak Sah',
+	'inviteCodeExpired' => 'Invite Code Kadarluarsa',
+
 	'unknownAction' => 'Aksi tidak dikenal',
 	'hostIsNotActive' => 'Tidak dapat menerapkan tugas saat host ini tidak aktif',
 	'needVerifyEmail' => 'Harap verifikasi email Anda terlebih dahulu',
@@ -30,6 +33,7 @@
 	'tooShortUsername' => 'Nama pengguna terlalu pendek',
 	'parentNotFound' => 'Domain induk tidak ditemukan',
 	'invalidDeployYaml' => 'Skrip deployment Anda bukan YAML yang valid',
+	'deploymentFailedToReach' => 'Kami gagal menghubungi server {0} untuk deployment ini: {1}',
 	'hostRunnerProgressing' => 'Terlalu cepat! Tidak dapat diterapkan saat deployment sedang berjalan! Harap tunggu sebentar.',
 	'backupNeedSubscribe' => 'Maaf, Anda perlu meningkatkan paket Anda untuk membuat cadangan',
 	'backupIsNotActive' => 'Status cadangan tidak aktif, mungkin sudah hilang',
