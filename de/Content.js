@@ -48,6 +48,14 @@ export default {
         prompt: `Bitte geben Sie Ihre E-Mail-Adresse ein, um das Löschen des Kontos zu bestätigen.`,
         disabled: `Sie können dieses Konto nicht löschen, wenn noch ein Hosting oder eine registrierte Domain vorhanden ist.`,
     },
+    hostNeedInvite: {
+        title: "Einladungscode erforderlich",
+        hint: "Hallo 👋 Um den kostenlosen Plan von DOM Cloud zu nutzen, müssen wir Ihnen entweder über einen Einladungscode oder durch Verknüpfung mit einem GitHub-Konto vertrauen. Der Einladungscode stammt von der Person, die Ihnen diese Plattform empfiehlt.",
+        hintBtn: "Erlauben!",
+        hintGitHub: "Alternativ können Sie Ihr GitHub-Konto verknüpfen. Ihr GitHub-Konto muss <b>mindestens sechs Monate alt sein und einen oder mehrere Follower haben</b>.",
+        githubFail: "Entschuldigung! Ihr verknüpftes GitHub-Konto ist noch nicht vertrauenswürdig. Sie können versuchen, das richtige Konto erneut zu verknüpfen, das unseren Anforderungen entspricht.",
+        altHint: "Wenn Sie diesen Schritt überspringen möchten, können Sie <a href=\"{0}\">mindestens einmal upgraden</a>. Ein Upgrade bestätigt, dass Sie tatsächlich menschlich sind und ohne Einladungscode oder zusätzliche Kontoverknüpfungen vertrauenswürdig sind 😄."
+    },
     hostCreate: {
         chooseTemplate: `Wählen Sie eine Vorlage, um zu beginnen`,
         startFromScratch: `Von Grund auf neu beginnen`,

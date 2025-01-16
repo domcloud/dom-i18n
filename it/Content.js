@@ -48,6 +48,14 @@ export default {
         prompt: `Per favore, inserisci il tuo indirizzo e-mail per confermare l'eliminazione dell'account.`,
         disabled: `Non puoi eliminare questo account se c'è un hosting o un dominio registrato.`,
     },
+    hostNeedInvite: {
+        title: "Codice di invito richiesto",
+        hint: "Ciao 👋 Per usufruire del piano gratuito di DOM Cloud dobbiamo fidarci di te tramite un codice di invito o collegando il tuo account GitHub. Il codice di invito proviene da chi ti consiglia questa piattaforma.",
+        hintBtn: "Concedi!",
+        hintGitHub: "In alternativa, puoi collegare il tuo account GitHub. Il tuo account GitHub deve <b>avere almeno sei mesi di età e uno o più follower</b>.",
+        githubFail: "Spiacenti! Il tuo account GitHub collegato non è ancora affidabile. Puoi provare a ricollegare l'account corretto che soddisfa i nostri requisiti.",
+        altHint: "Se desideri evitare questo passaggio, puoi <a href=\"{0}\">effettuare un upgrade almeno una volta</a>. L'upgrade conferma che sei veramente umano e che puoi essere affidabile senza un codice di invito o account aggiuntivi 😄."
+    },
     hostCreate: {
         chooseTemplate: `Scegli un modello per iniziare`,
         startFromScratch: `Inizia da zero`,

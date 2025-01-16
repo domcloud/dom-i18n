@@ -48,6 +48,14 @@ export default {
         prompt: `Veuillez écrire votre email pour accepter la suppression du compte.`,
         disabled: `Vous ne pouvez pas supprimer ce compte s'il y a encore un hébergement ou un domaine enregistré.`,
     },
+    hostNeedInvite: {
+        title: "Code d'invitation requis",
+        hint: "Bonjour 👋 Pour profiter du plan gratuit de DOM Cloud, nous devons vous faire confiance soit via un code d'invitation, soit en liant votre compte GitHub. Le code d'invitation provient de la personne qui vous recommande cette plateforme.",
+        hintBtn: "Accorder !",
+        hintGitHub: "Alternativement, vous pouvez lier votre compte GitHub. Votre compte GitHub doit <b>avoir au moins six mois et avoir un ou plusieurs abonnés</b>.",
+        githubFail: "Désolé ! Votre compte GitHub lié n'est pas encore digne de confiance. Vous pouvez essayer de relier le compte correct qui répond à nos exigences.",
+        altHint: "Si vous souhaitez éviter cette étape, vous pouvez <a href=\"{0}\">mettre à niveau au moins une fois</a>. La mise à niveau confirme que vous êtes vraiment humain et digne de confiance sans code d'invitation ou comptes supplémentaires 😄."
+    },
     hostCreate: {
         chooseTemplate: `Choisissez un modèle pour commencer`,
         startFromScratch: `Commencer de zéro`,

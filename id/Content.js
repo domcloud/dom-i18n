@@ -48,6 +48,14 @@ export default {
         prompt: `Silakan tulis email Anda untuk menyetujui penghapusan akun.`,
         disabled: `Anda tidak dapat menghapus akun ini jika masih ada hosting atau domain terdaftar.`,
     },
+    hostNeedInvite: {
+        title: "Kode Undangan Dibutuhkan",
+        hint: "Halo 👋 Untuk menikmati paket gratis DOM Cloud, kami perlu memercayai Anda baik melalui kode undangan atau menautkan ke akun GitHub. Kode undangan berasal dari orang yang merekomendasikan platform ini kepada Anda.",
+        hintBtn: "Berikan!",
+        hintGitHub: "Sebagai alternatif, Anda dapat menautkan akun GitHub Anda. Akun GitHub Anda harus <b>berusia enam bulan atau lebih dan memiliki satu atau lebih pengikut</b>.",
+        githubFail: "Maaf! Akun GitHub yang Anda tautkan belum dipercaya. Anda dapat mencoba menautkan kembali akun yang sesuai dengan persyaratan kami.",
+        altHint: "Jika Anda ingin melewati langkah ini, Anda dapat <a href=\"{0}\">melakukan peningkatan setidaknya sekali</a>. Peningkatan membuktikan bahwa Anda benar-benar manusia dan dapat dipercaya tanpa kode undangan atau akun tambahan 😄."
+    },
     hostCreate: {
         chooseTemplate: `Pilih template untuk memulai`,
         startFromScratch: `Mulai dari awal`,

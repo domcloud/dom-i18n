@@ -47,6 +47,14 @@ export default {
         prompt: `请写下你的电子邮件以同意删除账户。`,
         disabled: `如果仍有主机或已注册域名，则无法删除此账户。`,
     },
+    hostNeedInvite: {
+        title: "需要邀请码",
+        hint: "你好 👋 要享受 DOM Cloud 的免费计划，我们需要通过邀请码或链接 GitHub 帐户来信任你。邀请码来自向你推荐此平台的人。",
+        hintBtn: "授权！",
+        hintGitHub: "或者，你可以链接你的 GitHub 帐户。你的 GitHub 帐户必须<b>至少有六个月的历史并且有一个或多个关注者</b>。",
+        githubFail: "抱歉！你的已链接 GitHub 帐户尚未被信任。你可以尝试重新链接符合我们要求的正确帐户。",
+        altHint: "如果你希望跳过此步骤，可以<a href=\"{0}\">至少升级一次</a>。升级可以验证你是真正的人类，无需邀请码或链接额外帐户即可被信任 😄。"
+    },
     hostCreate: {
         chooseTemplate: `选择一个模板开始`,
         startFromScratch: `从头开始`,

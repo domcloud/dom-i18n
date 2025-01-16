@@ -48,6 +48,14 @@ export default {
         prompt: `Schrijf je email om akkoord te gaan met het verwijderen van het account.`,
         disabled: `Je kunt dit account niet verwijderen als er nog een hosting of geregistreerd domein is.`,
     },
+    hostNeedInvite: {
+        title: "Uitnodigingscode vereist",
+        hint: "Hallo 👋 Om gebruik te maken van het gratis plan van DOM Cloud, moeten we je vertrouwen, hetzij via een uitnodigingscode of door je GitHub-account te koppelen. De uitnodigingscode komt van degene die je dit platform aanbeveelt.",
+        hintBtn: "Verlenen!",
+        hintGitHub: "Als alternatief kun je je GitHub-account koppelen. Je GitHub-account moet <b>zes maanden of ouder zijn en een of meer volgers hebben</b>.",
+        githubFail: "Sorry! Je gekoppelde GitHub-account is nog niet vertrouwd. Je kunt proberen het juiste account opnieuw te koppelen dat aan onze vereisten voldoet.",
+        altHint: "Als je deze stap wilt overslaan, kun je <a href=\"{0}\">minstens één keer upgraden</a>. Upgraden bevestigt dat je echt een mens bent en zonder uitnodigingscode of extra accounts te koppelen vertrouwd kunt worden 😄."
+    },
     hostCreate: {
         chooseTemplate: `Kies een sjabloon om mee te beginnen`,
         startFromScratch: `Begin vanaf nul`,

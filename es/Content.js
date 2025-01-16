@@ -49,11 +49,12 @@ export default {
         disabled: `No puede eliminar esta cuenta si todavía hay alojamiento o un dominio registrado.`,
     },
     hostNeedInvite: {
-        title: `Se necesita un código de invitación`,
-        hint: `Hola 👋 Para disfrutar del plan gratuito de DOM Cloud, necesitamos que nos proporciones un código de invitación. El código de invitación proviene de
-        quien te recomienda esta plataforma. Solicita uno en nuestro <a href="{0}" target="_blank">Foro de la comunidad de Discord</a> si aún no lo has hecho.`,
-        altHint: `Si no deseas solicitar un código, puedes <a href="{0}">actualizar al menos una vez</a>.
-        La actualización verifica que eres realmente humano y que se puede confiar en ti sin un código de invitación 😄.`
+        title: "Se necesita código de invitación",
+        hint: "Hola 👋 Para disfrutar del plan gratuito de DOM Cloud necesitamos confiar en ti, ya sea mediante un código de invitación o vinculando tu cuenta de GitHub. El código de invitación proviene de quien te recomienda esta plataforma.",
+        hintBtn: "¡Conceder!",
+        hintGitHub: "Alternativamente, puedes vincular tu cuenta de GitHub. Tu cuenta de GitHub debe <b>tener seis meses o más de antigüedad y al menos un seguidor</b>.",
+        githubFail: "¡Lo sentimos! Tu cuenta de GitHub vinculada aún no es confiable. Puedes intentar volver a vincular la cuenta correcta que cumpla con nuestros requisitos.",
+        altHint: "Si deseas evitar este paso, puedes <a href=\"{0}\">mejorar al menos una vez</a>. Mejorar verifica que realmente eres humano y puedes ser confiable sin un código de invitación o vincular cuentas adicionales 😄."
     },
     hostCreate: {
         chooseTemplate: `Elige una plantilla para comenzar`,

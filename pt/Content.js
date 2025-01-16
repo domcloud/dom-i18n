@@ -48,6 +48,14 @@ export default {
         prompt: `Por favor, escreva seu email para concordar com a exclusão da conta.`,
         disabled: `Você não pode excluir esta conta se ainda houver hospedagem ou domínio registrado.`,
     },
+    hostNeedInvite: {
+        title: "Código de Convite Necessário",
+        hint: "Olá 👋 Para aproveitar o plano gratuito do DOM Cloud, precisamos confiar em você, seja por meio de um código de convite ou vinculando sua conta do GitHub. O código de convite vem de quem recomenda esta plataforma para você.",
+        hintBtn: "Conceder!",
+        hintGitHub: "Alternativamente, você pode vincular sua conta do GitHub. Sua conta do GitHub deve <b>ter pelo menos seis meses e um ou mais seguidores</b>.",
+        githubFail: "Desculpe! Sua conta do GitHub vinculada ainda não é confiável. Você pode tentar vincular novamente a conta correta que atenda aos nossos requisitos.",
+        altHint: "Se você deseja evitar esta etapa, pode <a href=\"{0}\">fazer um upgrade pelo menos uma vez</a>. O upgrade confirma que você é realmente humano e pode ser confiável sem um código de convite ou contas adicionais 😄."
+    },
     hostCreate: {
         chooseTemplate: `Escolha um modelo para começar`,
         startFromScratch: `Começar do zero`,

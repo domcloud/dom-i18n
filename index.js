@@ -1,9 +1,9 @@
 const ar = () => import('./ar');
 const de = () => import('./de');
-const id = () => import('./id');
 const es = () => import('./es');
 const fr = () => import('./fr');
 const hi = () => import('./hi');
+const id = () => import('./id');
 const it = () => import('./it');
 const ja = () => import('./ja');
 const ko = () => import('./ko');
@@ -16,7 +16,7 @@ import metadata from './metadata';
 import enLang from './en'; // always loaded as fallback
 const en = () => new Promise((resolve) => resolve(enLang));
 
-export const locales = { ar, de, en, id, fr, hi, es, it, ja, ko, nl, pt, ru, zh };
+export const locales = { ar, de, en, es, fr, hi, id, it, ja, ko, nl, pt, ru, zh };
 
 /**
  * @type {keyof typeof locales}
