@@ -130,9 +130,12 @@ export default {
         pingNoIpContent: `El servidor DNS no devuelve una dirección IP.`,
         pingNoIp6Title: `No IPv6`,
         pingNoIp6Content: ` El DNS de este sitio web no tiene dirección IPv6. Puede que no esté disponible para usuarios IPv6.`,
+        pingNoIp6Hint: "Por favor, agrega un registro AAAA con el valor",
         pingWrongIpTitle: `Dirección IP incorrecta`,
         pingWrongIpContent: `El DNS de este sitio web ha devuelto una dirección IP incorrecta. 
-            Puede que no sirva el contenido correcto, o que esté detrás de un proxy..`,
+            Puede que no sirva el contenido correcto, o que esté detrás de un proxy.`,
+        pingWrongIpCurrent: "Direcciones IP actuales",
+        pingWrongIpExpect: "Direcciones IP correctas",
         pingNoWwwTitle: `www.* dirección IP del subdominio no encontrada`,
         pingNoWwwContent: ` 
             Es posible que algunas personas no puedan acceder a este

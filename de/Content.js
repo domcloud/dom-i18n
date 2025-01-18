@@ -128,9 +128,12 @@ export default {
         pingNoIpContent: `Der DNS-Server gibt keine IP-Adresse zurück.`,
         pingNoIp6Title: `Kein IPv6`,
         pingNoIp6Content: `Das DNS dieser Website hat keine IPv6-Adresse. Es ist möglicherweise für IPv6-Benutzer nicht verfügbar.`,
+        pingNoIp6Hint: "Bitte einen AAAA-Eintrag mit dem Wert hinzufügen",
         pingWrongIpTitle: `Falsche IP-Adresse`,
         pingWrongIpContent: `Das DNS dieser Website gibt eine falsche IP-Adresse zurück. 
             Es könnte den falschen Inhalt liefern oder hinter einem Proxy stehen.`,
+        pingWrongIpCurrent: "Aktuelle IP-Adressen",
+        pingWrongIpExpect: "Korrekte IP-Adressen",
         pingNoWwwTitle: `www.* Subdomain IP-Adresse nicht gefunden`,
         pingNoWwwContent: ` 
             Einige Personen können möglicherweise nicht auf diese

@@ -124,9 +124,12 @@ export default {
         pingNoIpContent: `لا يقوم خادم DNS بإرجاع عنوان IP.`,
         pingNoIp6Title: `لا يوجد IPv6`,
         pingNoIp6Content: `لا يحتوي DNS لهذا الموقع على عنوان IPv6. قد يكون غير متاح لمستخدمي IPv6.`,
+        pingNoIp6Hint: "يرجى إضافة سجل AAAA بالقيمة",
         pingWrongIpTitle: `عنوان IP غير صحيح`,
         pingWrongIpContent: `قام DNS لهذا الموقع بإرجاع عنوان IP غير صحيح.
             قد لا يخدم المحتوى الصحيح، أو أنه خلف وكيل.`,
+        pingWrongIpCurrent: "عناوين IP الحالية",
+        pingWrongIpExpect: "عناوين IP الصحيحة",
         pingNoWwwTitle: `لم يتم العثور على عنوان IP لنطاق www.*`,
         pingNoWwwContent: `
             قد لا يتمكن بعض الأشخاص من الوصول إلى هذا

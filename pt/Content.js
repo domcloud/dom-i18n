@@ -122,8 +122,11 @@ export default {
         pingNoIpContent: `O servidor DNS não retorna um endereço IP.`,
         pingNoIp6Title: `Sem IPv6`,
         pingNoIp6Content: `O DNS deste site não tem um endereço IPv6. Pode não estar disponível para usuários de IPv6.`,
+        pingNoIp6Hint: "Adicione um registro AAAA com o valor",
         pingWrongIpTitle: `Endereço IP incorreto`,
         pingWrongIpContent: `O DNS deste site retorna um endereço IP incorreto. Pode não entregar o conteúdo correto ou estar por trás de um proxy.`,
+        pingWrongIpCurrent: "Endereços IP atuais",
+        pingWrongIpExpect: "Endereços IP corretos",
         pingNoWwwTitle: `Endereço IP para subdomínio www.* não encontrado`,
         pingNoWwwContent: `
                 Algumas pessoas podem não conseguir acessar este site ao prefixá-lo com www. É recomendado configurar um redirecionamento de subdomínio www.`,

@@ -128,14 +128,17 @@ export default {
         pingNoIpContent: `Il server DNS non restituisce un indirizzo IP.`,
         pingNoIp6Title: `Nessun IPv6`,
         pingNoIp6Content: `Il DNS di questo sito web non ha un indirizzo IPv6. Potrebbe non essere disponibile per gli utenti IPv6.`,
+        pingNoIp6Hint: "Si prega di aggiungere un record AAAA con il valore",
         pingWrongIpTitle: `Indirizzo IP errato`,
         pingWrongIpContent: `Il DNS di questo sito web restituisce un indirizzo IP errato. 
-            Potrebbe fornire contenuti sbagliati o essere dietro un proxy.`,
+        Potrebbe fornire contenuti sbagliati o essere dietro un proxy.`,
         pingNoWwwTitle: `Indirizzo IP della sottodirectory www.* non trovato`,
         pingNoWwwContent: ` 
-            Alcune persone potrebbero non essere in grado di accedere a questo
-            sito web se lo precedono con www. Si consiglia di
-            impostare un reindirizzamento per la sottodirectory www.`,
+        Alcune persone potrebbero non essere in grado di accedere a questo
+        sito web se lo precedono con www. Si consiglia di
+        impostare un reindirizzamento per la sottodirectory www.`,
+        pingWrongIpCurrent: "Indirizzi IP correnti",
+        pingWrongIpExpect: "Indirizzi IP corretti",
         pingOkTitle: `Indirizzo IP corretto`,
         pingOkContent: `Il DNS di questo sito web restituisce l'indirizzo IP corretto.`,
         webNoHttpTitle: `Sito web non accessibile`,

@@ -130,9 +130,12 @@ export default {
         pingNoIpContent: `Server DNS tidak mengembalikan alamat IP.`,
         pingNoIp6Title: `Tidak ada IPv6`,
         pingNoIp6Content: ` DNS website ini tidak memiliki alamat IPv6. Mungkin tidak tersedia untuk pengguna IPv6.`,
+        pingNoIp6Hint: "Harap tambahkan catatan AAAA dengan nilai",
         pingWrongIpTitle: `Alamat IP Salah`,
         pingWrongIpContent: `Server DNS website ini mengembalikan alamat IP yang salah. 
             Mungkin tidak melayani konten yang benar, atau berada di belakang proxy.`,
+        pingWrongIpCurrent: "Alamat IP saat ini",
+        pingWrongIpExpect: "Alamat IP yang benar",
         pingNoWwwTitle: `Alamat IP subdomain www.* tidak ditemukan`,
         pingNoWwwContent: ` 
             Beberapa orang mungkin tidak dapat mengakses ini
