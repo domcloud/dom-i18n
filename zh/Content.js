@@ -29,13 +29,13 @@ export default {
         changeCountryBtn: `更改国家`,
     },
     notification: {
-        freeUserGuideTitle: `欢迎加入！`,
-        freeUserGuideHint: `感谢你选择我们作为你的云平台 🥳 如果你还没有，
-          尝试阅读我们的<a href="{0}" target="_blank">入门指南</a>。
-          想要获得完整体验？ 尝试<a href="{1}">升级你的计划</a>以解锁
-          更多功能，如免费自定义域名、第三方API的完全访问、
-          docker和自定义后台服务<a href={2} target="_blank">等更多功能</a>！`,
-        empty: '这里没什么可看的',
+        freeUserGuideTitle: "欢迎 onboard！",
+        freeUserGuideHint: "感谢您选择我们作为您的云平台 🥳 如果您还没有，请尝试阅读我们的<a href=\"{0}\" target=\"_blank\">入门指南</a>。需要我们的完整体验？尝试<a href=\"{1}\">升级您的计划</a>以移除 API 防火墙、免费域名横幅，并解锁<a href=\"{2}\" target=\"_blank\">更多功能</a>！",
+        lockedUserGuideTitle: "欢迎 onboard！",
+        lockedUserGuideHint: "感谢您选择我们作为您的云平台 🥳 在<a href=\"{0}\">此处</a>创建您的第一个网站。您可能需要链接您的 GitHub 帐户以验证此帐户。您也可以<a href=\"{1}\">升级您的计划</a>，立即验证您的帐户并解锁<a href=\"{2}\" target=\"_blank\">更多功能</a>，成为订阅帐户。",
+        accountNoticeTitle: "⚠️ 您的帐户可能被暂停",
+        accountNoticeHint: "由于以下原因，您的帐户已被暂停：{0}。您可以<a href=\"{1}\">升级您的计划</a>来解决此问题。",
+        empty: "这里没有内容"
     },
     purchaseConfirmation: {
         purchasedHint: "谢谢。如果我们的系统确认了你的付款，确认电子邮件将发送到你的电子邮件地址。",

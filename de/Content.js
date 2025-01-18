@@ -30,13 +30,13 @@ export default {
         changeCountryBtn: `Land ändern`,
     },
     notification: {
-        freeUserGuideTitle: `Willkommen an Bord!`,
-        freeUserGuideHint: `Vielen Dank, dass Sie uns als Ihre Cloud-Plattform gewählt haben 🥳 Wenn Sie es noch nicht getan haben,
-          lesen Sie unsere <a href="{0}" target="_blank">Einstiegshilfe</a>.
-          Möchten Sie das volle Erlebnis? Versuchen Sie <a href="{1}">Ihren Plan zu aktualisieren</a>, um mehr Funktionen freizuschalten,
-          wie z.B. kostenlos anpassbare Domains, vollständiger Zugriff auf Drittanbieter-APIs,
-          Docker und benutzerdefinierte Hintergrunddienste <a href={2} target="_blank">und vieles mehr</a>!`,
-        empty: 'Nichts zu sehen hier',
+        freeUserGuideTitle: "Willkommen an Bord!",
+        freeUserGuideHint: "Vielen Dank, dass Sie uns als Ihre Cloud-Plattform gewählt haben 🥳 Wenn Sie es noch nicht getan haben, lesen Sie unseren <a href=\"{0}\" target=\"_blank\">Einstiegsleitfaden</a>. Brauchen Sie unser volles Erlebnis? Versuchen Sie <a href=\"{1}\">Ihr Paket zu upgraden</a>, um die API-Firewall, kostenlose Domain-Banner zu entfernen und <a href=\"{2}\" target=\"_blank\">mehr Funktionen</a> freizuschalten!",
+        lockedUserGuideTitle: "Willkommen an Bord!",
+        lockedUserGuideHint: "Vielen Dank, dass Sie uns als Ihre Cloud-Plattform gewählt haben 🥳 Erstellen Sie Ihre erste Website <a href=\"{0}\">hier</a>. Möglicherweise werden Sie aufgefordert, Ihr GitHub-Konto zu verknüpfen, um dieses Konto zu verifizieren. Sie können auch einfach <a href=\"{1}\">Ihr Paket upgraden</a>, um Ihr Konto sofort zu verifizieren und <a href=\"{2}\" target=\"_blank\">mehr Funktionen</a> zu erhalten.",
+        accountNoticeTitle: "⚠️ Ihr Konto kann gesperrt werden",
+        accountNoticeHint: "Ihr Konto wurde aus folgendem Grund gesperrt: {0}. Sie können <a href=\"{1}\">Ihr Paket upgraden</a>, um dieses Problem zu lösen.",
+        empty: "Nichts zu sehen hier"    
     },
     purchaseConfirmation: {
         purchasedHint: "Vielen Dank. Wenn unser System Ihre Zahlung verifiziert hat, wird eine Bestätigungs-E-Mail an Ihre E-Mail gesendet.",
@@ -113,6 +113,8 @@ export default {
         </p>`,
         dnsOffTitle: `Kein Namensserver`,
         dnsOffContent: `Diese Website hat keinen Namensserver. Es ist möglicherweise extern konfiguriert.`,
+        dnsNotExistTitle: "Domain existiert nicht",
+        dnsNotExistContent: "Diese Domain wurde nicht gefunden oder ist möglicherweise nicht registriert. Haben Sie sie gekauft?",    
         dnsManagedTitle: `DNS verwaltet`,
         dnsManagedContent: `Das DNS dieser Website wird von DOM Cloud verwaltet.`,
         dnsMixedTitle: `DNS ist gemischt`,
@@ -134,6 +136,7 @@ export default {
             Einige Personen können möglicherweise nicht auf diese
             Website zugreifen, wenn sie sie mit www. voranstellen. Eine
             Weiterleitung der www-Subdomain einzurichten, wird empfohlen.`,
+        pingNoWwwFix: "www.* Subdomain-Weiterleitung einrichten",
         pingOkTitle: `IP-Adresse OK`,
         pingOkContent: `Das DNS dieser Website gibt die korrekte IP-Adresse zurück.`,
         webNoHttpTitle: `Website ist nicht zugänglich`,
@@ -141,16 +144,21 @@ export default {
         webNoHttpsTitle: `HTTPS nicht verfügbar`,
         webNoHttpsContent: `Diese Website hat möglicherweise kein HTTPS-Zertifikat
             installiert, oder es ist abgelaufen oder nicht richtig konfiguriert.`,
+        pingNoHttpsFix: "HTTPS-Zertifikat installieren",
         webBadHttpTitle: `Website gibt einen Fehler zurück`,
         webBadHttpContent: `Diese Website gibt einen 500- oder 403-Fehler zurück, 
             sie ist möglicherweise nicht richtig konfiguriert (überprüfen Sie die NGINX/App-Einstellungen!).`,
         webBadRedirectTitle: `Website hat schlechte Weiterleitungen`,
         webBadRedirectContent: `Diese Website leitet Besucher außerhalb der Domain weiter, 
             sie ist möglicherweise nicht richtig konfiguriert (überprüfen Sie die Basis-URL-Einstellungen!).`,
-        webBadWwwTitle: `www.* Subdomain ist nicht zugänglich`,
-        webBadWwwContent: `Die www-Subdomain dieser Website ist entweder nicht zugänglich 
-            oder gibt eine andere IP-Adresse zurück. Es wird empfohlen, www und non-www 
-            Subdomains zu konsolidieren.`,
+        webInfiniteRedirectTitle: "Website hat unendliche Weiterleitungen",
+        webInfiniteRedirectContent: "Diese Website liefert derzeit unendliche HTTPS-Anfragen, sie befindet sich möglicherweise bereits hinter einem HTTPS-Proxy.",
+        webInfiniteRedirectFix: "HTTPS-Weiterleitung deaktivieren",
+        webBadWwwTitle: "www.* Subdomain ist nicht zugänglich",
+        webBadWwwContent: "Die www-Subdomain ist entweder nicht zugänglich oder gibt einen Fehler zurück.",
+        webInsecureTitle: "Website bietet unsichere HTTP-Anfragen an",
+        webInsecureContent: "Diese Website leitet nicht zum HTTPS-Protokoll um, dies wird nicht empfohlen und kann zu Cookie-Problemen führen.",
+        webInsecureContentFix: "HTTPS-Weiterleitung erzwingen",
         webOkTitle: `Website OK`,
         webOkContent: `Diese Website ist für HTTP und HTTPS zugänglich und gibt keine Fehler zurück.`,
     },

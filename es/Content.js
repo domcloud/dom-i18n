@@ -30,13 +30,13 @@ export default {
         changeCountryBtn: `Cambiar de país`,
     },
     notification: {
-        freeUserGuideTitle: `¡Bienvenido a Bordo!`,
-        freeUserGuideHint: `Gracias por elegirnos como su plataforma en la nube 🥳 Si aún no lo ha hecho,
-            intente leer nuestra <a href="{0}" target="_blank">Guía de Inicio</a>.
-            ¿Necesita nuestra experiencia completa? Intente <a href="{1}">actualizar su plan</a> para desbloquear
-            más funciones como dominio personalizable gratuito, acceso completo a la API de terceros,
-            Docker y servicios de fondo personalizados <a href={2} target="_blank">¡y mucho más!</a>`,
-        empty: 'No hay nada que ver aquí',
+        freeUserGuideTitle: "¡Bienvenido a Bordo!",
+        freeUserGuideHint: "Gracias por elegirnos como tu plataforma en la nube 🥳 Si aún no lo has hecho, prueba leyendo nuestra <a href=\"{0}\" target=\"_blank\">Guía de Inicio</a>. ¿Necesitas nuestra experiencia completa? Intenta <a href=\"{1}\">mejorar tu plan</a> para eliminar el firewall de API, los banners de dominio gratuito y desbloquear <a href=\"{2}\" target=\"_blank\">más funciones</a>!",
+        lockedUserGuideTitle: "¡Bienvenido a Bordo!",
+        lockedUserGuideHint: "Gracias por elegirnos como tu plataforma en la nube 🥳 Crea tu primer sitio web <a href=\"{0}\">aquí</a>. Es posible que se te pida vincular tu cuenta de GitHub para verificar esta cuenta. También puedes simplemente <a href=\"{1}\">mejorar tu plan</a> para verificar tu cuenta al instante junto con <a href=\"{2}\" target=\"_blank\">más funciones</a> como cuenta suscrita.",
+        accountNoticeTitle: "⚠️ Tu cuenta puede ser suspendida",
+        accountNoticeHint: "Tu cuenta está suspendida debido a este motivo: {0}. Puedes <a href=\"{1}\">mejorar tu plan</a> para resolver este problema.",
+        empty: "Nada que ver aquí"
     },
     purchaseConfirmation: {
         purchasedHint: "Gracias. Si nuestro sistema ha verificado su pago, un correo electrónico de confirmación será enviado a su correo electrónico.",
@@ -115,6 +115,8 @@ export default {
         </p>`,
         dnsOffTitle: `No hay servidor de nombres`,
         dnsOffContent: `Este sitio web no tiene servidor de nombres. Puede que esté configurado externamente.`,
+        dnsNotExistTitle: "El dominio no existe",
+        dnsNotExistContent: "Este dominio no se encuentra o puede que no esté registrado. ¿Lo has comprado?",    
         dnsManagedTitle: `Gestión de DNS`,
         dnsManagedContent: `DOM Cloud gestiona las DNS de este sitio web.`,
         dnsMixedTitle: `El DNS es mixto`,
@@ -136,6 +138,7 @@ export default {
             Es posible que algunas personas no puedan acceder a este
             sitio web si le ponen el prefijo www. Se recomienda configurar una
             www redirección de subdominio se recomienda.`,
+        pingNoWwwFix: "Configurar redirección del subdominio www.*",
         pingOkTitle: `Dirección IP OK`,
         pingOkContent: `El DNS de este sitio web devolvió la dirección IP correcta.`,
         webNoHttpTitle: `No se puede acceder al sitio web`,
@@ -143,17 +146,22 @@ export default {
         webNoHttpsTitle: `HTTPS no disponible`,
         webNoHttpsContent: `Es posible que este sitio web no tenga certificado HTTPS
             instalado, o ha caducado, o no está configurado correctamente.`,
+        pingNoHttpsFix: "Instalar certificado HTTPS",
         webBadHttpTitle: `El sitio web está devolviendo un error`,
         webBadHttpContent: `Este sitio web devuelve un error 500 o 403,
             es posible que no esté configurado correctamente (¡verifique la configuración de NGINX/Aplicación!).`,
         webBadRedirectTitle: `El sitio web tiene redirecciones incorrectas`,
         webBadRedirectContent: `Este sitio web está redirigiendo a los visitantes fuera del dominio,
             es posible que no esté configurado correctamente (¡verifique la configuración de la URL base!).`,
-        webBadWwwTitle: `El subdominio www.* no es accesible`,
-        webBadWwwContent: `El subdominio www de este sitio web no es accesible o está devolviendo un error.`,
-        webInsecureTitle: `El sitio web no es totalmente seguro`,
-        webInsecureContent: ` Este sitio web no redirige HTTP a HTTPS,
-            lo cual está bien pero no es recomendable.`,
+        webInfiniteRedirectTitle: "El sitio web tiene redirecciones infinitas",
+        webInfiniteRedirectContent: "Este sitio web está actualmente sirviendo solicitudes HTTPS infinitas, puede estar detrás de un proxy HTTPS.",
+        webInfiniteRedirectFix: "Deshabilitar redirección HTTPS",
+        
+        webBadWwwTitle: "El subdominio www.* no es accesible",
+        webBadWwwContent: "El subdominio www no es accesible o devuelve un error.",
+        webInsecureTitle: "El sitio web está sirviendo solicitudes HTTP inseguras",
+        webInsecureContent: "Este sitio web no redirige al protocolo HTTPS, no se recomienda y puede causar problemas con las cookies.",
+        webInsecureContentFix: "Forzar redirección HTTPS",
         webOkTitle: `El sitio web está bien`,
         webOkContent: `Este sitio web es accesible a través de HTTP y HTTPS.`,
     },

@@ -31,16 +31,13 @@ export default {
         keepUsingEnglish: `Keep using English`,
     },
     notification: {
-        freeUserGuideTitle: `Welcome Abroad!`,
-        freeUserGuideHint: `Thank you for choosing us as your cloud platform 🥳 If you haven't
-          already, try reading our <a href="{0}" target="_blank">Getting Started</a>
-          Guide. Need our fullest experience? Try <a href="{1}">upgrading your plan</a> to unlock 
-          more features such as free customizable domain, full 3rd party API access, 
-          docker and custom background services <a href={2} target="_blank">and much more</a>!`,
-        lockedUserGuideTitle: `Welcome Abroad!`,
-        lockedUserGuideHint: `Thank you for choosing us as your cloud platform 🥳 Unfortunately, as of Oct 31 2024 Free plan are now invite only! 
-          Please <a href="{1}">upgrade</a> or join our <a href="{0}" target="_blank">Discord Community Forum</a> to get one!`,
-        empty: 'Nothing to see here',
+        freeUserGuideTitle: "Welcome Aboard!",
+        freeUserGuideHint: "Thank you for choosing us as your cloud platform 🥳 If you haven't already, try reading our <a href=\"{0}\" target=\"_blank\">Getting Started</a> Guide. Need our fullest experience? Try <a href=\"{1}\">upgrading your plan</a> to get rid of API firewall, free domain banners and unlock <a href=\"{2}\" target=\"_blank\">more features</a>!",
+        lockedUserGuideTitle: "Welcome Aboard!",
+        lockedUserGuideHint: "Thank you for choosing us as your cloud platform 🥳 Create your first website <a href=\"{0}\">here</a>. You might be asked to link your GitHub account to verify this account. You can also just <a href=\"{1}\">upgrade your plan</a> to verify your account instantly along with <a href=\"{2}\" target=\"_blank\">more features</a> as a subscribing account.",
+        accountNoticeTitle: "⚠️ Your account may be suspended",
+        accountNoticeHint: "Your account is suspended due to this reason: {0}. You can <a href=\"{1}\">upgrade your plan</a> to solve this issue.",
+        empty: "Nothing to see here"
     },
     purchaseConfirmation: {
         purchasedHint: "Thank you. If our system has verified your payment, a confirmation email will be sent to your email.",

@@ -30,13 +30,13 @@ export default {
         changeCountryBtn: `Cambia paese`,
     },
     notification: {
-        freeUserGuideTitle: `Benvenuto a bordo!`,
-        freeUserGuideHint: `Grazie per averci scelto come tua piattaforma cloud 🥳 Se non l'hai ancora fatto,
-          consulta la nostra <a href="{0}" target="_blank">guida introduttiva</a>.
-          Vuoi vivere l'esperienza completa? Prova a <a href="{1}">aggiornare il tuo piano</a> per sbloccare ulteriori funzionalità,
-          come domini personalizzabili gratuiti, accesso completo alle API di terze parti,
-          Docker e servizi di backend personalizzati <a href={2} target="_blank">e molto altro</a>!`,
-        empty: 'Niente da vedere qui',
+        freeUserGuideTitle: "Benvenuto a Bordo!",
+        freeUserGuideHint: "Grazie per averci scelto come tua piattaforma cloud 🥳 Se non lo hai già fatto, prova a leggere la nostra <a href=\"{0}\" target=\"_blank\">Guida Introduttiva</a>. Vuoi la nostra esperienza completa? Prova <a href=\"{1}\">a migliorare il tuo piano</a> per rimuovere il firewall API, i banner di dominio gratuiti e sbloccare <a href=\"{2}\" target=\"_blank\">più funzionalità</a>!",
+        lockedUserGuideTitle: "Benvenuto a Bordo!",
+        lockedUserGuideHint: "Grazie per averci scelto come tua piattaforma cloud 🥳 Crea il tuo primo sito web <a href=\"{0}\">qui</a>. Potresti dover collegare il tuo account GitHub per verificare questo account. Puoi anche <a href=\"{1}\">migliorare il tuo piano</a> per verificare istantaneamente il tuo account con <a href=\"{2}\" target=\"_blank\">più funzionalità</a> come account in abbonamento.",
+        accountNoticeTitle: "⚠️ Il tuo account potrebbe essere sospeso",
+        accountNoticeHint: "Il tuo account è sospeso per questo motivo: {0}. Puoi <a href=\"{1}\">migliorare il tuo piano</a> per risolvere il problema.",
+        empty: "Non c'è niente da vedere qui"
     },
     purchaseConfirmation: {
         purchasedHint: "Grazie. Una volta che il nostro sistema ha verificato il tuo pagamento, verrà inviata una e-mail di conferma al tuo indirizzo e-mail.",

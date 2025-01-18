@@ -1,52 +1,51 @@
 export default {
     footer: {
-        help: `Something doesn't work? Ask for help in 
-        <a href="{0}" target="_blank">forum</a> or <a href="{1}">email</a> or
-        <a href="{2}">chat</a>.`,
-        credit: `{0}, built by <a href="{1}">{2}</a>`,
+        help: `هل تواجه مشكلة؟ اطلب المساعدة عبر 
+        <a href="{0}" target="_blank">المنتدى</a> أو <a href="{1}">البريد الإلكتروني</a> أو
+        <a href="{2}">الدردشة</a>.`,
+        credit: `{0}, تم إنشاؤه بواسطة <a href="{1}">{2}</a>`,
     },
     welcome: {
-        title: `Welcome to DOM Cloud! 🎉`,
-        description: ` <p>Hi, {0}</p>
+        title: `مرحبًا بك في DOM Cloud! 🎉`,
+        description: ` <p>مرحبًا، {0}</p>
         <p>
-          Thank you for joining the DOM Cloud fleet to reach the freedom to
-          achieve success on the Internet!
+          شكرًا لانضمامك إلى أسطول DOM Cloud لتحقيق الحرية للوصول إلى النجاح على الإنترنت!
         </p>
         <p>
-          To be able to serve you optimally, we need confirm the region you currently occupy. 
-          This also affects your payment options and the default server location which you can change later:
+          لنتمكن من خدمتك بشكل أفضل، نحتاج إلى تأكيد المنطقة التي تقيم فيها حاليًا. 
+          يؤثر ذلك أيضًا على خيارات الدفع وموقع الخادم الافتراضي الذي يمكنك تغييره لاحقًا:
         </p>
         `,
-        createWebsiteHint: `Ready? Let's make your first website.`,
-        createWebsiteBtn: `Create a website`,
+        createWebsiteHint: `جاهز؟ لنقم بإنشاء موقعك الأول.`,
+        createWebsiteBtn: `إنشاء موقع`,
         emailConfirmation: `
-            Looks like you need to verify email <strong>{0}</strong>
-            before continuing.<br />
-            Please check your email (and spam) inbox.
+            يبدو أنك بحاجة إلى تأكيد البريد الإلكتروني <strong>{0}</strong>
+            قبل المتابعة.<br />
+            يرجى التحقق من بريدك الإلكتروني (وصندوق البريد العشوائي).
         `,
-        emailConfirmationHint: `Email hasn't arrived yet?`,
-        emailConfirmationBtn: `Send Confirmation Email Again`,
-        emailConfirmationSent: "Email confirmation to <strong>{0}</strong> has been sent!",
-        changeCountryBtn: `Change country`,
+        emailConfirmationHint: `لم يصلك البريد الإلكتروني بعد؟`,
+        emailConfirmationBtn: `إعادة إرسال بريد التأكيد`,
+        emailConfirmationSent: "تم إرسال تأكيد البريد الإلكتروني إلى <strong>{0}</strong>!",
+        changeCountryBtn: `تغيير البلد`,
     },
     notification: {
-        freeUserGuideTitle: `Welcome Abroad!`,
-        freeUserGuideHint: `Thank you for choosing us as your cloud platform 🥳 If you haven't
-          already, try reading our <a href="{0}" target="_blank">Getting Started</a>
-          Guide. Need our fullest experience? Try <a href="{1}">upgrading your plan</a> to unlock 
-          more features such as free customizable domain, full 3rd party API access, 
-          docker and custom background services <a href={2} target="_blank">and much more</a>!`,
-        empty: 'Nothing to see here',
+        freeUserGuideTitle: "مرحبًا بك على متن الطائرة!",
+        freeUserGuideHint: "شكرًا لاختيارك لنا كمنصة السحابة الخاصة بك 🥳 إذا لم تقم بذلك بعد، حاول قراءة <a href=\"{0}\" target=\"_blank\">دليل البداية</a>. هل تحتاج إلى تجربتنا الكاملة؟ جرب <a href=\"{1}\">ترقية خطتك</a> للتخلص من جدار الحماية الخاص بـ API، لافتات النطاق المجانية، وفتح <a href=\"{2}\" target=\"_blank\">مزيد من الميزات</a>!",
+        lockedUserGuideTitle: "مرحبًا بك على متن الطائرة!",
+        lockedUserGuideHint: "شكرًا لاختيارك لنا كمنصة السحابة الخاصة بك 🥳 قم بإنشاء موقعك الأول <a href=\"{0}\">هنا</a>. قد يُطلب منك ربط حساب GitHub الخاص بك للتحقق من هذا الحساب. يمكنك أيضًا <a href=\"{1}\">ترقية خطتك</a> للتحقق من حسابك فورًا مع <a href=\"{2}\" target=\"_blank\">مزيد من الميزات</a> كحساب مشترك.",
+        accountNoticeTitle: "⚠️ قد يتم تعليق حسابك",
+        accountNoticeHint: "تم تعليق حسابك بسبب هذا السبب: {0}. يمكنك <a href=\"{1}\">ترقية خطتك</a> لحل هذه المشكلة.",
+        empty: "لا يوجد شيء هنا"
     },
     purchaseConfirmation: {
-        purchasedHint: "Thank you. If our system has verified your payment, a confirmation email will be sent to your email.",
-        purchaseCancel: "Your payment has been canceled.",
+        purchasedHint: "شكرًا لك. إذا قام نظامنا بالتحقق من دفعتك، سيتم إرسال بريد تأكيد إلى بريدك الإلكتروني.",
+        purchaseCancel: "تم إلغاء دفعتك.",
     },
     accountDeletion: {
-        title: `Deleting your Account`,
-        hint: `ATTENTION! Account deletion is permanent and we cannot reverse the action. If you have a host or domain registered, you need to delete them beforehand. Contact us if you need help.`,
-        prompt: `Please write your email to agree for account deletion.`,
-        disabled: `You cannot delete this account if there is still hosting or a registered domain.`,
+        title: `حذف حسابك`,
+        hint: `انتباه! حذف الحساب نهائي ولا يمكننا التراجع عن هذا الإجراء. إذا كان لديك استضافة أو نطاق مسجل، يجب حذفهم أولاً. تواصل معنا إذا كنت بحاجة إلى مساعدة.`,
+        prompt: `يرجى كتابة بريدك الإلكتروني للموافقة على حذف الحساب.`,
+        disabled: `لا يمكنك حذف هذا الحساب إذا كانت هناك استضافة أو نطاق مسجل.`,
     },
     hostNeedInvite: {
         title: "رمز الدعوة مطلوب",
@@ -57,41 +56,38 @@ export default {
         altHint: "إذا كنت ترغب في تخطي هذه الخطوة، يمكنك <a href=\"{0}\">الترقية مرة واحدة على الأقل</a>. الترقية تؤكد أنك إنسان حقيقي ويمكن الوثوق بك بدون رمز دعوة أو ربط حسابات إضافية 😄."
     },
     hostCreate: {
-        chooseTemplate: `Choose a template to start with`,
-        startFromScratch: `Start from scratch`,
-        uploadFileHint: `Upload or enter the URL to analyze the content`,
-        readingTheFile: `Reading the file...`,
-        readingFiles: `Reading {0} of {1} file(s)...`,
-        readingZipFile: `Reading the zip file...`,
-        compressingZipFile: `Compressing into a zip file...`,
-        uploadingFiles: `Uploading files... ({0} of {1})`,
-        uploadCompleted: `Upload complete ({0} file(s) with total size {1}}`,
-        uploadError: `Upload failed with status code {0}`,
-        emptyZipFile: `No file found in the zip`,
-        noFileSelected: `No file selected`,
-        exceededFileSizeLimit: `This file size ({0}) exceeds the limit ({1}), try upload it to GitHub first and put the link here instead.`,
-        missingTemplate: `Failed to fetch the data template. Maybe the file still missing.`,
-        checkingRepo: `Checking this repo...`,
-        cloneWithDeployKey: `Repo will be cloned with a deploy key.`,
-        uploadDirectory: `Upload a directory`,
-        uploadZipFile: `Upload a zip file`,
-        dropDirectory: `Drop that directory...`,
-        dropZipFile: `Drop that zip file...`,
-        dropWhatsThat: `That ain't a zip file or directory...`,
-        dropMultiple: `(Please only drop one file or directory)`,
-        readingDroppedDirectory: `Reading the dropped directory...`,
-        readingDroppedZipFile: `Reading the dropped zip file...`,
-        orPasteUrl: "... or paste Git Repo/Zip URL",
-        attachDeployKey: `Attach deploy key`,
-        selectFramework: `Tell us the framework or language`,
-        applyFramework: `Apply this template`,
-        attachDeployKeyHint: `If your repository is set private, you can use
-            deploy keys to access it. We created an asymmetric deploy key
-            for you, you need to add this public key to your repository. `,
-        attachDeployKeyLearnMore: `Learn more about GitHub integration 
-            with deploy keys.`,
-        attachDeployKeyOpenConfig: `Open repository's deploy key configuration`,
-        attachDeployKeyConfirm: `I have added this public key`,
+        chooseTemplate: `اختر قالبًا للبدء`,
+        startFromScratch: `ابدأ من الصفر`,
+        uploadFileHint: `قم بتحميل ملف أو أدخل الرابط لتحليل المحتوى`,
+        readingTheFile: `جارٍ قراءة الملف...`,
+        readingFiles: `جارٍ قراءة {0} من {1} ملف/ملفات...`,
+        readingZipFile: `جارٍ قراءة ملف zip...`,
+        compressingZipFile: `جارٍ ضغط الملفات إلى ملف zip...`,
+        uploadingFiles: `جارٍ تحميل الملفات... ({0} من {1})`,
+        uploadCompleted: `اكتمل التحميل ({0} ملف/ملفات بحجم إجمالي {1}})`,
+        uploadError: `فشل التحميل برمز الحالة {0}`,
+        emptyZipFile: `لم يتم العثور على أي ملفات في ملف zip`,
+        noFileSelected: `لم يتم اختيار أي ملف`,
+        exceededFileSizeLimit: `حجم هذا الملف ({0}) يتجاوز الحد المسموح به ({1}). حاول تحميله إلى GitHub وضع الرابط هنا بدلًا من ذلك.`,
+        missingTemplate: `فشل في جلب قالب البيانات. ربما لا يزال الملف مفقودًا.`,
+        checkingRepo: `جارٍ التحقق من هذا المستودع...`,
+        cloneWithDeployKey: `سيتم استنساخ المستودع باستخدام مفتاح نشر.`,
+        uploadDirectory: `تحميل مجلد`,
+        uploadZipFile: `تحميل ملف zip`,
+        dropDirectory: `اسحب المجلد هنا...`,
+        dropZipFile: `اسحب ملف zip هنا...`,
+        dropWhatsThat: `هذا ليس ملف zip أو مجلد...`,
+        dropMultiple: `(يرجى سحب ملف أو مجلد واحد فقط)`,
+        readingDroppedDirectory: `جارٍ قراءة المجلد المسحوب...`,
+        readingDroppedZipFile: `جارٍ قراءة ملف zip المسحوب...`,
+        orPasteUrl: "... أو الصق رابط مستودع Git/ملف Zip",
+        attachDeployKey: `إرفاق مفتاح نشر`,
+        selectFramework: `أخبرنا عن الإطار أو اللغة`,
+        applyFramework: `تطبيق هذا القالب`,
+        attachDeployKeyHint: `إذا كان المستودع خاصًا، يمكنك استخدام مفاتيح النشر للوصول إليه. لقد أنشأنا مفتاح نشر غير متماثل لك، تحتاج إلى إضافة هذا المفتاح العام إلى مستودعك.`,
+        attachDeployKeyLearnMore: `تعرف على المزيد حول التكامل مع GitHub باستخدام مفاتيح النشر.`,
+        attachDeployKeyOpenConfig: `افتح إعدادات مفتاح النشر للمستودع`,
+        attachDeployKeyConfirm: `لقد أضفت هذا المفتاح العام`,
     },
     hostConnection: {
         title: `تحقق من الاتصال`,
@@ -115,6 +111,8 @@ export default {
         </p>`,
         dnsOffTitle: `لا يوجد خادم أسماء`,
         dnsOffContent: `هذا الموقع لا يحتوي على خادم أسماء. قد يكون مهيأ خارجيًا.`,
+        dnsNotExistTitle: "النطاق غير موجود",
+        dnsNotExistContent: "هذا النطاق غير موجود أو قد لا يكون مسجلًا. هل قمت بشرائه؟",
         dnsManagedTitle: `DNS مُدار`,
         dnsManagedContent: `يتم إدارة DNS لهذا الموقع بواسطة DOM Cloud.`,
         dnsMixedTitle: `DNS مختلط`,
@@ -134,6 +132,7 @@ export default {
             قد لا يتمكن بعض الأشخاص من الوصول إلى هذا
             الموقع إذا قاموا ببدءه بـ www. يوصى بإعداد
             إعادة توجيه نطاق www.`,
+        pingNoWwwFix: "إعداد إعادة توجيه النطاق الفرعي www.*",
         pingOkTitle: `عنوان IP صحيح`,
         pingOkContent: `قام DNS لهذا الموقع بإرجاع عنوان IP صحيح.`,
         webNoHttpTitle: `الموقع غير متاح`,
@@ -141,17 +140,21 @@ export default {
         webNoHttpsTitle: `HTTPS غير متاح`,
         webNoHttpsContent: `قد لا يحتوي هذا الموقع على شهادة HTTPS
             مثبتة، أو قد انتهت صلاحيتها، أو لم يتم تكوينها بشكل صحيح.`,
+        pingNoHttpsFix: "تثبيت شهادة HTTPS",
         webBadHttpTitle: `الموقع يعيد خطأ`,
         webBadHttpContent: `هذا الموقع يعيد خطأ 500 أو 403،
             قد لا يكون مهيأ بشكل صحيح (تحقق من إعدادات NGINX/التطبيق!).`,
         webBadRedirectTitle: `الموقع يحتوي على عمليات إعادة توجيه سيئة`,
         webBadRedirectContent: `يقوم هذا الموقع بإعادة توجيه الزوار إلى خارج النطاق،
             قد لا يكون مهيأ بشكل صحيح (تحقق من إعدادات عنوان URL الأساسي!).`,
-        webBadWwwTitle: `النطاق الفرعي www.* غير متاح`,
-        webBadWwwContent: `النطاق الفرعي www لهذا الموقع إما غير متاح أو يعيد خطأ.`,
-        webInsecureTitle: `الموقع غير آمن بالكامل`,
-        webInsecureContent: `لا يقوم هذا الموقع بإعادة توجيه HTTP إلى HTTPS،
-            وهذا أمر جيد ولكن غير موصى به.`,
+        webInfiniteRedirectTitle: "الموقع يحتوي على إعادة توجيه لا نهائية",
+        webInfiniteRedirectContent: "هذا الموقع يقوم حاليًا بخدمة طلبات HTTPS لا نهائية، قد يكون بالفعل خلف وكيل HTTPS.",
+        webInfiniteRedirectFix: "تعطيل إعادة توجيه HTTPS",
+        webBadWwwTitle: "النطاق الفرعي www.* غير متاح",
+        webBadWwwContent: "النطاق الفرعي www إما غير متاح أو يعيد خطأ.",
+        webInsecureTitle: "الموقع يقدم طلبات HTTP غير آمنة",
+        webInsecureContent: "هذا الموقع لا يعيد التوجيه إلى بروتوكول HTTPS، هذا غير موصى به وقد يؤدي إلى مشكلات ملفات تعريف الارتباط.",
+        webInsecureContentFix: "فرض إعادة توجيه HTTPS",
         webOkTitle: `الموقع جيد`,
         webOkContent: `يمكن الوصول إلى هذا الموقع عبر HTTP و HTTPS.`,
     },

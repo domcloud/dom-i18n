@@ -30,13 +30,13 @@ export default {
         changeCountryBtn: `Changer de pays`,
     },
     notification: {
-        freeUserGuideTitle: `Bienvenue à bord !`,
-        freeUserGuideHint: `Merci de nous avoir choisi comme votre plateforme cloud 🥳 Si ce n'est déjà fait,
-          essayez de lire notre <a href="{0}" target="_blank">Guide de démarrage</a>.
-          Vous voulez une expérience complète ? Essayez de <a href="{1}">mettre à niveau votre plan</a> pour débloquer 
-          plus de fonctionnalités telles qu'un domaine personnalisable gratuit, un accès complet aux API tierces, 
-          docker et services d'arrière-plan personnalisés <a href={2} target="_blank">et bien plus encore</a> !`,
-        empty: 'Rien à voir ici',
+        freeUserGuideTitle: "Bienvenue à Bord !",
+        freeUserGuideHint: "Merci de nous avoir choisis comme votre plateforme cloud 🥳 Si ce n'est pas encore fait, essayez de lire notre <a href=\"{0}\" target=\"_blank\">Guide de Démarrage</a>. Vous voulez vivre l'expérience complète ? Essayez <a href=\"{1}\">d'améliorer votre plan</a> pour supprimer le pare-feu API, les bannières de domaine gratuites et débloquer <a href=\"{2}\" target=\"_blank\">plus de fonctionnalités</a> !",
+        lockedUserGuideTitle: "Bienvenue à Bord !",
+        lockedUserGuideHint: "Merci de nous avoir choisis comme votre plateforme cloud 🥳 Créez votre premier site web <a href=\"{0}\">ici</a>. Il est possible que vous deviez lier votre compte GitHub pour vérifier votre compte. Vous pouvez également <a href=\"{1}\">améliorer votre plan</a> pour vérifier votre compte instantanément tout en profitant de <a href=\"{2}\" target=\"_blank\">plus de fonctionnalités</a> en tant que compte abonné.",
+        accountNoticeTitle: "⚠️ Votre compte pourrait être suspendu",
+        accountNoticeHint: "Votre compte est suspendu pour la raison suivante : {0}. Vous pouvez <a href=\"{1}\">améliorer votre plan</a> pour résoudre ce problème.",
+        empty: "Rien à voir ici"
     },
     purchaseConfirmation: {
         purchasedHint: "Merci. Si notre système a vérifié votre paiement, un email de confirmation sera envoyé à votre adresse email.",
