@@ -26,7 +26,7 @@
 	  ¿Necesitas ayuda para configurar tu alojamiento? Nuestro <a href="mailto:support@<?= app()->emailDomainSender ?>?subject=Necesito ayuda para configurar el alojamiento&amp;body=Hola, quiero preguntarte....">Servicio de Soporte</a> puede ayudarte.<br>
 	  También puedes participar en <a href="<?= app()->appSupportUrl ?>">discusiones de la comunidad</a> si lo deseas.
 	</div>
-	<p class="unsub">¿No te registraste a través de domcloud.co? Ignora este correo electrónico.</p>
+	<p class="unsub">¿No te registraste a través de <?= app()->appPortalUrl ?>? Ignora este correo electrónico.</p>
   </div>
 </body>
 

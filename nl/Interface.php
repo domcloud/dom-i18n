@@ -20,7 +20,7 @@
 	'or' => 'Of',
 	'signInWith' => 'Inloggen met {0}',
 	'wrongLogin' => 'Verkeerd e-mailadres of wachtwoord',
-	'registerAgreement' => 'Door te registreren gaat u akkoord met onze <a href="//domcloud.co/service" target="_blank">Servicevoorwaarden</a>.',
+	'registerAgreement' => 'Door te registreren gaat u akkoord met onze <a href="{0}" target="_blank">Servicevoorwaarden</a>.',
 	'emailSent' => 'De verificatiemail is verzonden, controleer uw inbox (en spambox) voordat u inlogt.',
 	'oAuthFail' => 'Het lijkt erop dat uw poging om in te loggen via een derde partij is mislukt. Dit wordt meestal veroorzaakt door een time-out of een niet-geverifieerd primair e-mailadres dat aan dat account is gekoppeld.',
 	'passReset' => 'Uw wachtwoord is succesvol gereset. Log in met uw nieuwe wachtwoord.',

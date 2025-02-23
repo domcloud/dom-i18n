@@ -24,7 +24,7 @@
 	  <div></div>
 	</div>
 	<div class="button">
-	  <a href="https://my.domcloud.co/login" target="_blank">Verifica tu cuenta</a>
+	  <a href="<?= app()->appPortalUrl ?>/login" target="_blank">Verifica tu cuenta</a>
 	</div>
 	<div class="section">Gracias por tu atención.<br>¿Necesitas ayuda? Siempre puedes responder a este correo electrónico.<br>
 	</div>

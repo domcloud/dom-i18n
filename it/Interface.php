@@ -20,7 +20,7 @@
 	'or' => 'O',
 	'signInWith' => 'Accedi con {0}',
 	'wrongLogin' => 'E-mail o password errata',
-	'registerAgreement' => 'Registrandoti accetti i nostri <a href="//domcloud.co/service" target="_blank">Termini di servizio</a>.',
+	'registerAgreement' => 'Registrandoti accetti i nostri <a href="{0}" target="_blank">Termini di servizio</a>.',
 	'emailSent' => 'L’e-mail di verifica è stata inviata, controlla la tua casella di posta (e la cartella spam) prima di accedere.',
 	'oAuthFail' => 'Sembra che il tuo tentativo di accesso tramite terzi sia fallito. Questo è comunemente causato da un timeout o dall’indirizzo e-mail principale legato a quell’account non ancora verificato.',
 	'passReset' => 'La tua password è stata reimpostata con successo. Effettua l’accesso con la tua nuova password.',

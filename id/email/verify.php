@@ -26,9 +26,9 @@
 	<div class="section">
 	  Butuh bantuan untuk menyiapkan hosting Anda? <a href="mailto:support@<?= app()->emailDomainSender ?>?subject=Butuh bantuan setting hosting&amp;body=Hi, Saya ingin bertanya....">Support
 	    Desk</a> kami dapat membantu anda.<br>
-	  Anda juga dapat berpartisipasi dalam <a href="https://github.com/domcloud/domcloud-id/discussions">diskusi komunitas kami</a> jika anda suka.
+	  Anda juga dapat berpartisipasi dalam <a href="<?= app()->appSupportUrl ?>">diskusi komunitas kami</a> jika anda suka.
 	</div>
-	<p class="unsub">Tidak mendaftar melalui domcloud.co? Abaikan email ini.</p>
+	<p class="unsub">Tidak mendaftar melalui <?= app()->appPortalUrl ?>? Abaikan email ini.</p>
   </div>
 </body>
 

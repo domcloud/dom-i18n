@@ -23,7 +23,7 @@
 	<div></div>
   </div>
   <div class="button">
-	<a href="https://my.domcloud.co/login" target="_blank">Periksa akun Anda</a>
+	<a href="<?= app()->appPortalUrl ?>/login" target="_blank">Periksa akun Anda</a>
   </div>
   <div class="section">Terima kasih atas perhatian Anda<br>Butuh bantuan? Anda selalu dapat membalas email ini
   </div>

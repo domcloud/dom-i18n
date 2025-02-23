@@ -20,7 +20,7 @@
 	'or' => '或',
 	'signInWith' => '登录方式 {0}',
 	'wrongLogin' => '错误的电子邮件或密码',
-	'registerAgreement' => '注册即表示您同意我们的<a href="//domcloud.co/service" target="_blank">服务条款</a>。',
+	'registerAgreement' => '注册即表示您同意我们的<a href="{0}" target="_blank">服务条款</a>。',
 	'emailSent' => '验证邮件已发送，请在登录前检查您的收件箱（和垃圾邮件箱）。',
 	'oAuthFail' => '看起来您使用第三方登录的尝试失败了。通常是由于超时或该帐户关联的主要电子邮件尚未验证。',
 	'passReset' => '您的密码已成功重置。请使用新密码登录。',

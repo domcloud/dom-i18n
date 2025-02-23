@@ -20,7 +20,7 @@
 	'or' => 'Ou',
 	'signInWith' => 'Se connecter avec {0}',
 	'wrongLogin' => 'E-mail ou mot de passe incorrect',
-	'registerAgreement' => 'En vous inscrivant, vous acceptez nos <a href="//domcloud.co/service" target="_blank">Conditions de service</a>.',
+	'registerAgreement' => 'En vous inscrivant, vous acceptez nos <a href="{0}" target="_blank">Conditions de service</a>.',
 	'emailSent' => 'L’e-mail de vérification a été envoyé, veuillez vérifier votre boîte de réception (et la boîte de spam) avant de vous connecter.',
 	'oAuthFail' => 'Il semble que votre tentative de connexion via un tiers ait échoué. Cela est généralement dû à un délai d’attente ou à une adresse e-mail principale non vérifiée.',
 	'passReset' => 'Votre mot de passe a été réinitialisé avec succès. Veuillez vous connecter avec votre nouveau mot de passe.',

@@ -20,7 +20,7 @@
 	'or' => 'Ou',
 	'signInWith' => 'Entrar com {0}',
 	'wrongLogin' => 'E-mail ou senha incorretos',
-	'registerAgreement' => 'Ao se registrar, você concorda com nossos <a href="//domcloud.co/service" target="_blank">Termos de Serviço</a>.',
+	'registerAgreement' => 'Ao se registrar, você concorda com nossos <a href="{0}" target="_blank">Termos de Serviço</a>.',
 	'emailSent' => 'O e-mail de verificação foi enviado, verifique sua caixa de entrada (e a caixa de spam) antes de fazer login.',
 	'oAuthFail' => 'Parece que sua tentativa de login com terceiros falhou. Isso é comumente causado por tempo limite ou e-mail principal vinculado a essa conta ainda não verificado.',
 	'passReset' => 'Sua senha foi redefinida com sucesso. Faça login com sua nova senha.',

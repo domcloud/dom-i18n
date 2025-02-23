@@ -17,7 +17,7 @@
 	'signInWith' => 'Masuk dengan {0}',
 	'wrongLogin' => 'Salah email atau password',
 	'wrongEmail' => 'Salah email?',
-	'registerAgreement' => 'Dengan mendaftar anda menyetujui <a href="//domcloud.co/service" target="_blank">Kebijakan Layanan</a> Kami',
+	'registerAgreement' => 'Dengan mendaftar anda menyetujui <a href="{0}" target="_blank">Kebijakan Layanan</a> Kami',
 	'emailSent' => 'Email untuk verifikasi telah dikirim, mohon cek inbox (dan spam box) anda sebelum masuk.',
 	'oAuthFail' => 'Tampaknya upaya Anda dengan user pihak ketiga gagal. Hal ini biasanya disebabkan karena waktunya habis atau email utama yang terikat dengan akun tersebut belum terverifikasi.',
 	'passReset' => 'Password anda sudah disetel ulang. Mohon masuk dengan password baru anda.',

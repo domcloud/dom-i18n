@@ -20,7 +20,7 @@
 	'or' => 'Oder',
 	'signInWith' => 'Anmelden mit {0}',
 	'wrongLogin' => 'Falsche E-Mail oder falsches Passwort',
-	'registerAgreement' => 'Durch die Registrierung stimmen Sie unseren <a href="//domcloud.co/service" target="_blank">Nutzungsbedingungen</a> zu.',
+	'registerAgreement' => 'Durch die Registrierung stimmen Sie unseren <a href="{0}" target="_blank">Nutzungsbedingungen</a> zu.',
 	'emailSent' => 'Die Bestätigungs-E-Mail wurde gesendet, bitte überprüfen Sie Ihr Postfach (und den Spam-Ordner), bevor Sie sich anmelden.',
 	'oAuthFail' => 'Es scheint, dass Ihr Versuch mit der Anmeldung über Drittanbieter fehlgeschlagen ist. Dies wird häufig durch eine Zeitüberschreitung oder eine nicht verifizierte primäre E-Mail-Adresse verursacht.',
 	'passReset' => 'Ihr Passwort wurde erfolgreich zurückgesetzt. Bitte melden Sie sich mit Ihrem neuen Passwort an.',
