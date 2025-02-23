@@ -6,10 +6,10 @@ export default {
         credit: `{0}, 由<a href="{1}">{2}</a>创建`,
     },
     welcome: {
-        title: `欢迎来到DOM Cloud！ 🎉`,
+        title: `欢迎来到{0}！ 🎉`,
         description: ` <p>你好，{0}</p>
         <p>
-          感谢你加入DOM Cloud舰队，获得在互联网上取得成功的自由！
+          感谢您加入{1}，获得在互联网上取得成功的自由！
         </p>
         <p>
           为了能为你提供最佳服务，我们需要确认你当前所在的区域。
@@ -49,7 +49,7 @@ export default {
     },
     hostNeedInvite: {
         title: "需要邀请码",
-        hint: "你好 👋 要享受 DOM Cloud 的免费计划，我们需要通过邀请码或链接 GitHub 帐户来信任你。邀请码来自向你推荐此平台的人。",
+        hint: "你好 👋 要享受我们的免费计划，我们需要通过邀请码或 GitHub 帐户链接信任您。邀请码来自向您推荐此平台的人。",
         hintBtn: "授权！",
         hintGitHub: "或者，你可以链接你的 GitHub 帐户。你的 GitHub 帐户必须<b>至少有六个月的历史并且有一个或多个关注者</b>。",
         githubFail: "抱歉！你的已链接 GitHub 帐户尚未被信任。你可以尝试重新链接符合我们要求的正确帐户。",
@@ -113,7 +113,7 @@ export default {
         dnsOffTitle: `No name server`,
         dnsOffContent: `This website does not have a name server. It maybe externally configured.`,
         dnsManagedTitle: `DNS managed`,
-        dnsManagedContent: `This website's DNS is managed by DOM Cloud.`,
+        dnsManagedContent: `This website's DNS is managed by {0}.`,
         dnsMixedTitle: `DNS is mixed`,
         dnsMixedContent: `This website's DNS has a mixed
             configuration. Ensure that the name server

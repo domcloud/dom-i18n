@@ -12,7 +12,7 @@
 	'recoverYourPassword' => 'Recupere sua senha',
 	'recoverYourPasswordHint' => 'Insira uma nova senha para alterar',
 	'report' => 'Relatar',
-	'reportPrompt' => 'Denuncie atividades suspeitas na rede DOM Cloud. O conteúdo será removido imediatamente se o site denunciado atender aos nossos critérios.',
+	'reportPrompt' => 'Denuncie atividades suspeitas na rede {0}. O conteúdo será removido imediatamente se o site denunciado atender aos nossos critérios.',
 	'reportAbuse' => 'Denunciar conteúdo abusivo',
 	'reportDomain' => 'Domínio a ser denunciado',
 	'ok' => 'OK',

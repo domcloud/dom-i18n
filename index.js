@@ -12,7 +12,6 @@ const pt = () => import('./pt');
 const ru = () => import('./ru');
 const zh = () => import('./zh');
 
-import metadata from './metadata';
 import enLang from './en'; // always loaded as fallback
 const en = () => new Promise((resolve) => resolve(enLang));
 
@@ -22,20 +21,12 @@ export const locales = { ar, de, en, es, fr, hi, id, it, ja, ko, nl, pt, ru, zh 
  * @type {keyof typeof locales}
  */
 let initialLocale = 'en';
-const fallbackLocale = 'en';
-let lastSetup = localStorage.getItem('lang') || '';
 
 /**
- * @param {string} locale
+ * @type {'en'}
  */
-export function getMetadata(locale) {
-    if (locale in metadata) {
-        // @ts-ignore
-        return metadata[locale];
-    } else {
-        return metadata[fallbackLocale];
-    }
-}
+const fallbackLocale = 'en';
+let lastSetup = localStorage.getItem('lang') || '';
 
 if (lastSetup in locales) {
     // @ts-ignore

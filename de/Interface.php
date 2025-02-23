@@ -12,7 +12,7 @@
 	'recoverYourPassword' => 'Passwort wiederherstellen',
 	'recoverYourPasswordHint' => 'Geben Sie ein neues Passwort ein, um es zu ändern',
 	'report' => 'Melden',
-	'reportPrompt' => 'Melden Sie verdächtige Aktivitäten im DOM Cloud-Netzwerk. Inhalte werden sofort entfernt, wenn die gemeldete Website unsere Kriterien erfüllt.',
+	'reportPrompt' => 'Melden Sie verdächtige Aktivitäten im {0}-Netzwerk. Inhalte werden sofort entfernt, wenn die gemeldete Website unsere Kriterien erfüllt.',
 	'reportAbuse' => 'Missbrauch melden',
 	'reportDomain' => 'Zu meldende Domain',
 	'ok' => 'OK',

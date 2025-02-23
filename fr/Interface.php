@@ -12,7 +12,7 @@
 	'recoverYourPassword' => 'Récupérer votre mot de passe',
 	'recoverYourPasswordHint' => 'Entrez un nouveau mot de passe pour le changer',
 	'report' => 'Signaler',
-	'reportPrompt' => 'Signalez une activité suspecte dans le réseau DOM Cloud. Le contenu sera immédiatement supprimé si le site signalé remplit nos critères.',
+	'reportPrompt' => 'Signalez une activité suspecte dans le réseau {0}. Le contenu sera immédiatement supprimé si le site signalé remplit nos critères.',
 	'reportAbuse' => 'Signaler un abus',
 	'reportDomain' => 'Domaine à signaler',
 	'ok' => 'OK',

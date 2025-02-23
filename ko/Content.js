@@ -6,10 +6,10 @@ export default {
         credit: `{0}, 작성자 <a href="{1}">{2}</a>`,
     },
     welcome: {
-        title: `DOM Cloud에 오신 것을 환영합니다! 🎉`,
+        title: `{0} 에 오신 것을 환영합니다! 🎉`,
         description: ` <p>안녕하세요, {0}</p>
         <p>
-          인터넷에서 성공할 수 있는 자유를 얻기 위해 DOM Cloud 함대에 가입해 주셔서 감사합니다!
+          {1} 에 가입하여 인터넷에서 웹 개발자의 자유를 실현해 주셔서 감사합니다!
         </p>
         <p>
           최상의 서비스를 제공하기 위해 현재 위치한 지역을 확인해야 합니다.
@@ -48,7 +48,7 @@ export default {
     },
     hostNeedInvite: {
         title: "초대 코드 필요",
-        hint: "안녕하세요 👋 DOM Cloud 무료 플랜을 이용하려면 초대 코드 또는 GitHub 계정 연결을 통해 신뢰를 얻어야 합니다. 초대 코드는 이 플랫폼을 추천한 사람으로부터 받습니다.",
+        hint: "안녕하세요 👋 무료 플랜을 이용하려면 초대 코드나 GitHub 계정 링크를 통해 신뢰해야 합니다. 초대 코드는 이 플랫폼을 추천한 사람에게서 제공됩니다.",
         hintBtn: "허용!",
         hintGitHub: "또는 GitHub 계정을 연결할 수 있습니다. GitHub 계정은 <b>6개월 이상되어야 하며 팔로워가 1명 이상 있어야 합니다</b>.",
         githubFail: "죄송합니다! 연결된 GitHub 계정은 아직 신뢰할 수 없습니다. 우리의 요구 사항을 충족하는 올바른 계정을 다시 연결해 보세요.",
@@ -111,7 +111,7 @@ export default {
         dnsNotExistTitle: "도메인이 존재하지 않습니다",
         dnsNotExistContent: "이 도메인을 찾을 수 없거나 등록되지 않았을 수 있습니다. 구매하셨나요?",    
         dnsManagedTitle: `DNS 관리됨`,
-        dnsManagedContent: `이 웹사이트의 DNS는 DOM Cloud에서 관리합니다.`,
+        dnsManagedContent: `이 웹사이트의 DNS는 {0}에서 관리합니다.`,
         dnsMixedTitle: `DNS가 혼합되었습니다`,
         dnsMixedContent: `이 웹사이트의 DNS는 혼합 구성을 가지고 있습니다. 네임 서버가 올바르게 구성되었는지 확인하세요. 다른 레코드와 우리의 레코드를 혼합하지 마세요!`,
         dnsExternalTitle: `외부에서 관리되는 DNS`,

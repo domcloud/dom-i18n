@@ -12,7 +12,7 @@
 	'recoverYourPassword' => 'Recupera la tua password',
 	'recoverYourPasswordHint' => 'Inserisci una nuova password per cambiare',
 	'report' => 'Segnala',
-	'reportPrompt' => 'Segnala attività sospette all’interno della rete DOM Cloud. Il contenuto verrà immediatamente rimosso se il sito segnalato soddisfa i nostri criteri.',
+	'reportPrompt' => 'Segnala attività sospette all’interno della rete {0}. Il contenuto verrà immediatamente rimosso se il sito segnalato soddisfa i nostri criteri.',
 	'reportAbuse' => 'Segnala contenuto abusivo',
 	'reportDomain' => 'Dominio da segnalare',
 	'ok' => 'OK',

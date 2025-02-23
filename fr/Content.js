@@ -6,11 +6,10 @@ export default {
         credit: `{0}, créé par <a href="{1}">{2}</a>`,
     },
     welcome: {
-        title: `Bienvenue sur DOM Cloud ! 🎉`,
+        title: `Bienvenue sur {0} ! 🎉`,
         description: ` <p>Salut, {0}</p>
         <p>
-          Merci de rejoindre la flotte DOM Cloud pour atteindre la liberté de
-          réussir sur Internet !
+         Merci d'avoir rejoint {1} pour atteindre la liberté des développeurs Web sur Internet !
         </p>
         <p>
           Pour pouvoir vous servir de manière optimale, nous devons confirmer la région que vous occupez actuellement.
@@ -50,7 +49,7 @@ export default {
     },
     hostNeedInvite: {
         title: "Code d'invitation requis",
-        hint: "Bonjour 👋 Pour profiter du plan gratuit de DOM Cloud, nous devons vous faire confiance soit via un code d'invitation, soit en liant votre compte GitHub. Le code d'invitation provient de la personne qui vous recommande cette plateforme.",
+        hint: "Bonjour 👋 Pour profiter de notre offre gratuite, nous devons vous faire confiance soit via un code d'invitation, soit via un lien vers un compte GitHub. Le code d'invitation provient de la personne qui vous recommande cette plateforme.",
         hintBtn: "Accorder !",
         hintGitHub: "Alternativement, vous pouvez lier votre compte GitHub. Votre compte GitHub doit <b>avoir au moins six mois et avoir un ou plusieurs abonnés</b>.",
         githubFail: "Désolé ! Votre compte GitHub lié n'est pas encore digne de confiance. Vous pouvez essayer de relier le compte correct qui répond à nos exigences.",
@@ -116,7 +115,7 @@ export default {
         dnsOffTitle: `No name server`,
         dnsOffContent: `This website does not have a name server. It maybe externally configured.`,
         dnsManagedTitle: `DNS managed`,
-        dnsManagedContent: `This website's DNS is managed by DOM Cloud.`,
+        dnsManagedContent: `This website's DNS is managed by {0}.`,
         dnsMixedTitle: `DNS is mixed`,
         dnsMixedContent: `This website's DNS has a mixed
             configuration. Ensure that the name server

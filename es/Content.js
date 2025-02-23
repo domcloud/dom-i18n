@@ -6,11 +6,10 @@ export default {
         credit: `{0}, construido por <a href="{1}">{2}</a>`,
     },
     welcome: {
-        title: `Bienvenido a DOM Cloud! 🎉`,
+        title: `Bienvenido a {0}! 🎉`,
         description: ` <p>Hola, {0}</p>
         <p>
-          Gracias por unirse a la flota de DOM Cloud para alcanzar la libertad de
-          ¡alcanzar el éxito en Internet!
+         ¡Gracias por unirte a {1} para alcanzar la libertad de los desarrolladores web en Internet!
         </p>
         <p>
           Para poder atenderle de forma óptima, necesitamos confirmarle la región que actualmente. 
@@ -50,7 +49,7 @@ export default {
     },
     hostNeedInvite: {
         title: "Se necesita código de invitación",
-        hint: "Hola 👋 Para disfrutar del plan gratuito de DOM Cloud necesitamos confiar en ti, ya sea mediante un código de invitación o vinculando tu cuenta de GitHub. El código de invitación proviene de quien te recomienda esta plataforma.",
+        hint: "Hola 👋 Para disfrutar de nuestro plan gratuito, necesitamos confiar en ti ya sea mediante un código de invitación o un enlace a una cuenta de GitHub. El código de invitación proviene de quien te recomienda esta plataforma.",
         hintBtn: "¡Conceder!",
         hintGitHub: "Alternativamente, puedes vincular tu cuenta de GitHub. Tu cuenta de GitHub debe <b>tener seis meses o más de antigüedad y al menos un seguidor</b>.",
         githubFail: "¡Lo sentimos! Tu cuenta de GitHub vinculada aún no es confiable. Puedes intentar volver a vincular la cuenta correcta que cumpla con nuestros requisitos.",
@@ -118,7 +117,7 @@ export default {
         dnsNotExistTitle: "El dominio no existe",
         dnsNotExistContent: "Este dominio no se encuentra o puede que no esté registrado. ¿Lo has comprado?",    
         dnsManagedTitle: `Gestión de DNS`,
-        dnsManagedContent: `DOM Cloud gestiona las DNS de este sitio web.`,
+        dnsManagedContent: `{0} gestiona las DNS de este sitio web.`,
         dnsMixedTitle: `El DNS es mixto`,
         dnsMixedContent: `El DNS de este sitio web tiene una
             mixto. Asegúrese de que el servidor de nombres

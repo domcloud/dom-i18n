@@ -12,7 +12,7 @@
 	'recoverYourPassword' => '비밀번호 복구',
 	'recoverYourPasswordHint' => '새 비밀번호를 입력하여 변경하세요',
 	"report" => "신고",
-	"reportPrompt" => "DOM Cloud 네트워크 내에서 의심스러운 활동을 신고하세요. 신고된 웹사이트가 당사의 기준을 충족하면 콘텐츠가 즉시 제거됩니다.",
+	"reportPrompt" => "{0} 네트워크 내에서 의심스러운 활동을 신고하세요. 신고된 웹사이트가 당사의 기준을 충족하면 콘텐츠가 즉시 제거됩니다.",
 	"reportAbuse" => "부적절한 콘텐츠 신고",
 	"reportDomain" => "신고할 도메인",
 

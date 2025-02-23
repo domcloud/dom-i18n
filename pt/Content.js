@@ -6,11 +6,10 @@ export default {
         credit: `{0}, construído por <a href="{1}">{2}</a>`,
     },
     welcome: {
-        title: `Bem-vindo ao DOM Cloud! 🎉`,
+        title: `Bem-vindo ao {0}! 🎉`,
         description: ` <p>Olá, {0}</p>
         <p>
-          Obrigado por se juntar à frota DOM Cloud para alcançar a liberdade de
-          ter sucesso na Internet!
+          Obrigado por se juntar a {1} para alcançar a liberdade dos desenvolvedores web na Internet!
         </p>
         <p>
           Para podermos atendê-lo de forma ideal, precisamos confirmar a região em que você se encontra atualmente.
@@ -50,7 +49,7 @@ export default {
     },
     hostNeedInvite: {
         title: "Código de Convite Necessário",
-        hint: "Olá 👋 Para aproveitar o plano gratuito do DOM Cloud, precisamos confiar em você, seja por meio de um código de convite ou vinculando sua conta do GitHub. O código de convite vem de quem recomenda esta plataforma para você.",
+        hint: "Olá 👋 Para aproveitar nosso plano gratuito, precisamos confiar em você por meio de um código de convite ou um link para uma conta do GitHub. O código de convite vem da pessoa que recomendou esta plataforma para você.",
         hintBtn: "Conceder!",
         hintGitHub: "Alternativamente, você pode vincular sua conta do GitHub. Sua conta do GitHub deve <b>ter pelo menos seis meses e um ou mais seguidores</b>.",
         githubFail: "Desculpe! Sua conta do GitHub vinculada ainda não é confiável. Você pode tentar vincular novamente a conta correta que atenda aos nossos requisitos.",
@@ -113,7 +112,7 @@ export default {
         dnsNotExistTitle: "Domínio não existe",
         dnsNotExistContent: "Este domínio não foi encontrado ou pode não estar registrado. Você o comprou?",    
         dnsManagedTitle: `DNS gerenciado`,
-        dnsManagedContent: `O DNS deste site é gerenciado pela DOM Cloud.`,
+        dnsManagedContent: `O DNS deste site é gerenciado pela {0}.`,
         dnsMixedTitle: `DNS misturado`,
         dnsMixedContent: `O DNS deste site tem uma configuração mista. Certifique-se de que o servidor de nomes esteja configurado corretamente. Não misture nossos registros com outros!`,
         dnsExternalTitle: `DNS gerenciado externamente`,

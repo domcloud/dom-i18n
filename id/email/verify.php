@@ -16,7 +16,7 @@
 	<div class="section">
 	  <div>Yth, <?= esc($name) ?></div>
 	  <div><br></div>
-	  <div>Terima kasih telah mendaftar di DOM Cloud. Harap konfirmasi email Anda agar Anda dapat mulai menyiapkan hosting.&nbsp;
+	  <div>Terima kasih telah mendaftar di <?= $appTitle ?>. Harap konfirmasi email Anda agar Anda dapat mulai menyiapkan hosting.&nbsp;
 	  </div>
 	  <div></div>
 	</div>

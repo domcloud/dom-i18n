@@ -6,11 +6,10 @@ export default {
         credit: `{0}, dibuat oleh <a href="{1}">{2}</a>`,
     },
     welcome: {
-        title: `Selamat datang di DOM Cloud! 🎉`,
+        title: `Selamat datang di {0}! 🎉`,
         description: ` <p>Hai, {0}</p>
         <p>
-          Terima kasih telah bergabung dengan armada DOM Cloud untuk mencapai kebebasan
-          mencapai kesuksesan di Internet!
+          Terima kasih telah bergabung dengan {1} untuk meraih kebebasan pengembang web di Internet!
         </p>
         <p>
           Untuk dapat melayani Anda secara optimal, kami perlu konfirmasi negara Anda saat ini berada. 
@@ -50,7 +49,7 @@ export default {
     },
     hostNeedInvite: {
         title: "Kode Undangan Dibutuhkan",
-        hint: "Halo 👋 Untuk menikmati paket gratis DOM Cloud, kami perlu memercayai Anda baik melalui kode undangan atau menautkan ke akun GitHub. Kode undangan berasal dari orang yang merekomendasikan platform ini kepada Anda.",
+        hint: "Hai 👋 Untuk menikmati paket gratis kami, kami perlu memercayai Anda baik melalui kode undangan atau tautan ke akun GitHub. Kode undangan berasal dari orang yang merekomendasikan platform ini kepada Anda.",
         hintBtn: "Berikan!",
         hintGitHub: "Sebagai alternatif, Anda dapat menautkan akun GitHub Anda. Akun GitHub Anda harus <b>berusia enam bulan atau lebih dan memiliki satu atau lebih pengikut</b>.",
         githubFail: "Maaf! Akun GitHub yang Anda tautkan belum dipercaya. Anda dapat mencoba menautkan kembali akun yang sesuai dengan persyaratan kami.",
@@ -118,7 +117,7 @@ export default {
         dnsNotExistTitle: "Domain tidak ditemukan",
         dnsNotExistContent: "Domain ini tidak ditemukan atau mungkin belum terdaftar. Apakah Anda sudah membelinya?",    
         dnsManagedTitle: `DNS dikelola`,
-        dnsManagedContent: `DNS website ini dikelola oleh DOM Cloud.`,
+        dnsManagedContent: `DNS website ini dikelola oleh {0}.`,
         dnsMixedTitle: `DNS bercampur`,
         dnsMixedContent: `DNS website ini memiliki konfigurasi yang bercampur
             Pastikan bahwa server nama

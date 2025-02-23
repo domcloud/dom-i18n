@@ -16,7 +16,7 @@
 	  <div>Yth, <?= esc($name) ?></div>
 	  <div><br></div>
 	  <div>
-	    Terimakasih sudah mempercayakan DOM Cloud. Berikut keterangan pembelian anda.
+	    Terimakasih sudah mempercayakan <?= $appTitle ?>. Berikut keterangan pembelian anda.
 	  </div>
 	  <div></div>
 	</div>

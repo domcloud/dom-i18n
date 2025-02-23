@@ -4,10 +4,10 @@ export default {
         credit: `{0}、作成者 <a href="{1}">{2}</a>`,
     },
     welcome: {
-        title: `DOM Cloudへようこそ！ 🎉`,
+        title: `{0} へようこそ！ 🎉`,
         description: ` <p>こんにちは、{0}</p>
         <p>
-          インターネットでの成功を達成する自由を得るためにDOM Cloudの艦隊に参加していただき、ありがとうございます！
+          インターネットでの成功を達成する自由を得るために{1}の艦隊に参加していただき、ありがとうございます！
         </p>
         <p>
           最適なサービスを提供するために、現在あなたがいる地域を確認する必要があります。
@@ -46,7 +46,7 @@ export default {
     },
     hostNeedInvite: {
         title: "招待コードが必要です",
-        hint: "こんにちは 👋 DOM Cloudの無料プランを利用するには、招待コードまたはGitHubアカウントのリンクを通じて信頼を得る必要があります。招待コードは、このプラットフォームをお勧めする人から提供されます。",
+        hint: "こんにちは👋 無料プランをご利用いただくには、招待コードまたは GitHub アカウントへのリンクを通じてお客様を信頼していただく必要があります。招待コードは、このプラットフォームをお客様にお勧めした人から提供されます。",
         hintBtn: "許可する！",
         hintGitHub: "または、GitHubアカウントをリンクすることもできます。GitHubアカウントは<b>6か月以上古く、1人以上のフォロワーが必要です</b>。",
         githubFail: "申し訳ありません！リンクされたGitHubアカウントはまだ信頼されていません。要件を満たす適切なアカウントを再リンクしてみてください。",
@@ -109,7 +109,7 @@ export default {
         dnsOffTitle: `No name server`,
         dnsOffContent: `This website does not have a name server. It maybe externally configured.`,
         dnsManagedTitle: `DNS managed`,
-        dnsManagedContent: `This website's DNS is managed by DOM Cloud.`,
+        dnsManagedContent: `This website's DNS is managed by {0}.`,
         dnsMixedTitle: `DNS is mixed`,
         dnsMixedContent: `This website's DNS has a mixed
             configuration. Ensure that the name server

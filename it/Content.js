@@ -6,11 +6,10 @@ export default {
         credit: `{0}, creato da <a href="{1}">{2}</a>`,
     },
     welcome: {
-        title: `Benvenuto su DOM Cloud! 🎉`,
+        title: `Benvenuto su {0}! 🎉`,
         description: ` <p>Salve, {0}</p>
         <p>
-          Grazie per esserti unito alla flotta di DOM Cloud, per raggiungere la libertà
-          di avere successo su Internet!
+          Grazie per esserti unito a {1} per raggiungere la libertà degli sviluppatori web su Internet!
         </p>
         <p>
           Per servirti al meglio, dobbiamo confermare la regione in cui ti trovi attualmente.
@@ -50,7 +49,7 @@ export default {
     },
     hostNeedInvite: {
         title: "Codice di invito richiesto",
-        hint: "Ciao 👋 Per usufruire del piano gratuito di DOM Cloud dobbiamo fidarci di te tramite un codice di invito o collegando il tuo account GitHub. Il codice di invito proviene da chi ti consiglia questa piattaforma.",
+        hint: "Ciao 👋 Per usufruire del nostro piano gratuito, dobbiamo fidarci di te tramite un codice di invito o un link a un account GitHub. Il codice di invito proviene dalla persona che ti ha consigliato questa piattaforma.",
         hintBtn: "Concedi!",
         hintGitHub: "In alternativa, puoi collegare il tuo account GitHub. Il tuo account GitHub deve <b>avere almeno sei mesi di età e uno o più follower</b>.",
         githubFail: "Spiacenti! Il tuo account GitHub collegato non è ancora affidabile. Puoi provare a ricollegare l'account corretto che soddisfa i nostri requisiti.",
@@ -116,7 +115,7 @@ export default {
         dnsOffTitle: `Nessun nameserver`,
         dnsOffContent: `Questo sito web non ha un nameserver. Potrebbe essere configurato esternamente.`,
         dnsManagedTitle: `DNS gestito`,
-        dnsManagedContent: `Il DNS di questo sito web è gestito da DOM Cloud.`,
+        dnsManagedContent: `Il DNS di questo sito web è gestito da {0}.`,
         dnsMixedTitle: `DNS misto`,
         dnsMixedContent: `Il DNS di questo sito web ha una configurazione
             mista. Assicurati che il nameserver sia

@@ -6,11 +6,10 @@ export default {
         credit: `{0}, erstellt von <a href="{1}">{2}</a>`,
     },
     welcome: {
-        title: `Willkommen bei DOM Cloud! 🎉`,
+        title: `Willkommen bei {0}! 🎉`,
         description: ` <p>Hallo, {0}</p>
         <p>
-          Vielen Dank, dass Sie der DOM Cloud Flotte beigetreten sind, um die Freiheit zu erreichen,
-          im Internet erfolgreich zu sein!
+          Vielen Dank, dass Sie {1} beigetreten sind, um die Freiheit für Webentwickler im Internet zu erreichen!
         </p>
         <p>
           Um Sie optimal bedienen zu können, müssen wir die Region bestätigen, in der Sie sich derzeit befinden.
@@ -50,7 +49,7 @@ export default {
     },
     hostNeedInvite: {
         title: "Einladungscode erforderlich",
-        hint: "Hallo 👋 Um den kostenlosen Plan von DOM Cloud zu nutzen, müssen wir Ihnen entweder über einen Einladungscode oder durch Verknüpfung mit einem GitHub-Konto vertrauen. Der Einladungscode stammt von der Person, die Ihnen diese Plattform empfiehlt.",
+        hint: "Hallo 👋 Damit Sie unseren kostenlosen Plan nutzen können, müssen wir Ihnen entweder über einen Einladungscode oder einen Link zu einem GitHub-Konto vertrauen. Der Einladungscode stammt von der Person, die Ihnen diese Plattform empfohlen hat.",
         hintBtn: "Erlauben!",
         hintGitHub: "Alternativ können Sie Ihr GitHub-Konto verknüpfen. Ihr GitHub-Konto muss <b>mindestens sechs Monate alt sein und einen oder mehrere Follower haben</b>.",
         githubFail: "Entschuldigung! Ihr verknüpftes GitHub-Konto ist noch nicht vertrauenswürdig. Sie können versuchen, das richtige Konto erneut zu verknüpfen, das unseren Anforderungen entspricht.",
@@ -116,7 +115,7 @@ export default {
         dnsNotExistTitle: "Domain existiert nicht",
         dnsNotExistContent: "Diese Domain wurde nicht gefunden oder ist möglicherweise nicht registriert. Haben Sie sie gekauft?",    
         dnsManagedTitle: `DNS verwaltet`,
-        dnsManagedContent: `Das DNS dieser Website wird von DOM Cloud verwaltet.`,
+        dnsManagedContent: `Das DNS dieser Website wird von {0} verwaltet.`,
         dnsMixedTitle: `DNS ist gemischt`,
         dnsMixedContent: `Das DNS dieser Website hat eine gemischte
             Konfiguration. Stellen Sie sicher, dass der Namensserver

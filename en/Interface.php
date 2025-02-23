@@ -12,7 +12,7 @@
 	'recoverYourPassword' => 'Recover Your Password',
 	'recoverYourPasswordHint' => 'Enter a new password to change',
 	"report" => "Report",
-	"reportPrompt" => "Report suspicious activity within DOM Cloud Network. Content will be immediately removed if reported website fulfills our criteria.",
+	"reportPrompt" => "Report suspicious activity within {0}. Content will be immediately removed if reported website fulfills our criteria.",
 	"reportAbuse" => "Report Abuse Content",
 	"reportDomain" => "Domain to report",
 

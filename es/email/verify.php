@@ -15,7 +15,7 @@
 	<div class="section">
 	  <div>Hola, <?= esc($name) ?></div>
 	  <div><br></div>
-	  <div>Gracias por registrarte en DOM Cloud. Por favor, confirma tu correo electrónico para que puedas comenzar a configurar tu alojamiento.&nbsp;</div>
+	  <div>Gracias por registrarte en <?= $appTitle ?>. Por favor, confirma tu correo electrónico para que puedas comenzar a configurar tu alojamiento.&nbsp;</div>
 	  <div></div>
 	</div>
 	<div class="button">

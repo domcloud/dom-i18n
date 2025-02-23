@@ -12,7 +12,7 @@
 	'recoverYourPassword' => 'Herstel je wachtwoord',
 	'recoverYourPasswordHint' => 'Voer een nieuw wachtwoord in om te wijzigen',
 	'report' => 'Rapporteren',
-	'reportPrompt' => 'Meld verdachte activiteiten binnen het DOM Cloud-netwerk. Inhoud wordt onmiddellijk verwijderd als de gerapporteerde website aan onze criteria voldoet.',
+	'reportPrompt' => 'Meld verdachte activiteiten binnen het {0}-netwerk. Inhoud wordt onmiddellijk verwijderd als de gerapporteerde website aan onze criteria voldoet.',
 	'reportAbuse' => 'Misbruik melden',
 	'reportDomain' => 'Domein om te melden',
 	'ok' => 'OK',

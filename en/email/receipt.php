@@ -16,7 +16,7 @@
 	  <div>Hi, <?= esc($name) ?></div>
 	  <div><br></div>
 	  <div>
-	    Thank you for trusting DOM Cloud. The following is a description of your purchase.
+	    Thank you for trusting <?= $appTitle ?>. The following is a description of your purchase.
 	  </div>
 	  <div></div>
 	</div>

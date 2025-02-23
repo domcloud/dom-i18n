@@ -6,11 +6,10 @@ export default {
         credit: `{0}, built by <a href="{1}">{2}</a>`,
     },
     welcome: {
-        title: `Welcome to DOM Cloud! 🎉`,
+        title: `Welcome to {0}! 🎉`,
         description: ` <p>Hi, {0}</p>
         <p>
-          Thank you for joining the DOM Cloud fleet to reach the freedom to
-          achieve success on the Internet!
+          Thank you for joining {1} to reach the freedom for web developers on the Internet!
         </p>
         <p>
           To be able to serve you optimally, we need confirm the region you currently occupy. 
@@ -51,7 +50,7 @@ export default {
     },
     hostNeedInvite: {
         title: `Invite Code Needed`,
-        hint: `Hello 👋 To enjoy DOM Cloud free plan we need to trust you either via invite code or Linking to GitHub account. The invitation code comes from 
+        hint: `Hello 👋 To enjoy our free plan we need to trust you either via invite code or Linking to GitHub account. The invitation code comes from 
         who recommends you this platform.`,
         hintBtn: `Grant!`,
         hintGitHub: `Alternatively, you can link your GitHub account. Your GitHub account must <b>be six months or older and has one or more followers</b>.`,
@@ -121,7 +120,7 @@ export default {
         dnsNotExistTitle: `Domain not exist`,
         dnsNotExistContent: `This domain is not found or may not be registered. Have you purchase it?`,
         dnsManagedTitle: `DNS managed`,
-        dnsManagedContent: `This website's DNS is managed by DOM Cloud.`,
+        dnsManagedContent: `This website's DNS is managed by {0}.`,
         dnsMixedTitle: `DNS is mixed`,
         dnsMixedContent: `This website's DNS has a mixed
             configuration. Ensure that the name server

@@ -6,11 +6,10 @@ export default {
         credit: `{0}, gemaakt door <a href="{1}">{2}</a>`,
     },
     welcome: {
-        title: `Welkom bij DOM Cloud! 🎉`,
+        title: `Welkom bij {0}! 🎉`,
         description: ` <p>Hallo, {0}</p>
         <p>
-          Bedankt dat je je hebt aangesloten bij de DOM Cloud vloot om de vrijheid te bereiken
-          om succes te behalen op het internet!
+          Bedankt dat je lid bent geworden van {1} om de vrijheid van webontwikkelaars op internet te bereiken!
         </p>
         <p>
           Om je optimaal van dienst te kunnen zijn, moeten we bevestigen in welke regio je je momenteel bevindt.
@@ -50,7 +49,7 @@ export default {
     },
     hostNeedInvite: {
         title: "Uitnodigingscode vereist",
-        hint: "Hallo 👋 Om gebruik te maken van het gratis plan van DOM Cloud, moeten we je vertrouwen, hetzij via een uitnodigingscode of door je GitHub-account te koppelen. De uitnodigingscode komt van degene die je dit platform aanbeveelt.",
+        hint: "Hallo 👋 Om van ons gratis plan te kunnen genieten, moeten we je vertrouwen via een uitnodigingscode of een link naar een GitHub-account. De uitnodigingscode komt van de persoon die dit platform aan je heeft aanbevolen.",
         hintBtn: "Verlenen!",
         hintGitHub: "Als alternatief kun je je GitHub-account koppelen. Je GitHub-account moet <b>zes maanden of ouder zijn en een of meer volgers hebben</b>.",
         githubFail: "Sorry! Je gekoppelde GitHub-account is nog niet vertrouwd. Je kunt proberen het juiste account opnieuw te koppelen dat aan onze vereisten voldoet.",
@@ -113,7 +112,7 @@ export default {
         dnsNotExistTitle: "Domein bestaat niet",
         dnsNotExistContent: "Dit domein is niet gevonden of is mogelijk niet geregistreerd. Heeft u het gekocht?",    
         dnsManagedTitle: `DNS beheerd`,
-        dnsManagedContent: `De DNS van deze website wordt beheerd door DOM Cloud.`,
+        dnsManagedContent: `De DNS van deze website wordt beheerd door {0}.`,
         dnsMixedTitle: `DNS is gemengd`,
         dnsMixedContent: `De DNS van deze website heeft een gemengde configuratie. Zorg ervoor dat de naamserver correct is geconfigureerd. Meng onze records niet met andere records!`,
         dnsExternalTitle: `Extern beheerde DNS`,

@@ -16,7 +16,7 @@
 	<div class="section">
 	  <div>Hi, <?= esc($name) ?></div>
 	  <div><br></div>
-	  <div>Thank you for signing up in DOM Cloud. Please confirm your email so you can start setting up hosting.&nbsp;
+	  <div>Thank you for signing up in <?= $appTitle ?>. Please confirm your email so you can start setting up hosting.&nbsp;
 	  </div>
 	  <div></div>
 	</div>
