@@ -12,11 +12,11 @@
 <body>
   <div class="container">
 	<p></p>
-	<img class="logo" width="150" height="150" alt="" src="http://cdn.mcauto-images-production.sendgrid.net/a29c06201af03bf0/70219a8f-d353-4098-bd3d-7e05101cff9d/1000x1000.png">
+	<img class="logo" width="150" height="150" alt="" src="<?= app()->appLogoUrl ?>">
 	<div class="section">
 	  <div>Hi, <?= esc($name) ?></div>
 	  <div><br></div>
-	  <div>Thank you for signing up in <?= $appTitle ?>. Please confirm your email so you can start setting up hosting.&nbsp;
+	  <div>Thank you for signing up in <?= app()->appTitle ?>. Please confirm your email so you can start setting up hosting.&nbsp;
 	  </div>
 	  <div></div>
 	</div>
@@ -24,11 +24,11 @@
 	  <a href="<?= $link ?>" target="_blank">Confirm Your Email Now</a>
 	</div>
 	<div class="section">
-	  Need help setting up your hosting? Our <a href="mailto:support@domcloud.co?subject=I need help set up hosting&amp;body=Hi, I want to ask you....">Support
+	  Need help setting up your hosting? Our <a href="mailto:support@<?= app()->emailDomainSender ?>?subject=I need help set up hosting&amp;body=Hi, I want to ask you....">Support
 	    Desk</a> can help you up.<br>
-	  You can also participate in <a href="https://github.com/domcloud/domcloud/discussions">community discussions</a> if you like to.
+	  You can also participate in <a href="<?= app()->appSupportUrl ?>">community discussions</a> if you like to.
 	</div>
-	<p class="unsub">Not registering through domcloud.co? Ignore this email.</p>
+	<p class="unsub">Not registering through <?= app()->appPortalUrl ?>? Ignore this email.</p>
   </div>
 </body>
 
