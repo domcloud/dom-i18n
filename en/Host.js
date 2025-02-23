@@ -63,6 +63,7 @@ export default {
     "websiteUsername": "Website Username",
     "websiteDomain": "Website Domain",
     "manageHostLogin": "Manage Host Login",
+    "manageDatabase": "Manage Database",
     "total": "Total",
     "used": "Used",
     "remainingMonthlyPlan": "Remaining Monthly Plan",

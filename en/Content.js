@@ -301,6 +301,20 @@ export default {
             inputSubfolderNotUnique: "Subfolder value must unique with other subfolder entries",
         }
     },
+    hostDB: {
+        title: `Manage Database`,
+        description: `<p>This page helps you see database lists and create or drop databases that linked to this domain</p> 
+        <p>
+            We support creating MariaDB (MySQL-compatible), PostgreSQL and Valkey (Redis-compatible) databases.
+            To access it, connect to localhost with port 3306, 5432 and 6379 respectively. You can also use our web
+            editor to manage its content.
+        </p> <p>
+            MariaDB and PostgreSQL uses the same username and password across all databases in a domain, while Valkey uses
+            the database name as the username and unique password for each database. Also, since our database is shared across
+            a single server, administrative queries inside the database is limited. Refer to our documentation for more details. 
+        </p>`,
+        helpText: `Help on configuration`,
+    },
     hostDNS: {
         title: `Check DNS Config`,
         description: `<p>This page helps you change DNS records if you point your domain name server to us. 
