@@ -129,7 +129,8 @@ export default {
   each time you login or your websites has enough network traffic (>50 MB)
   at the end of the month.
   `,
-    "discountedAt": "Discounted at {0}",
+    "discountedAt": "Discount of {0} placed",
+    "paymentFeeAt": "Payment fees of {0} placed",
     "extendingCurrentExpiryDate": "Extending current expiry date",
     "usersLimitHint": "{0} {0, plural, one {user} other {users}} in this team, {1} {1, plural, one {user} other {users}} can be added more",
     "emailToInvite": "Email to invite",

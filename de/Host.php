@@ -4,9 +4,9 @@
 	'invoiceDomainTransferOf' => 'Domain Transfer of {0}',
 	'invoiceTeamPurchaseOf' => 'Team Purchase of {0} plan',
 	'invoiceTeamAddons' => 'Team Add-ons',
-	'invoiceForMonths' => ' for {0} months',
-	'invoiceForYears' => ' for {0} years',
-	'invoiceForYearsAndMonths' => ' for {0} years and {1} months',
+	'invoiceForMonths' => 'for {0}',
+	'invoiceForYears' => 'for {0}',
+	'invoiceForYearsAndMonths' => 'for {0} and {1}',
 	'invoiceDataTransferAddonsFor' => 'Additional Data transfer for {0} GB',
 	'invoiceTip' => 'Convenience Fee',
 
