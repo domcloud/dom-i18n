@@ -2,6 +2,7 @@
 	'code' => 'en',
 	'codename' => 'English',
 	'codedir' => 'ltr',
+	'currency' => 'usd',
 	'login' => 'Sign In',
 	'register' => 'Register',
 	'email' => 'Email',
