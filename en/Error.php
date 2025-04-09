@@ -16,6 +16,7 @@
 	'inviteNewFail' => 'Failed to invite, maybe they already been added?',
 	'inviteRemoveFail' => 'Failed to remove member, maybe they already been removed?',
 
+	'inviteCodeNeedSubscribe' => 'Invite Code generation requires subscribe',
 	'inviteCodeInvalid' => 'Invite Code Invalid',
 	'inviteCodeExpired' => 'Invite Code Expired',
 
