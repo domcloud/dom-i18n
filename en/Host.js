@@ -84,6 +84,7 @@ export default {
     "useDefaultCname": "Use default domain name ({0})",
     "useDifferentPassword": " Use different password for {0}",
     "redeploy": "Redeploy",
+    "askForHelp": "Ask for help",
     "debugManually": "Debug Manually",
     "startOver": "Start Over",
     "deployScript": "Deploy Script",
