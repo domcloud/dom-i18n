@@ -224,7 +224,7 @@ export default {
                 static: "Static",
                 php: "PHP-FPM",
                 app: "Phusion App",
-                gls: "Generic App",
+                gls: "Shell Command",
                 socat: "Forward Port",
                 deny: "Deny Requests",
             },
