@@ -162,6 +162,7 @@ export default {
     "why": "Why?",
     "pay": "Pay",
     "payAccept": "We accept payments through",
+    "sales": "Sales",
     "loading": "Gathering data...",
     "fetchError": "Error fetching data! try again later",
     "notFound": "Not Found",
