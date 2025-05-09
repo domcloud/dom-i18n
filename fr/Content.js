@@ -225,7 +225,7 @@ export default {
                 php: "PHP-FPM",
                 app: "Phusion App",
                 gls: "Shell Command",
-                socat: "Forward Port",
+                proxy: "Forward Port",
                 deny: "Deny Requests",
             },
             staticMode: "Static Mode",
@@ -244,7 +244,7 @@ export default {
                 index: 'Root Index - Standard',
                 always: 'Root Index - Always',
             },
-            socatPort: 'Forward to Port',
+            proxyPort: 'Forward to Port',
             appMode: 'App Mode',
             appEntry: 'App Startup File',
             appBin: 'App Binary Path',
@@ -262,7 +262,7 @@ export default {
         },
         hints: {
             root: "Static files from {0} will be resolved to {1}",
-            socat: "Forward client requests to port {0}",
+            proxy: "Forward client requests to port {0}",
             app: "Invoke {0} script from {1} using {2} from {3}",
             gls: "Run \"{0}\" from {1} with given $PORT",
             staticModes: {

@@ -236,7 +236,7 @@ export default {
                 php: "PHP-FPM",
                 app: "Aplicación Phusion",
                 gls: "Aplicación Genérica",
-                socat: "Reenviar Puerto",
+                proxy: "Reenviar Puerto",
                 deny: "Denegar Solicitudes",
             },
             staticMode: "Modo Estático",
@@ -255,7 +255,7 @@ export default {
                 index: 'Índice Root - Estándar',
                 always: 'Índice Root - Siempre',
             },
-            socatPort: 'Reenviar al Puerto',
+            proxyPort: 'Reenviar al Puerto',
             appMode: 'Modo de Aplicación',
             appEntry: 'Archivo de Inicio de la Aplicación',
             appBin: 'Ruta Binaria de la Aplicación',
@@ -273,7 +273,7 @@ export default {
         },
         hints: {
             root: "Los archivos estáticos desde {0} se resolverán a {1}",
-            socat: "Reenviar solicitudes de cliente al puerto {0}",
+            proxy: "Reenviar solicitudes de cliente al puerto {0}",
             app: "Invocar el script {0} desde {1} usando {2} desde {3}",
             gls: "Ejecutar \"{0}\" desde {1} con $PORT dado",
             staticModes: {

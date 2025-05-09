@@ -207,7 +207,7 @@ export default {
                 php: "PHP-FPM",
                 app: "Aplicativo Phusion",
                 gls: "Aplicativo Genérico",
-                socat: "Encaminhamento de Porta",
+                proxy: "Encaminhamento de Porta",
                 deny: "Negar Solicitação",
             },
             staticMode: "Modo Estático",
@@ -226,7 +226,7 @@ export default {
                 index: 'Root Index - Padrão',
                 always: 'Root Index - Sempre',
             },
-            socatPort: 'Encaminhamento de Porta',
+            proxyPort: 'Encaminhamento de Porta',
             appMode: 'Modo Aplicativo',
             appEntry: 'Arquivo de Entrada do Aplicativo',
             appBin: 'Caminho binário do Aplicativo',
@@ -244,7 +244,7 @@ export default {
         },
         hints: {
             root: "Resolve {1} para arquivos estáticos de {0}",
-            socat: "Encaminha solicitações do cliente para a porta {0}",
+            proxy: "Encaminha solicitações do cliente para a porta {0}",
             app: "Executa o script {0} de {1} com {2} de {3}",
             gls: "Executa \"{0}\" de {1} para a porta especificada $PORT",
             staticModes: {

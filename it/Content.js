@@ -226,7 +226,7 @@ export default {
                 php: "PHP-FPM",
                 app: "App Phusion",
                 gls: "App Generica",
-                socat: "Inoltra Porta",
+                proxy: "Inoltra Porta",
                 deny: "Rifiuta Richieste",
             },
             staticMode: "Modalità statica",
@@ -245,7 +245,7 @@ export default {
                 index: 'Indice root - Standard',
                 always: 'Indice root - Sempre',
             },
-            socatPort: 'Inoltra a Porta',
+            proxyPort: 'Inoltra a Porta',
             appMode: 'Modalità App',
             appEntry: 'File di avvio App',
             appBin: 'Percorso binario App',
@@ -263,7 +263,7 @@ export default {
         },
         hints: {
             root: "I file statici da {0} verranno risolti in {1}",
-            socat: "Inoltra le richieste dei client alla porta {0}",
+            proxy: "Inoltra le richieste dei client alla porta {0}",
             app: "Esegui il script {0} da {1} utilizzando {2} da {3}",
             gls: "Esegui \"{0}\" da {1} con la porta $PORT assegnata",
             staticModes: {

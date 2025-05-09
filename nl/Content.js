@@ -204,7 +204,7 @@ export default {
                 php: "PHP-FPM",
                 app: "Phusion App",
                 gls: "Algemene App",
-                socat: "Poortdoorsturing",
+                proxy: "Poortdoorsturing",
                 deny: "Verzoek weigeren",
             },
             staticMode: "Statische modus",
@@ -223,7 +223,7 @@ export default {
                 index: 'Rootindex - Standaard',
                 always: 'Rootindex - Altijd',
             },
-            socatPort: 'Poortdoorsturing',
+            proxyPort: 'Poortdoorsturing',
             appMode: 'App-modus',
             appEntry: 'App startbestand',
             appBin: 'App-binary pad',
@@ -241,7 +241,7 @@ export default {
         },
         hints: {
             root: "Lost {1} op naar statische bestanden vanaf {0}",
-            socat: "Stuurt klantverzoeken door naar poort {0}",
+            proxy: "Stuurt klantverzoeken door naar poort {0}",
             app: "Voert {0} script uit vanaf {1} met {2} vanuit {3}",
             gls: "Voert \"{0}\" uit vanuit {1} naar gespecificeerde $PORT",
             staticModes: {

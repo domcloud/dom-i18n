@@ -229,7 +229,7 @@ export default {
                 php: "PHP-FPM",
                 app: "Phusion App",
                 gls: "Generische App",
-                socat: "Port weiterleiten",
+                proxy: "Port weiterleiten",
                 deny: "Anfragen verweigern",
             },
             staticMode: "Statischer Modus",
@@ -248,7 +248,7 @@ export default {
                 index: 'Root-Index - Standard',
                 always: 'Root-Index - Immer',
             },
-            socatPort: 'Weiterleiten zu Port',
+            proxyPort: 'Weiterleiten zu Port',
             appMode: 'App-Modus',
             appEntry: 'App-Startdatei',
             appBin: 'App-Binärpfad',
@@ -266,7 +266,7 @@ export default {
         },
         hints: {
             root: "Statische Dateien von {0} werden nach {1} aufgelöst",
-            socat: "Leite Kundenanfragen an Port {0} weiter",
+            proxy: "Leite Kundenanfragen an Port {0} weiter",
             app: "Führe {0}-Skript aus {1} mit {2} von {3} aus",
             gls: "Führe \"{0}\" aus {1} mit gegebenem $PORT aus",
             staticModes: {

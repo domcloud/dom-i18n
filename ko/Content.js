@@ -205,7 +205,7 @@ export default {
                 php: "PHP-FPM",
                 app: "Phusion App",
                 gls: "일반 앱",
-                socat: "포트 전달",
+                proxy: "포트 전달",
                 deny: "요청 거부",
             },
             staticMode: "정적 모드",
@@ -224,7 +224,7 @@ export default {
                 index: '루트 인덱스 - 표준',
                 always: '루트 인덱스 - 항상',
             },
-            socatPort: '포트 전달',
+            proxyPort: '포트 전달',
             appMode: '앱 모드',
             appEntry: '앱 시작 파일',
             appBin: '앱 바이너리 경로',
@@ -242,7 +242,7 @@ export default {
         },
         hints: {
             root: "{0}에서 {1}로 정적 파일을 해결합니다",
-            socat: "클라이언트 요청을 포트 {0}으로 전달합니다",
+            proxy: "클라이언트 요청을 포트 {0}으로 전달합니다",
             app: "{1}에서 {0} 스크립트를 {2}을 사용하여 {3}에서 호출합니다",
             gls: "\"{0}\"를 {1}에서 지정된 $PORT로 실행합니다",
             staticModes: {

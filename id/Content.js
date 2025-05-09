@@ -235,7 +235,7 @@ export default {
                 php: "PHP-FPM",
                 app: "Aplikasi Phusion",
                 gls: "Aplikasi Umum",
-                socat: "Meneruskan Port",
+                proxy: "Meneruskan Port",
                 deny: "Tolak Permintaan",
             },
             staticMode: "Mode Statis",
@@ -254,7 +254,7 @@ export default {
                 index: 'Indeks Root - Standar',
                 always: 'Indeks Root - Selalu',
             },
-            socatPort: 'Meneruskan ke Port',
+            proxyPort: 'Meneruskan ke Port',
             appMode: 'Mode Aplikasi',
             appEntry: 'File Startup Aplikasi',
             appBin: 'Jalur Biner Aplikasi',
@@ -272,7 +272,7 @@ export default {
         },
         hints: {
             root: "File statis dari {0} akan diselesaikan ke {1}",
-            socat: "Meneruskan permintaan klien ke port {0}",
+            proxy: "Meneruskan permintaan klien ke port {0}",
             app: "Jalankan skrip {0} dari {1} menggunakan {2} dari {3}",
             gls: "Jalankan \"{0}\" dari {1} dengan $PORT yang diberikan",
             staticModes: {
