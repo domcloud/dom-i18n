@@ -10,6 +10,7 @@ export default {
     "owner": "Owner",
     "admin": "Admin",
     "member": "Member",
+    "client": "Client",
     "team": "Team",
     "email": "Email",
     "storage": "Storage",

@@ -22,6 +22,7 @@
 
 	'unknownAction' => 'Unknown Action',
 	'hostIsNotActive' => 'Unable to apply task while this host is not active',
+	'hostNoDeployment' => 'Unable to run deployments without SSH access',
 	'needVerifyEmail' => 'Please verify your email first',
 	'hostQuotaLimit' => 'Sorry, you need to upgrade your plan to create more hosts. If you already have, check your balance or contact support.',
 	'usingInternalDomain' => 'Sorry, you can\'t use our domain here',
