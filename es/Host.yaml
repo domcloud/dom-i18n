@@ -1,0 +1,115 @@
+status:
+  active: Activo
+  starting: Iniciando
+  suspended: Suspendido
+  moving: Moviendo
+  removing: Eliminando
+  removed: Eliminado
+invoiceDomainPurchaseOf: Compra de dominio {0}
+invoiceDomainExtendOf: Renovación de dominio {0}
+invoiceDomainTransferOf: Transferencia de dominio {0}
+invoiceTeamPurchaseOf: Compra de equipo con plan {0}
+invoiceTeamAddons: Complementos de equipo
+invoiceForMonths: ' por {0, plural, =1{# mes} other{# meses}}'
+invoiceForYears: ' por {0, plural, =1{# año} other{# años}}'
+invoiceForYearsAndMonths: ' por {0, plural, =1{# año} other{# años}} y {1, plural, =1{# mes} other{# meses}}'
+invoiceDataTransferAddonsFor: Transferencia de datos adicional por {0} GB
+invoiceTip: Tarifa de conveniencia
+listTitle: Lista de sitios web
+newOrder: Añadir un sitio web
+tabDetail: Información
+tabSetup: Configurar
+tabManage: Gestione
+tabRunner: Despliegue
+tabDatabase: Base de Datos
+tabSubdomain: Subdominio
+tabSoftware: Software
+tabWebhook: Webhook
+tabCheck: Consulte
+tabConnection: Comprobar conexión
+tabFirewall: Comprobar cortafuegos
+tabNginx: Compruebe NGINX
+tabDns: Compruebe DNS
+tabLog: Comprobar registros
+tabUser: Verificar Usuario
+tabAdmin: Admin
+tabRename: Cambiar nombre de usuario
+tabCname: Cambiar dominio
+tabPasswd: Cambiar contraseña
+tabServer: Cambiar región
+tabTransfer: Sitio web de transferencias
+tabDelete: Borrar sitio web
+startFromTemplate: Partir de una plantilla
+uploadOrClone: Subir o clonar desde Internet
+seeMoreTemplates: Ver más plantillas web
+customTemplate: Plantilla personalizada
+customDomain: Dominio personalizado
+mergeToParentDomain: Fusión con el dominio principal
+fetchingDomains: '...Búsqueda de dominios'
+moreTemplates: Más plantillas
+portalUsername: Nombre de usuario
+portalUsernameHint: Sólo alfanumérico y guión
+portalPassword: Contraseña
+serverName: Región
+scheme: Plan
+usage: Utilización
+month: Mes
+year: Año(s)
+free: Gratis
+database: Base de Datos
+additionalServices: Servicios Adicionales
+softwareCompilers: Compiladores de Software
+enableNewFeatures: Habilitar Nuevas Funciones
+addHost: Añadir un sitio web
+emptyList: No hay página web
+waitForDataHint: El uso de recursos aparecerá aquí
+IPAddress: Dirección IP
+openWebsite: Abrir el sitio web
+openPortal: Portal abierto
+creationDate: Fecha de compra
+websiteStatus: Estado del Sitio Web
+websiteUsername: Nombre de Usuario del Sitio Web
+websiteDomain: Dominio del Sitio Web
+manageHostLogin: Gestionar inicio de sesión de host
+total: Total
+used: Usado
+remainingMonthlyPlan: Plan mensual restante
+remainingAddons: Complementos restantes
+createDatabase: Crear Base de Datos {0}
+createDatabaseHint: Ingrese el nombre de la nueva base de datos {0}
+createDatabaseConfirm: Se creará "{0}", ¿continuar?
+dropDatabase: Eliminar Base de Datos {0}
+dropDatabaseConfirm: Se eliminará "{0}", ¿continuar?
+dropDatabaseConfirm2: ¿Realmente quieres ejecutar "{0}"? Esto no se puede deshacer.
+tables: '{0} {0, plural, one {tabla} other {tablas}}'
+noSubdomain: Utilice un dominio personalizado para crear subdominios
+createSubdomain: Crear un nuevo subdominio
+deleteSubdomain: Eliminar subdominio {0}
+deleteSubdomainConfirm: Se eliminará el subdominio "{0}", ¿continuar?
+deleteSubdomainConfirm2: ¿Realmente quieres ejecutar "{0}"? Esto no se puede deshacer.
+enterFullDomainName: Ingrese el nombre de dominio completo
+useDefaultCname: Usar el nombre de dominio predeterminado ({0})
+useDifferentPassword: Usar una contraseña diferente para {0}
+redeploy: Redistribuya
+debugManually: Depurar manualmente
+startOver: Empezar de nuevo
+deployScript: Desplegar script
+deployAdd: Añadir una tarea de despliegue
+deployNow: Ejecutar!
+deployClearHint: ¿Borrar todos los registros?
+websiteReadyHint: Su sitio está listo. ¿Intentar visitarlo ahora?
+deployByAdmin: Ejecutado Por Mod del Sistema
+deployOverwriteBanner: ¡Este script reemplazará todos los archivos de este sitio web!
+deployOverwriteWarn: Usted mencionó el parámetro fuente, lo que significa que su archivo HOME será PERMANENTEMENTE SOBREESCRITO. Esta acción no puede ser revertida. ¿Está usted seguro?
+deployHelpBtn: Desplegar Config Referencia
+githubWebhook: Configurar Webhook
+githubWebhookTitle: Configurar la acción de GitHub
+githubWebhookHelp: Puede utilizar este webhook para desplegar automáticamente su sitio web cuando se empuja a GitHub.
+githubWebhookHelpBtn: Ayuda de GitHub Action Webhook
+noWebhook: No hay webhooks configurados para este host.
+noGitHubApi: La API de GitHub no está disponible
+noGitHubApiToken: No se ha encontrado el token de la API de GitHub
+noGitHubApiHint: Primero debe vincular una cuenta de GitHub con acceso completo al repositorio..
+noGitHubApiLink: Vincular GitHub ahora
+noRepo: No se ha encontrado ningún repositorio
+noRepoHint: Intente limitar su búsqueda

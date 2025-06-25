@@ -1,0 +1,17 @@
+listTitle: Código de invitación
+startingHint: ¿Un amigo quiere probar nuestro servicio? Envíale un código de invitación. Puede que recibas una recompensa cuando tu amigo se actualice.
+freePlanHint: Lo sentimos. Los usuarios gratuitos no pueden crear un nuevo código. Por favor, actualiza o pide un código de invitación en nuestro Foro de la Comunidad de Discord..
+newOrder: Crear un nuevo código de invitación
+code: Código de invitación
+credit: Crédito actual
+quota: Inscribirse a la izquierda
+totalRedeem: Crédito total
+totalSignup: Total de inscripciones
+expiry: Expiración del código de invitación
+cooldown: Renovar Código Enfriamiento
+editQuota: Editar cuota
+editQuotaTitle: Editar cuota y establecer un nuevo código
+editQuotaHint: Seleccione el límite de código de invitación para un nuevo código
+noInvitees: Aún no hay inscripciones registradas
+inviteeCode: Código de inscripción
+inviteeJoinTime: Hora de entrada

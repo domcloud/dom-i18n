@@ -1,0 +1,47 @@
+check: जांच
+detail: विवरण
+dns: DNS
+renew: नवीनीकरण
+renewDomain: डोमेन नवीनीकरण
+listTitle: डोमेन सूची
+newOrder: डोमेन खरीदें
+transferDomain: डोमेन स्थानांतरित करें
+registerTitle: डोमेन खाता पंजीकरण
+administrationData: प्रशासन डेटा
+addressData: पता डेटा
+address: पता
+address1: पता (लाइन 1)
+address2: पता (लाइन 2)
+address3: पता (लाइन 3)
+city: शहर
+state: राज्य
+country: देश
+zipCode: पिन कोड
+company: कंपनी
+companyName: कंपनी / संगठन का नाम
+domainName: डोमेन नाम
+domainStatus: डोमेन स्थिति
+enterContact: डोमेन संपर्क दर्ज करें
+contactEntered: डोमेन संपर्क दर्ज किया गया
+myOwn: जो डोमेन मैंने ऑर्डर किया है वह मेरा है
+enterBio: संपर्क दर्ज करें
+publicBio: सार्वजनिक संपर्क / डोमेन मालिक
+personalBio: व्यक्तिगत संपर्क / जिम्मेदार डोमेन
+domainPrice: डोमेन मूल्य
+emptyList: कोई डोमेन सूचीबद्ध नहीं है
+registrationDate: पंजीकरण तिथि
+expirationDate: समाप्ति तिथि
+transferLock: स्थानांतरण लॉक
+privacyLock: गोपनीयता लॉक
+nameServers: नाम सर्वर
+checkHint: जांच बटन पर क्लिक करें
+checkFail: डोमेन उपलब्धता की जांच विफल रही
+findDomain: डोमेन खोजें
+findWait: जांच हो रही है...
+findUnavailable: डोमेन वर्तमान में उपलब्ध नहीं है।
+findNeedData: हम तब तक डोमेन खरीद प्रक्रिया नहीं कर सकते जब तक आप आवश्यक डेटा को भर नहीं देते।
+findNeedDataAction: अब भरें
+verifyHint: खरीदारी के 15 दिनों के भीतर आपको अपना ईमेल सत्यापित करना होगा, अन्यथा हमारा रजिस्ट्रार आपके डोमेन को निलंबित कर देगा!
+verifyBtn: सत्यापन ईमेल को पुनः भेजें {0}
+transferCode: EPP / ट्रांसफर कोड
+showTransferCode: EPP कोड दिखाएं

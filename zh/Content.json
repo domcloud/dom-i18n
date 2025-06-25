@@ -1,0 +1,310 @@
+{
+  "footer": {
+    "help": "有什么问题吗？在<a href=\"{0}\" target=\"_blank\">论坛</a>或通过\n        <a href=\"{1}\">电子邮件</a>或\n        <a href=\"{2}\">聊天</a>请求帮助。",
+    "credit": "{0}, 由<a href=\"{1}\">{2}</a>创建"
+  },
+  "welcome": {
+    "title": "欢迎来到{0}！ 🎉",
+    "description": " <p>你好，{0}</p>\n        <p>\n          感谢您加入{1}，获得在互联网上取得成功的自由！\n        </p>\n        <p>\n          为了能为你提供最佳服务，我们需要确认你当前所在的区域。\n          这也会影响你的支付选项和默认服务器位置，之后你可以更改：\n        </p>\n        ",
+    "createWebsiteHint": "准备好了吗？我们来创建你的第一个网站吧。",
+    "createWebsiteBtn": "创建网站",
+    "emailConfirmation": "\n            似乎你需要先验证电子邮件 <strong>{0}</strong>\n            才能继续。<br />\n            请检查你的电子邮件（和垃圾邮件）收件箱。\n        ",
+    "emailConfirmationHint": "还没有收到电子邮件？",
+    "emailConfirmationBtn": "重新发送确认电子邮件",
+    "emailConfirmationSent": "确认电子邮件已发送到 <strong>{0}</strong>！",
+    "changeCountryBtn": "更改国家"
+  },
+  "notification": {
+    "freeUserGuideTitle": "欢迎 onboard！",
+    "freeUserGuideHint": "感谢您选择我们作为您的云平台 🥳 如果您还没有，请尝试阅读我们的<a href=\"{0}\" target=\"_blank\">入门指南</a>。需要我们的完整体验？尝试<a href=\"{1}\">升级您的计划</a>以移除 API 防火墙、免费域名横幅，并解锁<a href=\"{2}\" target=\"_blank\">更多功能</a>！",
+    "lockedUserGuideTitle": "欢迎 onboard！",
+    "lockedUserGuideHint": "感谢您选择我们作为您的云平台 🥳 在<a href=\"{0}\">此处</a>创建您的第一个网站。您可能需要链接您的 GitHub 帐户以验证此帐户。您也可以<a href=\"{1}\">升级您的计划</a>，立即验证您的帐户并解锁<a href=\"{2}\" target=\"_blank\">更多功能</a>，成为订阅帐户。",
+    "accountNoticeTitle": "⚠️ 您的帐户可能被暂停",
+    "accountNoticeHint": "由于以下原因，您的帐户已被暂停：{0}。您可以<a href=\"{1}\">升级您的计划</a>来解决此问题。",
+    "empty": "这里没有内容"
+  },
+  "purchaseConfirmation": {
+    "purchasedHint": "谢谢。如果我们的系统确认了你的付款，确认电子邮件将发送到你的电子邮件地址。",
+    "purchaseCancel": "你的付款已取消。"
+  },
+  "accountDeletion": {
+    "title": "删除你的账户",
+    "hint": "注意！删除账户是永久性的，我们无法撤消操作。如果你有主机或已注册域名，你需要先删除它们。如果需要帮助，请联系我们。",
+    "prompt": "请写下你的电子邮件以同意删除账户。",
+    "disabled": "如果仍有主机或已注册域名，则无法删除此账户。"
+  },
+  "hostNeedInvite": {
+    "title": "需要邀请码",
+    "hint": "你好 👋 要享受我们的免费计划，我们需要通过邀请码或 GitHub 帐户链接信任您。邀请码来自向您推荐此平台的人。",
+    "hintBtn": "授权！",
+    "hintGitHub": "或者，你可以链接你的 GitHub 帐户。你的 GitHub 帐户必须<b>至少有六个月的历史并且有一个或多个关注者</b>。",
+    "githubFail": "抱歉！你的已链接 GitHub 帐户尚未被信任。你可以尝试重新链接符合我们要求的正确帐户。",
+    "altHint": "如果你希望跳过此步骤，可以<a href=\"{0}\">至少升级一次</a>。升级可以验证你是真正的人类，无需邀请码或链接额外帐户即可被信任 😄。"
+  },
+  "hostCreate": {
+    "chooseTemplate": "选择一个模板开始",
+    "startFromScratch": "从头开始",
+    "uploadFileHint": "上传或输入URL以分析内容",
+    "readingTheFile": "读取文件中...",
+    "readingFiles": "读取{1}中的{0}个文件...",
+    "readingZipFile": "读取ZIP文件中...",
+    "compressingZipFile": "压缩到ZIP文件中...",
+    "uploadingFiles": "上传文件中... ({1}中的{0})",
+    "uploadCompleted": "上传完成 ({0}个文件，总大小{1})",
+    "uploadError": "上传失败，状态代码{0}",
+    "emptyZipFile": "ZIP中未找到文件",
+    "noFileSelected": "未选择文件",
+    "exceededFileSizeLimit": "文件大小({0})超过限制({1})，尝试先上传到GitHub并在此处放置链接。",
+    "missingTemplate": "无法获取数据模板。该文件可能仍然丢失。",
+    "checkingRepo": "检查此存储库...",
+    "cloneWithDeployKey": "将使用部署密钥克隆存储库。",
+    "uploadDirectory": "上传目录",
+    "uploadZipFile": "上传ZIP文件",
+    "dropDirectory": "拖放目录...",
+    "dropZipFile": "拖放ZIP文件...",
+    "dropWhatsThat": "那不是ZIP文件或目录...",
+    "dropMultiple": "(请只拖放一个文件或目录)",
+    "readingDroppedDirectory": "读取拖放的目录中...",
+    "readingDroppedZipFile": "读取拖放的ZIP文件中...",
+    "orPasteUrl": "... 或粘贴Git Repo/Zip URL",
+    "attachDeployKey": "附加部署密钥",
+    "selectFramework": "告诉我们框架或语言",
+    "applyFramework": "应用此模板",
+    "attachDeployKeyHint": "如果你的存储库设置为私有，你可以\n            使用部署密钥进行访问。我们为你创建了一个非对称部署密钥，你需要将此公钥添加到你的存储库中。",
+    "attachDeployKeyLearnMore": "了解更多关于使用部署密钥进行GitHub集成的信息。",
+    "attachDeployKeyOpenConfig": "打开存储库部署密钥配置",
+    "attachDeployKeyConfirm": "我添加了这个公钥"
+  },
+  "hostConnection": {
+    "title": "Check Connection",
+    "description": "\n        <p>\n            This page checks if this website is accessible from the\n            internet.\n        </p>\n        <p>\n            There are three prerequisites for a website to be accessible\n            from the internet:\n        </p>\n        <ul>\n            <li>The DNS server must be available</li>\n            <li>The returned IP address must be correct</li>\n            <li>The server's content must be accessible</li>\n        </ul>\n        <p>\n            If one of the prerequisites above fails, this website may\n            not be accessible from the internet.\n        </p>",
+    "dnsOffTitle": "No name server",
+    "dnsOffContent": "This website does not have a name server. It maybe externally configured.",
+    "dnsManagedTitle": "DNS managed",
+    "dnsManagedContent": "This website's DNS is managed by {0}.",
+    "dnsMixedTitle": "DNS is mixed",
+    "dnsMixedContent": "This website's DNS has a mixed\n            configuration. Ensure that the name server\n            is configured properly. Do not mix our\n            records with other records!",
+    "dnsExternalTitle": "DNS managed externally",
+    "dnsExternalContent": "This website's DNS is handled by a third party.",
+    "pingNoIpTitle": "IP Address not found",
+    "pingNoIpContent": "The DNS server does not return an IP address.",
+    "pingNoIp6Title": "No IPv6",
+    "pingNoIp6Content": " This website's DNS has no IPv6 address. It maybe unavailable for IPv6 users.",
+    "pingWrongIpTitle": "Incorrect IP Address",
+    "pingWrongIpContent": "This website's DNS returned an incorrect IP address. \n            It may not serve the correct content, or it's behind a proxy.",
+    "pingNoWwwTitle": "www.* subdomain IP address not found",
+    "pingNoWwwContent": " \n            Some people may not be able to access this\n            website if they prefix it with www. Setup a\n            www subdomain redirect is recommended.",
+    "pingOkTitle": "IP Address OK",
+    "pingOkContent": "This website's DNS returned the correct IP address.",
+    "webNoHttpTitle": "Website is not accessible",
+    "webNoHttpContent": "This website is not accessible via HTTP.",
+    "webNoHttpsTitle": "HTTPS not available",
+    "webNoHttpsContent": "This website may not have HTTPS certificate\n            installed, or it's expired, or not configured properly.",
+    "webBadHttpTitle": "Website is returning an error",
+    "webBadHttpContent": "This website returns 500 or 403 error, \n            it may not be configured properly (check NGINX/App settings!).",
+    "webBadRedirectTitle": "Website is has bad redirects",
+    "webBadRedirectContent": "This website is redirecting visitors to outside the domain, \n            it may not be configured properly (check Base URL settings!).",
+    "webBadWwwTitle": "www.* subdomain is not accessible",
+    "webBadWwwContent": "This website's www subdomain is either not accessible or returning error.",
+    "webInsecureTitle": "Website is not fully secure",
+    "webInsecureContent": " This website doesn't redirect HTTP to HTTPS,\n            which is fine but not recommended.",
+    "webOkTitle": "Website is OK",
+    "webOkContent": "This website is accessible via HTTP and HTTPS."
+  },
+  "hostFirewall": {
+    "title": "Check Firewall",
+    "description": "\n        <p>\n            Firewall helps your website not to be exploited in the event of a\n            hacker break-in by blocking all outgoing traffic except those on the\n            <a href=\"{0}\" target=\"_blank\" rel=\"noreferrer\">whitelist</a>.\n        </p>\n        <p>\n            Depending on your use of the website, you may want to turn off the\n            firewall if your website requires third party API or other forms of \n            communication not listed in the whitelist.\n        </p>\n        <p>The firewall applies to the domain and all subdomains within. It is \n        mandatorily turned on for users with free plan. To turn it off, you \n        have to be in subscribing plan (Lite or above).</p>\n        <p><a href=\"{1}\" target=\"_blank\" rel=\"noreferrer\">Read more</a></p>\n        ",
+    "offTitle": "Firewall is off",
+    "offContent": "<p>\n            All outgoing traffic is allowed. Keep your site secure, please!\n        </p>",
+    "offBtn": "Turn it on",
+    "onTitle": "Firewall is active",
+    "onContent": "<p>\n            All third-party outgoing connection is blocked except for whitelists.<br/>\n            Turn it off to remove this limitation.\n        </p>",
+    "onBtn": "Turn it off"
+  },
+  "hostNginx": {
+    "title": "Check NGINX Config",
+    "description": "\n        <p>\n            NGINX is our main server gateway that serves HTTP ports (80 and 443).\n            To make your website works, your web app must be correctly configured\n            here. Here you can view your current configuration and make changes \n            either via preconfigured UI or full-blown NGINX config as YAML script. \n        </p>\n        <p>\n            NGINX typically serves static content first that's configured via <code>root</code>\n            path, or forward the request dynamically to your App via PHP-FPM <code>fastcgi</code> \n            or Passenger <code>passenger</code> if such file doesn't exist.\n        </p>\n        <p>\n            NGINX config is different for subdomains. If your subdomain content happens \n            to live inside this website, please enter the subdomain name below to configure it. \n            Also, please take a moment to read <a href=\"{0}\" target=\"_blank\" rel=\"noreferrer\">\n            our NGINX Configuration</a> or contact us in case you came into a problem.\n        </p>\n        ",
+    "subdomain": "Subdomain",
+    "error": "ERROR: no configuration exists for {0}",
+    "errorFetch": "There was an error fetching the NGINX config",
+    "notExist": "ERROR: no configuration exists for {0}",
+    "tabCurrent": "Current NGINX Config",
+    "tabEdit": "Edit Interactively",
+    "tabPreview": "Preview Changes",
+    "labels": {
+      "subfolderConfig": "Subfolder Config",
+      "rootConfig": "Root Config",
+      "rootPath": "Root Path",
+      "rootIsAlias": "Root is Alias",
+      "resolveType": "Resolve Type",
+      "resolveTypes": {
+        "static": "Static",
+        "php": "PHP-FPM",
+        "app": "Phusion App",
+        "gls": "Shell Command",
+        "socat": "Forward Port",
+        "deny": "Deny Requests"
+      },
+      "staticMode": "Static Mode",
+      "staticModes": {
+        "default": "Default",
+        "smart": "Smart",
+        "autoindex": "Auto-index",
+        "index": "Root Index"
+      },
+      "static404Path": "404 HTML File Path",
+      "phpMode": "PHP Mode",
+      "phpModes": {
+        "default": "Default",
+        "smart": "Smart",
+        "indexSafe": "Root Index - Safe",
+        "index": "Root Index - Standard",
+        "always": "Root Index - Always"
+      },
+      "socatPort": "Forward to Port",
+      "appMode": "App Mode",
+      "appEntry": "App Startup File",
+      "appBin": "App Binary Path",
+      "appModes": {
+        "default": "Auto",
+        "node": "Node",
+        "python": "Python",
+        "ruby": "Ruby"
+      },
+      "glsCmd": "App Command",
+      "appEnv": "Environment Keys",
+      "appDev": "Development Mode?",
+      "appRoot": "Working Directory",
+      "addSubfolderConfig": "Add subfolder config"
+    },
+    "hints": {
+      "root": "Static files from {0} will be resolved to {1}",
+      "socat": "Forward client requests to port {0}",
+      "app": "Invoke {0} script from {1} using {2} from {3}",
+      "gls": "Run \"{0}\" from {1} with given $PORT",
+      "staticModes": {
+        "default": "Serve static files",
+        "smart": "Attempt to find HTML file if possible",
+        "index": "Serve root index.html if no file found",
+        "autoindex": "Allow listing server files if index.html is not found",
+        "with404": "or show custom 404 error page"
+      },
+      "phpModes": {
+        "default": "Serve index.php or php files that ends with .php",
+        "smart": "Attempt to find PHP file without .php",
+        "indexSafe": "Serve root index.php but don't try if client looks for a file",
+        "index": "Serve root index.php when static file is not found",
+        "always": "Allow PATH_INFO style requests handled to PHP"
+      },
+      "deleteSubfolderPrompt": "Are you sure want to delete subfolder config for {0}",
+      "inputSubfolderPrompt": "Please input subfolder (must start with '/' and no spaces)",
+      "inputSubfolderNotValid": "Subfolder input is not valid",
+      "inputSubfolderNotUnique": "Subfolder value must unique with other subfolder entries"
+    }
+  },
+  "hostDNS": {
+    "title": "Check DNS Config",
+    "description": "<p>This page helps you change DNS records if you point your domain name server to us. \n        </p> <p>Alternatively, you can also edit DNS records via Webmin.</p>",
+    "helpText": "Help on configuration",
+    "error": "ERROR: no configuration exists for {0}",
+    "errorFetch": "There was an error fetching the dns config",
+    "notExist": "ERROR: no configuration exists for {0}",
+    "tabCurrent": "Current DNS Settings",
+    "tabEdit": "Edit DNS Interactively",
+    "tabPreview": "Preview Changes",
+    "existingRecords": "Existing DNS Records",
+    "addedRecords": "Added DNS Records"
+  },
+  "hostLog": {
+    "runningList": "Running processes list",
+    "logTypeError": "NGINX Error Log",
+    "logTypeAccess": "NGINX Access Log",
+    "logTypePassenger": "Passenger App Log",
+    "logTypeErrorHint": "This log contains NGINX and PHP error logs for the current day",
+    "logTypeAccessHint": "This log contains NGINX access logs for the current day",
+    "logTypePassengerHint": "This log contains Passenger App log that's currently running",
+    "errorFetch": "There was an error fetching the log file",
+    "subdomain": "Subdomain",
+    "maxLines": "Max Lines",
+    "emptyLog": "This log is empty right now"
+  },
+  "hostManage": {
+    "title": "Manage Website Access",
+    "description": "\n        <p>\n            Use the following login access to upload or edit your website\n            content. <a href=\"{0}\" target=\"_blank\">Learn more</a>.\n        </p>",
+    "openPorts": "Opened Ports",
+    "openPortsDescription": "Opened Ports for editing your server",
+    "onlineEditor": "Online Editors",
+    "webminInfo": "<p>\n            Webmin is used to manage your server files and\n            configurations using web interface.\n        </p>\n        <p>You'll be autologged in.</p>",
+    "filestashInfo": "<p>\n            Filestash is used to manage your server files \n            using web-interface of SFTP connection.\n            (to upload files, use drag-and-drop).\n        </p>\n        <p>You'll be autologged in.</p>",
+    "phpMyAdminInfo": " <p>\n        phpMyAdmin is used to manage MySQL database\n        using web interface.\n        </p>\n        <p class=\"mb-0\">\n            You need to enter credentials manually.\n        </p>",
+    "phpPgAdminInfo": "  <p>\n        phpPgAdmin is used to manage PostgreSQL database\n        using web interface.\n        </p>\n        <p class=\"mb-0\">\n            You need to enter credentials manually.\n        </p>",
+    "websshInfo": "<p>\n            WebSSH is used to open SSH connection using web\n            interface.\n            </p>\n            <p class=\"mb-0\">You'll be autologged in.</p>",
+    "vscodeInfo": " <p>\n            Open VS Code to edit files and run commands\n            directly on your server.<br />\n            Make sure you already have installed VS Code and\n            its Remote SSH Extension.\n        </p>\n        <p>\n            If you want to open another folder, enter here\n            and press return:\n        </p>"
+  },
+  "hostTransfer": {
+    "warn": "ATTENTION! Website transfer means moving it to another account. You will lose access to your data because the owner has changed!",
+    "currentOwner": "Current owner: {0}",
+    "hint": "Please enter the email of the account you wish to receive:",
+    "disabled": "You cannot transfer this website while it's not active.",
+    "member": "Members cannot transfer this website.",
+    "action": "Transfer!"
+  },
+  "hostDelete": {
+    "warn": "ATTENTION! Host deletions are permanent and we can't reverse the action. Please be certain.",
+    "hint": "Please enter your website username to agree to host deletion.",
+    "member": "Members cannot delete this website.",
+    "action": "Delete!"
+  },
+  "hostCname": {
+    "disabled": "You cannot change the domain name when this website is not active.",
+    "curHint": "Current domain name: ",
+    "hint": "You can change the main domain name website here. Enter the new domain name:",
+    "warn": "This will make your website unusable for current domain! Please update DNS in new domain beforehand for minimal downtime.",
+    "member": "Members cannot change the domain of this website.",
+    "action": "Change domain name!"
+  },
+  "hostRename": {
+    "disabled": "You cannot change the username when this website is not active.",
+    "hint": "You can change your website username here. Enter the new username:",
+    "warn": "This will also change database username! Your website may be unusable until you change it in your website config.",
+    "member": "Members cannot change the username of this website.",
+    "action": "Rename this username!"
+  },
+  "hostPasswd": {
+    "disabled": "You cannot change the password when this website is not active.",
+    "hint": "You can change your website password here. Enter the new password:",
+    "warn": "This will also change database password! Your website may be unusable until you change it in your website config.",
+    "member": "Members cannot change the password this website.",
+    "action": "Update this password!"
+  },
+  "hostCheck": {
+    "title": "Mandatory DNS Checkup",
+    "prompt": "This checks whether {0} can be resolved via Google's DNS before get added into our server.",
+    "valid": "This domain is resolvable",
+    "valid_with_note": "This domain will be resolvable once additional configs added automatically for you",
+    "incorrect": "Incorrect A+AAAA/CNAME record to this domain, please configure it first before continue.",
+    "missing": "Missing A+AAAA/CNAME record to this domain, please configure it first before continue.",
+    "loading": "...",
+    "retrying": "..."
+  },
+  "domain": {
+    "createInfo": "Keep in mind you are only registering a domain. If you want\n            to manage the website, <a href=\"{0}\" target=\"_blank\">create the website here</a>",
+    "transferInfo": "Make sure that you have access rights to transfer the\n            domain from another service. We will reach out to you if the\n            domain transfer fails after payment, but if you fail to\n            prove domain ownership through the EPP code or existing\n            document requirements, we cannot help you. By ToS you will\n            not get a refund in the purchase of a domain under any\n            circumstances.",
+    "eppTransferInfo": "You can transfer your domain to another registrar by\n            using this EPP code. The transfer works if the domain is not locked"
+  },
+  "invoiceDescription": {
+    "domainPurchaseOf": "Domain Purchase of {0}",
+    "domainExtendOf": "Domain Extend of {0}",
+    "domainTransferOf": "Domain Transfer of {0}",
+    "hostPurchase": "Host Purchase",
+    "hostRenew": "Host Renew",
+    "hostUpgrade": "Host Upgrade",
+    "hostExtend": "Host Extend",
+    "withPlan": " with {0} Plan",
+    "forMonths": " for {0} months",
+    "forYears": " for {0} years",
+    "forYearsAndMonths": " for {0} years and {1} months",
+    "dataTransferAddonsFor": "Additional Data transfer for {0} GB",
+    "tip": "Convenience Fee"
+  }
+}

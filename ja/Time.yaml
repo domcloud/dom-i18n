@@ -1,0 +1,12 @@
+years: '{0, plural, =1{# 年} other{# 年}}'
+months: '{0, plural, =1{# ヶ月} other{# ヶ月}}'
+weeks: '{0, plural, =1{# 週} other{# 週}}'
+days: '{0, plural, =1{# 日} other{# 日}}'
+hours: '{0, plural, =1{# 時間} other{# 時間}}'
+minutes: '{0, plural, =1{# 分} other{# 分}}'
+seconds: '{0, plural, =1{# 秒} other{# 秒}}'
+ago: '{0} 前'
+inFuture: '{0} 後'
+yesterday: 昨日
+tomorrow: 明日
+now: たった今

@@ -1,0 +1,167 @@
+logout: تسجيل الخروج
+profile: الملف الشخصي
+status: الحالة
+verifyStatus: حالة التحقق
+bannedHint: تم حظر حسابك، عذرًا.
+hosting: موقع ويب
+domain: نطاق
+backup: نسخة احتياطية
+owner: المالك
+admin: المسؤول
+member: عضو
+team: الفريق
+email: البريد الإلكتروني
+storage: التخزين
+bandwidth: النطاق الترددي
+instances: الحالات
+users: المستخدمين
+details: تفاصيل
+members: الأعضاء
+upgrade: ترقية
+otherTeams: فرق أخرى
+inviteCode: رمز الدعوة
+hostname: اسم المضيف
+port: المنفذ
+username: اسم المستخدم
+password: كلمة المرور
+server: الخادم
+ipv4: IPv4
+ipv6: IPv6
+ssh: SSH/SFTP
+webmin: Webmin
+filestash: Filestash
+mysql: MySQL
+postgresql: PostgreSQL
+redis: Redis
+mysql2: MySQL (MariaDB)
+redis2: Redis (Valkey)
+phpmyadmin: phpMyAdmin
+phppgadmin: phpPgAdmin
+phprdadmin: phpRdAdmin
+webssh: WebSSH
+vscode: Visual Studio Code
+help: مساعدة
+helpDocs: مستندات
+helpEmail: البريد الإلكتروني
+helpForum: المنتدى
+helpChat: الدردشة
+helpUpdates: التحديثات
+country: الدولة
+chooseCountry: اختر دولة
+expiration: تاريخ الانتهاء
+resendConfirmationEmail: إعادة إرسال البريد الإلكتروني للتأكيد
+learnMore: تعرف على المزيد
+passwordNotice: لا تحتاج إلى تذكر هذه كلمة المرور
+lastUpdatedAt: آخر تحديث في
+language: اللغة
+theme: السمة
+themeDark: داكن دائمًا
+themeLight: فاتح دائمًا
+themeSystem: الإعداد الافتراضي للنظام
+role: الدور
+action: إجراء
+currencyInput: العملة
+invoiceNoteInput: جهة اتصال الفاتورة
+defaultServerInput: الخادم الافتراضي
+defaultServerInputNone: لا شيء (اسألني)
+name: الاسم
+phone: رقم الهاتف
+phoneHint: رقم الهاتف المؤهل بالكامل (يبدأ بـ +)
+phoneAlt: رقم هاتف بديل
+fullName: الاسم الكامل
+companyName: اسم الشركة
+activeEmail: البريد الإلكتروني النشط
+newPassword: كلمة مرور جديدة
+editProfile: تعديل الملف الشخصي
+saveProfile: حفظ الملف الشخصي
+deleteAccount: حذف الحساب
+loginMethods: طرق تسجيل الدخول
+loginRemoveConfirm: هل أنت متأكد أنك تريد إزالة طريقة تسجيل الدخول هذه؟
+loginAdd: إضافة أو استبدال طريقة تسجيل الدخول
+loginGithub: GitHub
+loginGoogle: Google
+loginEmail: البريد الإلكتروني + كلمة المرور
+loginVia: عبر {0}
+passwordConfirm: أدخل كلمة مرور الحساب الحالية (إذا كانت موجودة)
+passwordSetInput: أدخل كلمة مرور جديدة، يجب أن تكون على الأقل 8 أحرف
+passwordSetCancel: تم إلغاء تعيين كلمة المرور لهذا الحساب
+passwordSetCancelLength: تم إلغاء تعيين كلمة المرور، يجب أن تكون على الأقل 8 أحرف
+yearDuration: المدة بالسنوات
+monthDuration: المدة بالأشهر
+annualSaving: وفر 16%
+totalPayment: إجمالي الدفع
+expirationDate: تاريخ الانتهاء
+orderNow: اطلب الآن
+invoice: فاتورة
+pendingInvoices: الفواتير المعلقة
+noPendingInvoices: ليس لديك أي فواتير معلقة حاليًا.
+mixedCurrency: الفواتير المختارة تحتوي على عملات مختلطة
+currentPlan: الخطة الحالية
+currentPlanDescription: بتكلفة <b>{0}</b> شهريًا مع انتهاء <b>{1}</b>
+priceDescription: '{0} / الشهر'
+monthlyLimits: الحدود الشهرية
+storageLimit: '{0} جيجابايت تخزين'
+networkLimit: '{0} جيجابايت شبكة'
+instanceLimit: '{0} {0, plural, one {حالة} other {حالات}}'
+userLimit: '{0} {0, plural, one {مستخدم} other {مستخدمين}}'
+autoStop: الإيقاف التلقائي عند الوصول إلى الحدود
+noFreeDomain: لا يوجد نطاق {0} مجاني
+withFreeDomain: نطاق {0} مجاني
+withBackup: نسخة احتياطية تلقائية على مستوى الخادم
+withDocker: Docker وتطبيقات طويلة الأمد
+storageUsage: استخدام التخزين
+storageUsageCap: من إجمالي {0}
+bandwidthUsed: النطاق الترددي المستخدم
+bandwidthUsedCap: من إجمالي {0} شهريًا
+instancesActive: الحالات النشطة
+instancesActiveCap: من إجمالي {0} مواقع
+teamUsers: مستخدمي الفريق
+teamUsersCap: من إجمالي {0} مستخدمين كحد أقصى
+remainingAvailable: المتبقي المتاح
+remainingStorage: التخزين المتبقي
+remainingNetwork: بيانات الشبكة
+remainingInstance: الحالة المتبقية
+dataTransfer: نقل البيانات
+copy: نسخ
+copied: تم النسخ!
+reloading: إعادة تحميل {0}
+expires: تنتهي في {0}
+expiresAt: تنتهي في {0}
+expireFreeHint: |2
+  يتم تجديد تواريخ الانتهاء تلقائيًا (تمديد لمدة 3 أشهر)
+  في كل مرة تقوم فيها بتسجيل الدخول أو يحصل موقعك على حركة مرور كافية للشبكة (>50 ميجابايت)
+  في نهاية الشهر.
+discountedAt: بخصم عند {0}
+extendingCurrentExpiryDate: تمديد تاريخ الانتهاء الحالي
+usersLimitHint: '{0} {0, plural, one {مستخدم} other {مستخدمين}} في هذا الفريق، {1} {1, plural, one {مستخدم} other {مستخدمين}} يمكن إضافتهم أكثر'
+emailToInvite: البريد الإلكتروني للدعوة
+selectRole: اختر الدور
+info: معلومات
+total: الإجمالي
+back: عودة
+add: إضافة
+addMember: إضافة عضو
+confirmRemoveMember: هل أنت متأكد أنك تريد إزالة هذا العضو؟
+edit: تحرير
+apply: تطبيق
+save: حفظ
+clear: مسح
+update: تحديث
+updateUsage: تحديث الاستخدام
+change: تغيير
+archives: الأرشيفات
+renew: تجديد
+extend: تمديد
+topup: شحن
+processing: جارٍ المعالجة
+cancel: إلغاء
+print: طباعة
+delete: حذف
+why: لماذا؟
+pay: ادفع
+payAccept: نقبل الدفع عبر
+loading: جارٍ جمع البيانات...
+fetchError: خطأ في جلب البيانات! حاول مرة أخرى لاحقًا
+notFound: غير موجود
+notFoundDescription: الصفحة التي تبحث عنها غير موجودة.
+notFoundLink: العودة إلى الصفحة الرئيسية

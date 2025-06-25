@@ -1,0 +1,47 @@
+check: Periksa
+detail: Detail
+dns: DNS
+renew: Perpanjang
+renewDomain: Perpanjang Domain
+listTitle: Daftar Domain
+newOrder: Beli domain
+transferDomain: Transfer domain
+registerTitle: Registrasi Akun Domain
+administrationData: Data Administrasi
+addressData: Data Alamat
+address: Alamat
+address1: Alamat (Baris 1)
+address2: Alamat (Baris 2)
+address3: Alamat (Baris 3)
+city: Kota
+state: Negara Bagian
+country: Negara
+zipCode: Kode Pos
+company: Perusahaan
+companyName: Nama Perusahaan / Organisasi
+domainName: Nama Domain
+domainStatus: Status Domain
+enterContact: Masukkan Kontak Domain
+contactEntered: Kontak Domain dimasukkan
+myOwn: Domain yang saya pesan adalah milik saya
+enterBio: Masukkan Kontak
+publicBio: Kontak Publik / Pemilik Domain
+personalBio: Kontak Pribadi / Penanggung Jawab Domain
+domainPrice: Harga Domain
+emptyList: Tidak ada domain yang terdaftar
+registrationDate: Tanggal Registrasi
+expirationDate: Tanggal Kedaluwarsa
+transferLock: Kunci Transfer
+privacyLock: Kunci Privasi
+nameServers: Server Nama
+checkHint: Klik tombol periksa
+checkFail: Gagal memeriksa ketersediaan domain
+findDomain: Cari Domain
+findWait: Memeriksa ...
+findUnavailable: Domain saat ini tidak tersedia.
+findNeedData: Kami tidak dapat memproses pembelian domain sampai Anda mengisi data yang diperlukan.
+findNeedDataAction: Isi sekarang
+verifyHint: Anda perlu memverifikasi email Anda dalam 15 hari setelah pembelian atau registrar kami akan menangguhkan domain Anda!
+verifyBtn: Kirim ulang email verifikasi ke {0}
+transferCode: Kode EPP / Transfer
+showTransferCode: Tampilkan Kode EPP
