@@ -17,7 +17,7 @@ welcome:
     </p>
   createWebsiteHint: Bereit? Lass uns deine erste Website erstellen.
   createWebsiteBtn: Erstelle eine Website
-  emailConfirmation: |2
+  emailConfirmation: |
     Es sieht so aus, als müssten Sie die E-Mail <strong>{0}</strong> verifizieren,
     bevor Sie fortfahren können.<br />
     Bitte überprüfen Sie Ihren E-Mail-Posteingang (und den Spam-Ordner).
@@ -25,6 +25,7 @@ welcome:
   emailConfirmationBtn: Bestätigungs-E-Mail erneut senden
   emailConfirmationSent: E-Mail-Bestätigung an <strong>{0}</strong> wurde gesendet!
   changeCountryBtn: Land ändern
+  keepUsingEnglish: Keep using English
 notification:
   freeUserGuideTitle: Willkommen an Bord!
   freeUserGuideHint: "Vielen Dank, dass Sie uns als Ihre Cloud-Plattform gewählt haben \U0001F973 Wenn Sie es noch nicht getan haben, lesen Sie unseren <a href=\"{0}\" target=\"_blank\">Einstiegsleitfaden</a>. Brauchen Sie unser volles Erlebnis? Versuchen Sie <a href=\"{1}\">Ihr Paket zu upgraden</a>, um die API-Firewall, kostenlose Domain-Banner zu entfernen und <a href=\"{2}\" target=\"_blank\">mehr Funktionen</a> freizuschalten!"
@@ -77,7 +78,7 @@ hostCreate:
   attachDeployKey: Deploy-Schlüssel anhängen
   selectFramework: Nennen Sie uns das Framework oder die Sprache
   applyFramework: Diese Vorlage anwenden
-  attachDeployKeyHint: 'Wenn Ihr Repository privat eingestellt ist, können Sie Deploy-Schlüssel verwenden, um darauf zuzugreifen. Wir haben einen asymmetrischen Deploy-Schlüssel für Sie erstellt, Sie müssen diesen öffentlichen Schlüssel zu Ihrem Repository hinzufügen. '
+  attachDeployKeyHint: "Wenn Ihr Repository privat eingestellt ist, können Sie Deploy-Schlüssel verwenden, um darauf zuzugreifen. Wir haben einen asymmetrischen Deploy-Schlüssel für Sie erstellt, Sie müssen diesen öffentlichen Schlüssel zu Ihrem Repository hinzufügen. "
   attachDeployKeyLearnMore: |-
     Erfahren Sie mehr über die GitHub-Integration
     mit Deploy-Schlüsseln.
@@ -120,7 +121,7 @@ hostConnection:
   pingNoIpTitle: IP-Adresse nicht gefunden
   pingNoIpContent: Der DNS-Server gibt keine IP-Adresse zurück.
   pingNoIp6Title: Kein IPv6
-  pingNoIp6Content: Das DNS dieser Website hat keine IPv6-Adresse. Es ist möglicherweise für IPv6-Benutzer nicht verfügbar.
+  pingNoIp6Content: 'Das DNS dieser Website hat keine IPv6-Adresse. Es ist möglicherweise für IPv6-Benutzer nicht verfügbar.'
   pingNoIp6Hint: Bitte einen AAAA-Eintrag mit dem Wert hinzufügen
   pingWrongIpTitle: Falsche IP-Adresse
   pingWrongIpContent: |-
@@ -129,7 +130,7 @@ hostConnection:
   pingWrongIpCurrent: Aktuelle IP-Adressen
   pingWrongIpExpect: Korrekte IP-Adressen
   pingNoWwwTitle: www.* Subdomain IP-Adresse nicht gefunden
-  pingNoWwwContent: |2-
+  pingNoWwwContent: |-
     Einige Personen können möglicherweise nicht auf diese
     Website zugreifen, wenn sie sie mit www. voranstellen. Eine
     Weiterleitung der www-Subdomain einzurichten, wird empfohlen.
@@ -152,18 +153,20 @@ hostConnection:
     Diese Website leitet Besucher außerhalb der Domain weiter,
     sie ist möglicherweise nicht richtig konfiguriert (überprüfen Sie die Basis-URL-Einstellungen!).
   webInfiniteRedirectTitle: Website hat unendliche Weiterleitungen
-  webInfiniteRedirectContent: Diese Website liefert derzeit unendliche HTTPS-Anfragen, sie befindet sich möglicherweise bereits hinter einem HTTPS-Proxy.
+  webInfiniteRedirectContent: |-
+    Diese Website liefert derzeit unendliche HTTPS-Anfragen, sie befindet sich möglicherweise bereits hinter einem HTTPS-Proxy.
   webInfiniteRedirectFix: HTTPS-Weiterleitung deaktivieren
   webBadWwwTitle: www.* Subdomain ist nicht zugänglich
   webBadWwwContent: Die www-Subdomain ist entweder nicht zugänglich oder gibt einen Fehler zurück.
   webInsecureTitle: Website bietet unsichere HTTP-Anfragen an
-  webInsecureContent: Diese Website leitet nicht zum HTTPS-Protokoll um, dies wird nicht empfohlen und kann zu Cookie-Problemen führen.
+  webInsecureContent: |-
+    Diese Website leitet nicht zum HTTPS-Protokoll um, dies wird nicht empfohlen und kann zu Cookie-Problemen führen.
   webInsecureContentFix: HTTPS-Weiterleitung erzwingen
   webOkTitle: Website OK
   webOkContent: Diese Website ist für HTTP und HTTPS zugänglich und gibt keine Fehler zurück.
 hostFirewall:
   title: Firewall überprüfen
-  description: |2
+  description: |
     <p>
     Eine Firewall hilft, Ihre Website vor Ausnutzung im Falle eines
     Hackerangriffs zu schützen, indem sie den gesamten ausgehenden Datenverkehr blockiert,
@@ -193,7 +196,7 @@ hostFirewall:
   onBtn: Ausschalten
 hostNginx:
   title: NGINX-Konfiguration überprüfen
-  description: |2
+  description: |
     <p>
     NGINX ist unser Hauptserver-Gateway, das HTTP-Ports (80 und 443) bedient.
     Damit Ihre Website funktioniert, muss Ihre Web-App hier korrekt konfiguriert sein.
@@ -251,6 +254,7 @@ hostNginx:
       python: Python
       ruby: Ruby
     glsCmd: App-Befehl
+    glsBg: Run in Background?
     appEnv: Umgebungsschlüssel
     appDev: Entwicklungsmodus?
     appRoot: Arbeitsverzeichnis
@@ -276,6 +280,20 @@ hostNginx:
     inputSubfolderPrompt: Bitte Unterordner eingeben (muss mit '/' beginnen und keine Leerzeichen enthalten)
     inputSubfolderNotValid: Unterordner-Eingabe ist nicht gültig
     inputSubfolderNotUnique: Unterordner-Wert muss eindeutig sein gegenüber anderen Unterordner-Einträgen
+hostDB:
+  title: Manage Database
+  description: |-
+    <p>This page helps you see database lists and create or drop databases that linked to this domain</p>
+    <p>
+    We support creating MariaDB (MySQL-compatible), PostgreSQL and Valkey (Redis-compatible) databases.
+    To access it, connect to localhost with port 3306, 5432 and 6379 respectively. You can also use our web
+    editor to manage its content.
+    </p> <p>
+    MariaDB and PostgreSQL uses the same username and password across all databases in a domain, while Valkey uses
+    the database name as the username and unique password for each database. Also, since our database is shared across
+    a single server, administrative queries inside the database is limited. Refer to our documentation for more details.
+    </p>
+  helpText: Help on configuration
 hostDNS:
   title: DNS-Konfiguration überprüfen
   description: |-
@@ -294,10 +312,14 @@ hostLog:
   runningList: Liste der laufenden Prozesse
   logTypeError: NGINX-Fehlerprotokoll
   logTypeAccess: NGINX-Zugriffsprotokoll
+  logTypePhp: PHP Error Log
   logTypePassenger: Passenger-App-Protokoll
+  logTypeProxfix: Proxfix App Log
   logTypeErrorHint: Dieses Protokoll enthält NGINX- und PHP-Fehlerprotokolle des aktuellen Tages
   logTypeAccessHint: Dieses Protokoll enthält NGINX-Zugriffsprotokolle des aktuellen Tages
+  logTypePhpHint: This log contains PHP error logs for the current day
   logTypePassengerHint: Dieses Protokoll enthält Passenger-App-Protokoll der aktuell laufenden App
+  logTypeProxfixHint: This log contains App log ran by Proxfix that's currently running
   errorFetch: Fehler beim Abrufen der Protokolldatei
   subdomain: Subdomain
   maxLines: Maximale Zeilen
@@ -388,19 +410,30 @@ hostPasswd:
   warn: Dies wird auch das Datenbankpasswort ändern! Ihre Website kann unbrauchbar sein, bis Sie es in Ihrer Website-Konfiguration ändern.
   member: Mitglieder können das Passwort dieser Website nicht ändern.
   action: Dieses Passwort aktualisieren!
+hostServer:
+  disabled: You cannot change the server region when this website is not active.
+  hint: 'You can move your website to another cloud or self-hosted server here. Choose a new server:'
+  warn: This will perform backup, delete, then restore on this website. Also could make your website temporarily inacessible due to IP addresses changing!
+  member: Members cannot change the server region of this website.
+  upgrade: Moving this website to another server requires backup feature, you need to upgrade.
+  action: Move to this server!
 hostCheck:
   title: Obligatorische DNS-Überprüfung
   prompt: Dies überprüft, ob {0} über Googles DNS aufgelöst werden kann, bevor es zu unserem Server hinzugefügt wird.
   valid: Diese Domain ist auflösbar
-  validNote: Diese Domain wird auflösbar sein, sobald zusätzliche Konfigurationen automatisch für Sie hinzugefügt werden
+  valid_with_note: This domain will be resolvable once additional configs added automatically for you
   incorrect: Falscher A+AAAA/CNAME-Eintrag für diese Domain, bitte konfigurieren Sie es zuerst, bevor Sie fortfahren.
   missing: Fehlender A+AAAA/CNAME-Eintrag für diese Domain, bitte konfigurieren Sie es zuerst, bevor Sie fortfahren.
   loading: '...'
   retrying: '...'
+  validNote: Diese Domain wird auflösbar sein, sobald zusätzliche Konfigurationen automatisch für Sie hinzugefügt werden
 domain:
-  createInfo: Denken Sie daran, dass Sie nur eine Domain registrieren. Wenn Sie die Website verwalten möchten, <a href="{0}" target="_blank">erstellen Sie die Website hier</a>
-  transferInfo: Stellen Sie sicher, dass Sie die Zugriffsrechte haben, um die Domain von einem anderen Dienst zu übertragen. Wir werden uns mit Ihnen in Verbindung setzen, wenn der Domaintransfer nach der Zahlung fehlschlägt, aber wenn Sie das Domain-Eigentum nicht durch den EPP-Code oder vorhandene Dokumentanforderungen nachweisen können, können wir nicht helfen. Laut AGB erhalten Sie unter keinen Umständen eine Rückerstattung beim Kauf einer Domain.
-  eppTransferInfo: Sie können Ihre Domain zu einem anderen Registrar übertragen, indem Sie diesen EPP-Code verwenden. Der Transfer funktioniert, wenn die Domain nicht gesperrt ist.
+  createInfo: |-
+    Denken Sie daran, dass Sie nur eine Domain registrieren. Wenn Sie die Website verwalten möchten, <a href="{0}" target="_blank">erstellen Sie die Website hier</a>
+  transferInfo: |-
+    Stellen Sie sicher, dass Sie die Zugriffsrechte haben, um die Domain von einem anderen Dienst zu übertragen. Wir werden uns mit Ihnen in Verbindung setzen, wenn der Domaintransfer nach der Zahlung fehlschlägt, aber wenn Sie das Domain-Eigentum nicht durch den EPP-Code oder vorhandene Dokumentanforderungen nachweisen können, können wir nicht helfen. Laut AGB erhalten Sie unter keinen Umständen eine Rückerstattung beim Kauf einer Domain.
+  eppTransferInfo: |-
+    Sie können Ihre Domain zu einem anderen Registrar übertragen, indem Sie diesen EPP-Code verwenden. Der Transfer funktioniert, wenn die Domain nicht gesperrt ist.
   dnsManagedHint: |-
     Wir bieten keine Benutzeroberfläche für benutzerdefinierte DNS-Einträge. <br />
     Wenn Ihre Nameserver auf <b>{0}</b> gesetzt sind, werden die DNS von

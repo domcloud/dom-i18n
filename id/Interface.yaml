@@ -104,9 +104,8 @@ storageLimit: '{0} GB Penyimpanan'
 networkLimit: '{0} GB Jaringan'
 instanceLimit: '{0} {0, plural, one {Instance} other {Instance}}'
 userLimit: '{0} {0, plural, one {Pengguna} other {Pengguna}}'
-autoStop: Berhenti Otomatis saat mencapai batas
-noFreeDomain: Tidak ada domain {0}
-withFreeDomain: Domain gratis {0}
+refuseFirewall: Turn off firewall at will
+withGlobalDomain: Use global domain
 withBackup: Cadangan otomatis pada tingkat server
 withDocker: Docker dan aplikasi yang berjalan lama
 storageUsage: Penggunaan Penyimpanan
@@ -127,11 +126,12 @@ copied: Tersalin!
 reloading: Memuat ulang {0}
 expires: Kadaluarsa {0}
 expiresAt: Kadaluarsa pada {0}
-expireFreeHint: |2
+expireFreeHint: |
   Tanggal kadaluarsa secara otomatis diperpanjang (diperpanjang selama 2 bulan)
   setiap kali Anda login atau situs web Anda memiliki cukup lalu lintas jaringan (>50 MB)
   pada akhir bulan.
 discountedAt: Diskon {0}
+paymentFeeAt: Payment fees of {0} placed
 extendingCurrentExpiryDate: Memperpanjang tanggal kadaluarsa saat ini
 usersLimitHint: '{0} {0, plural, one {pengguna} other {pengguna}} di tim ini, {1} {1, plural, one {pengguna} other {pengguna}} dapat ditambahkan lagi'
 emailToInvite: Email untuk diundang
@@ -160,8 +160,12 @@ delete: Hapus
 why: Mengapa?
 pay: Bayar
 payAccept: Kami menerima pembayaran melalui
+sales: Sales
 loading: Mengumpulkan data ...
 fetchError: Kesalahan mengambil data! Coba lagi nanti
 notFound: Tidak Ditemukan
 notFoundDescription: Halaman yang Anda cari tidak ada.
 notFoundLink: Kembali ke beranda
+autoStop: Berhenti Otomatis saat mencapai batas
+noFreeDomain: Tidak ada domain {0}
+withFreeDomain: Domain gratis {0}

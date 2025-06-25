@@ -61,6 +61,7 @@ websiteStatus: Website Status
 websiteUsername: Website Gebruikersnaam
 websiteDomain: Website Domein
 manageHostLogin: Beheer host login
+manageDatabase: Manage Database
 total: Totaal
 used: Gebruikt
 remainingMonthlyPlan: Resterend maandelijks plan
@@ -79,8 +80,9 @@ deleteSubdomainConfirm: '"{0}" subdomein wordt verwijderd, doorgaan?'
 deleteSubdomainConfirm2: Weet u zeker dat u "{0}" wilt uitvoeren? Dit kan niet ongedaan gemaakt worden.
 enterFullDomainName: Voer de volledige domeinnaam in
 useDefaultCname: Gebruik de standaard domeinnaam ({0})
-useDifferentPassword: Gebruik een ander wachtwoord voor {0}
+useDifferentPassword: 'Gebruik een ander wachtwoord voor {0}'
 redeploy: Opnieuw implementeren
+askForHelp: Ask for help
 debugManually: Handmatig debuggen
 startOver: Opnieuw beginnen
 deployScript: Script implementeren

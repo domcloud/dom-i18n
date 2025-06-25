@@ -17,7 +17,7 @@ welcome:
     </p>
   createWebsiteHint: Klaar? Laten we je eerste website maken.
   createWebsiteBtn: Maak een website
-  emailConfirmation: |2
+  emailConfirmation: |
     Het lijkt erop dat je de email <strong>{0}</strong> moet verifiëren
     voordat je verder kunt gaan.<br />
     Controleer je email (en spam) inbox.
@@ -25,6 +25,7 @@ welcome:
   emailConfirmationBtn: Verificatie-email opnieuw verzenden
   emailConfirmationSent: Verificatie-email naar <strong>{0}</strong> is verzonden!
   changeCountryBtn: Land wijzigen
+  keepUsingEnglish: Keep using English
 notification:
   freeUserGuideTitle: Welkom aan Boord!
   freeUserGuideHint: "Bedankt dat je ons hebt gekozen als je cloudplatform \U0001F973 Als je dat nog niet hebt gedaan, probeer dan onze <a href=\"{0}\" target=\"_blank\">Startgids</a> te lezen. Onze volledige ervaring nodig? Probeer <a href=\"{1}\">je plan te upgraden</a> om de API-firewall, gratis domeinbanners te verwijderen en <a href=\"{2}\" target=\"_blank\">meer functies</a> te ontgrendelen!"
@@ -77,10 +78,9 @@ hostCreate:
   attachDeployKey: Koppel implementatiesleutel
   selectFramework: Vertel ons het framework of de taal
   applyFramework: Dit sjabloon toepassen
-  attachDeployKeyHint: |-
-    Als je repository privé is ingesteld, kun je
-    implementatiesleutels gebruiken om toegang te krijgen. We hebben een asymmetrische implementatiesleutel voor je gemaakt, je moet deze publieke sleutel toevoegen aan je repository.
-  attachDeployKeyLearnMore: Meer weten over GitHub-integratie met implementatiesleutels.
+  attachDeployKeyHint: "Als je repository privé is ingesteld, kun je\nimplementatiesleutels gebruiken om toegang te krijgen. We hebben een asymmetrische implementatiesleutel voor je gemaakt, je moet deze publieke sleutel toevoegen aan je repository."
+  attachDeployKeyLearnMore: |-
+    Meer weten over GitHub-integratie met implementatiesleutels.
   attachDeployKeyOpenConfig: Open de implementatiesleutelconfiguratie van de repository
   attachDeployKeyConfirm: Ik heb deze publieke sleutel toegevoegd
 hostConnection:
@@ -107,15 +107,20 @@ hostConnection:
   dnsManagedTitle: DNS beheerd
   dnsManagedContent: De DNS van deze website wordt beheerd door {0}.
   dnsMixedTitle: DNS is gemengd
-  dnsMixedContent: De DNS van deze website heeft een gemengde configuratie. Zorg ervoor dat de naamserver correct is geconfigureerd. Meng onze records niet met andere records!
+  dnsMixedContent: |-
+    De DNS van deze website heeft een gemengde configuratie. Zorg ervoor dat de naamserver correct is geconfigureerd. Meng onze records niet met andere records!
   dnsExternalTitle: Extern beheerde DNS
   dnsExternalContent: De DNS van deze website wordt beheerd door een derde partij.
   pingNoIpTitle: IP-adres niet gevonden
   pingNoIpContent: De DNS-server retourneert geen IP-adres.
   pingNoIp6Title: Geen IPv6
-  pingNoIp6Content: De DNS van deze website heeft geen IPv6-adres. Het kan niet beschikbaar zijn voor IPv6-gebruikers.
+  pingNoIp6Content: 'De DNS van deze website heeft geen IPv6-adres. Het kan niet beschikbaar zijn voor IPv6-gebruikers.'
+  pingNoIp6Hint: Please add an AAAA record with value
   pingWrongIpTitle: Onjuist IP-adres
-  pingWrongIpContent: De DNS van deze website retourneert een onjuist IP-adres. Het kan de juiste inhoud niet leveren of het bevindt zich achter een proxy.
+  pingWrongIpContent: |-
+    De DNS van deze website retourneert een onjuist IP-adres. Het kan de juiste inhoud niet leveren of het bevindt zich achter een proxy.
+  pingWrongIpCurrent: Current IP addresses
+  pingWrongIpExpect: Correct IP addresses
   pingNoWwwTitle: IP-adres voor www.* subdomein niet gevonden
   pingNoWwwContent: |2-
                     Sommige mensen kunnen deze website mogelijk niet bereiken als ze www ervoor plaatsen. Het is aanbevolen om een www subdomein omleiding in te stellen.
@@ -125,25 +130,30 @@ hostConnection:
   webNoHttpTitle: Website is niet toegankelijk
   webNoHttpContent: Deze website is niet toegankelijk via HTTP.
   webNoHttpsTitle: HTTPS niet beschikbaar
-  webNoHttpsContent: Deze website heeft mogelijk geen HTTPS-certificaat geïnstalleerd, of het is verlopen of niet correct geconfigureerd.
+  webNoHttpsContent: |-
+    Deze website heeft mogelijk geen HTTPS-certificaat geïnstalleerd, of het is verlopen of niet correct geconfigureerd.
   pingNoHttpsFix: HTTPS-certificaat installeren
   webBadHttpTitle: Website retourneert een fout
-  webBadHttpContent: Deze website retourneert een 500 of 403 fout. Het is mogelijk niet correct geconfigureerd (controleer NGINX/App instellingen!).
+  webBadHttpContent: |-
+    Deze website retourneert een 500 of 403 fout. Het is mogelijk niet correct geconfigureerd (controleer NGINX/App instellingen!).
   webBadRedirectTitle: Website heeft slechte omleidingen
-  webBadRedirectContent: Deze website leidt bezoekers om naar buiten het domein. Het is mogelijk niet correct geconfigureerd (controleer de Basis URL instellingen!).
+  webBadRedirectContent: |-
+    Deze website leidt bezoekers om naar buiten het domein. Het is mogelijk niet correct geconfigureerd (controleer de Basis URL instellingen!).
   webInfiniteRedirectTitle: Website heeft oneindige omleidingen
-  webInfiniteRedirectContent: Deze website verwerkt momenteel oneindige HTTPS-verzoeken, het staat mogelijk al achter een HTTPS-proxy.
+  webInfiniteRedirectContent: |-
+    Deze website verwerkt momenteel oneindige HTTPS-verzoeken, het staat mogelijk al achter een HTTPS-proxy.
   webInfiniteRedirectFix: HTTPS-omleiding uitschakelen
   webBadWwwTitle: www.* subdomein is niet toegankelijk
   webBadWwwContent: Het www-subdomein is niet toegankelijk of retourneert een fout.
   webInsecureTitle: Website biedt onveilige HTTP-verzoeken aan
-  webInsecureContent: Deze website leidt niet door naar het HTTPS-protocol, dit wordt niet aanbevolen en kan cookieproblemen veroorzaken.
+  webInsecureContent: |-
+    Deze website leidt niet door naar het HTTPS-protocol, dit wordt niet aanbevolen en kan cookieproblemen veroorzaken.
   webInsecureContentFix: Forceer HTTPS-omleiding
   webOkTitle: Website is OK
   webOkContent: Deze website is toegankelijk via HTTP en HTTPS.
 hostFirewall:
   title: Firewall controleren
-  description: |2
+  description: |
     <p>
     Een firewall helpt uw website te beschermen tegen misbruik in geval van een hackerinbraak door al het uitgaande verkeer te blokkeren behalve dat op de <a href="{0}" target="_blank" rel="noreferrer">witte lijst</a>.
     </p>
@@ -167,7 +177,7 @@ hostFirewall:
   onBtn: Zet het uit
 hostNginx:
   title: NGINX Configuratie controleren
-  description: |2
+  description: |
     <p>
     NGINX is onze hoofdserver gateway die HTTP poorten (80 en 443) bedient. Om uw website te laten werken, moet uw webapp hier correct worden geconfigureerd. Hier kunt u uw huidige configuratie bekijken en wijzigingen aanbrengen via een vooraf geconfigureerde UI of volledige NGINX-configuratie als YAML-script.
     </p>
@@ -221,6 +231,7 @@ hostNginx:
       python: Python
       ruby: Ruby
     glsCmd: App-opdracht
+    glsBg: Run in Background?
     appEnv: Omgevingssleutels
     appDev: Ontwikkelmodus?
     appRoot: Werkdirectory
@@ -246,9 +257,24 @@ hostNginx:
     inputSubfolderPrompt: Voer submap in (beginnend met '/' en geen spaties)
     inputSubfolderNotValid: Submapinvoer is niet geldig
     inputSubfolderNotUnique: Submapwaarde moet uniek zijn ten opzichte van andere submapitems
+hostDB:
+  title: Manage Database
+  description: |-
+    <p>This page helps you see database lists and create or drop databases that linked to this domain</p>
+    <p>
+    We support creating MariaDB (MySQL-compatible), PostgreSQL and Valkey (Redis-compatible) databases.
+    To access it, connect to localhost with port 3306, 5432 and 6379 respectively. You can also use our web
+    editor to manage its content.
+    </p> <p>
+    MariaDB and PostgreSQL uses the same username and password across all databases in a domain, while Valkey uses
+    the database name as the username and unique password for each database. Also, since our database is shared across
+    a single server, administrative queries inside the database is limited. Refer to our documentation for more details.
+    </p>
+  helpText: Help on configuration
 hostDNS:
   title: DNS Configuratie controleren
-  description: <p>Deze pagina helpt u bij het wijzigen van DNS-records als u uw domeinnaamservers naar ons verwijst.</p> <p>U kunt ook DNS-records bewerken via Webmin.</p>
+  description: |-
+    <p>Deze pagina helpt u bij het wijzigen van DNS-records als u uw domeinnaamservers naar ons verwijst.</p> <p>U kunt ook DNS-records bewerken via Webmin.</p>
   helpText: Configuratiehulp
   error: 'Fout: er is geen configuratie voor {0}'
   errorFetch: Er is een fout opgetreden bij het ophalen van de DNS-configuratie
@@ -262,10 +288,14 @@ hostLog:
   runningList: Lijst met actieve processen
   logTypeError: NGINX-foutenlog
   logTypeAccess: NGINX-toegangslog
+  logTypePhp: PHP Error Log
   logTypePassenger: Passenger-app-log
+  logTypeProxfix: Proxfix App Log
   logTypeErrorHint: Deze log bevat de NGINX- en PHP-foutenlogs van de huidige datum
   logTypeAccessHint: Deze log bevat de NGINX-toegangslogs van de huidige datum
+  logTypePhpHint: This log contains PHP error logs for the current day
   logTypePassengerHint: Deze log bevat de actieve logs van uw Passenger-app
+  logTypeProxfixHint: This log contains App log ran by Proxfix that's currently running
   errorFetch: Er is een fout opgetreden bij het ophalen van de logbestanden
   subdomain: Subdomein
   maxLines: Maximaal aantal regels
@@ -357,6 +387,13 @@ hostPasswd:
   warn: This will also change database password! Your website may be unusable until you change it in your website config.
   member: Members cannot change the password this website.
   action: Update this password!
+hostServer:
+  disabled: You cannot change the server region when this website is not active.
+  hint: 'You can move your website to another cloud or self-hosted server here. Choose a new server:'
+  warn: This will perform backup, delete, then restore on this website. Also could make your website temporarily inacessible due to IP addresses changing!
+  member: Members cannot change the server region of this website.
+  upgrade: Moving this website to another server requires backup feature, you need to upgrade.
+  action: Move to this server!
 hostCheck:
   title: Mandatory DNS Checkup
   prompt: This checks whether {0} can be resolved via Google's DNS before get added into our server.
@@ -381,6 +418,14 @@ domain:
   eppTransferInfo: |-
     You can transfer your domain to another registrar by
     using this EPP code. The transfer works if the domain is not locked
+  dnsManagedHint: |-
+    We don't provide UI for custom DNS records. <br />
+    If your nameservers are set to <b>{0}</b> then DNS are handled by
+    <a href="{1}" target="_blank">the respective website DNS</a>.
+  dnsManagedOpen: |-
+    If you want to change it anyway please manage it via our
+    <a href="{0}" target="_blank">Registrar UI</a>. Click forgot password
+    and enter your current email to set your password the first time.
 invoiceDescription:
   domainPurchaseOf: Domain Purchase of {0}
   domainExtendOf: Domain Extend of {0}

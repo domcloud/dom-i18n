@@ -61,6 +61,7 @@ websiteStatus: Status Website
 websiteUsername: Nama Pengguna Website
 websiteDomain: Domain Website
 manageHostLogin: Atur Login Hosting
+manageDatabase: Manage Database
 total: Total
 used: Digunakan
 remainingMonthlyPlan: Sisa Bulanan Paket
@@ -79,8 +80,9 @@ deleteSubdomainConfirm: Akan menghapus subdomain "{0}", lanjutkan?
 deleteSubdomainConfirm2: Apakah Anda yakin ingin menjalankan "{0}"? Ini tidak dapat dibatalkan.
 enterFullDomainName: Masukkan nama domain lengkap
 useDefaultCname: Gunakan nama domain default ({0})
-useDifferentPassword: Gunakan kata sandi yang berbeda untuk {0}
+useDifferentPassword: 'Gunakan kata sandi yang berbeda untuk {0}'
 redeploy: Deploy Ulang
+askForHelp: Ask for help
 debugManually: Debug Secara Manual
 startOver: Mulai Dari Awal
 deployScript: Deploy Script

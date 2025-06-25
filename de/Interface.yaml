@@ -104,9 +104,8 @@ storageLimit: '{0} GB Speicher'
 networkLimit: '{0} GB Netzwerk'
 instanceLimit: '{0} {0, plural, one {Instanz} other {Instanzen}}'
 userLimit: '{0} {0, plural, one {Benutzer} other {Benutzer}}'
-autoStop: Automatisches Stoppen bei Limits
-noFreeDomain: Keine {0} Domain
-withFreeDomain: Kostenlose {0} Domain
+refuseFirewall: Turn off firewall at will
+withGlobalDomain: Use global domain
 withBackup: Automatische serverseitige Sicherung
 withDocker: Docker und langlaufende Anwendungen
 storageUsage: Speichernutzung
@@ -127,11 +126,12 @@ copied: Kopiert!
 reloading: Wird neu geladen {0}
 expires: Läuft ab {0}
 expiresAt: Läuft ab am {0}
-expireFreeHint: |2
+expireFreeHint: |
   Ablaufdaten werden automatisch verlängert (um 3 Monate verlängert)
   jedes Mal, wenn Sie sich einloggen oder Ihre Webseiten genügend Netzwerkverkehr haben (>50 MB)
   am Monatsende.
 discountedAt: Rabattiert bei {0}
+paymentFeeAt: Payment fees of {0} placed
 extendingCurrentExpiryDate: Aktuelles Ablaufdatum verlängern
 usersLimitHint: '{0} {0, plural, one {Benutzer} other {Benutzer}} in diesem Team, {1} {1, plural, one {Benutzer} other {Benutzer}} können noch hinzugefügt werden'
 emailToInvite: E-Mail zum Einladen
@@ -160,8 +160,12 @@ delete: Löschen
 why: Warum?
 pay: Bezahlen
 payAccept: Wir akzeptieren Zahlungen über
+sales: Sales
 loading: Daten werden gesammelt...
 fetchError: Fehler beim Abrufen der Daten! Versuchen Sie es später noch einmal
 notFound: Nicht gefunden
 notFoundDescription: Die Seite, die Sie suchen, existiert nicht.
 notFoundLink: Zurück zur Startseite
+autoStop: Automatisches Stoppen bei Limits
+noFreeDomain: Keine {0} Domain
+withFreeDomain: Kostenlose {0} Domain

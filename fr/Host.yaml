@@ -61,6 +61,7 @@ websiteStatus: Statut du site web
 websiteUsername: Nom d'utilisateur du site web
 websiteDomain: Domaine du site web
 manageHostLogin: Gérer la connexion de l'hôte
+manageDatabase: Manage Database
 total: Total
 used: Utilisé
 remainingMonthlyPlan: Plan mensuel restant
@@ -79,8 +80,9 @@ deleteSubdomainConfirm: Supprimera le sous-domaine "{0}", continuer ?
 deleteSubdomainConfirm2: Êtes-vous sûr de vouloir exécuter "{0}" ? Cela ne peut pas être annulé.
 enterFullDomainName: Entrez le nom de domaine complet
 useDefaultCname: Utiliser le nom de domaine par défaut ({0})
-useDifferentPassword: Utiliser un mot de passe différent pour {0}
+useDifferentPassword: 'Utiliser un mot de passe différent pour {0}'
 redeploy: Redéployer
+askForHelp: Ask for help
 debugManually: Déboguer manuellement
 startOver: Recommencer
 deployScript: Déployer le script

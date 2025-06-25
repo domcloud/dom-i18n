@@ -61,6 +61,7 @@ websiteStatus: Статус сайта
 websiteUsername: Имя пользователя сайта
 websiteDomain: Домен сайта
 manageHostLogin: Управление входом на хост
+manageDatabase: Manage Database
 total: Всего
 used: Использовано
 remainingMonthlyPlan: Остаток месячного плана
@@ -79,8 +80,9 @@ deleteSubdomainConfirm: Поддомен "{0}" будет удалён, прод
 deleteSubdomainConfirm2: Вы уверены, что хотите выполнить "{0}"? Это действие нельзя отменить.
 enterFullDomainName: Введите полное имя домена
 useDefaultCname: Использовать домен по умолчанию ({0})
-useDifferentPassword: Использовать другой пароль для {0}
+useDifferentPassword: 'Использовать другой пароль для {0}'
 redeploy: Повторный деплой
+askForHelp: Ask for help
 debugManually: Отладить вручную
 startOver: Начать заново
 deployScript: Развернуть скрипт

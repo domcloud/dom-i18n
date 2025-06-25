@@ -61,6 +61,7 @@ websiteStatus: 웹사이트 상태
 websiteUsername: 웹사이트 사용자 이름
 websiteDomain: 웹사이트 도메인
 manageHostLogin: 호스트 로그인 관리
+manageDatabase: Manage Database
 total: 총계
 used: 사용된
 remainingMonthlyPlan: 남은 월간 플랜
@@ -81,6 +82,7 @@ enterFullDomainName: 전체 도메인 이름을 입력하세요
 useDefaultCname: 기본 도메인 이름 사용 ({0})
 useDifferentPassword: '{0}에 대해 다른 비밀번호 사용'
 redeploy: 재배포
+askForHelp: Ask for help
 debugManually: 수동으로 디버그
 startOver: 다시 시작
 deployScript: 배포 스크립트

@@ -17,7 +17,7 @@ welcome:
     </p>
   createWebsiteHint: جاهز؟ لنقم بإنشاء موقعك الأول.
   createWebsiteBtn: إنشاء موقع
-  emailConfirmation: |2
+  emailConfirmation: |
     يبدو أنك بحاجة إلى تأكيد البريد الإلكتروني <strong>{0}</strong>
     قبل المتابعة.<br />
     يرجى التحقق من بريدك الإلكتروني (وصندوق البريد العشوائي).
@@ -25,6 +25,7 @@ welcome:
   emailConfirmationBtn: إعادة إرسال بريد التأكيد
   emailConfirmationSent: تم إرسال تأكيد البريد الإلكتروني إلى <strong>{0}</strong>!
   changeCountryBtn: تغيير البلد
+  keepUsingEnglish: Keep using English
 notification:
   freeUserGuideTitle: مرحبًا بك على متن الطائرة!
   freeUserGuideHint: "شكرًا لاختيارك لنا كمنصة السحابة الخاصة بك \U0001F973 إذا لم تقم بذلك بعد، حاول قراءة <a href=\"{0}\" target=\"_blank\">دليل البداية</a>. هل تحتاج إلى تجربتنا الكاملة؟ جرب <a href=\"{1}\">ترقية خطتك</a> للتخلص من جدار الحماية الخاص بـ API، لافتات النطاق المجانية، وفتح <a href=\"{2}\" target=\"_blank\">مزيد من الميزات</a>!"
@@ -77,8 +78,9 @@ hostCreate:
   attachDeployKey: إرفاق مفتاح نشر
   selectFramework: أخبرنا عن الإطار أو اللغة
   applyFramework: تطبيق هذا القالب
-  attachDeployKeyHint: إذا كان المستودع خاصًا، يمكنك استخدام مفاتيح النشر للوصول إليه. لقد أنشأنا مفتاح نشر غير متماثل لك، تحتاج إلى إضافة هذا المفتاح العام إلى مستودعك.
-  attachDeployKeyLearnMore: تعرف على المزيد حول التكامل مع GitHub باستخدام مفاتيح النشر.
+  attachDeployKeyHint: "إذا كان المستودع خاصًا، يمكنك استخدام مفاتيح النشر للوصول إليه. لقد أنشأنا مفتاح نشر غير متماثل لك، تحتاج إلى إضافة هذا المفتاح العام إلى مستودعك."
+  attachDeployKeyLearnMore: |-
+    تعرف على المزيد حول التكامل مع GitHub باستخدام مفاتيح النشر.
   attachDeployKeyOpenConfig: افتح إعدادات مفتاح النشر للمستودع
   attachDeployKeyConfirm: لقد أضفت هذا المفتاح العام
 hostConnection:
@@ -116,7 +118,7 @@ hostConnection:
   pingNoIpTitle: لم يتم العثور على عنوان IP
   pingNoIpContent: لا يقوم خادم DNS بإرجاع عنوان IP.
   pingNoIp6Title: لا يوجد IPv6
-  pingNoIp6Content: لا يحتوي DNS لهذا الموقع على عنوان IPv6. قد يكون غير متاح لمستخدمي IPv6.
+  pingNoIp6Content: 'لا يحتوي DNS لهذا الموقع على عنوان IPv6. قد يكون غير متاح لمستخدمي IPv6.'
   pingNoIp6Hint: يرجى إضافة سجل AAAA بالقيمة
   pingWrongIpTitle: عنوان IP غير صحيح
   pingWrongIpContent: |-
@@ -148,18 +150,20 @@ hostConnection:
     يقوم هذا الموقع بإعادة توجيه الزوار إلى خارج النطاق،
     قد لا يكون مهيأ بشكل صحيح (تحقق من إعدادات عنوان URL الأساسي!).
   webInfiniteRedirectTitle: الموقع يحتوي على إعادة توجيه لا نهائية
-  webInfiniteRedirectContent: هذا الموقع يقوم حاليًا بخدمة طلبات HTTPS لا نهائية، قد يكون بالفعل خلف وكيل HTTPS.
+  webInfiniteRedirectContent: |-
+    هذا الموقع يقوم حاليًا بخدمة طلبات HTTPS لا نهائية، قد يكون بالفعل خلف وكيل HTTPS.
   webInfiniteRedirectFix: تعطيل إعادة توجيه HTTPS
   webBadWwwTitle: النطاق الفرعي www.* غير متاح
   webBadWwwContent: النطاق الفرعي www إما غير متاح أو يعيد خطأ.
   webInsecureTitle: الموقع يقدم طلبات HTTP غير آمنة
-  webInsecureContent: هذا الموقع لا يعيد التوجيه إلى بروتوكول HTTPS، هذا غير موصى به وقد يؤدي إلى مشكلات ملفات تعريف الارتباط.
+  webInsecureContent: |-
+    هذا الموقع لا يعيد التوجيه إلى بروتوكول HTTPS، هذا غير موصى به وقد يؤدي إلى مشكلات ملفات تعريف الارتباط.
   webInsecureContentFix: فرض إعادة توجيه HTTPS
   webOkTitle: الموقع جيد
   webOkContent: يمكن الوصول إلى هذا الموقع عبر HTTP و HTTPS.
 hostFirewall:
   title: تحقق من جدار الحماية
-  description: |2
+  description: |
     <p>
     يساعد جدار الحماية موقعك على عدم التعرض للاختراق في حالة
     اختراقه عن طريق حظر كل حركة المرور الصادرة باستثناء تلك الموجودة في
@@ -189,7 +193,7 @@ hostFirewall:
   onBtn: إيقافه
 hostNginx:
   title: تحقق من تكوين NGINX
-  description: |2
+  description: |
     <p>
     NGINX هو بوابة الخادم الرئيسية لدينا التي تخدم المنافذ HTTP (80 و 443).
     لجعل موقعك يعمل، يجب تكوين تطبيق الويب الخاص بك بشكل صحيح
@@ -251,6 +255,7 @@ hostNginx:
       python: Python
       ruby: Ruby
     glsCmd: أمر التطبيق
+    glsBg: Run in Background?
     appEnv: مفاتيح البيئة
     appDev: وضع التطوير؟
     appRoot: دليل العمل
@@ -276,6 +281,20 @@ hostNginx:
     inputSubfolderPrompt: يرجى إدخال المجلد الفرعي (يجب أن يبدأ بـ '/' وبدون مسافات)
     inputSubfolderNotValid: إدخال المجلد الفرعي غير صالح
     inputSubfolderNotUnique: يجب أن تكون قيمة المجلد الفرعي فريدة مع إدخالات المجلد الفرعي الأخرى
+hostDB:
+  title: Manage Database
+  description: |-
+    <p>This page helps you see database lists and create or drop databases that linked to this domain</p>
+    <p>
+    We support creating MariaDB (MySQL-compatible), PostgreSQL and Valkey (Redis-compatible) databases.
+    To access it, connect to localhost with port 3306, 5432 and 6379 respectively. You can also use our web
+    editor to manage its content.
+    </p> <p>
+    MariaDB and PostgreSQL uses the same username and password across all databases in a domain, while Valkey uses
+    the database name as the username and unique password for each database. Also, since our database is shared across
+    a single server, administrative queries inside the database is limited. Refer to our documentation for more details.
+    </p>
+  helpText: Help on configuration
 hostDNS:
   title: تحقق من تكوين DNS
   description: |-
@@ -294,10 +313,14 @@ hostLog:
   runningList: قائمة العمليات الجارية
   logTypeError: سجل أخطاء NGINX
   logTypeAccess: سجل وصول NGINX
+  logTypePhp: PHP Error Log
   logTypePassenger: سجل تطبيق Passenger
+  logTypeProxfix: Proxfix App Log
   logTypeErrorHint: يتضمن هذا السجل سجلات أخطاء NGINX و PHP لليوم الحالي
   logTypeAccessHint: يتضمن هذا السجل سجلات وصول NGINX لليوم الحالي
+  logTypePhpHint: This log contains PHP error logs for the current day
   logTypePassengerHint: يتضمن هذا السجل سجل تطبيق Passenger الجاري
+  logTypeProxfixHint: This log contains App log ran by Proxfix that's currently running
   errorFetch: حدث خطأ أثناء جلب ملف السجل
   subdomain: النطاق الفرعي
   maxLines: الحد الأقصى لعدد السطور
@@ -389,6 +412,13 @@ hostPasswd:
   warn: This will also change database password! Your website may be unusable until you change it in your website config.
   member: Members cannot change the password this website.
   action: Update this password!
+hostServer:
+  disabled: You cannot change the server region when this website is not active.
+  hint: 'You can move your website to another cloud or self-hosted server here. Choose a new server:'
+  warn: This will perform backup, delete, then restore on this website. Also could make your website temporarily inacessible due to IP addresses changing!
+  member: Members cannot change the server region of this website.
+  upgrade: Moving this website to another server requires backup feature, you need to upgrade.
+  action: Move to this server!
 hostCheck:
   title: Mandatory DNS Checkup
   prompt: This checks whether {0} can be resolved via Google's DNS before get added into our server.

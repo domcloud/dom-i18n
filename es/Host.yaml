@@ -5,16 +5,6 @@ status:
   moving: Moviendo
   removing: Eliminando
   removed: Eliminado
-invoiceDomainPurchaseOf: Compra de dominio {0}
-invoiceDomainExtendOf: Renovación de dominio {0}
-invoiceDomainTransferOf: Transferencia de dominio {0}
-invoiceTeamPurchaseOf: Compra de equipo con plan {0}
-invoiceTeamAddons: Complementos de equipo
-invoiceForMonths: ' por {0, plural, =1{# mes} other{# meses}}'
-invoiceForYears: ' por {0, plural, =1{# año} other{# años}}'
-invoiceForYearsAndMonths: ' por {0, plural, =1{# año} other{# años}} y {1, plural, =1{# mes} other{# meses}}'
-invoiceDataTransferAddonsFor: Transferencia de datos adicional por {0} GB
-invoiceTip: Tarifa de conveniencia
 listTitle: Lista de sitios web
 newOrder: Añadir un sitio web
 tabDetail: Información
@@ -71,6 +61,7 @@ websiteStatus: Estado del Sitio Web
 websiteUsername: Nombre de Usuario del Sitio Web
 websiteDomain: Dominio del Sitio Web
 manageHostLogin: Gestionar inicio de sesión de host
+manageDatabase: Manage Database
 total: Total
 used: Usado
 remainingMonthlyPlan: Plan mensual restante
@@ -89,8 +80,9 @@ deleteSubdomainConfirm: Se eliminará el subdominio "{0}", ¿continuar?
 deleteSubdomainConfirm2: ¿Realmente quieres ejecutar "{0}"? Esto no se puede deshacer.
 enterFullDomainName: Ingrese el nombre de dominio completo
 useDefaultCname: Usar el nombre de dominio predeterminado ({0})
-useDifferentPassword: Usar una contraseña diferente para {0}
+useDifferentPassword: 'Usar una contraseña diferente para {0}'
 redeploy: Redistribuya
+askForHelp: Ask for help
 debugManually: Depurar manualmente
 startOver: Empezar de nuevo
 deployScript: Desplegar script
@@ -113,3 +105,13 @@ noGitHubApiHint: Primero debe vincular una cuenta de GitHub con acceso completo 
 noGitHubApiLink: Vincular GitHub ahora
 noRepo: No se ha encontrado ningún repositorio
 noRepoHint: Intente limitar su búsqueda
+invoiceDomainPurchaseOf: Compra de dominio {0}
+invoiceDomainExtendOf: Renovación de dominio {0}
+invoiceDomainTransferOf: Transferencia de dominio {0}
+invoiceTeamPurchaseOf: Compra de equipo con plan {0}
+invoiceTeamAddons: Complementos de equipo
+invoiceForMonths: ' por {0, plural, =1{# mes} other{# meses}}'
+invoiceForYears: ' por {0, plural, =1{# año} other{# años}}'
+invoiceForYearsAndMonths: ' por {0, plural, =1{# año} other{# años}} y {1, plural, =1{# mes} other{# meses}}'
+invoiceDataTransferAddonsFor: Transferencia de datos adicional por {0} GB
+invoiceTip: Tarifa de conveniencia

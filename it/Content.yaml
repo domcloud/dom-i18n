@@ -17,7 +17,7 @@ welcome:
     </p>
   createWebsiteHint: Pronto? Creiamo il tuo primo sito web.
   createWebsiteBtn: Crea un sito web
-  emailConfirmation: |2
+  emailConfirmation: |
     Sembra che tu debba verificare l'e-mail <strong>{0}</strong>
     prima di poter continuare.<br />
     Per favore, controlla la tua casella di posta elettronica (e la cartella spam).
@@ -25,6 +25,7 @@ welcome:
   emailConfirmationBtn: Invia di nuovo l'e-mail di conferma
   emailConfirmationSent: E-mail di conferma inviata a <strong>{0}</strong>!
   changeCountryBtn: Cambia paese
+  keepUsingEnglish: Keep using English
 notification:
   freeUserGuideTitle: Benvenuto a Bordo!
   freeUserGuideHint: "Grazie per averci scelto come tua piattaforma cloud \U0001F973 Se non lo hai già fatto, prova a leggere la nostra <a href=\"{0}\" target=\"_blank\">Guida Introduttiva</a>. Vuoi la nostra esperienza completa? Prova <a href=\"{1}\">a migliorare il tuo piano</a> per rimuovere il firewall API, i banner di dominio gratuiti e sbloccare <a href=\"{2}\" target=\"_blank\">più funzionalità</a>!"
@@ -105,6 +106,8 @@ hostConnection:
     </p>
   dnsOffTitle: Nessun nameserver
   dnsOffContent: Questo sito web non ha un nameserver. Potrebbe essere configurato esternamente.
+  dnsNotExistTitle: Domain not exist
+  dnsNotExistContent: This domain is not found or may not be registered. Have you purchase it?
   dnsManagedTitle: DNS gestito
   dnsManagedContent: Il DNS di questo sito web è gestito da {0}.
   dnsMixedTitle: DNS misto
@@ -118,25 +121,50 @@ hostConnection:
   pingNoIpTitle: Indirizzo IP non trovato
   pingNoIpContent: Il server DNS non restituisce un indirizzo IP.
   pingNoIp6Title: Nessun IPv6
-  pingNoIp6Content: Il DNS di questo sito web non ha un indirizzo IPv6. Potrebbe non essere disponibile per gli utenti IPv6.
+  pingNoIp6Content: 'Il DNS di questo sito web non ha un indirizzo IPv6. Potrebbe non essere disponibile per gli utenti IPv6.'
   pingNoIp6Hint: Si prega di aggiungere un record AAAA con il valore
   pingWrongIpTitle: Indirizzo IP errato
   pingWrongIpContent: |-
     Il DNS di questo sito web restituisce un indirizzo IP errato.
     Potrebbe fornire contenuti sbagliati o essere dietro un proxy.
+  pingWrongIpCurrent: Indirizzi IP correnti
+  pingWrongIpExpect: Indirizzi IP corretti
   pingNoWwwTitle: Indirizzo IP della sottodirectory www.* non trovato
-  pingNoWwwContent: |2-
+  pingNoWwwContent: |-
     Alcune persone potrebbero non essere in grado di accedere a questo
     sito web se lo precedono con www. Si consiglia di
     impostare un reindirizzamento per la sottodirectory www.
-  pingWrongIpCurrent: Indirizzi IP correnti
-  pingWrongIpExpect: Indirizzi IP corretti
+  pingNoWwwFix: Setup www.* subdomain redirect
   pingOkTitle: Indirizzo IP corretto
   pingOkContent: Il DNS di questo sito web restituisce l'indirizzo IP corretto.
   webNoHttpTitle: Sito web non accessibile
   webNoHttpContent: Questo sito web non è accessibile tramite HTTP.
   webNoHttpsTitle: Sito web non accessibile tramite HTTPS
-  webNoHttpsContent: Questo sito web non è accessibile tramite HTTPS.
+  webNoHttpsContent: |-
+    Questo sito web non è accessibile tramite HTTPS.
+  pingNoHttpsFix: Install HTTPS certificate
+  webBadHttpTitle: Website is returning an error
+  webBadHttpContent: |-
+    This website returns 500 or 403 error,
+    it may not be configured properly (check NGINX/App logs!).
+  webBadRedirectTitle: Website has bad redirects
+  webBadRedirectContent: |-
+    This website redirects visitor to outside the domain,
+    it may not be configured properly (check Base URL settings!).
+  webInfiniteRedirectTitle: Website has infinite redirects
+  webInfiniteRedirectContent: |-
+    This website currently serving infinite HTTPS requests,
+    it may already behind a HTTPS proxy.
+  webInfiniteRedirectFix: Disable HTTPS redirect
+  webBadWwwTitle: www.* subdomain is not accessible
+  webBadWwwContent: The www subdomain is either not accessible or returning error.
+  webInsecureTitle: Website is serving insecure HTTP requests
+  webInsecureContent: |-
+    This website doesn't redirect to HTTPS protocol,
+    it is not recommended and can lead to cookie issues.
+  webInsecureContentFix: Force HTTPS redirect
+  webOkTitle: Sito web OK
+  webOkContent: Questo sito web è accessibile tramite HTTP e HTTPS e non restituisce errori.
   webRedirectTitle: Reindirizzamento HTTP
   webRedirectContent: Questo sito web esegue un reindirizzamento a un'altra pagina
   web404Title: HTTP 404
@@ -148,11 +176,9 @@ hostConnection:
     Questo sito web restituisce un contenuto sbagliato. Potrebbe avere un problema di configurazione
     o restituire un altro indirizzo IP. È consigliabile consolidare
     i sottodomini www e non-www.
-  webOkTitle: Sito web OK
-  webOkContent: Questo sito web è accessibile tramite HTTP e HTTPS e non restituisce errori.
 hostFirewall:
   title: Controlla Firewall
-  description: |2
+  description: |
     <p>
     Il firewall aiuta a proteggere il tuo sito web dall'essere sfruttato in caso di
     attacco hacker bloccando tutto il traffico in uscita eccetto quelli nella
@@ -182,7 +208,7 @@ hostFirewall:
   onBtn: Spegni
 hostNginx:
   title: Controlla Configurazione NGINX
-  description: |2
+  description: |
     <p>
     NGINX è il nostro principale gateway server che serve porte HTTP (80 e 443).
     Per far funzionare il tuo sito web, la tua app web deve essere correttamente configurata
@@ -244,6 +270,7 @@ hostNginx:
       python: Python
       ruby: Ruby
     glsCmd: Comando App
+    glsBg: Run in Background?
     appEnv: Chiavi Ambiente
     appDev: Modalità Sviluppo?
     appRoot: Directory di lavoro
@@ -269,6 +296,20 @@ hostNginx:
     inputSubfolderPrompt: Inserisci la sottocartella (deve iniziare con '/' e senza spazi)
     inputSubfolderNotValid: Input della sottocartella non valido
     inputSubfolderNotUnique: Il valore della sottocartella deve essere univoco rispetto ad altre voci di sottocartella
+hostDB:
+  title: Manage Database
+  description: |-
+    <p>This page helps you see database lists and create or drop databases that linked to this domain</p>
+    <p>
+    We support creating MariaDB (MySQL-compatible), PostgreSQL and Valkey (Redis-compatible) databases.
+    To access it, connect to localhost with port 3306, 5432 and 6379 respectively. You can also use our web
+    editor to manage its content.
+    </p> <p>
+    MariaDB and PostgreSQL uses the same username and password across all databases in a domain, while Valkey uses
+    the database name as the username and unique password for each database. Also, since our database is shared across
+    a single server, administrative queries inside the database is limited. Refer to our documentation for more details.
+    </p>
+  helpText: Help on configuration
 hostDNS:
   title: Controlla Configurazione DNS
   description: |-
@@ -287,10 +328,14 @@ hostLog:
   runningList: Elenco processi in esecuzione
   logTypeError: Log Errori NGINX
   logTypeAccess: Log Accessi NGINX
+  logTypePhp: PHP Error Log
   logTypePassenger: Log App Passenger
+  logTypeProxfix: Proxfix App Log
   logTypeErrorHint: Questo log contiene i log errori NGINX e PHP per il giorno corrente
   logTypeAccessHint: Questo log contiene i log accessi NGINX per il giorno corrente
+  logTypePhpHint: This log contains PHP error logs for the current day
   logTypePassengerHint: Questo log contiene il log dell'app Passenger attualmente in esecuzione
+  logTypeProxfixHint: This log contains App log ran by Proxfix that's currently running
   errorFetch: C'è stato un errore nel recupero del file di log
   subdomain: Sottodominio
   maxLines: Linee massime
@@ -382,15 +427,23 @@ hostPasswd:
   warn: Questo cambierà anche la password del database! Il tuo sito web potrebbe essere inutilizzabile finché non lo cambi nella configurazione del sito web.
   member: I membri non possono cambiare la password di questo sito web.
   action: Aggiorna questa password!
+hostServer:
+  disabled: You cannot change the server region when this website is not active.
+  hint: 'You can move your website to another cloud or self-hosted server here. Choose a new server:'
+  warn: This will perform backup, delete, then restore on this website. Also could make your website temporarily inacessible due to IP addresses changing!
+  member: Members cannot change the server region of this website.
+  upgrade: Moving this website to another server requires backup feature, you need to upgrade.
+  action: Move to this server!
 hostCheck:
   title: Controllo DNS obbligatorio
   prompt: Questo controlla se {0} può essere risolto tramite il DNS di Google prima di essere aggiunto al nostro server.
   valid: Questo dominio è risolvibile
-  validNote: Questo dominio sarà risolvibile una volta che le configurazioni aggiuntive saranno aggiunte automaticamente per te
+  valid_with_note: This domain will be resolvable once additional configs added automatically for you
   incorrect: Record A+AAAA/CNAME errato per questo dominio, configuralo prima di continuare.
   missing: Record A+AAAA/CNAME mancante per questo dominio, configuralo prima di continuare.
   loading: '...'
   retrying: '...'
+  validNote: Questo dominio sarà risolvibile una volta che le configurazioni aggiuntive saranno aggiunte automaticamente per te
 domain:
   createInfo: |-
     Tieni presente che stai registrando solo un dominio. Se desideri

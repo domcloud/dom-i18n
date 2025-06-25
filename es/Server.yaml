@@ -1,15 +1,23 @@
 listTitle: Lista de servidores alojados en el servidor
 newOrder: Agregar un servidor
+startingHint: Read about creating your own self-hosted instance
 name: Nombre del archivo de respaldo
-size: Tamaño del respaldo
-download: Descargar respaldo
+nameHint: The URL to your server bridge API
+description: Server Nice Name
+descriptionHint: The long description of this server
+secret: Bridge Secret
+secretHint: The secret that set on file /home/bridge/public_html/.env
 openHost: Abrir configuración del host
 emptyList: No hay respaldos listados
+createTitle: Crear un nuevo respaldo
+createTitleHint: Seleccione un host para crear respaldo.
+updateTitle: Update this server
+updateTitleHint: Update your server information, leave blank for secret password to not modify it.
+size: Tamaño del respaldo
+download: Descargar respaldo
 seeCreationProgress: Ver el progreso de creación del respaldo en el ejecutor del host
 noProgressAvailable: Ya no se encuentra este registro de respaldo
 restore: Restaurar este respaldo
 restoreTitle: Restaurar un respaldo
 restoreTitleHint: Seleccione un dominio en el que restaurar. ¡Tenga cuidado! Los datos se sobrescribirán.
 restoreTitleConfirm: Está a punto de restaurar este respaldo en {0}. ¿Desea continuar?
-createTitle: Crear un nuevo respaldo
-createTitleHint: Seleccione un host para crear respaldo.

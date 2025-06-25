@@ -5,7 +5,7 @@ days: '{0, plural, =1{# dia} other{# dias}}'
 hours: '{0, plural, =1{# hora} other{# horas}}'
 minutes: '{0, plural, =1{# minuto} other{# minutos}}'
 seconds: '{0, plural, =1{# segundo} other{# segundos}}'
-ago: há {0}
+ago: 'há {0}'
 inFuture: em {0}
 yesterday: Ontem
 tomorrow: Amanhã

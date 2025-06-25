@@ -104,9 +104,8 @@ storageLimit: '{0} جيجابايت تخزين'
 networkLimit: '{0} جيجابايت شبكة'
 instanceLimit: '{0} {0, plural, one {حالة} other {حالات}}'
 userLimit: '{0} {0, plural, one {مستخدم} other {مستخدمين}}'
-autoStop: الإيقاف التلقائي عند الوصول إلى الحدود
-noFreeDomain: لا يوجد نطاق {0} مجاني
-withFreeDomain: نطاق {0} مجاني
+refuseFirewall: Turn off firewall at will
+withGlobalDomain: Use global domain
 withBackup: نسخة احتياطية تلقائية على مستوى الخادم
 withDocker: Docker وتطبيقات طويلة الأمد
 storageUsage: استخدام التخزين
@@ -127,11 +126,12 @@ copied: تم النسخ!
 reloading: إعادة تحميل {0}
 expires: تنتهي في {0}
 expiresAt: تنتهي في {0}
-expireFreeHint: |2
+expireFreeHint: |
   يتم تجديد تواريخ الانتهاء تلقائيًا (تمديد لمدة 3 أشهر)
   في كل مرة تقوم فيها بتسجيل الدخول أو يحصل موقعك على حركة مرور كافية للشبكة (>50 ميجابايت)
   في نهاية الشهر.
 discountedAt: بخصم عند {0}
+paymentFeeAt: Payment fees of {0} placed
 extendingCurrentExpiryDate: تمديد تاريخ الانتهاء الحالي
 usersLimitHint: '{0} {0, plural, one {مستخدم} other {مستخدمين}} في هذا الفريق، {1} {1, plural, one {مستخدم} other {مستخدمين}} يمكن إضافتهم أكثر'
 emailToInvite: البريد الإلكتروني للدعوة
@@ -160,8 +160,12 @@ delete: حذف
 why: لماذا؟
 pay: ادفع
 payAccept: نقبل الدفع عبر
+sales: Sales
 loading: جارٍ جمع البيانات...
 fetchError: خطأ في جلب البيانات! حاول مرة أخرى لاحقًا
 notFound: غير موجود
 notFoundDescription: الصفحة التي تبحث عنها غير موجودة.
 notFoundLink: العودة إلى الصفحة الرئيسية
+autoStop: الإيقاف التلقائي عند الوصول إلى الحدود
+noFreeDomain: لا يوجد نطاق {0} مجاني
+withFreeDomain: نطاق {0} مجاني

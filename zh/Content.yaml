@@ -17,7 +17,7 @@ welcome:
     </p>
   createWebsiteHint: 准备好了吗？我们来创建你的第一个网站吧。
   createWebsiteBtn: 创建网站
-  emailConfirmation: |2
+  emailConfirmation: |
     似乎你需要先验证电子邮件 <strong>{0}</strong>
     才能继续。<br />
     请检查你的电子邮件（和垃圾邮件）收件箱。
@@ -25,13 +25,14 @@ welcome:
   emailConfirmationBtn: 重新发送确认电子邮件
   emailConfirmationSent: 确认电子邮件已发送到 <strong>{0}</strong>！
   changeCountryBtn: 更改国家
+  keepUsingEnglish: Keep using English
 notification:
   freeUserGuideTitle: 欢迎 onboard！
   freeUserGuideHint: "感谢您选择我们作为您的云平台 \U0001F973 如果您还没有，请尝试阅读我们的<a href=\"{0}\" target=\"_blank\">入门指南</a>。需要我们的完整体验？尝试<a href=\"{1}\">升级您的计划</a>以移除 API 防火墙、免费域名横幅，并解锁<a href=\"{2}\" target=\"_blank\">更多功能</a>！"
   lockedUserGuideTitle: 欢迎 onboard！
   lockedUserGuideHint: "感谢您选择我们作为您的云平台 \U0001F973 在<a href=\"{0}\">此处</a>创建您的第一个网站。您可能需要链接您的 GitHub 帐户以验证此帐户。您也可以<a href=\"{1}\">升级您的计划</a>，立即验证您的帐户并解锁<a href=\"{2}\" target=\"_blank\">更多功能</a>，成为订阅帐户。"
   accountNoticeTitle: ⚠️ 您的帐户可能被暂停
-  accountNoticeHint: 由于以下原因，您的帐户已被暂停：{0}。您可以<a href="{1}">升级您的计划</a>来解决此问题。
+  accountNoticeHint: '由于以下原因，您的帐户已被暂停：{0}。您可以<a href="{1}">升级您的计划</a>来解决此问题。'
   empty: 这里没有内容
 purchaseConfirmation:
   purchasedHint: 谢谢。如果我们的系统确认了你的付款，确认电子邮件将发送到你的电子邮件地址。
@@ -77,10 +78,9 @@ hostCreate:
   attachDeployKey: 附加部署密钥
   selectFramework: 告诉我们框架或语言
   applyFramework: 应用此模板
-  attachDeployKeyHint: |-
-    如果你的存储库设置为私有，你可以
-    使用部署密钥进行访问。我们为你创建了一个非对称部署密钥，你需要将此公钥添加到你的存储库中。
-  attachDeployKeyLearnMore: 了解更多关于使用部署密钥进行GitHub集成的信息。
+  attachDeployKeyHint: "如果你的存储库设置为私有，你可以\n使用部署密钥进行访问。我们为你创建了一个非对称部署密钥，你需要将此公钥添加到你的存储库中。"
+  attachDeployKeyLearnMore: |-
+    了解更多关于使用部署密钥进行GitHub集成的信息。
   attachDeployKeyOpenConfig: 打开存储库部署密钥配置
   attachDeployKeyConfirm: 我添加了这个公钥
 hostConnection:
@@ -105,6 +105,8 @@ hostConnection:
     </p>
   dnsOffTitle: No name server
   dnsOffContent: This website does not have a name server. It maybe externally configured.
+  dnsNotExistTitle: Domain not exist
+  dnsNotExistContent: This domain is not found or may not be registered. Have you purchase it?
   dnsManagedTitle: DNS managed
   dnsManagedContent: This website's DNS is managed by {0}.
   dnsMixedTitle: DNS is mixed
@@ -119,15 +121,19 @@ hostConnection:
   pingNoIpContent: The DNS server does not return an IP address.
   pingNoIp6Title: No IPv6
   pingNoIp6Content: ' This website''s DNS has no IPv6 address. It maybe unavailable for IPv6 users.'
+  pingNoIp6Hint: Please add an AAAA record with value
   pingWrongIpTitle: Incorrect IP Address
   pingWrongIpContent: |-
     This website's DNS returned an incorrect IP address.
     It may not serve the correct content, or it's behind a proxy.
+  pingWrongIpCurrent: Current IP addresses
+  pingWrongIpExpect: Correct IP addresses
   pingNoWwwTitle: www.* subdomain IP address not found
-  pingNoWwwContent: |2-
+  pingNoWwwContent: |-
     Some people may not be able to access this
     website if they prefix it with www. Setup a
     www subdomain redirect is recommended.
+  pingNoWwwFix: Setup www.* subdomain redirect
   pingOkTitle: IP Address OK
   pingOkContent: This website's DNS returned the correct IP address.
   webNoHttpTitle: Website is not accessible
@@ -136,6 +142,7 @@ hostConnection:
   webNoHttpsContent: |-
     This website may not have HTTPS certificate
     installed, or it's expired, or not configured properly.
+  pingNoHttpsFix: Install HTTPS certificate
   webBadHttpTitle: Website is returning an error
   webBadHttpContent: |-
     This website returns 500 or 403 error,
@@ -144,17 +151,23 @@ hostConnection:
   webBadRedirectContent: |-
     This website is redirecting visitors to outside the domain,
     it may not be configured properly (check Base URL settings!).
+  webInfiniteRedirectTitle: Website has infinite redirects
+  webInfiniteRedirectContent: |-
+    This website currently serving infinite HTTPS requests,
+    it may already behind a HTTPS proxy.
+  webInfiniteRedirectFix: Disable HTTPS redirect
   webBadWwwTitle: www.* subdomain is not accessible
   webBadWwwContent: This website's www subdomain is either not accessible or returning error.
   webInsecureTitle: Website is not fully secure
   webInsecureContent: |2-
      This website doesn't redirect HTTP to HTTPS,
     which is fine but not recommended.
+  webInsecureContentFix: Force HTTPS redirect
   webOkTitle: Website is OK
   webOkContent: This website is accessible via HTTP and HTTPS.
 hostFirewall:
   title: Check Firewall
-  description: |2
+  description: |
     <p>
     Firewall helps your website not to be exploited in the event of a
     hacker break-in by blocking all outgoing traffic except those on the
@@ -184,7 +197,7 @@ hostFirewall:
   onBtn: Turn it off
 hostNginx:
   title: Check NGINX Config
-  description: |2
+  description: |
     <p>
     NGINX is our main server gateway that serves HTTP ports (80 and 443).
     To make your website works, your web app must be correctly configured
@@ -246,6 +259,7 @@ hostNginx:
       python: Python
       ruby: Ruby
     glsCmd: App Command
+    glsBg: Run in Background?
     appEnv: Environment Keys
     appDev: Development Mode?
     appRoot: Working Directory
@@ -271,6 +285,20 @@ hostNginx:
     inputSubfolderPrompt: Please input subfolder (must start with '/' and no spaces)
     inputSubfolderNotValid: Subfolder input is not valid
     inputSubfolderNotUnique: Subfolder value must unique with other subfolder entries
+hostDB:
+  title: Manage Database
+  description: |-
+    <p>This page helps you see database lists and create or drop databases that linked to this domain</p>
+    <p>
+    We support creating MariaDB (MySQL-compatible), PostgreSQL and Valkey (Redis-compatible) databases.
+    To access it, connect to localhost with port 3306, 5432 and 6379 respectively. You can also use our web
+    editor to manage its content.
+    </p> <p>
+    MariaDB and PostgreSQL uses the same username and password across all databases in a domain, while Valkey uses
+    the database name as the username and unique password for each database. Also, since our database is shared across
+    a single server, administrative queries inside the database is limited. Refer to our documentation for more details.
+    </p>
+  helpText: Help on configuration
 hostDNS:
   title: Check DNS Config
   description: |-
@@ -289,10 +317,14 @@ hostLog:
   runningList: Running processes list
   logTypeError: NGINX Error Log
   logTypeAccess: NGINX Access Log
+  logTypePhp: PHP Error Log
   logTypePassenger: Passenger App Log
+  logTypeProxfix: Proxfix App Log
   logTypeErrorHint: This log contains NGINX and PHP error logs for the current day
   logTypeAccessHint: This log contains NGINX access logs for the current day
+  logTypePhpHint: This log contains PHP error logs for the current day
   logTypePassengerHint: This log contains Passenger App log that's currently running
+  logTypeProxfixHint: This log contains App log ran by Proxfix that's currently running
   errorFetch: There was an error fetching the log file
   subdomain: Subdomain
   maxLines: Max Lines
@@ -384,6 +416,13 @@ hostPasswd:
   warn: This will also change database password! Your website may be unusable until you change it in your website config.
   member: Members cannot change the password this website.
   action: Update this password!
+hostServer:
+  disabled: You cannot change the server region when this website is not active.
+  hint: 'You can move your website to another cloud or self-hosted server here. Choose a new server:'
+  warn: This will perform backup, delete, then restore on this website. Also could make your website temporarily inacessible due to IP addresses changing!
+  member: Members cannot change the server region of this website.
+  upgrade: Moving this website to another server requires backup feature, you need to upgrade.
+  action: Move to this server!
 hostCheck:
   title: Mandatory DNS Checkup
   prompt: This checks whether {0} can be resolved via Google's DNS before get added into our server.
@@ -408,6 +447,14 @@ domain:
   eppTransferInfo: |-
     You can transfer your domain to another registrar by
     using this EPP code. The transfer works if the domain is not locked
+  dnsManagedHint: |-
+    We don't provide UI for custom DNS records. <br />
+    If your nameservers are set to <b>{0}</b> then DNS are handled by
+    <a href="{1}" target="_blank">the respective website DNS</a>.
+  dnsManagedOpen: |-
+    If you want to change it anyway please manage it via our
+    <a href="{0}" target="_blank">Registrar UI</a>. Click forgot password
+    and enter your current email to set your password the first time.
 invoiceDescription:
   domainPurchaseOf: Domain Purchase of {0}
   domainExtendOf: Domain Extend of {0}

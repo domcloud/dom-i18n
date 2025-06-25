@@ -1,0 +1,15 @@
+listTitle: Self-Hosted Server List
+newOrder: Add a server
+startingHint: Read about creating your own self-hosted instance
+name: Server Domain Name
+nameHint: The URL to your server bridge API
+description: Server Nice Name
+descriptionHint: The long description of this server
+secret: Bridge Secret
+secretHint: The secret that set on file /home/bridge/public_html/.env
+openHost: Open Host Settings
+emptyList: No servers listed
+createTitle: Create a new server
+createTitleHint: Please fill in your server information
+updateTitle: Update this server
+updateTitleHint: Update your server information, leave blank for secret password to not modify it.

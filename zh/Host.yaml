@@ -61,6 +61,7 @@ websiteStatus: 网站状态
 websiteUsername: 网站用户名
 websiteDomain: 网站域名
 manageHostLogin: 管理主机登录
+manageDatabase: Manage Database
 total: 总计
 used: 已用
 remainingMonthlyPlan: 剩余月度计划
@@ -79,8 +80,9 @@ deleteSubdomainConfirm: 将删除子域名 "{0}"，继续？
 deleteSubdomainConfirm2: 您确定要执行 "{0}" 吗？此操作无法撤销。
 enterFullDomainName: 输入完整的域名
 useDefaultCname: 使用默认域名 ({0})
-useDifferentPassword: 为 {0} 使用不同的密码
+useDifferentPassword: '为 {0} 使用不同的密码'
 redeploy: 重新部署
+askForHelp: Ask for help
 debugManually: 手动调试
 startOver: 重新开始
 deployScript: 部署脚本

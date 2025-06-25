@@ -104,9 +104,8 @@ storageLimit: '{0} GB de almacenamiento'
 networkLimit: '{0} GB de red'
 instanceLimit: '{0} {0, plural, one {Instancia} other {Instancias}}'
 userLimit: '{0} {0, plural, one {Usuario} other {Usuarios}}'
-autoStop: Detención automática en los límites
-noFreeDomain: Sin dominio {0} gratuito
-withFreeDomain: Dominio gratuito {0}
+refuseFirewall: Turn off firewall at will
+withGlobalDomain: Use global domain
 withBackup: Copia de seguridad automática a nivel de servidor
 withDocker: Docker y aplicaciones de larga duración
 storageUsage: Uso de almacenamiento
@@ -127,11 +126,12 @@ copied: ¡Copiado!
 reloading: Recargando {0}
 expires: Vence {0}
 expiresAt: Vence el {0}
-expireFreeHint: |2
+expireFreeHint: |
   Las fechas de vencimiento se renuevan automáticamente (se extienden por 3 meses)
   cada vez que inicia sesión o sus sitios web tienen suficiente tráfico de red (> 50 MB)
   al final del mes.
 discountedAt: Con descuento en {0}
+paymentFeeAt: Payment fees of {0} placed
 extendingCurrentExpiryDate: Extendiendo la fecha de vencimiento actual
 usersLimitHint: '{0} {0, plural, one {usuario} other {usuarios}} en este equipo, se pueden agregar {1} {1, plural, one {usuario} other {usuarios}} más'
 emailToInvite: Correo electrónico para invitar
@@ -160,8 +160,12 @@ delete: Eliminar
 why: ¿Por qué?
 pay: Pagar
 payAccept: Aceptamos pagos a través de
+sales: Sales
 loading: Recopilando datos...
 fetchError: ¡Error al buscar datos! Inténtelo de nuevo más tarde
 notFound: No encontrado
 notFoundDescription: La página que buscas no existe.
 notFoundLink: Volver a la página de inicio
+autoStop: Detención automática en los límites
+noFreeDomain: Sin dominio {0} gratuito
+withFreeDomain: Dominio gratuito {0}

@@ -17,7 +17,7 @@ welcome:
     </p>
   createWebsiteHint: Pronto? Vamos criar seu primeiro site.
   createWebsiteBtn: Criar um site
-  emailConfirmation: |2
+  emailConfirmation: |
     Parece que você precisa verificar o email <strong>{0}</strong>
     antes de continuar.<br />
     Por favor, verifique sua caixa de entrada de email (e spam).
@@ -25,6 +25,7 @@ welcome:
   emailConfirmationBtn: Reenviar Email de Confirmação
   emailConfirmationSent: Email de confirmação para <strong>{0}</strong> foi enviado!
   changeCountryBtn: Mudar de país
+  keepUsingEnglish: Keep using English
 notification:
   freeUserGuideTitle: Bem-vindo a Bordo!
   freeUserGuideHint: "Obrigado por nos escolher como sua plataforma de nuvem \U0001F973 Se ainda não o fez, experimente ler o nosso <a href=\"{0}\" target=\"_blank\">Guia de Introdução</a>. Quer a experiência completa? Experimente <a href=\"{1}\">atualizar seu plano</a> para remover o firewall da API, banners de domínio grátis e desbloquear <a href=\"{2}\" target=\"_blank\">mais recursos</a>!"
@@ -77,10 +78,9 @@ hostCreate:
   attachDeployKey: Anexar chave de implantação
   selectFramework: Diga-nos o framework ou linguagem
   applyFramework: Aplicar este modelo
-  attachDeployKeyHint: |-
-    Se o seu repositório estiver definido como privado, você pode usar
-    chaves de implantação para acessar. Criamos uma chave de implantação assimétrica para você, você precisará adicionar esta chave pública ao seu repositório.
-  attachDeployKeyLearnMore: Saiba mais sobre integração GitHub com chaves de implantação.
+  attachDeployKeyHint: "Se o seu repositório estiver definido como privado, você pode usar\nchaves de implantação para acessar. Criamos uma chave de implantação assimétrica para você, você precisará adicionar esta chave pública ao seu repositório."
+  attachDeployKeyLearnMore: |-
+    Saiba mais sobre integração GitHub com chaves de implantação.
   attachDeployKeyOpenConfig: Abrir configuração de chave de implantação do repositório
   attachDeployKeyConfirm: Adicionei esta chave pública
 hostConnection:
@@ -107,16 +107,18 @@ hostConnection:
   dnsManagedTitle: DNS gerenciado
   dnsManagedContent: O DNS deste site é gerenciado pela {0}.
   dnsMixedTitle: DNS misturado
-  dnsMixedContent: O DNS deste site tem uma configuração mista. Certifique-se de que o servidor de nomes esteja configurado corretamente. Não misture nossos registros com outros!
+  dnsMixedContent: |-
+    O DNS deste site tem uma configuração mista. Certifique-se de que o servidor de nomes esteja configurado corretamente. Não misture nossos registros com outros!
   dnsExternalTitle: DNS gerenciado externamente
   dnsExternalContent: O DNS deste site é gerenciado por terceiros.
   pingNoIpTitle: Endereço IP não encontrado
   pingNoIpContent: O servidor DNS não retorna um endereço IP.
   pingNoIp6Title: Sem IPv6
-  pingNoIp6Content: O DNS deste site não tem um endereço IPv6. Pode não estar disponível para usuários de IPv6.
+  pingNoIp6Content: 'O DNS deste site não tem um endereço IPv6. Pode não estar disponível para usuários de IPv6.'
   pingNoIp6Hint: Adicione um registro AAAA com o valor
   pingWrongIpTitle: Endereço IP incorreto
-  pingWrongIpContent: O DNS deste site retorna um endereço IP incorreto. Pode não entregar o conteúdo correto ou estar por trás de um proxy.
+  pingWrongIpContent: |-
+    O DNS deste site retorna um endereço IP incorreto. Pode não entregar o conteúdo correto ou estar por trás de um proxy.
   pingWrongIpCurrent: Endereços IP atuais
   pingWrongIpExpect: Endereços IP corretos
   pingNoWwwTitle: Endereço IP para subdomínio www.* não encontrado
@@ -128,25 +130,30 @@ hostConnection:
   webNoHttpTitle: Site inacessível
   webNoHttpContent: Este site não é acessível via HTTP.
   webNoHttpsTitle: HTTPS não disponível
-  webNoHttpsContent: Este site pode não ter um certificado HTTPS instalado, ou pode estar expirado ou configurado incorretamente.
+  webNoHttpsContent: |-
+    Este site pode não ter um certificado HTTPS instalado, ou pode estar expirado ou configurado incorretamente.
   pingNoHttpsFix: Instalar certificado HTTPS
   webBadHttpTitle: Site retorna um erro
-  webBadHttpContent: Este site retorna um erro 500 ou 403. Pode não estar configurado corretamente (verifique as configurações do NGINX/App!).
+  webBadHttpContent: |-
+    Este site retorna um erro 500 ou 403. Pode não estar configurado corretamente (verifique as configurações do NGINX/App!).
   webBadRedirectTitle: Site com redirecionamentos incorretos
-  webBadRedirectContent: Este site redireciona visitantes para fora do domínio. Pode não estar configurado corretamente (verifique as configurações do URL base!).
+  webBadRedirectContent: |-
+    Este site redireciona visitantes para fora do domínio. Pode não estar configurado corretamente (verifique as configurações do URL base!).
   webInfiniteRedirectTitle: O site possui redirecionamentos infinitos
-  webInfiniteRedirectContent: Este site está atualmente atendendo solicitações HTTPS infinitas, pode já estar atrás de um proxy HTTPS.
+  webInfiniteRedirectContent: |-
+    Este site está atualmente atendendo solicitações HTTPS infinitas, pode já estar atrás de um proxy HTTPS.
   webInfiniteRedirectFix: Desativar redirecionamento HTTPS
   webBadWwwTitle: O subdomínio www.* não está acessível
   webBadWwwContent: O subdomínio www não está acessível ou está retornando erro.
   webInsecureTitle: O site está atendendo solicitações HTTP inseguras
-  webInsecureContent: Este site não redireciona para o protocolo HTTPS, o que não é recomendado e pode causar problemas com cookies.
+  webInsecureContent: |-
+    Este site não redireciona para o protocolo HTTPS, o que não é recomendado e pode causar problemas com cookies.
   webInsecureContentFix: Forçar redirecionamento HTTPS
   webOkTitle: Site OK
   webOkContent: Este site é acessível via HTTP e HTTPS.
 hostFirewall:
   title: Verificação de Firewall
-  description: |2
+  description: |
     <p>
     Um firewall ajuda a proteger seu site de abuso em caso de invasão de hackers, bloqueando todo o tráfego de saída, exceto para a <a href="{0}" target="_blank" rel="noreferrer">lista de permissões</a>.
     </p>
@@ -170,7 +177,7 @@ hostFirewall:
   onBtn: Desativar
 hostNginx:
   title: Verificação de Configuração NGINX
-  description: |2
+  description: |
     <p>
     NGINX é nossa principal gateway de servidor que serve as portas HTTP (80 e 443). Para que seu site funcione, seu aplicativo da web deve ser configurado corretamente aqui. Aqui, você pode visualizar sua configuração atual e fazer alterações através de uma IU pré-configurada ou uma configuração completa de NGINX como script YAML.
     </p>
@@ -224,6 +231,7 @@ hostNginx:
       python: Python
       ruby: Ruby
     glsCmd: Comando do Aplicativo
+    glsBg: Run in Background?
     appEnv: Chaves de Ambiente
     appDev: Modo de Desenvolvimento?
     appRoot: Diretório de Trabalho
@@ -249,9 +257,24 @@ hostNginx:
     inputSubfolderPrompt: Insira a subpasta (começando com '/' e sem espaços)
     inputSubfolderNotValid: Entrada de subpasta não é válida
     inputSubfolderNotUnique: O valor da subpasta deve ser exclusivo em relação a outros itens de subpasta
+hostDB:
+  title: Manage Database
+  description: |-
+    <p>This page helps you see database lists and create or drop databases that linked to this domain</p>
+    <p>
+    We support creating MariaDB (MySQL-compatible), PostgreSQL and Valkey (Redis-compatible) databases.
+    To access it, connect to localhost with port 3306, 5432 and 6379 respectively. You can also use our web
+    editor to manage its content.
+    </p> <p>
+    MariaDB and PostgreSQL uses the same username and password across all databases in a domain, while Valkey uses
+    the database name as the username and unique password for each database. Also, since our database is shared across
+    a single server, administrative queries inside the database is limited. Refer to our documentation for more details.
+    </p>
+  helpText: Help on configuration
 hostDNS:
   title: Verificação de Configuração DNS
-  description: <p>Esta página ajuda a alterar os registros DNS se você apontar os servidores de nomes do seu domínio para nós.</p> <p>Você também pode editar registros DNS através do Webmin.</p>
+  description: |-
+    <p>Esta página ajuda a alterar os registros DNS se você apontar os servidores de nomes do seu domínio para nós.</p> <p>Você também pode editar registros DNS através do Webmin.</p>
   helpText: Ajuda de Configuração
   error: 'Erro: configuração para {0} não encontrada'
   errorFetch: Ocorreu um erro ao buscar a configuração DNS
@@ -265,10 +288,14 @@ hostLog:
   runningList: Lista de Processos Ativos
   logTypeError: Log de Erros NGINX
   logTypeAccess: Log de Acesso NGINX
+  logTypePhp: PHP Error Log
   logTypePassenger: Log de Aplicativo Passenger
+  logTypeProxfix: Proxfix App Log
   logTypeErrorHint: Este log contém os logs de erros NGINX e PHP da data atual
   logTypeAccessHint: Este log contém os logs de acesso NGINX da data atual
+  logTypePhpHint: This log contains PHP error logs for the current day
   logTypePassengerHint: Este log contém os logs ativos do seu aplicativo Passenger
+  logTypeProxfixHint: This log contains App log ran by Proxfix that's currently running
   errorFetch: Ocorreu um erro ao buscar os arquivos de log
   subdomain: Subdomínio
   maxLines: Máximo de Linhas
@@ -360,6 +387,13 @@ hostPasswd:
   warn: This will also change database password! Your website may be unusable until you change it in your website config.
   member: Members cannot change the password this website.
   action: Update this password!
+hostServer:
+  disabled: You cannot change the server region when this website is not active.
+  hint: 'You can move your website to another cloud or self-hosted server here. Choose a new server:'
+  warn: This will perform backup, delete, then restore on this website. Also could make your website temporarily inacessible due to IP addresses changing!
+  member: Members cannot change the server region of this website.
+  upgrade: Moving this website to another server requires backup feature, you need to upgrade.
+  action: Move to this server!
 hostCheck:
   title: Mandatory DNS Checkup
   prompt: This checks whether {0} can be resolved via Google's DNS before get added into our server.
@@ -384,6 +418,14 @@ domain:
   eppTransferInfo: |-
     You can transfer your domain to another registrar by
     using this EPP code. The transfer works if the domain is not locked
+  dnsManagedHint: |-
+    We don't provide UI for custom DNS records. <br />
+    If your nameservers are set to <b>{0}</b> then DNS are handled by
+    <a href="{1}" target="_blank">the respective website DNS</a>.
+  dnsManagedOpen: |-
+    If you want to change it anyway please manage it via our
+    <a href="{0}" target="_blank">Registrar UI</a>. Click forgot password
+    and enter your current email to set your password the first time.
 invoiceDescription:
   domainPurchaseOf: Domain Purchase of {0}
   domainExtendOf: Domain Extend of {0}

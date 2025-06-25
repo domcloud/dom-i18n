@@ -15,3 +15,7 @@ editQuotaHint: Seleccione el límite de código de invitación para un nuevo có
 noInvitees: Aún no hay inscripciones registradas
 inviteeCode: Código de inscripción
 inviteeJoinTime: Hora de entrada
+cooldownIn: 'Cooldown: {0}'
+quotaOffHint: Turn off invite code
+quotaSmallHint: For inviting a friend or someone at a public chat
+quotaLargeHint: For creating events and private online tutorials

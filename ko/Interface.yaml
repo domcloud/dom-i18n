@@ -104,9 +104,8 @@ storageLimit: '{0} GB 스토리지'
 networkLimit: '{0} GB 네트워크'
 instanceLimit: '{0} {0, plural, one {인스턴스} other {인스턴스들}}'
 userLimit: '{0} {0, plural, one {사용자} other {사용자들}}'
-autoStop: 제한 시 자동 중지
-noFreeDomain: 무료 {0} 도메인 없음
-withFreeDomain: 무료 {0} 도메인
+refuseFirewall: Turn off firewall at will
+withGlobalDomain: Use global domain
 withBackup: 자동 서버 수준 백업
 withDocker: Docker 및 장기 실행 앱
 storageUsage: 스토리지 사용량
@@ -127,12 +126,13 @@ copied: 복사됨!
 reloading: '{0} 다시 로드 중'
 expires: '{0}에 만료됨'
 expiresAt: '{0}에 만료됨'
-expireFreeHint: |2
+expireFreeHint: |
   만료 날짜는 자동으로 갱신됩니다 (3개월 연장)
   로그인하거나 월말에 웹사이트가 충분한 네트워크 트래픽을 가질 때마다 (>50 MB)
 discountedAt: '{0}에 할인됨'
+paymentFeeAt: Payment fees of {0} placed
 extendingCurrentExpiryDate: 현재 만료 날짜 연장
-usersLimitHint: 이 팀에는 {0} {0, plural, one {사용자} other {사용자들}}이 있으며, 추가로 {1} {1, plural, one {사용자} other {사용자들}}를 추가할 수 있습니다
+usersLimitHint: '이 팀에는 {0} {0, plural, one {사용자} other {사용자들}}이 있으며, 추가로 {1} {1, plural, one {사용자} other {사용자들}}를 추가할 수 있습니다'
 emailToInvite: 초대할 이메일
 selectRole: 역할 선택
 info: 정보
@@ -159,8 +159,12 @@ delete: 삭제
 why: 왜?
 pay: 결제
 payAccept: 다음을 통해 결제를 수락합니다
+sales: Sales
 loading: 데이터 수집 중...
 fetchError: 데이터 가져오기 오류! 나중에 다시 시도하세요
 notFound: 찾을 수 없음
 notFoundDescription: 찾고 있는 페이지가 존재하지 않습니다.
 notFoundLink: 홈페이지로 돌아가기
+autoStop: 제한 시 자동 중지
+noFreeDomain: 무료 {0} 도메인 없음
+withFreeDomain: 무료 {0} 도메인

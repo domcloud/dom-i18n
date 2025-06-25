@@ -104,9 +104,8 @@ storageLimit: '{0} Go de stockage'
 networkLimit: '{0} Go de réseau'
 instanceLimit: '{0} {0, plural, one {Instance} other {Instances}}'
 userLimit: '{0} {0, plural, one {Utilisateur} other {Utilisateurs}}'
-autoStop: Arrêt automatique aux limites
-noFreeDomain: Aucun domaine {0}
-withFreeDomain: Domaine gratuit {0}
+refuseFirewall: Turn off firewall at will
+withGlobalDomain: Use global domain
 withBackup: Sauvegarde automatique au niveau du serveur
 withDocker: Docker et applications de longue durée
 storageUsage: Utilisation du stockage
@@ -127,11 +126,12 @@ copied: Copié!
 reloading: Rechargement {0}
 expires: Expire le {0}
 expiresAt: Expire à {0}
-expireFreeHint: |2
+expireFreeHint: |
   Les dates d'expiration sont automatiquement renouvelées (prolongées de 3 mois)
   chaque fois que vous vous connectez ou que vos sites web ont suffisamment de trafic réseau (>50 MB)
   à la fin du mois.
 discountedAt: Réduit à {0}
+paymentFeeAt: Payment fees of {0} placed
 extendingCurrentExpiryDate: Prolongation de la date d'expiration actuelle
 usersLimitHint: '{0} {0, plural, one {utilisateur} other {utilisateurs}} dans cette équipe, {1} {1, plural, one {utilisateur} other {utilisateurs}} peuvent encore être ajoutés'
 emailToInvite: Email pour inviter
@@ -160,8 +160,12 @@ delete: Supprimer
 why: Pourquoi?
 pay: Payer
 payAccept: Nous acceptons les paiements via
+sales: Sales
 loading: Récupération des données...
 fetchError: Erreur lors de la récupération des données! Réessayez plus tard
 notFound: Non trouvé
 notFoundDescription: La page que vous recherchez n'existe pas.
 notFoundLink: Retour à la page d'accueil
+autoStop: Arrêt automatique aux limites
+noFreeDomain: Aucun domaine {0}
+withFreeDomain: Domaine gratuit {0}

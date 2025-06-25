@@ -17,7 +17,7 @@ welcome:
     </p>
   createWebsiteHint: ¿Preparado? Hagamos tu primer sitio web.
   createWebsiteBtn: Crear un sitio web
-  emailConfirmation: |2
+  emailConfirmation: |
     Parece que necesitas verificar el correo electrónico <strong>{0}</strong>
     antes de continuar.<br />
     Compruebe su correo electrónico (and spam) inbox.
@@ -25,6 +25,7 @@ welcome:
   emailConfirmationBtn: Volver a enviar el correo de confirmación
   emailConfirmationSent: ¡La confirmación de correo electrónico a <strong>{0}</strong> ha sido enviada!
   changeCountryBtn: Cambiar de país
+  keepUsingEnglish: Keep using English
 notification:
   freeUserGuideTitle: ¡Bienvenido a Bordo!
   freeUserGuideHint: "Gracias por elegirnos como tu plataforma en la nube \U0001F973 Si aún no lo has hecho, prueba leyendo nuestra <a href=\"{0}\" target=\"_blank\">Guía de Inicio</a>. ¿Necesitas nuestra experiencia completa? Intenta <a href=\"{1}\">mejorar tu plan</a> para eliminar el firewall de API, los banners de dominio gratuito y desbloquear <a href=\"{2}\" target=\"_blank\">más funciones</a>!"
@@ -77,10 +78,7 @@ hostCreate:
   attachDeployKey: Adjuntar clave de implementación
   selectFramework: Indícanos el marco o lenguaje
   applyFramework: Aplicar esta plantilla
-  attachDeployKeyHint: |-
-    Si su repositorio está configurado como privado, puede usar
-    claves de implementación para acceder a él. Hemos creado una clave de implementación
-    asimétrica para usted, debe agregar esta clave pública a su repositorio.
+  attachDeployKeyHint: "Si su repositorio está configurado como privado, puede usar\nclaves de implementación para acceder a él. Hemos creado una clave de implementación\nasimétrica para usted, debe agregar esta clave pública a su repositorio."
   attachDeployKeyLearnMore: |-
     Más información sobre la integración de GitHub
     con claves de implementación.
@@ -132,7 +130,7 @@ hostConnection:
   pingWrongIpCurrent: Direcciones IP actuales
   pingWrongIpExpect: Direcciones IP correctas
   pingNoWwwTitle: www.* dirección IP del subdominio no encontrada
-  pingNoWwwContent: |2-
+  pingNoWwwContent: |-
     Es posible que algunas personas no puedan acceder a este
     sitio web si le ponen el prefijo www. Se recomienda configurar una
     www redirección de subdominio se recomienda.
@@ -155,18 +153,20 @@ hostConnection:
     Este sitio web está redirigiendo a los visitantes fuera del dominio,
     es posible que no esté configurado correctamente (¡verifique la configuración de la URL base!).
   webInfiniteRedirectTitle: El sitio web tiene redirecciones infinitas
-  webInfiniteRedirectContent: Este sitio web está actualmente sirviendo solicitudes HTTPS infinitas, puede estar detrás de un proxy HTTPS.
+  webInfiniteRedirectContent: |-
+    Este sitio web está actualmente sirviendo solicitudes HTTPS infinitas, puede estar detrás de un proxy HTTPS.
   webInfiniteRedirectFix: Deshabilitar redirección HTTPS
   webBadWwwTitle: El subdominio www.* no es accesible
   webBadWwwContent: El subdominio www no es accesible o devuelve un error.
   webInsecureTitle: El sitio web está sirviendo solicitudes HTTP inseguras
-  webInsecureContent: Este sitio web no redirige al protocolo HTTPS, no se recomienda y puede causar problemas con las cookies.
+  webInsecureContent: |-
+    Este sitio web no redirige al protocolo HTTPS, no se recomienda y puede causar problemas con las cookies.
   webInsecureContentFix: Forzar redirección HTTPS
   webOkTitle: El sitio web está bien
   webOkContent: Este sitio web es accesible a través de HTTP y HTTPS.
 hostFirewall:
   title: Verificar Firewall
-  description: |2
+  description: |
     <p>
     El firewall ayuda a que tu sitio web no sea explotado en caso de
     una intrusión de hackers al bloquear todo el tráfico saliente excepto
@@ -196,7 +196,7 @@ hostFirewall:
   onBtn: Apagar
 hostNginx:
   title: Verificar Configuración de NGINX
-  description: |2
+  description: |
     <p>
     NGINX es nuestra puerta de enlace principal del servidor que sirve los puertos HTTP (80 y 443).
     Para que su sitio web funcione, su aplicación web debe estar configurada correctamente
@@ -258,6 +258,7 @@ hostNginx:
       python: Python
       ruby: Ruby
     glsCmd: Comando de la Aplicación
+    glsBg: Run in Background?
     appEnv: Claves de Entorno
     appDev: ¿Modo de Desarrollo?
     appRoot: Directorio de Trabajo
@@ -283,6 +284,20 @@ hostNginx:
     inputSubfolderPrompt: Por favor, ingrese la subcarpeta (debe comenzar con '/' y no tener espacios)
     inputSubfolderNotValid: La entrada de subcarpeta no es válida
     inputSubfolderNotUnique: El valor de la subcarpeta debe ser único en comparación con otras entradas de subcarpeta
+hostDB:
+  title: Manage Database
+  description: |-
+    <p>This page helps you see database lists and create or drop databases that linked to this domain</p>
+    <p>
+    We support creating MariaDB (MySQL-compatible), PostgreSQL and Valkey (Redis-compatible) databases.
+    To access it, connect to localhost with port 3306, 5432 and 6379 respectively. You can also use our web
+    editor to manage its content.
+    </p> <p>
+    MariaDB and PostgreSQL uses the same username and password across all databases in a domain, while Valkey uses
+    the database name as the username and unique password for each database. Also, since our database is shared across
+    a single server, administrative queries inside the database is limited. Refer to our documentation for more details.
+    </p>
+  helpText: Help on configuration
 hostDNS:
   title: Configurador de Servidor DNS
   description: |-
@@ -301,10 +316,14 @@ hostLog:
   runningList: Lista de procesos en ejecución
   logTypeError: Log de Errores de NGINX
   logTypeAccess: Log de Acceso de NGINX
+  logTypePhp: PHP Error Log
   logTypePassenger: Log de la Aplicación Passenger
+  logTypeProxfix: Proxfix App Log
   logTypeErrorHint: Este log contiene los logs de errores de NGINX y PHP del día actual
   logTypeAccessHint: Este log contiene los logs de acceso de NGINX del día actual
+  logTypePhpHint: This log contains PHP error logs for the current day
   logTypePassengerHint: Este log contiene el log de la Aplicación Passenger que está en ejecución
+  logTypeProxfixHint: This log contains App log ran by Proxfix that's currently running
   errorFetch: Hubo un error al obtener el archivo de log
   subdomain: Subdominio
   maxLines: Líneas Máximas

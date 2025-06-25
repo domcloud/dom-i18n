@@ -1,19 +1,19 @@
-invoiceDomainPurchaseOf: '{0} のドメイン購入'
-invoiceDomainExtendOf: '{0} のドメイン延長'
-invoiceDomainTransferOf: '{0} のドメイン転送'
-invoiceTeamPurchaseOf: '{0} プランのチーム購入'
-invoiceTeamAddons: チームアドオン
-invoiceForMonths: ' {0, plural, =1{# か月} other{# か月}} の間'
-invoiceForYears: ' {0, plural, =1{# 年} other{# 年}} の間'
-invoiceForYearsAndMonths: ' {0, plural, =1{# 年} other{# 年}} と {1, plural, =1{# か月} other{# か月}} の間'
-invoiceDataTransferAddonsFor: '{0} GBの追加データ転送'
-invoiceTip: 手数料
+status:
+  active: Active
+  starting: Starting
+  suspended: Suspended
+  moving: Moving
+  removing: Removing
+  removed: Removed
 listTitle: ウェブサイトリスト
 newOrder: ウェブサイトを追加
 tabDetail: 情報
 tabSetup: セットアップ
 tabManage: 管理
 tabRunner: デプロイ
+tabDatabase: Database
+tabSubdomain: Subdomain
+tabSoftware: Software
 tabWebhook: Webhook
 tabCheck: チェック
 tabConnection: 接続を確認
@@ -21,6 +21,7 @@ tabFirewall: ファイアウォールを確認
 tabNginx: NGINXを確認
 tabDns: DNSを確認
 tabLog: ログを確認
+tabUser: Check User
 tabAdmin: 管理
 tabRename: ユーザー名を変更
 tabCname: ドメインを変更
@@ -52,22 +53,36 @@ enableNewFeatures: 新機能を有効にする
 addHost: ウェブサイトを追加
 emptyList: ウェブサイトがリストされていません
 waitForDataHint: リソースの使用量はここに表示されます。データが表示されるのを次の日に再確認してください。
-slaveID: スレーブID
 IPAddress: IPアドレス
 openWebsite: ウェブサイトを開く
 openPortal: ポータルを開く
-websiteStatus: ホストの状態
 creationDate: 作成日
+websiteStatus: ホストの状態
 websiteUsername: ホストのユーザー名
 websiteDomain: ホストのドメイン
 manageHostLogin: ホストログインを管理
+manageDatabase: Manage Database
 total: 合計
 used: 使用済み
 remainingMonthlyPlan: 残りの月間プラン
 remainingAddons: 残りのアドオン
-planDetail: '{0} プラン、{1} ディスクスペース、{2} 月間帯域幅。'
+createDatabase: Create {0} Database
+createDatabaseHint: Enter the new {0} database name
+createDatabaseConfirm: Will create "{0}", continue?
+dropDatabase: Drop {0} Database
+dropDatabaseConfirm: Will drop "{0}", continue?
+dropDatabaseConfirm2: Are you really want to execute "{0}"? This can't be undone.
+tables: '{0} {0, plural, one {table} other {tables}}'
+noSubdomain: Please use custom domain to create subdomains
+createSubdomain: Create a new subdomain
+deleteSubdomain: Delete {0} subdomain
+deleteSubdomainConfirm: Will delete subdomain "{0}", continue?
+deleteSubdomainConfirm2: Are you really want to execute "{0}"? This can't be undone.
+enterFullDomainName: Enter full domain name
 useDefaultCname: デフォルト ({0}) の場合は空白のままにしてください
+useDifferentPassword: ' Use different password for {0}'
 redeploy: 再デプロイ
+askForHelp: Ask for help
 debugManually: 手動デバッグ
 startOver: 最初からやり直す
 deployScript: スクリプトをデプロイ
@@ -90,3 +105,15 @@ noGitHubApiHint: まず、フルリポジトリアクセスを持つGitHubアカ
 noGitHubApiLink: 今すぐGitHubをリンク
 noRepo: リポジトリが見つかりません
 noRepoHint: 検索を絞り込んでみてください
+invoiceDomainPurchaseOf: '{0} のドメイン購入'
+invoiceDomainExtendOf: '{0} のドメイン延長'
+invoiceDomainTransferOf: '{0} のドメイン転送'
+invoiceTeamPurchaseOf: '{0} プランのチーム購入'
+invoiceTeamAddons: チームアドオン
+invoiceForMonths: ' {0, plural, =1{# か月} other{# か月}} の間'
+invoiceForYears: ' {0, plural, =1{# 年} other{# 年}} の間'
+invoiceForYearsAndMonths: ' {0, plural, =1{# 年} other{# 年}} と {1, plural, =1{# か月} other{# か月}} の間'
+invoiceDataTransferAddonsFor: '{0} GBの追加データ転送'
+invoiceTip: 手数料
+slaveID: スレーブID
+planDetail: '{0} プラン、{1} ディスクスペース、{2} 月間帯域幅。'

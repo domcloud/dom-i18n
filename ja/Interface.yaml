@@ -104,9 +104,8 @@ storageLimit: '{0} GBのストレージ'
 networkLimit: '{0} GBのネットワーク'
 instanceLimit: '{0} {0, plural, one {インスタンス} other {インスタンス}}'
 userLimit: '{0} {0, plural, one {ユーザー} other {ユーザー}}'
-autoStop: 制限時に自動停止
-noFreeDomain: 無料の{0}ドメインはありません
-withFreeDomain: 無料の{0}ドメイン
+refuseFirewall: Turn off firewall at will
+withGlobalDomain: Use global domain
 withBackup: 自動サーバーレベルのバックアップ
 withDocker: Dockerと長時間実行されるアプリ
 storageUsage: ストレージ使用量
@@ -127,13 +126,14 @@ copied: コピーしました！
 reloading: '{0} を再読み込み中'
 expires: '{0}に期限切れ'
 expiresAt: '{0}に期限切れ'
-expireFreeHint: |2
+expireFreeHint: |
   有効期限は自動的に更新されます（3か月延長）
   ログインするたびに、または月末に十分なネットワークトラフィック（>50 MB）が
   あなたのウェブサイトにあるとき。
 discountedAt: '{0}で割引'
+paymentFeeAt: Payment fees of {0} placed
 extendingCurrentExpiryDate: 現在の有効期限を延長中
-usersLimitHint: このチームには{0} {0, plural, one {ユーザー} other {ユーザー}}がいます。{1} {1, plural, one {ユーザー} other {ユーザー}}を追加できます
+usersLimitHint: 'このチームには{0} {0, plural, one {ユーザー} other {ユーザー}}がいます。{1} {1, plural, one {ユーザー} other {ユーザー}}を追加できます'
 emailToInvite: 招待するメール
 selectRole: 役割を選択
 info: 情報
@@ -160,8 +160,12 @@ delete: 削除
 why: なぜ？
 pay: 支払い
 payAccept: 次の方法でお支払いを受け付けています
+sales: Sales
 loading: データを取得しています...
 fetchError: データの取得エラー！後でもう一度試してください
 notFound: 見つかりません
 notFoundDescription: お探しのページは存在しません。
 notFoundLink: ホームページに戻る
+autoStop: 制限時に自動停止
+noFreeDomain: 無料の{0}ドメインはありません
+withFreeDomain: 無料の{0}ドメイン

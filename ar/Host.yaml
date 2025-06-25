@@ -61,6 +61,7 @@ websiteStatus: حالة الموقع
 websiteUsername: اسم المستخدم للموقع
 websiteDomain: نطاق الموقع
 manageHostLogin: إدارة تسجيل دخول المضيف
+manageDatabase: Manage Database
 total: الإجمالي
 used: المستخدم
 remainingMonthlyPlan: الخطة الشهرية المتبقية
@@ -79,8 +80,9 @@ deleteSubdomainConfirm: سيتم حذف النطاق الفرعي "{0}", الم�
 deleteSubdomainConfirm2: هل تريد حقًا تنفيذ "{0}"؟ لا يمكن التراجع عن هذا.
 enterFullDomainName: أدخل اسم النطاق الكامل
 useDefaultCname: استخدام النطاق الافتراضي ({0})
-useDifferentPassword: استخدام كلمة مرور مختلفة لـ {0}
+useDifferentPassword: 'استخدام كلمة مرور مختلفة لـ {0}'
 redeploy: إعادة النشر
+askForHelp: Ask for help
 debugManually: التصحيح يدويًا
 startOver: البدء من جديد
 deployScript: نشر السكربت
