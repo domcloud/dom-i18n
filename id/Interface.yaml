@@ -60,6 +60,7 @@ themeLight: Selalu Terang
 themeSystem: Pengaturan Sistem Default
 role: Peran
 action: Aksi
+custom: Custom
 currencyInput: Mata Uang
 invoiceNoteInput: Kontak Tagihan
 defaultServerInput: Server Default
@@ -88,15 +89,24 @@ passwordSetCancel: Pengaturan kata sandi untuk akun ini telah dibatalkan
 passwordSetCancelLength: Pengaturan kata sandi dibatalkan, minimal harus 8 karakter
 yearDuration: Durasi dalam tahun
 monthDuration: Durasi dalam bulan
+annualSaving: Save 16% at yearly plan
 totalPayment: Total Pembayaran
 expirationDate: Tanggal Kadaluarsa
 orderNow: Pesan Sekarang
 invoice: Faktur
 pendingInvoices: Faktur yang Tertunda
 noPendingInvoices: Anda tidak memiliki faktur tertunda saat ini.
+mixedCurrency: Your invoices have mixed currencies
 currentPlan: Rencana Saat Ini
 currentPlanDescription: Dengan biaya <b>{0}</b> per bulan dengan masa berlaku <b>{1}</b>
+selectYourNewPlan: Select your new plan
 priceDescription: '{0} / bulan'
+paymentSummary: Payment Summary
+selectDuration: Select duration
+orderSummary: Order summary
+planFeatures: '{0} plan features'
+planIncludes: '{0} plan includes'
+paymentInput: 'Choose payment type'
 monthlyLimits: Batas Bulanan
 storageLimit: '{0} GB Penyimpanan'
 networkLimit: '{0} GB Jaringan'
