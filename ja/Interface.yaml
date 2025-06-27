@@ -89,31 +89,31 @@ passwordSetCancel: このアカウントのパスワード設定がキャンセ�
 passwordSetCancelLength: パスワード設定がキャンセルされました。8文字以上である必要があります
 yearDuration: 年単位の期間
 monthDuration: 月単位の期間
-annualSaving: Save 16% at yearly plan
+annualSaving: 年額プランで16%節約
 totalPayment: 合計支払い
 expirationDate: 有効期限日
 orderNow: 今すぐ注文
 invoice: 請求書
 pendingInvoices: 保留中の請求書
 noPendingInvoices: 現在、保留中の請求書はありません。
-mixedCurrency: Your invoices have mixed currencies
+mixedCurrency: 請求書に複数の通貨が含まれています
 currentPlan: 現在のプラン
 currentPlanDescription: <b>{0}</b>の費用で毎月<b>{1}</b>の期限付き
-selectYourNewPlan: Select your new plan
+selectYourNewPlan: 新しいプランを選択
 priceDescription: '{0} /月'
-paymentSummary: Payment Summary
-selectDuration: Select duration
-orderSummary: Order summary
-planFeatures: '{0} plan features'
-planIncludes: '{0} plan includes'
-paymentInput: 'Choose payment type'
+paymentSummary: 支払い概要
+selectDuration: 期間を選択
+orderSummary: 注文概要
+planFeatures: 'プラン{0}の機能'
+planIncludes: 'プラン{0}に含まれる内容'
+paymentInput: '支払い方法を選択'
 monthlyLimits: 毎月の制限
 storageLimit: '{0} GBのストレージ'
 networkLimit: '{0} GBのネットワーク'
 instanceLimit: '{0} {0, plural, one {インスタンス} other {インスタンス}}'
 userLimit: '{0} {0, plural, one {ユーザー} other {ユーザー}}'
-refuseFirewall: Turn off firewall at will
-withGlobalDomain: Use global domain
+refuseFirewall: 任意でファイアウォールを無効にする
+withGlobalDomain: グローバルドメインを使用する
 withBackup: 自動サーバーレベルのバックアップ
 withDocker: Dockerと長時間実行されるアプリ
 storageUsage: ストレージ使用量
@@ -139,7 +139,7 @@ expireFreeHint: |
   ログインするたびに、または月末に十分なネットワークトラフィック（>50 MB）が
   あなたのウェブサイトにあるとき。
 discountedAt: '{0}で割引'
-paymentFeeAt: Payment fees of {0} placed
+paymentFeeAt: 支払い手数料 {0} が適用されます
 extendingCurrentExpiryDate: 現在の有効期限を延長中
 usersLimitHint: 'このチームには{0} {0, plural, one {ユーザー} other {ユーザー}}がいます。{1} {1, plural, one {ユーザー} other {ユーザー}}を追加できます'
 emailToInvite: 招待するメール
@@ -168,7 +168,7 @@ delete: 削除
 why: なぜ？
 pay: 支払い
 payAccept: 次の方法でお支払いを受け付けています
-sales: Sales
+sales: 販売
 loading: データを取得しています...
 fetchError: データの取得エラー！後でもう一度試してください
 notFound: 見つかりません

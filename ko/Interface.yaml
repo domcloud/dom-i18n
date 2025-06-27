@@ -89,31 +89,31 @@ passwordSetCancel: 이 계정의 비밀번호 설정이 취소되었습니다
 passwordSetCancelLength: 비밀번호 설정 취소, 최소 8자 이상이어야 합니다
 yearDuration: 연 단위 기간
 monthDuration: 월 단위 기간
-annualSaving: Save 16% at yearly plan
+annualSaving: 연간 플랜으로 16% 절약
 totalPayment: 총 결제 금액
 expirationDate: 만료 날짜
 orderNow: 지금 주문
 invoice: 청구서
 pendingInvoices: 보류 중인 청구서
 noPendingInvoices: 현재 보류 중인 청구서가 없습니다.
-mixedCurrency: Your invoices have mixed currencies
+mixedCurrency: 귀하의 청구서에는 여러 통화가 포함되어 있습니다
 currentPlan: 현재 계획
 currentPlanDescription: 월 <b>{0}</b> 비용으로 만료 <b>{1}</b>
-selectYourNewPlan: Select your new plan
+selectYourNewPlan: 새로운 플랜을 선택하세요
 priceDescription: '{0} / 월'
-paymentSummary: Payment Summary
-selectDuration: Select duration
-orderSummary: Order summary
-planFeatures: '{0} plan features'
-planIncludes: '{0} plan includes'
-paymentInput: 'Choose payment type'
+paymentSummary: 결제 요약
+selectDuration: 기간 선택
+orderSummary: 주문 요약
+planFeatures: '플랜 {0}의 기능'
+planIncludes: '플랜 {0}에 포함됨'
+paymentInput: '결제 유형 선택'
 monthlyLimits: 월별 제한
 storageLimit: '{0} GB 스토리지'
 networkLimit: '{0} GB 네트워크'
 instanceLimit: '{0} {0, plural, one {인스턴스} other {인스턴스들}}'
 userLimit: '{0} {0, plural, one {사용자} other {사용자들}}'
-refuseFirewall: Turn off firewall at will
-withGlobalDomain: Use global domain
+refuseFirewall: 원하는 대로 방화벽을 끄기
+withGlobalDomain: 글로벌 도메인 사용
 withBackup: 자동 서버 수준 백업
 withDocker: Docker 및 장기 실행 앱
 storageUsage: 스토리지 사용량
@@ -138,7 +138,7 @@ expireFreeHint: |
   만료 날짜는 자동으로 갱신됩니다 (3개월 연장)
   로그인하거나 월말에 웹사이트가 충분한 네트워크 트래픽을 가질 때마다 (>50 MB)
 discountedAt: '{0}에 할인됨'
-paymentFeeAt: Payment fees of {0} placed
+paymentFeeAt: 결제 수수료 {0} 부과됨
 extendingCurrentExpiryDate: 현재 만료 날짜 연장
 usersLimitHint: '이 팀에는 {0} {0, plural, one {사용자} other {사용자들}}이 있으며, 추가로 {1} {1, plural, one {사용자} other {사용자들}}를 추가할 수 있습니다'
 emailToInvite: 초대할 이메일
@@ -167,7 +167,7 @@ delete: 삭제
 why: 왜?
 pay: 결제
 payAccept: 다음을 통해 결제를 수락합니다
-sales: Sales
+sales: 판매
 loading: 데이터 수집 중...
 fetchError: 데이터 가져오기 오류! 나중에 다시 시도하세요
 notFound: 찾을 수 없음

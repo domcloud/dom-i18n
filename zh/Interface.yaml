@@ -89,31 +89,31 @@ passwordSetCancel: 已取消设置此帐户的密码
 passwordSetCancelLength: 已取消设置密码，必须至少包含8个字符
 yearDuration: 年限
 monthDuration: 月限
-annualSaving: Save 16% at yearly plan
+annualSaving: 年付计划可节省16%
 totalPayment: 总付款额
 expirationDate: 到期日期
 orderNow: 立即订购
 invoice: 发票
 pendingInvoices: 待处理发票
 noPendingInvoices: 您当前没有待处理的发票。
-mixedCurrency: Your invoices have mixed currencies
+mixedCurrency: 您的发票包含多种货币
 currentPlan: 当前计划
 currentPlanDescription: 每月费用为 <b>{0}</b>，到期日为 <b>{1}</b>
-selectYourNewPlan: Select your new plan
+selectYourNewPlan: 选择您的新计划
 priceDescription: '{0} / 月'
-paymentSummary: Payment Summary
-selectDuration: Select duration
-orderSummary: Order summary
-planFeatures: '{0} plan features'
-planIncludes: '{0} plan includes'
-paymentInput: 'Choose payment type'
+paymentSummary: 付款摘要
+selectDuration: 选择时长
+orderSummary: 订单摘要
+planFeatures: '计划 {0} 的功能'
+planIncludes: '计划 {0} 包括'
+paymentInput: '选择付款方式'
 monthlyLimits: 每月限制
 storageLimit: '{0} GB 存储空间'
 networkLimit: '{0} GB 网络'
 instanceLimit: '{0} {0, plural, one {实例} other {实例}}'
 userLimit: '{0} {0, plural, one {用户} other {用户}}'
-refuseFirewall: Turn off firewall at will
-withGlobalDomain: Use global domain
+refuseFirewall: 可随意关闭防火墙
+withGlobalDomain: 使用全球域名
 withBackup: 服务器级别的自动备份
 withDocker: Docker 和长期运行的应用程序
 storageUsage: 存储使用情况
@@ -138,7 +138,7 @@ expireFreeHint: |
   到期日期会自动延长（每次您登录时或您的网站具有足够的网络流量（> 50 MB）时）
   每月末。
 discountedAt: 享受折扣 {0}
-paymentFeeAt: Payment fees of {0} placed
+paymentFeeAt: 收取付款手续费 {0}
 extendingCurrentExpiryDate: 延长当前到期日期
 usersLimitHint: '此团队中有 {0} {0, plural, one {用户} other {用户}}，还可以添加 {1} {1, plural, one {用户} other {用户}}'
 emailToInvite: 邀请的邮箱地址
@@ -167,7 +167,7 @@ delete: 删除
 why: 为什么？
 pay: 支付
 payAccept: 我们接受以下支付方式
-sales: Sales
+sales: 销售
 loading: 正在获取数据...
 fetchError: 获取数据时出错！请稍后重试
 notFound: 未找到

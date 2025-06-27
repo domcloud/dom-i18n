@@ -89,31 +89,31 @@ passwordSetCancel: A definição da senha para esta conta foi cancelada
 passwordSetCancelLength: Definição de senha cancelada, deve ter pelo menos 8 caracteres
 yearDuration: Duração em anos
 monthDuration: Duração em meses
-annualSaving: Save 16% at yearly plan
+annualSaving: Economize 16% no plano anual
 totalPayment: Pagamento Total
 expirationDate: Data de Expiração
 orderNow: Encomendar Agora
 invoice: Fatura
 pendingInvoices: Faturas Pendentes
 noPendingInvoices: Você não tem faturas pendentes no momento.
-mixedCurrency: Your invoices have mixed currencies
+mixedCurrency: Suas faturas têm moedas mistas
 currentPlan: Plano Atual
 currentPlanDescription: Com custo de <b>{0}</b> por mês com expiração em <b>{1}</b>
-selectYourNewPlan: Select your new plan
+selectYourNewPlan: Selecione seu novo plano
 priceDescription: '{0} / mês'
-paymentSummary: Payment Summary
-selectDuration: Select duration
-orderSummary: Order summary
-planFeatures: '{0} plan features'
-planIncludes: '{0} plan includes'
-paymentInput: 'Choose payment type'
+paymentSummary: Resumo do pagamento
+selectDuration: Selecione a duração
+orderSummary: Resumo do pedido
+planFeatures: 'Recursos do plano {0}'
+planIncludes: 'O plano {0} inclui'
+paymentInput: 'Escolha o tipo de pagamento'
 monthlyLimits: Limites Mensais
 storageLimit: '{0} GB de Armazenamento'
 networkLimit: '{0} GB de Rede'
 instanceLimit: '{0} {0, plural, one {Instância} other {Instâncias}}'
 userLimit: '{0} {0, plural, one {Usuário} other {Usuários}}'
-refuseFirewall: Turn off firewall at will
-withGlobalDomain: Use global domain
+refuseFirewall: Desative o firewall à vontade
+withGlobalDomain: Use domínio global
 withBackup: Backup automático no nível do servidor
 withDocker: Docker e aplicativos de longa duração
 storageUsage: Uso de Armazenamento
@@ -139,7 +139,7 @@ expireFreeHint: |-
   toda vez que você faz login ou seus sites têm tráfego de rede suficiente (> 50 MB)
   no final do mês.
 discountedAt: Com desconto de {0}
-paymentFeeAt: Payment fees of {0} placed
+paymentFeeAt: Taxas de pagamento de {0} aplicadas
 extendingCurrentExpiryDate: Estendendo a data de expiração atual
 usersLimitHint: '{0} {0, plural, one {usuário} other {usuários}} nesta equipe, {1} {1, plural, one {usuário} other {usuários}} podem ser adicionados'
 emailToInvite: E-mail para convidar
@@ -168,7 +168,7 @@ delete: Excluir
 why: Porquê?
 pay: Pagar
 payAccept: Aceitamos pagamentos por meio de
-sales: Sales
+sales: Vendas
 loading: Reunindo dados...
 fetchError: Erro ao buscar dados! Tente novamente mais tarde
 notFound: Não Encontrado
