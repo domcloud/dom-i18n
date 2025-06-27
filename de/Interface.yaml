@@ -60,6 +60,7 @@ themeLight: Immer Hell
 themeSystem: Systemstandard
 role: Rolle
 action: Aktion
+custom: Custom
 currencyInput: Währung
 invoiceNoteInput: Rechnungskontakt
 defaultServerInput: Standardserver
@@ -88,15 +89,24 @@ passwordSetCancel: Passwort für dieses Konto wurde abgebrochen
 passwordSetCancelLength: Passworteinstellung abgebrochen, muss mindestens 8 Zeichen lang sein
 yearDuration: Dauer in Jahren
 monthDuration: Dauer in Monaten
+annualSaving: Save 16% at yearly plan
 totalPayment: Gesamtzahlung
 expirationDate: Ablaufdatum
 orderNow: Jetzt bestellen
 invoice: Rechnung
 pendingInvoices: Ausstehende Rechnungen
 noPendingInvoices: Sie haben derzeit keine ausstehenden Rechnungen.
+mixedCurrency: Your invoices have mixed currencies
 currentPlan: Aktueller Plan
 currentPlanDescription: Mit Kosten von <b>{0}</b> pro Monat mit Ablauf <b>{1}</b>
+selectYourNewPlan: Select your new plan
 priceDescription: '{0} / Monat'
+paymentSummary: Payment Summary
+selectDuration: Select duration
+orderSummary: Order summary
+planFeatures: '{0} plan features'
+planIncludes: '{0} plan includes'
+paymentInput: 'Choose payment type'
 monthlyLimits: Monatliche Limits
 storageLimit: '{0} GB Speicher'
 networkLimit: '{0} GB Netzwerk'

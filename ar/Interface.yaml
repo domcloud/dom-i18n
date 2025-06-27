@@ -60,6 +60,7 @@ themeLight: فاتح دائمًا
 themeSystem: الإعداد الافتراضي للنظام
 role: الدور
 action: إجراء
+custom: Custom
 currencyInput: العملة
 invoiceNoteInput: جهة اتصال الفاتورة
 defaultServerInput: الخادم الافتراضي
@@ -88,15 +89,24 @@ passwordSetCancel: تم إلغاء تعيين كلمة المرور لهذا ا�
 passwordSetCancelLength: تم إلغاء تعيين كلمة المرور، يجب أن تكون على الأقل 8 أحرف
 yearDuration: المدة بالسنوات
 monthDuration: المدة بالأشهر
+annualSaving: Save 16% at yearly plan
 totalPayment: إجمالي الدفع
 expirationDate: تاريخ الانتهاء
 orderNow: اطلب الآن
 invoice: فاتورة
 pendingInvoices: الفواتير المعلقة
 noPendingInvoices: ليس لديك أي فواتير معلقة حاليًا.
+mixedCurrency: Your invoices have mixed currencies
 currentPlan: الخطة الحالية
 currentPlanDescription: بتكلفة <b>{0}</b> شهريًا مع انتهاء <b>{1}</b>
+selectYourNewPlan: Select your new plan
 priceDescription: '{0} / الشهر'
+paymentSummary: Payment Summary
+selectDuration: Select duration
+orderSummary: Order summary
+planFeatures: '{0} plan features'
+planIncludes: '{0} plan includes'
+paymentInput: 'Choose payment type'
 monthlyLimits: الحدود الشهرية
 storageLimit: '{0} جيجابايت تخزين'
 networkLimit: '{0} جيجابايت شبكة'
