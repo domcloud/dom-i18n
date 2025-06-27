@@ -89,31 +89,31 @@ passwordSetCancel: La configuración de la contraseña para esta cuenta ha sido 
 passwordSetCancelLength: Configuración de contraseña cancelada, debe tener al menos 8 caracteres
 yearDuration: Duración en años
 monthDuration: Duración en meses
-annualSaving: Save 16% at yearly plan
+annualSaving: Ahorra 16% en el plan anual
 totalPayment: Pago total
 expirationDate: Fecha de vencimiento
 orderNow: Ordenar ahora
 invoice: Factura
 pendingInvoices: Facturas pendientes
 noPendingInvoices: Actualmente no tiene facturas pendientes.
-mixedCurrency: Your invoices have mixed currencies
+mixedCurrency: Tus facturas contienen varias monedas
 currentPlan: Plan actual
 currentPlanDescription: Con un costo de <b>{0}</b> por mes con vencimiento el <b>{1}</b>
-selectYourNewPlan: Select your new plan
+selectYourNewPlan: Selecciona tu nuevo plan
 priceDescription: '{0} / mes'
-paymentSummary: Payment Summary
-selectDuration: Select duration
-orderSummary: Order summary
-planFeatures: '{0} plan features'
-planIncludes: '{0} plan includes'
-paymentInput: 'Choose payment type'
+paymentSummary: Resumen de pago
+selectDuration: Selecciona duración
+orderSummary: Resumen del pedido
+planFeatures: 'Características del plan {0}'
+planIncludes: 'El plan {0} incluye'
+paymentInput: 'Elige tipo de pago'
 monthlyLimits: Límites mensuales
 storageLimit: '{0} GB de almacenamiento'
 networkLimit: '{0} GB de red'
 instanceLimit: '{0} {0, plural, one {Instancia} other {Instancias}}'
 userLimit: '{0} {0, plural, one {Usuario} other {Usuarios}}'
-refuseFirewall: Turn off firewall at will
-withGlobalDomain: Use global domain
+refuseFirewall: Desactiva el firewall a voluntad
+withGlobalDomain: Usar dominio global
 withBackup: Copia de seguridad automática a nivel de servidor
 withDocker: Docker y aplicaciones de larga duración
 storageUsage: Uso de almacenamiento
@@ -139,7 +139,7 @@ expireFreeHint: |
   cada vez que inicia sesión o sus sitios web tienen suficiente tráfico de red (> 50 MB)
   al final del mes.
 discountedAt: Con descuento en {0}
-paymentFeeAt: Payment fees of {0} placed
+paymentFeeAt: Se aplican tarifas de pago de {0}
 extendingCurrentExpiryDate: Extendiendo la fecha de vencimiento actual
 usersLimitHint: '{0} {0, plural, one {usuario} other {usuarios}} en este equipo, se pueden agregar {1} {1, plural, one {usuario} other {usuarios}} más'
 emailToInvite: Correo electrónico para invitar
