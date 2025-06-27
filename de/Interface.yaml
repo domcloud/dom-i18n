@@ -88,14 +88,12 @@ passwordSetCancel: Passwort für dieses Konto wurde abgebrochen
 passwordSetCancelLength: Passworteinstellung abgebrochen, muss mindestens 8 Zeichen lang sein
 yearDuration: Dauer in Jahren
 monthDuration: Dauer in Monaten
-annualSaving: 16% sparen
 totalPayment: Gesamtzahlung
 expirationDate: Ablaufdatum
 orderNow: Jetzt bestellen
 invoice: Rechnung
 pendingInvoices: Ausstehende Rechnungen
 noPendingInvoices: Sie haben derzeit keine ausstehenden Rechnungen.
-mixedCurrency: Ausgewählte Rechnungen haben gemischte Währungen
 currentPlan: Aktueller Plan
 currentPlanDescription: Mit Kosten von <b>{0}</b> pro Monat mit Ablauf <b>{1}</b>
 priceDescription: '{0} / Monat'

@@ -88,14 +88,12 @@ passwordSetCancel: 已取消设置此帐户的密码
 passwordSetCancelLength: 已取消设置密码，必须至少包含8个字符
 yearDuration: 年限
 monthDuration: 月限
-annualSaving: 节省 16%
 totalPayment: 总付款额
 expirationDate: 到期日期
 orderNow: 立即订购
 invoice: 发票
 pendingInvoices: 待处理发票
 noPendingInvoices: 您当前没有待处理的发票。
-mixedCurrency: 所选发票具有混合货币
 currentPlan: 当前计划
 currentPlanDescription: 每月费用为 <b>{0}</b>，到期日为 <b>{1}</b>
 priceDescription: '{0} / 月'

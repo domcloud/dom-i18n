@@ -88,14 +88,12 @@ passwordSetCancel: A definição da senha para esta conta foi cancelada
 passwordSetCancelLength: Definição de senha cancelada, deve ter pelo menos 8 caracteres
 yearDuration: Duração em anos
 monthDuration: Duração em meses
-annualSaving: Economize 16%
 totalPayment: Pagamento Total
 expirationDate: Data de Expiração
 orderNow: Encomendar Agora
 invoice: Fatura
 pendingInvoices: Faturas Pendentes
 noPendingInvoices: Você não tem faturas pendentes no momento.
-mixedCurrency: As faturas selecionadas têm moedas mistas
 currentPlan: Plano Atual
 currentPlanDescription: Com custo de <b>{0}</b> por mês com expiração em <b>{1}</b>
 priceDescription: '{0} / mês'

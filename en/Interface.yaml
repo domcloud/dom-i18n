@@ -96,7 +96,7 @@ orderNow: Order Now
 invoice: Invoice
 pendingInvoices: Pending Invoices
 noPendingInvoices: You have no pending invoices currently.
-mixedCurrency: Selected invoices have mixed currencies
+mixedCurrency: Your invoices have mixed currencies
 currentPlan: Current Plan
 currentPlanDescription: With cost <b>{0}</b> per month with expiry <b>{1}</b>
 selectYourNewPlan: Select your new plan

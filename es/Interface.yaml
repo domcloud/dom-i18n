@@ -88,14 +88,12 @@ passwordSetCancel: La configuración de la contraseña para esta cuenta ha sido 
 passwordSetCancelLength: Configuración de contraseña cancelada, debe tener al menos 8 caracteres
 yearDuration: Duración en años
 monthDuration: Duración en meses
-annualSaving: Ahorro anual del 16%
 totalPayment: Pago total
 expirationDate: Fecha de vencimiento
 orderNow: Ordenar ahora
 invoice: Factura
 pendingInvoices: Facturas pendientes
 noPendingInvoices: Actualmente no tiene facturas pendientes.
-mixedCurrency: Las facturas seleccionadas tienen monedas mixtas
 currentPlan: Plan actual
 currentPlanDescription: Con un costo de <b>{0}</b> por mes con vencimiento el <b>{1}</b>
 priceDescription: '{0} / mes'

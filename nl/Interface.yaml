@@ -88,14 +88,12 @@ passwordSetCancel: Het instellen van het wachtwoord voor dit account is geannule
 passwordSetCancelLength: Wachtwoordinstelling geannuleerd, moet minimaal 8 tekens zijn
 yearDuration: Duur in jaren
 monthDuration: Duur in maanden
-annualSaving: 16% besparen
 totalPayment: Totaal te betalen
 expirationDate: Vervaldatum
 orderNow: Nu bestellen
 invoice: Factuur
 pendingInvoices: Openstaande facturen
 noPendingInvoices: Je hebt momenteel geen openstaande facturen.
-mixedCurrency: Geselecteerde facturen hebben verschillende valuta
 currentPlan: Huidig plan
 currentPlanDescription: Met kosten <b>{0}</b> per maand met vervaldatum <b>{1}</b>
 priceDescription: '{0} / maand'

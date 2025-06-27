@@ -88,14 +88,12 @@ passwordSetCancel: Pengaturan kata sandi untuk akun ini telah dibatalkan
 passwordSetCancelLength: Pengaturan kata sandi dibatalkan, minimal harus 8 karakter
 yearDuration: Durasi dalam tahun
 monthDuration: Durasi dalam bulan
-annualSaving: Simpan 16%
 totalPayment: Total Pembayaran
 expirationDate: Tanggal Kadaluarsa
 orderNow: Pesan Sekarang
 invoice: Faktur
 pendingInvoices: Faktur yang Tertunda
 noPendingInvoices: Anda tidak memiliki faktur tertunda saat ini.
-mixedCurrency: Faktur yang dipilih memiliki mata uang yang berbeda
 currentPlan: Rencana Saat Ini
 currentPlanDescription: Dengan biaya <b>{0}</b> per bulan dengan masa berlaku <b>{1}</b>
 priceDescription: '{0} / bulan'

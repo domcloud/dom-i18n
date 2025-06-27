@@ -88,14 +88,12 @@ passwordSetCancel: このアカウントのパスワード設定がキャンセ�
 passwordSetCancelLength: パスワード設定がキャンセルされました。8文字以上である必要があります
 yearDuration: 年単位の期間
 monthDuration: 月単位の期間
-annualSaving: 16%節約
 totalPayment: 合計支払い
 expirationDate: 有効期限日
 orderNow: 今すぐ注文
 invoice: 請求書
 pendingInvoices: 保留中の請求書
 noPendingInvoices: 現在、保留中の請求書はありません。
-mixedCurrency: 選択された請求書に異なる通貨があります
 currentPlan: 現在のプラン
 currentPlanDescription: <b>{0}</b>の費用で毎月<b>{1}</b>の期限付き
 priceDescription: '{0} /月'

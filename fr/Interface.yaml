@@ -88,14 +88,12 @@ passwordSetCancel: La définition du mot de passe pour ce compte a été annulé
 passwordSetCancelLength: Définition du mot de passe annulée, doit comporter au moins 8 caractères
 yearDuration: Durée en années
 monthDuration: Durée en mois
-annualSaving: Économisez 16%
 totalPayment: Paiement total
 expirationDate: Date d'expiration
 orderNow: Commander maintenant
 invoice: Facture
 pendingInvoices: Factures en attente
 noPendingInvoices: Vous n'avez actuellement aucune facture en attente.
-mixedCurrency: Les factures sélectionnées ont des devises mixtes
 currentPlan: Plan actuel
 currentPlanDescription: Avec un coût de <b>{0}</b> par mois avec expiration le <b>{1}</b>
 priceDescription: '{0} / mois'

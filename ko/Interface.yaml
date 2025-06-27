@@ -88,14 +88,12 @@ passwordSetCancel: 이 계정의 비밀번호 설정이 취소되었습니다
 passwordSetCancelLength: 비밀번호 설정 취소, 최소 8자 이상이어야 합니다
 yearDuration: 연 단위 기간
 monthDuration: 월 단위 기간
-annualSaving: 16% 절약
 totalPayment: 총 결제 금액
 expirationDate: 만료 날짜
 orderNow: 지금 주문
 invoice: 청구서
 pendingInvoices: 보류 중인 청구서
 noPendingInvoices: 현재 보류 중인 청구서가 없습니다.
-mixedCurrency: 선택한 청구서에 혼합 통화가 있습니다
 currentPlan: 현재 계획
 currentPlanDescription: 월 <b>{0}</b> 비용으로 만료 <b>{1}</b>
 priceDescription: '{0} / 월'

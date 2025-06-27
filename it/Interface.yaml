@@ -88,14 +88,12 @@ passwordSetCancel: L'impostazione della password per questo account è stata ann
 passwordSetCancelLength: L'impostazione della password annullata, deve essere di almeno 8 caratteri
 yearDuration: Durata in anni
 monthDuration: Durata in mesi
-annualSaving: Risparmia il 16%
 totalPayment: Pagamento totale
 expirationDate: Data di scadenza
 orderNow: Ordina ora
 invoice: Fattura
 pendingInvoices: Fatture in sospeso
 noPendingInvoices: Attualmente non hai fatture in sospeso.
-mixedCurrency: Le fatture selezionate hanno valute miste
 currentPlan: Piano attuale
 currentPlanDescription: Con un costo di <b>{0}</b> al mese con scadenza il <b>{1}</b>
 priceDescription: '{0} / mese'
