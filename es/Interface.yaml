@@ -60,6 +60,7 @@ themeLight: Siempre Claro
 themeSystem: Predeterminado del sistema
 role: Rol
 action: Acción
+custom: Custom
 currencyInput: Moneda
 invoiceNoteInput: Contacto de factura
 defaultServerInput: Servidor predeterminado
@@ -88,15 +89,24 @@ passwordSetCancel: La configuración de la contraseña para esta cuenta ha sido 
 passwordSetCancelLength: Configuración de contraseña cancelada, debe tener al menos 8 caracteres
 yearDuration: Duración en años
 monthDuration: Duración en meses
+annualSaving: Save 16% at yearly plan
 totalPayment: Pago total
 expirationDate: Fecha de vencimiento
 orderNow: Ordenar ahora
 invoice: Factura
 pendingInvoices: Facturas pendientes
 noPendingInvoices: Actualmente no tiene facturas pendientes.
+mixedCurrency: Your invoices have mixed currencies
 currentPlan: Plan actual
 currentPlanDescription: Con un costo de <b>{0}</b> por mes con vencimiento el <b>{1}</b>
+selectYourNewPlan: Select your new plan
 priceDescription: '{0} / mes'
+paymentSummary: Payment Summary
+selectDuration: Select duration
+orderSummary: Order summary
+planFeatures: '{0} plan features'
+planIncludes: '{0} plan includes'
+paymentInput: 'Choose payment type'
 monthlyLimits: Límites mensuales
 storageLimit: '{0} GB de almacenamiento'
 networkLimit: '{0} GB de red'

@@ -60,6 +60,7 @@ themeLight: हमेशा लाइट
 themeSystem: सिस्टम डिफ़ॉल्ट
 role: भूमिका
 action: क्रिया
+custom: Custom
 currencyInput: मुद्रा
 invoiceNoteInput: इनवॉइस संपर्क
 defaultServerInput: डिफ़ॉल्ट सर्वर
@@ -88,15 +89,24 @@ passwordSetCancel: इस खाते के लिए पासवर्ड �
 passwordSetCancelLength: पासवर्ड सेटिंग रद्द की गई, कम से कम 8 वर्ण होने चाहिए
 yearDuration: वर्षों में अवधि
 monthDuration: महीनों में अवधि
+annualSaving: Save 16% at yearly plan
 totalPayment: कुल भुगतान
 expirationDate: समाप्ति तिथि
 orderNow: अभी ऑर्डर करें
 invoice: चालान
 pendingInvoices: लंबित चालान
 noPendingInvoices: आपके पास वर्तमान में कोई लंबित चालान नहीं हैं।
+mixedCurrency: Your invoices have mixed currencies
 currentPlan: वर्तमान योजना
 currentPlanDescription: <b>{0}</b> प्रति माह की लागत के साथ <b>{1}</b> समाप्ति के साथ
+selectYourNewPlan: Select your new plan
 priceDescription: '{0} / माह'
+paymentSummary: Payment Summary
+selectDuration: Select duration
+orderSummary: Order summary
+planFeatures: '{0} plan features'
+planIncludes: '{0} plan includes'
+paymentInput: 'Choose payment type'
 monthlyLimits: मासिक सीमाएँ
 storageLimit: '{0} जीबी स्टोरेज'
 networkLimit: '{0} जीबी नेटवर्क'
