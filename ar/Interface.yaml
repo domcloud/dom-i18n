@@ -89,31 +89,31 @@ passwordSetCancel: تم إلغاء تعيين كلمة المرور لهذا ا�
 passwordSetCancelLength: تم إلغاء تعيين كلمة المرور، يجب أن تكون على الأقل 8 أحرف
 yearDuration: المدة بالسنوات
 monthDuration: المدة بالأشهر
-annualSaving: Save 16% at yearly plan
+annualSaving: وفر 16% على الخطة السنوية
 totalPayment: إجمالي الدفع
 expirationDate: تاريخ الانتهاء
 orderNow: اطلب الآن
 invoice: فاتورة
 pendingInvoices: الفواتير المعلقة
 noPendingInvoices: ليس لديك أي فواتير معلقة حاليًا.
-mixedCurrency: Your invoices have mixed currencies
+mixedCurrency: فواتيرك تحتوي على عملات مختلطة
 currentPlan: الخطة الحالية
 currentPlanDescription: بتكلفة <b>{0}</b> شهريًا مع انتهاء <b>{1}</b>
-selectYourNewPlan: Select your new plan
+selectYourNewPlan: اختر خطتك الجديدة
 priceDescription: '{0} / الشهر'
-paymentSummary: Payment Summary
-selectDuration: Select duration
-orderSummary: Order summary
-planFeatures: '{0} plan features'
-planIncludes: '{0} plan includes'
-paymentInput: 'Choose payment type'
+paymentSummary: ملخص الدفع
+selectDuration: اختر المدة
+orderSummary: ملخص الطلب
+planFeatures: 'ميزات الخطة {0}'
+planIncludes: 'تتضمن خطة {0}'
+paymentInput: 'اختر نوع الدفع'
 monthlyLimits: الحدود الشهرية
 storageLimit: '{0} جيجابايت تخزين'
 networkLimit: '{0} جيجابايت شبكة'
 instanceLimit: '{0} {0, plural, one {حالة} other {حالات}}'
 userLimit: '{0} {0, plural, one {مستخدم} other {مستخدمين}}'
-refuseFirewall: Turn off firewall at will
-withGlobalDomain: Use global domain
+refuseFirewall: قم بإيقاف جدار الحماية حسب الرغبة
+withGlobalDomain: استخدم النطاق العالمي
 withBackup: نسخة احتياطية تلقائية على مستوى الخادم
 withDocker: Docker وتطبيقات طويلة الأمد
 storageUsage: استخدام التخزين
@@ -139,7 +139,7 @@ expireFreeHint: |
   في كل مرة تقوم فيها بتسجيل الدخول أو يحصل موقعك على حركة مرور كافية للشبكة (>50 ميجابايت)
   في نهاية الشهر.
 discountedAt: بخصم عند {0}
-paymentFeeAt: Payment fees of {0} placed
+paymentFeeAt: تُفرض رسوم الدفع بقيمة {0}
 extendingCurrentExpiryDate: تمديد تاريخ الانتهاء الحالي
 usersLimitHint: '{0} {0, plural, one {مستخدم} other {مستخدمين}} في هذا الفريق، {1} {1, plural, one {مستخدم} other {مستخدمين}} يمكن إضافتهم أكثر'
 emailToInvite: البريد الإلكتروني للدعوة
@@ -168,7 +168,7 @@ delete: حذف
 why: لماذا؟
 pay: ادفع
 payAccept: نقبل الدفع عبر
-sales: Sales
+sales: المبيعات
 loading: جارٍ جمع البيانات...
 fetchError: خطأ في جلب البيانات! حاول مرة أخرى لاحقًا
 notFound: غير موجود
