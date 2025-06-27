@@ -89,31 +89,31 @@ passwordSetCancel: Pengaturan kata sandi untuk akun ini telah dibatalkan
 passwordSetCancelLength: Pengaturan kata sandi dibatalkan, minimal harus 8 karakter
 yearDuration: Durasi dalam tahun
 monthDuration: Durasi dalam bulan
-annualSaving: Save 16% at yearly plan
+annualSaving: Hemat 16% pada paket tahunan
 totalPayment: Total Pembayaran
 expirationDate: Tanggal Kadaluarsa
 orderNow: Pesan Sekarang
 invoice: Faktur
 pendingInvoices: Faktur yang Tertunda
 noPendingInvoices: Anda tidak memiliki faktur tertunda saat ini.
-mixedCurrency: Your invoices have mixed currencies
+mixedCurrency: Faktur Anda memiliki mata uang campuran
 currentPlan: Rencana Saat Ini
 currentPlanDescription: Dengan biaya <b>{0}</b> per bulan dengan masa berlaku <b>{1}</b>
-selectYourNewPlan: Select your new plan
+selectYourNewPlan: Pilih paket baru Anda
 priceDescription: '{0} / bulan'
-paymentSummary: Payment Summary
-selectDuration: Select duration
-orderSummary: Order summary
-planFeatures: '{0} plan features'
-planIncludes: '{0} plan includes'
-paymentInput: 'Choose payment type'
+paymentSummary: Ringkasan Pembayaran
+selectDuration: Pilih durasi
+orderSummary: Ringkasan Pesanan
+planFeatures: 'Fitur paket {0}'
+planIncludes: 'Paket {0} mencakup'
+paymentInput: 'Pilih jenis pembayaran'
 monthlyLimits: Batas Bulanan
 storageLimit: '{0} GB Penyimpanan'
 networkLimit: '{0} GB Jaringan'
-instanceLimit: '{0} {0, plural, one {Instance} other {Instance}}'
+instanceLimit: '{0} {0, plural, one {Instansi} other {Instansi}}'
 userLimit: '{0} {0, plural, one {Pengguna} other {Pengguna}}'
-refuseFirewall: Turn off firewall at will
-withGlobalDomain: Use global domain
+refuseFirewall: Matikan firewall sesuai keinginan
+withGlobalDomain: Gunakan domain global
 withBackup: Cadangan otomatis pada tingkat server
 withDocker: Docker dan aplikasi yang berjalan lama
 storageUsage: Penggunaan Penyimpanan
@@ -139,7 +139,7 @@ expireFreeHint: |
   setiap kali Anda login atau situs web Anda memiliki cukup lalu lintas jaringan (>50 MB)
   pada akhir bulan.
 discountedAt: Diskon {0}
-paymentFeeAt: Payment fees of {0} placed
+paymentFeeAt: Biaya pembayaran sebesar {0} dikenakan
 extendingCurrentExpiryDate: Memperpanjang tanggal kadaluarsa saat ini
 usersLimitHint: '{0} {0, plural, one {pengguna} other {pengguna}} di tim ini, {1} {1, plural, one {pengguna} other {pengguna}} dapat ditambahkan lagi'
 emailToInvite: Email untuk diundang
