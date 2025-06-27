@@ -60,6 +60,7 @@ themeLight: Always Light
 themeSystem: System Default
 role: Role
 action: Action
+custom: Custom
 currencyInput: Currency
 invoiceNoteInput: Invoice Contact
 defaultServerInput: Default Server
@@ -88,7 +89,7 @@ passwordSetCancel: Setting password for this account has been cancelled
 passwordSetCancelLength: Setting password cancelled, must be at least 8 characters
 yearDuration: Duration in years
 monthDuration: Duration in months
-annualSaving: Save 16%
+annualSaving: Save 16% at yearly plan
 totalPayment: Total Payment
 expirationDate: Expiration Date
 orderNow: Order Now
@@ -98,7 +99,14 @@ noPendingInvoices: You have no pending invoices currently.
 mixedCurrency: Selected invoices have mixed currencies
 currentPlan: Current Plan
 currentPlanDescription: With cost <b>{0}</b> per month with expiry <b>{1}</b>
+selectYourNewPlan: Select your new plan
 priceDescription: '{0} / month'
+paymentSummary: Payment Summary
+selectDuration: Select duration
+orderSummary: Order summary
+planFeatures: '{0} plan features'
+planIncludes: '{0} plan includes'
+paymentInput: 'Choose payment type'
 monthlyLimits: Monthly Limits
 storageLimit: '{0} GB Storage'
 networkLimit: '{0} GB Network'
