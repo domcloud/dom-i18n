@@ -60,6 +60,7 @@ themeLight: Altijd licht
 themeSystem: Systeemstandaard
 role: Rol
 action: Actie
+custom: Custom
 currencyInput: Valuta
 invoiceNoteInput: Factuurcontact
 defaultServerInput: Standaardserver
@@ -88,15 +89,24 @@ passwordSetCancel: Het instellen van het wachtwoord voor dit account is geannule
 passwordSetCancelLength: Wachtwoordinstelling geannuleerd, moet minimaal 8 tekens zijn
 yearDuration: Duur in jaren
 monthDuration: Duur in maanden
+annualSaving: Save 16% at yearly plan
 totalPayment: Totaal te betalen
 expirationDate: Vervaldatum
 orderNow: Nu bestellen
 invoice: Factuur
 pendingInvoices: Openstaande facturen
 noPendingInvoices: Je hebt momenteel geen openstaande facturen.
+mixedCurrency: Your invoices have mixed currencies
 currentPlan: Huidig plan
 currentPlanDescription: Met kosten <b>{0}</b> per maand met vervaldatum <b>{1}</b>
+selectYourNewPlan: Select your new plan
 priceDescription: '{0} / maand'
+paymentSummary: Payment Summary
+selectDuration: Select duration
+orderSummary: Order summary
+planFeatures: '{0} plan features'
+planIncludes: '{0} plan includes'
+paymentInput: 'Choose payment type'
 monthlyLimits: Maandelijkse limieten
 storageLimit: '{0} GB Opslag'
 networkLimit: '{0} GB Netwerk'

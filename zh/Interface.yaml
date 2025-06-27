@@ -60,6 +60,7 @@ themeLight: 始终亮色
 themeSystem: 系统主题
 role: 角色
 action: 操作
+custom: Custom
 currencyInput: 货币
 invoiceNoteInput: 发票备注
 defaultServerInput: 默认服务器
@@ -88,15 +89,24 @@ passwordSetCancel: 已取消设置此帐户的密码
 passwordSetCancelLength: 已取消设置密码，必须至少包含8个字符
 yearDuration: 年限
 monthDuration: 月限
+annualSaving: Save 16% at yearly plan
 totalPayment: 总付款额
 expirationDate: 到期日期
 orderNow: 立即订购
 invoice: 发票
 pendingInvoices: 待处理发票
 noPendingInvoices: 您当前没有待处理的发票。
+mixedCurrency: Your invoices have mixed currencies
 currentPlan: 当前计划
 currentPlanDescription: 每月费用为 <b>{0}</b>，到期日为 <b>{1}</b>
+selectYourNewPlan: Select your new plan
 priceDescription: '{0} / 月'
+paymentSummary: Payment Summary
+selectDuration: Select duration
+orderSummary: Order summary
+planFeatures: '{0} plan features'
+planIncludes: '{0} plan includes'
+paymentInput: 'Choose payment type'
 monthlyLimits: 每月限制
 storageLimit: '{0} GB 存储空间'
 networkLimit: '{0} GB 网络'

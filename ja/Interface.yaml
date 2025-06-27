@@ -60,6 +60,7 @@ themeLight: 常にライト
 themeSystem: システムデフォルト
 role: 役割
 action: アクション
+custom: Custom
 currencyInput: 通貨
 invoiceNoteInput: 請求書の連絡先
 defaultServerInput: デフォルトサーバー
@@ -88,15 +89,24 @@ passwordSetCancel: このアカウントのパスワード設定がキャンセ�
 passwordSetCancelLength: パスワード設定がキャンセルされました。8文字以上である必要があります
 yearDuration: 年単位の期間
 monthDuration: 月単位の期間
+annualSaving: Save 16% at yearly plan
 totalPayment: 合計支払い
 expirationDate: 有効期限日
 orderNow: 今すぐ注文
 invoice: 請求書
 pendingInvoices: 保留中の請求書
 noPendingInvoices: 現在、保留中の請求書はありません。
+mixedCurrency: Your invoices have mixed currencies
 currentPlan: 現在のプラン
 currentPlanDescription: <b>{0}</b>の費用で毎月<b>{1}</b>の期限付き
+selectYourNewPlan: Select your new plan
 priceDescription: '{0} /月'
+paymentSummary: Payment Summary
+selectDuration: Select duration
+orderSummary: Order summary
+planFeatures: '{0} plan features'
+planIncludes: '{0} plan includes'
+paymentInput: 'Choose payment type'
 monthlyLimits: 毎月の制限
 storageLimit: '{0} GBのストレージ'
 networkLimit: '{0} GBのネットワーク'

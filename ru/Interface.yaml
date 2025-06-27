@@ -60,6 +60,7 @@ themeLight: Всегда светло
 themeSystem: Системная тема
 role: Роль
 action: Действие
+custom: Custom
 currencyInput: Валюта
 invoiceNoteInput: Контакт для счета
 defaultServerInput: Сервер по умолчанию
@@ -88,15 +89,24 @@ passwordSetCancel: Установка пароля для этой учетно�
 passwordSetCancelLength: Установка пароля отменена, должен состоять минимум из 8 символов
 yearDuration: Продолжительность в годах
 monthDuration: Продолжительность в месяцах
+annualSaving: Save 16% at yearly plan
 totalPayment: Общая сумма к оплате
 expirationDate: Дата истечения срока действия
 orderNow: Заказать сейчас
 invoice: Счет-фактура
 pendingInvoices: Ожидающие счета-фактуры
 noPendingInvoices: У вас в настоящее время нет ожидающих счетов-фактур.
+mixedCurrency: Your invoices have mixed currencies
 currentPlan: Текущий план
 currentPlanDescription: Стоимость <b>{0}</b> в месяц с истечением срока <b>{1}</b>
+selectYourNewPlan: Select your new plan
 priceDescription: '{0} / месяц'
+paymentSummary: Payment Summary
+selectDuration: Select duration
+orderSummary: Order summary
+planFeatures: '{0} plan features'
+planIncludes: '{0} plan includes'
+paymentInput: 'Choose payment type'
 monthlyLimits: Ежемесячные лимиты
 storageLimit: '{0} ГБ хранилища'
 networkLimit: '{0} ГБ сети'
