@@ -224,17 +224,36 @@ hostNginx:
   tabEdit: Edit Interactively
   tabPreview: Preview Changes
   labels:
-    subfolderConfig: Subfolder Config
-    rootConfig: Root Config
+    subfolderConfig: Configuration for URL starting with
+    rootConfig: Main Configuration for all paths
     rootPath: Root Path
-    rootIsAlias: Root is Alias
-    resolveType: Resolve Type
-    resolveTypes:
-      static: Static
-      php: PHP-FPM
-      app: Phusion App
+    rootPathHint: |
+      Root path is also known as the file path for static files. 
+      This path is relative to $HOME.
+    rootIsAlias: Root path is Alias path
+    rootIsAliasHint: |
+      When URL path is matched, that will be appended to root path. 
+      Checking "root path as alias path" will prevent that.
+    cacheExpires: Cache Expiration
+    cacheExpiresHint: |
+     Static files including CSS and JS will be cached in browser for 7 days by default. 
+     Set this to "no cache" if this behavior is annoying.
+    cacheExpirations:
+      off: "no cache"
+      1d: "1 day"
+      7d: "7 days"
+      30d: "30 days"
+      max: "never expire"
+    backendType: Backend Type
+    backendTypeHint: |
+     Your backend type.
+     Web traffic will be forwarded to your backend if static files is not found.
+    backendTypes:
+      static: No Backend
+      php: PHP Daemon
+      app: App Laucher
       gls: Shell Command
-      socat: Forward Port
+      proxy: Forward to Port
       deny: Deny Requests
     staticMode: Static Mode
     staticModes:
@@ -247,45 +266,58 @@ hostNginx:
     phpModes:
       default: Default
       smart: Smart
-      indexSafe: Root Index - Safe
       index: Root Index - Standard
+      indexSafe: Root Index - Safe
       always: Root Index - Always
-    socatPort: Forward to Port
-    appMode: App Mode
-    appEntry: App Startup File
-    appBin: App Binary Path
+    proxyPort: Forward to Port
+    appMode: Launcher Language
+    appEntry: Script Path
+    appBin: Launcher Path
     appModes:
       default: Auto
       node: Node
       python: Python
       ruby: Ruby
-    glsCmd: App Command
+    glsCmd: Command to Run
     glsBg: Run in Background?
     appEnv: Environment Keys
     appDev: Development Mode?
     appRoot: Working Directory
-    addSubfolderConfig: Add subfolder config
+    addSubfolderConfig: Add a new path config
   hints:
-    root: Static files from {0} will be resolved to {1}
-    socat: Forward client requests to port {0}
-    app: Invoke {0} script from {1} using {2} from {3}
-    gls: Run "{0}" from {1} with given $PORT
+    root: |
+      If web path starts with: {0} 
+      Serve files at this path: {1}
+    proxy: |
+      Act as a web proxy to localhost:{0}
+    app: |
+      Launch a {0} server from: {3}
+      With the main script at: {1}/{0}
+    gls: |
+      Launch a shell command: {0}
+      From this path: {1}
+      With $PORT automatically set
+      Then act as a web proxy to $PORT
     staticModes:
-      default: Serve static files
-      smart: Attempt to find HTML file if possible
-      index: Serve root index.html if no file found
-      autoindex: Allow listing server files if index.html is not found
+      default: Just serve static files
+      smart: Hide .html if possible
+      index: Serve root index.html
+      autoindex: Show list of files
       with404: or show custom 404 error page
     phpModes:
-      default: Serve index.php or php files that ends with .php
-      smart: Attempt to find PHP file without .php
-      indexSafe: Serve root index.php but don't try if client looks for a file
-      index: Serve root index.php when static file is not found
-      always: Allow PATH_INFO style requests handled to PHP
-    deleteSubfolderPrompt: Are you sure want to delete subfolder config for {0}
-    inputSubfolderPrompt: Please input subfolder (must start with '/' and no spaces)
-    inputSubfolderNotValid: Subfolder input is not valid
-    inputSubfolderNotUnique: Subfolder value must unique with other subfolder entries
+      default: Just serve PHP files
+      smart: Hide .php if possible
+      index: Serve root index.php
+      indexSafe: 
+        Serve root index.php safely
+        Do not execute PHP for media files
+      always: 
+        Serve root index.php as PATH_INFO
+        Used for legacy PHP software
+    deleteSubfolderPrompt: Are you sure want to delete path config for {0}
+    inputSubfolderPrompt: Please input the URL path to match with the new config (must start with '/' and no spaces)
+    inputSubfolderNotValid: Path input is not valid
+    inputSubfolderNotUnique: Path value must unique with other path entries
 hostDB:
   title: Manage Database
   description: |-
