@@ -289,21 +289,21 @@ hostNginx:
       Dengan $PORT secara otomatis diatur
       Kemudian bertindak sebagai proxy web ke $PORT
     staticModes:
-      default: Just serve static files
-      smart: Hide .html if possible
-      index: Serve root index.html
-      autoindex: Show list of files
-      with404: or show custom 404 error page
+      default: Hanya layani berkas statis
+      smart: Sembunyikan .html jika memungkinkan
+      index: Layani index.html utama
+      autoindex: Tampilkan daftar berkas
+      with404: atau tampilkan halaman 404 khusus
     phpModes:
-      default: Just serve PHP files
-      smart: Hide .php if possible
-      index: Serve root index.php
-      indexSafe: Serve root index.php safely Do not execute PHP for media files
-      always: Serve root index.php as PATH_INFO Used for legacy PHP software
-    deleteSubfolderPrompt: Are you sure want to delete path config for {0}
-    inputSubfolderPrompt: Please input the URL path to match with the new config (must start with '/' and no spaces)
-    inputSubfolderNotValid: Path input is not valid
-    inputSubfolderNotUnique: Path value must unique with other path entries
+      default: Hanya layani berkas PHP
+      smart: Sembunyikan .php jika memungkinkan
+      index: Layani index.php utama
+      indexSafe: Layani index.php utama dengan aman, jangan jalankan PHP untuk berkas media
+      always: Layani index.php utama sebagai PATH_INFO, digunakan untuk perangkat lunak PHP lama
+    deleteSubfolderPrompt: Apakah Anda yakin ingin menghapus konfigurasi jalur untuk {0}
+    inputSubfolderPrompt: Harap masukkan path URL untuk dicocokkan dengan konfigurasi baru (harus diawali dengan '/' dan tanpa spasi)
+    inputSubfolderNotValid: Input path tidak valid
+    inputSubfolderNotUnique: Nilai path harus unik dibandingkan entri path lainnya
 hostDB:
   title: Kelola Database
   description: |-
