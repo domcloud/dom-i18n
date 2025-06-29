@@ -219,68 +219,88 @@ hostNginx:
   tabEdit: تحرير بشكل تفاعلي
   tabPreview: معاينة التغييرات
   labels:
-    subfolderConfig: تكوين المجلد الفرعي
-    rootConfig: تكوين الجذر
-    rootPath: مسار الجذر
-    rootIsAlias: الجذر هو الاسم المستعار
-    resolveType: نوع الحل
-    resolveTypes:
-      static: ثابت
-      php: PHP-FPM
-      app: تطبيق Phusion
-      gls: تطبيق عام
-      socat: إعادة توجيه المنفذ
-      deny: رفض الطلبات
-    staticMode: وضع الثابت
+    subfolderConfig: Configuration for URL starting with
+    rootConfig: Main Configuration for all paths
+    rootPath: Root Path
+    rootPathHint: "Root path is also known as the file path for static files. \nThis path is relative to $HOME.\n"
+    rootIsAlias: Root path is Alias path
+    rootIsAliasHint: "When URL path is matched, that will be appended to root path. \nChecking \"root path as alias path\" will prevent that.\n"
+    cacheExpires: Cache Expiration
+    cacheExpiresHint: "Static files including CSS and JS will be cached in browser for 7 days by default. \nSet this to \"no cache\" if this behavior is annoying.\n"
+    cacheExpirations:
+      off: "no cache"
+      1d: "1 day"
+      7d: "7 days"
+      30d: "30 days"
+      max: "never expire"
+    backendType: Backend Type
+    backendTypeHint: |
+      Your backend type.
+      Web traffic will be forwarded to your backend if static files is not found.
+    backendTypes:
+      static: No Backend
+      php: PHP Daemon
+      app: App Laucher
+      gls: Shell Command
+      proxy: Forward to Port
+      deny: Deny Requests
+    staticMode: Static Mode
     staticModes:
-      default: افتراضي
-      smart: ذكي
-      autoindex: الفهرسة التلقائية
-      index: فهرس الجذر
-    static404Path: مسار ملف 404 HTML
-    phpMode: وضع PHP
+      default: Default
+      smart: Smart
+      autoindex: Auto-index
+      index: Root Index
+    static404Path: 404 HTML File Path
+    phpMode: PHP Mode
     phpModes:
-      default: افتراضي
-      smart: ذكي
-      indexSafe: فهرس الجذر - آمن
-      index: فهرس الجذر - قياسي
-      always: فهرس الجذر - دائمًا
-    socatPort: إعادة التوجيه إلى المنفذ
-    appMode: وضع التطبيق
-    appEntry: ملف بدء التشغيل للتطبيق
-    appBin: مسار البرنامج الثنائي للتطبيق
+      default: Default
+      smart: Smart
+      index: Root Index - Standard
+      indexSafe: Root Index - Safe
+      always: Root Index - Always
+    proxyPort: Forward to Port
+    appMode: Launcher Language
+    appEntry: Script Path
+    appBin: Launcher Path
     appModes:
-      default: تلقائي
+      default: Auto
       node: Node
       python: Python
       ruby: Ruby
-    glsCmd: أمر التطبيق
+    glsCmd: Command to Run
     glsBg: Run in Background?
-    appEnv: مفاتيح البيئة
-    appDev: وضع التطوير؟
-    appRoot: دليل العمل
-    addSubfolderConfig: إضافة تكوين المجلد الفرعي
+    appEnv: Environment Keys
+    appDev: Development Mode?
+    appRoot: Working Directory
+    addSubfolderConfig: Add a new path config
   hints:
-    root: سيتم حل الملفات الثابتة من {0} إلى {1}
-    socat: إعادة توجيه طلبات العميل إلى المنفذ {0}
-    app: تشغيل سيناريو {0} من {1} باستخدام {2} من {3}
-    gls: تشغيل "{0}" من {1} باستخدام $PORT المعطاة
+    root: "If web path starts with: {0} \nServe files at this path: {1}\n"
+    proxy: |
+      Act as a web proxy to localhost:{0}
+    app: |
+      Launch a {0} server from: {3}
+      With the main script at: {1}/{0}
+    gls: |
+      Launch a shell command: {0}
+      From this path: {1}
+      With $PORT automatically set
+      Then act as a web proxy to $PORT
     staticModes:
-      default: خدمة الملفات الثابتة
-      smart: محاولة العثور على ملف HTML إن أمكن
-      index: خدمة ملف index.html الجذر إذا لم يتم العثور على ملف
-      autoindex: السماح بإدراج ملفات الخادم إذا لم يتم العثور على ملف index.html
-      with404: أو عرض صفحة خطأ 404 مخصصة
+      default: Just serve static files
+      smart: Hide .html if possible
+      index: Serve root index.html
+      autoindex: Show list of files
+      with404: or show custom 404 error page
     phpModes:
-      default: خدمة ملف index.php أو ملفات PHP التي تنتهي بـ .php
-      smart: محاولة العثور على ملف PHP بدون .php
-      indexSafe: خدمة ملف index.php الجذر ولكن لا تحاول إذا كان العميل يبحث عن ملف
-      index: خدمة ملف index.php الجذر عندما لا يتم العثور على ملف ثابت
-      always: السماح بطلبات نمط PATH_INFO التي يتم توجيهها إلى PHP
-    deleteSubfolderPrompt: هل أنت متأكد من رغبتك في حذف تكوين المجلد الفرعي لـ {0}
-    inputSubfolderPrompt: يرجى إدخال المجلد الفرعي (يجب أن يبدأ بـ '/' وبدون مسافات)
-    inputSubfolderNotValid: إدخال المجلد الفرعي غير صالح
-    inputSubfolderNotUnique: يجب أن تكون قيمة المجلد الفرعي فريدة مع إدخالات المجلد الفرعي الأخرى
+      default: Just serve PHP files
+      smart: Hide .php if possible
+      index: Serve root index.php
+      indexSafe: Serve root index.php safely Do not execute PHP for media files
+      always: Serve root index.php as PATH_INFO Used for legacy PHP software
+    deleteSubfolderPrompt: Are you sure want to delete path config for {0}
+    inputSubfolderPrompt: Please input the URL path to match with the new config (must start with '/' and no spaces)
+    inputSubfolderNotValid: Path input is not valid
+    inputSubfolderNotUnique: Path value must unique with other path entries
 hostDB:
   title: Manage Database
   description: |-
