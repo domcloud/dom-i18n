@@ -25,7 +25,7 @@ welcome:
   emailConfirmationBtn: Kirim Ulang Email Konfirmasi
   emailConfirmationSent: Konfirmasi email ke <strong>{0}</strong> telah dikirim!
   changeCountryBtn: Ubah negara
-  keepUsingEnglish: Keep using English
+  keepUsingEnglish: Terus gunakan bahasa Inggris
 notification:
   freeUserGuideTitle: Selamat Datang!
   freeUserGuideHint: "Terima kasih telah memilih kami sebagai platform cloud Anda \U0001F973 Jika Anda belum melakukannya, cobalah membaca <a href=\"{0}\" target=\"_blank\">Panduan Memulai</a> kami. Butuh pengalaman penuh kami? Coba <a href=\"{1}\">tingkatkan paket Anda</a> untuk menghapus firewall API, banner domain gratis, dan membuka <a href=\"{2}\" target=\"_blank\">lebih banyak fitur</a>!"
@@ -65,7 +65,7 @@ hostCreate:
   exceededFileSizeLimit: Ukuran file ini ({0}) melebihi batas ({1}), coba unggah ke GitHub terlebih dahulu dan letakkan tautannya di sini.
   missingTemplate: Gagal mengambil template data. Mungkin file masih hilang.
   checkingRepo: Memeriksa repo ini...
-  cloneWithDeployKey: Repo akan di-clone dengan kunci deploy.
+  cloneWithDeployKey: Repositori akan dikloning dengan kunci deploy.
   uploadDirectory: Unggah direktori
   uploadZipFile: Unggah file zip
   dropDirectory: Lepaskan direktori itu...
@@ -74,7 +74,7 @@ hostCreate:
   dropMultiple: (Harap lepaskan hanya satu file atau direktori)
   readingDroppedDirectory: Membaca direktori yang dijatuhkan...
   readingDroppedZipFile: Membaca file zip yang dijatuhkan...
-  orPasteUrl: '... atau tempelkan URL Git Repo/Zip'
+  orPasteUrl: '... atau tempelkan URL Git Repositori/Zip'
   attachDeployKey: Lampirkan kunci deploy
   selectFramework: Beritahu kami kerangka kerja atau bahasa pemrograman
   applyFramework: Terapkan template ini
@@ -215,69 +215,69 @@ hostNginx:
     Konfigurasi NGINX kami</a> atau hubungi kami jika Anda mengalami masalah.
     </p>
   subdomain: Subdomain
-  error: 'ERROR: tidak ada konfigurasi untuk {0}'
+  error: 'KESALAHAN: tidak ada konfigurasi untuk {0}'
   errorFetch: Terjadi kesalahan saat mengambil konfigurasi NGINX
-  notExist: 'ERROR: tidak ada konfigurasi untuk {0}'
+  notExist: 'KESALAHAN: tidak ada konfigurasi untuk {0}'
   tabCurrent: Konfigurasi NGINX Saat Ini
-  tabEdit: Edit Secara Interaktif
+  tabEdit: Sunting Secara Interaktif
   tabPreview: Pratinjau Perubahan
   labels:
-    subfolderConfig: Configuration for URL starting with
-    rootConfig: Main Configuration for all paths
-    rootPath: Root Path
-    rootPathHint: "Root path is also known as the file path for static files. \nThis path is relative to $HOME.\n"
-    rootIsAlias: Root path is Alias path
-    rootIsAliasHint: "When URL path is matched, that will be appended to root path. \nChecking \"root path as alias path\" will prevent that.\n"
-    cacheExpires: Cache Expiration
-    cacheExpiresHint: "Static files including CSS and JS will be cached in browser for 7 days by default. \nSet this to \"no cache\" if this behavior is annoying.\n"
+    subfolderConfig: Konfigurasi untuk URL yang diawali dengan
+    rootConfig: Konfigurasi Utama untuk semua jalur
+    rootPath: Jalur Utama
+    rootPathHint: "Jalur utama juga dikenal sebagai path berkas statis. \nJalur ini relatif terhadap $HOME.\n"
+    rootIsAlias: Jalur utama adalah alias
+    rootIsAliasHint: "Ketika path URL cocok, nilai tersebut akan ditambahkan ke jalur utama. \nMemeriksa \"jalur utama sebagai alias\" akan mencegah itu.\n"
+    cacheExpires: Kedaluwarsa Cache
+    cacheExpiresHint: "Berkas statis termasuk CSS dan JS akan disimpan dalam cache browser selama 7 hari secara default. \nAtur ini ke \"no cache\" jika perilaku ini mengganggu.\n"
     cacheExpirations:
-      off: "no cache"
-      1d: "1 day"
-      7d: "7 days"
-      30d: "30 days"
-      max: "never expire"
-    backendType: Backend Type
+      off: "tanpa cache"
+      1d: "1 hari"
+      7d: "7 hari"
+      30d: "30 hari"
+      max: "tidak pernah kedaluwarsa"
+    backendType: Tipe Backend
     backendTypeHint: |
-      Your backend type.
-      Web traffic will be forwarded to your backend if static files is not found.
+      Tipe backend Anda.
+      Lalu lintas web akan diteruskan ke backend Anda jika berkas statis tidak ditemukan.
     backendTypes:
-      static: No Backend
-      php: PHP Daemon
-      app: App Laucher
-      gls: Shell Command
-      proxy: Forward to Port
-      deny: Deny Requests
-    staticMode: Static Mode
+      static: Tanpa Backend
+      php: Daemon PHP
+      app: Peluncur Aplikasi
+      gls: Perintah Shell
+      proxy: Teruskan ke Port
+      deny: Tolak Permintaan
+    staticMode: Mode Statis
     staticModes:
-      default: Default
-      smart: Smart
-      autoindex: Auto-index
-      index: Root Index
-    static404Path: 404 HTML File Path
-    phpMode: PHP Mode
+      default: Bawaan
+      smart: Cerdas
+      autoindex: Indeks Otomatis
+      index: Indeks Utama
+    static404Path: Jalur Berkas HTML 404
+    phpMode: Mode PHP
     phpModes:
-      default: Default
-      smart: Smart
-      index: Root Index - Standard
-      indexSafe: Root Index - Safe
-      always: Root Index - Always
-    proxyPort: Forward to Port
-    appMode: Launcher Language
-    appEntry: Script Path
-    appBin: Launcher Path
+      default: Bawaan
+      smart: Cerdas
+      index: Indeks Utama - Standar
+      indexSafe: Indeks Utama - Aman
+      always: Indeks Utama - Selalu
+    proxyPort: Teruskan ke Port
+    appMode: Bahasa Peluncur
+    appEntry: Jalur Skrip
+    appBin: Jalur Peluncur
     appModes:
-      default: Auto
+      default: Otomatis
       node: Node
       python: Python
       ruby: Ruby
-    glsCmd: Command to Run
-    glsBg: Run in Background?
-    appEnv: Environment Keys
-    appDev: Development Mode?
-    appRoot: Working Directory
-    addSubfolderConfig: Add a new path config
+    glsCmd: Perintah untuk dijalankan
+    glsBg: Jalankan di Latar Belakang?
+    appEnv: Kunci Lingkungan
+    appDev: Mode Pengembangan?
+    appRoot: Direktori Kerja
+    addSubfolderConfig: Tambah konfigurasi jalur baru
   hints:
-    root: "If web path starts with: {0} \nServe files at this path: {1}\n"
+    root: "Jika path web diawali dengan: {0} \nLayani berkas pada jalur: {1}\n"
     proxy: |
       Act as a web proxy to localhost:{0}
     app: |
@@ -305,19 +305,16 @@ hostNginx:
     inputSubfolderNotValid: Path input is not valid
     inputSubfolderNotUnique: Path value must unique with other path entries
 hostDB:
-  title: Manage Database
+  title: Kelola Database
   description: |-
-    <p>This page helps you see database lists and create or drop databases that linked to this domain</p>
+    <p>Halaman ini membantu Anda melihat daftar database dan membuat atau menghapus database yang terhubung dengan domain ini</p>
     <p>
-    We support creating MariaDB (MySQL-compatible), PostgreSQL and Valkey (Redis-compatible) databases.
-    To access it, connect to localhost with port 3306, 5432 and 6379 respectively. You can also use our web
-    editor to manage its content.
+    Kami mendukung pembuatan database MariaDB (kompatibel dengan MySQL), PostgreSQL, dan Valkey (kompatibel dengan Redis).
+    Untuk mengaksesnya, hubungkan ke localhost dengan port 3306, 5432, dan 6379 secara berurutan. Anda juga dapat menggunakan editor web kami untuk mengelola isinya.
     </p> <p>
-    MariaDB and PostgreSQL uses the same username and password across all databases in a domain, while Valkey uses
-    the database name as the username and unique password for each database. Also, since our database is shared across
-    a single server, administrative queries inside the database is limited. Refer to our documentation for more details.
+    MariaDB dan PostgreSQL menggunakan username dan password yang sama untuk semua database dalam satu domain, sementara Valkey menggunakan nama database sebagai username dan password yang unik untuk setiap database. Selain itu, karena database kami dibagikan di satu server, query administratif di dalam database terbatas. Silakan merujuk ke dokumentasi kami untuk informasi lebih lanjut.
     </p>
-  helpText: Help on configuration
+  helpText: Bantuan tentang konfigurasi
 hostDNS:
   title: Periksa Konfigurasi DNS
   description: |-
@@ -336,14 +333,14 @@ hostLog:
   runningList: Daftar proses yang berjalan
   logTypeError: Log Kesalahan NGINX
   logTypeAccess: Log Akses NGINX
-  logTypePhp: PHP Error Log
+  logTypePhp: Log Kesalahan PHP
   logTypePassenger: Log Aplikasi Passenger
-  logTypeProxfix: Proxfix App Log
+  logTypeProxfix: Log Aplikasi Proxfix
   logTypeErrorHint: Log ini berisi log kesalahan NGINX dan PHP untuk hari ini
   logTypeAccessHint: Log ini berisi log akses NGINX untuk hari ini
-  logTypePhpHint: This log contains PHP error logs for the current day
+  logTypePhpHint: Log ini berisi log kesalahan PHP untuk hari ini
   logTypePassengerHint: Log ini berisi log Aplikasi Passenger yang sedang berjalan
-  logTypeProxfixHint: This log contains App log ran by Proxfix that's currently running
+  logTypeProxfixHint: Log ini berisi log aplikasi yang dijalankan oleh Proxfix yang sedang berjalan
   errorFetch: Terjadi kesalahan saat mengambil file log
   subdomain: Subdomain
   maxLines: Baris Maksimal
