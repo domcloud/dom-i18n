@@ -302,19 +302,17 @@ hostNginx:
     inputSubfolderNotValid: إدخال المسار غير صالح
     inputSubfolderNotUnique: قيمة المسار يجب أن تكون فريدة عن باقي المسارات
 hostDB:
-  title: Manage Database
+  title: إدارة قاعدة البيانات
   description: |-
-    <p>This page helps you see database lists and create or drop databases that linked to this domain</p>
+    <p>تساعدك هذه الصفحة على عرض قوائم قواعد البيانات وإنشاءها أو حذفها المرتبطة بهذا النطاق</p>
     <p>
-    We support creating MariaDB (MySQL-compatible), PostgreSQL and Valkey (Redis-compatible) databases.
-    To access it, connect to localhost with port 3306, 5432 and 6379 respectively. You can also use our web
-    editor to manage its content.
+    ندعم إنشاء قواعد بيانات MariaDB (متوافقة مع MySQL)، PostgreSQL و Valkey (متوافقة مع Redis).
+    للوصول إليها، قم بالاتصال بـ localhost مع المنافذ 3306، 5432، و 6379 على التوالي. يمكنك أيضًا استخدام محرر الويب لإدارة محتواها.
     </p> <p>
-    MariaDB and PostgreSQL uses the same username and password across all databases in a domain, while Valkey uses
-    the database name as the username and unique password for each database. Also, since our database is shared across
-    a single server, administrative queries inside the database is limited. Refer to our documentation for more details.
+    يستخدم كلٌ من MariaDB و PostgreSQL نفس اسم المستخدم وكلمة المرور عبر جميع قواعد البيانات في النطاق، بينما يستخدم Valkey اسم قاعدة البيانات كاسم مستخدم وكلمة مرور فريدة لكل قاعدة بيانات.
+    كما أن الاستعلامات الإدارية داخل قاعدة البيانات محدودة نظراً لمشاركة قاعدة البيانات على خادم واحد. يرجى الرجوع إلى وثائقنا لمزيد من التفاصيل.
     </p>
-  helpText: Help on configuration
+  helpText: مساعدة في التكوين
 hostDNS:
   title: تحقق من تكوين DNS
   description: |-
@@ -338,36 +336,33 @@ hostLog:
   logTypeProxfix: Proxfix App Log
   logTypeErrorHint: يتضمن هذا السجل سجلات أخطاء NGINX و PHP لليوم الحالي
   logTypeAccessHint: يتضمن هذا السجل سجلات وصول NGINX لليوم الحالي
-  logTypePhpHint: This log contains PHP error logs for the current day
+  logTypePhpHint: يحتوي هذا السجل على سجلات أخطاء PHP لليوم الحالي
   logTypePassengerHint: يتضمن هذا السجل سجل تطبيق Passenger الجاري
-  logTypeProxfixHint: This log contains App log ran by Proxfix that's currently running
+  logTypeProxfixHint: يحتوي هذا السجل على سجلات التطبيق التي يتم تشغيلها بواسطة Proxfix حالياً
   errorFetch: حدث خطأ أثناء جلب ملف السجل
   subdomain: النطاق الفرعي
   maxLines: الحد الأقصى لعدد السطور
   emptyLog: هذا السجل فارغ حاليًا
 hostManage:
-  title: Manage Website Access
+  title: إدارة الوصول إلى الموقع
   description: |2-
             <p>
-    Use the following login access to upload or edit your website
-    content. <a href="{0}" target="_blank">Learn more</a>.
+    استخدم بيانات الاعتماد التالية لتسجيل الدخول لتحميل أو تحرير محتوى موقعك. <a href="{0}" target="_blank">اقرأ المزيد</a>.
     </p>
-  openPorts: Opened Ports
-  openPortsDescription: Opened Ports for editing your server
-  onlineEditor: Online Editors
+  openPorts: المنافذ المفتوحة
+  openPortsDescription: المنافذ المفتوحة لتحرير الخادم الخاص بك
+  onlineEditor: المحررون عبر الإنترنت
   webminInfo: |-
     <p>
-    Webmin is used to manage your server files and
-    configurations using web interface.
+    يُستخدم Webmin لإدارة ملفات وإعدادات الخادم الخاص بك من خلال واجهة الويب.
     </p>
-    <p>You'll be autologged in.</p>
+    <p>سيتم تسجيل دخولك تلقائيًا.</p>
   filestashInfo: |-
     <p>
-    Filestash is used to manage your server files
-    using web-interface of SFTP connection.
-    (to upload files, use drag-and-drop).
+    يُستخدم Filestash لإدارة ملفات الخادم الخاص بك باستخدام واجهة الويب لاتصال SFTP.
+    (لتحميل الملفات، استخدم السحب والإفلات).
     </p>
-    <p>You'll be autologged in.</p>
+    <p>سيتم تسجيل دخولك تلقائيًا.</p>
   phpMyAdminInfo: |2-
      <p>
     يتم استخدام phpMyAdmin لإدارة قاعدة بيانات MySQL
@@ -400,50 +395,50 @@ hostManage:
     واضغط على Enter:
     </p>
 hostTransfer:
-  warn: ATTENTION! Website transfer means moving it to another account. You will lose access to your data because the owner has changed!
-  currentOwner: 'Current owner: {0}'
-  hint: 'Please enter the email of the account you wish to receive:'
-  disabled: You cannot transfer this website while it's not active.
-  member: Members cannot transfer this website.
-  action: Transfer!
+  warn: تنبيه! نقل الموقع يعني نقله إلى حساب آخر. ستفقد الوصول إلى بياناتك لأن المالك قد تغير!
+  currentOwner: 'المالك الحالي: {0}'
+  hint: 'يرجى إدخال بريد الحساب الذي ترغب في استلام الموقع عليه:'
+  disabled: لا يمكنك نقل هذا الموقع بينما هو غير نشط.
+  member: لا يمكن للأعضاء نقل هذا الموقع.
+  action: نقل الموقع!
 hostDelete:
-  warn: ATTENTION! Host deletions are permanent and we can't reverse the action. Please be certain.
-  hint: Please enter your website username to agree to host deletion.
-  member: Members cannot delete this website.
-  action: Delete!
+  warn: تنبيه! حذف الموقع نهائي ولا يمكن التراجع عن هذه العملية. يرجى التأكد.
+  hint: يرجى إدخال اسم المستخدم الخاص بموقعك للموافقة على حذف الموقع.
+  member: لا يمكن للأعضاء حذف هذا الموقع.
+  action: حذف الموقع!
 hostCname:
-  disabled: You cannot change the domain name when this website is not active.
-  curHint: 'Current domain name: '
-  hint: 'You can change the main domain name website here. Enter the new domain name:'
-  warn: This will make your website unusable for current domain! Please update DNS in new domain beforehand for minimal downtime.
-  member: Members cannot change the domain of this website.
-  action: Change domain name!
+  disabled: لا يمكنك تغيير اسم النطاق عندما يكون الموقع غير نشط.
+  curHint: 'اسم النطاق الحالي: '
+  hint: 'يمكنك تغيير النطاق الرئيسي للموقع هنا. أدخل اسم النطاق الجديد:'
+  warn: سيؤدي هذا إلى جعل موقعك غير قابل للاستخدام للنطاق الحالي! يرجى تحديث سجلات DNS في النطاق الجديد مسبقاً لتقليل فترة التوقف.
+  member: لا يمكن للأعضاء تغيير نطاق هذا الموقع.
+  action: تغيير اسم النطاق!
 hostRename:
-  disabled: You cannot change the username when this website is not active.
-  hint: 'You can change your website username here. Enter the new username:'
-  warn: This will also change database username! Your website may be unusable until you change it in your website config.
-  member: Members cannot change the username of this website.
-  action: Rename this username!
+  disabled: لا يمكنك تغيير اسم المستخدم عندما يكون الموقع غير نشط.
+  hint: 'يمكنك تغيير اسم مستخدم موقعك هنا. أدخل اسم المستخدم الجديد:'
+  warn: سيؤدي ذلك أيضاً إلى تغيير اسم مستخدم قاعدة البيانات! قد يصبح موقعك غير قابل للاستخدام حتى تقوم بتحديث الإعدادات.
+  member: لا يمكن للأعضاء تغيير اسم مستخدم هذا الموقع.
+  action: إعادة تسمية اسم المستخدم!
 hostPasswd:
-  disabled: You cannot change the password when this website is not active.
-  hint: 'You can change your website password here. Enter the new password:'
-  warn: This will also change database password! Your website may be unusable until you change it in your website config.
-  member: Members cannot change the password this website.
-  action: Update this password!
+  disabled: لا يمكنك تغيير كلمة المرور عندما يكون الموقع غير نشط.
+  hint: 'يمكنك تغيير كلمة مرور موقعك هنا. أدخل كلمة المرور الجديدة:'
+  warn: سيؤدي ذلك أيضاً إلى تغيير كلمة مرور قاعدة البيانات! قد يصبح موقعك غير قابل للاستخدام حتى تقوم بتحديث الإعدادات.
+  member: لا يمكن للأعضاء تغيير كلمة مرور هذا الموقع.
+  action: تحديث كلمة المرور!
 hostServer:
-  disabled: You cannot change the server region when this website is not active.
-  hint: 'You can move your website to another cloud or self-hosted server here. Choose a new server:'
-  warn: This will perform backup, delete, then restore on this website. Also could make your website temporarily inacessible due to IP addresses changing!
-  member: Members cannot change the server region of this website.
-  upgrade: Moving this website to another server requires backup feature, you need to upgrade.
-  action: Move to this server!
+  disabled: لا يمكنك تغيير منطقة الخادم عندما يكون الموقع غير نشط.
+  hint: 'يمكنك نقل موقعك إلى خادم سحابي آخر أو خادم مُستضاف ذاتياً هنا. اختر خادماً جديداً:'
+  warn: سيؤدي ذلك إلى إجراء نسخة احتياطية، وحذف، ثم استعادة الموقع. قد يجعل ذلك موقعك غير متاح مؤقتاً بسبب تغير عناوين الـ IP!
+  member: لا يمكن للأعضاء تغيير منطقة الخادم لهذا الموقع.
+  upgrade: نقل الموقع إلى خادم آخر يتطلب ميزة النسخ الاحتياطي، يجب عليك الترقية.
+  action: نقل إلى هذا الخادم!
 hostCheck:
-  title: Mandatory DNS Checkup
-  prompt: This checks whether {0} can be resolved via Google's DNS before get added into our server.
-  valid: This domain is resolvable
-  valid_with_note: This domain will be resolvable once additional configs added automatically for you
-  incorrect: Incorrect A+AAAA/CNAME record to this domain, please configure it first before continue.
-  missing: Missing A+AAAA/CNAME record to this domain, please configure it first before continue.
+  title: فحص DNS الإلزامي
+  prompt: يقوم هذا بفحص ما إذا كان {0} يمكن حله عبر DNS الخاص بجوجل قبل إضافته إلى خادمنا.
+  valid: هذا النطاق قابل للحل.
+  valid_with_note: سيصبح هذا النطاق قابلاً للحل بمجرد إضافة التكوينات الإضافية تلقائياً.
+  incorrect: سجل A+AAAA/CNAME غير صحيح لهذا النطاق، يرجى تهيئته أولاً قبل المتابعة.
+  missing: سجل A+AAAA/CNAME مفقود لهذا النطاق، يرجى تهيئته أولاً قبل المتابعة.
   loading: '...'
   retrying: '...'
 domain:
