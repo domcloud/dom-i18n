@@ -279,15 +279,15 @@ hostNginx:
   hints:
     root: "Jika path web diawali dengan: {0} \nLayani berkas pada jalur: {1}\n"
     proxy: |
-      Act as a web proxy to localhost:{0}
+      Bertindak sebagai proxy web ke localhost:{0}
     app: |
-      Launch a {0} server from: {3}
-      With the main script at: {1}/{0}
+      Luncurkan server {0} dari: {3}
+      Dengan skrip utama di: {1}/{0}
     gls: |
-      Launch a shell command: {0}
-      From this path: {1}
-      With $PORT automatically set
-      Then act as a web proxy to $PORT
+      Jalankan perintah shell: {0}
+      Dari jalur ini: {1}
+      Dengan $PORT secara otomatis diatur
+      Kemudian bertindak sebagai proxy web ke $PORT
     staticModes:
       default: Just serve static files
       smart: Hide .html if possible
