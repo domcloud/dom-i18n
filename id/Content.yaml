@@ -222,68 +222,88 @@ hostNginx:
   tabEdit: Edit Secara Interaktif
   tabPreview: Pratinjau Perubahan
   labels:
-    subfolderConfig: Konfigurasi Subfolder
-    rootConfig: Konfigurasi Root
-    rootPath: Jalur Root
-    rootIsAlias: Root adalah Alias
-    resolveType: Jenis Penyelesaian
-    resolveTypes:
-      static: Statis
-      php: PHP-FPM
-      app: Aplikasi Phusion
-      gls: Aplikasi Umum
-      socat: Meneruskan Port
-      deny: Tolak Permintaan
-    staticMode: Mode Statis
+    subfolderConfig: Configuration for URL starting with
+    rootConfig: Main Configuration for all paths
+    rootPath: Root Path
+    rootPathHint: "Root path is also known as the file path for static files. \nThis path is relative to $HOME.\n"
+    rootIsAlias: Root path is Alias path
+    rootIsAliasHint: "When URL path is matched, that will be appended to root path. \nChecking \"root path as alias path\" will prevent that.\n"
+    cacheExpires: Cache Expiration
+    cacheExpiresHint: "Static files including CSS and JS will be cached in browser for 7 days by default. \nSet this to \"no cache\" if this behavior is annoying.\n"
+    cacheExpirations:
+      off: "no cache"
+      1d: "1 day"
+      7d: "7 days"
+      30d: "30 days"
+      max: "never expire"
+    backendType: Backend Type
+    backendTypeHint: |
+      Your backend type.
+      Web traffic will be forwarded to your backend if static files is not found.
+    backendTypes:
+      static: No Backend
+      php: PHP Daemon
+      app: App Laucher
+      gls: Shell Command
+      proxy: Forward to Port
+      deny: Deny Requests
+    staticMode: Static Mode
     staticModes:
       default: Default
-      smart: Cerdas
-      autoindex: Auto-indeks
-      index: Indeks Root
-    static404Path: Jalur File HTML 404
-    phpMode: Mode PHP
+      smart: Smart
+      autoindex: Auto-index
+      index: Root Index
+    static404Path: 404 HTML File Path
+    phpMode: PHP Mode
     phpModes:
       default: Default
-      smart: Cerdas
-      indexSafe: Indeks Root - Aman
-      index: Indeks Root - Standar
-      always: Indeks Root - Selalu
-    socatPort: Meneruskan ke Port
-    appMode: Mode Aplikasi
-    appEntry: File Startup Aplikasi
-    appBin: Jalur Biner Aplikasi
+      smart: Smart
+      index: Root Index - Standard
+      indexSafe: Root Index - Safe
+      always: Root Index - Always
+    proxyPort: Forward to Port
+    appMode: Launcher Language
+    appEntry: Script Path
+    appBin: Launcher Path
     appModes:
-      default: Otomatis
+      default: Auto
       node: Node
       python: Python
       ruby: Ruby
-    glsCmd: Perintah Aplikasi
+    glsCmd: Command to Run
     glsBg: Run in Background?
-    appEnv: Kunci Lingkungan
-    appDev: Mode Pengembangan?
-    appRoot: Direktori Kerja
-    addSubfolderConfig: Tambahkan konfigurasi subfolder
+    appEnv: Environment Keys
+    appDev: Development Mode?
+    appRoot: Working Directory
+    addSubfolderConfig: Add a new path config
   hints:
-    root: File statis dari {0} akan diselesaikan ke {1}
-    socat: Meneruskan permintaan klien ke port {0}
-    app: Jalankan skrip {0} dari {1} menggunakan {2} dari {3}
-    gls: Jalankan "{0}" dari {1} dengan $PORT yang diberikan
+    root: "If web path starts with: {0} \nServe files at this path: {1}\n"
+    proxy: |
+      Act as a web proxy to localhost:{0}
+    app: |
+      Launch a {0} server from: {3}
+      With the main script at: {1}/{0}
+    gls: |
+      Launch a shell command: {0}
+      From this path: {1}
+      With $PORT automatically set
+      Then act as a web proxy to $PORT
     staticModes:
-      default: Layani file statis
-      smart: Cobalah untuk menemukan file HTML jika memungkinkan
-      index: Layani root index.html jika tidak ada file yang ditemukan
-      autoindex: Izinkan daftar file server jika index.html tidak ditemukan
-      with404: atau tampilkan halaman kesalahan 404 khusus
+      default: Just serve static files
+      smart: Hide .html if possible
+      index: Serve root index.html
+      autoindex: Show list of files
+      with404: or show custom 404 error page
     phpModes:
-      default: Layani index.php atau file php yang berakhir dengan .php
-      smart: Cobalah untuk menemukan file PHP tanpa .php
-      indexSafe: Layani root index.php tetapi jangan coba jika klien mencari file
-      index: Layani root index.php ketika file statis tidak ditemukan
-      always: Izinkan permintaan dengan gaya PATH_INFO ditangani oleh PHP
-    deleteSubfolderPrompt: Apakah Anda yakin ingin menghapus konfigurasi subfolder untuk {0}
-    inputSubfolderPrompt: Silakan masukkan subfolder (harus dimulai dengan '/' dan tidak ada spasi)
-    inputSubfolderNotValid: Masukan subfolder tidak valid
-    inputSubfolderNotUnique: Nilai subfolder harus unik dibandingkan dengan entri subfolder lainnya
+      default: Just serve PHP files
+      smart: Hide .php if possible
+      index: Serve root index.php
+      indexSafe: Serve root index.php safely Do not execute PHP for media files
+      always: Serve root index.php as PATH_INFO Used for legacy PHP software
+    deleteSubfolderPrompt: Are you sure want to delete path config for {0}
+    inputSubfolderPrompt: Please input the URL path to match with the new config (must start with '/' and no spaces)
+    inputSubfolderNotValid: Path input is not valid
+    inputSubfolderNotUnique: Path value must unique with other path entries
 hostDB:
   title: Manage Database
   description: |-
