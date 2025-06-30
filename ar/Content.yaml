@@ -286,17 +286,17 @@ hostNginx:
       مع ضبط $PORT تلقائيًا
       ثم العمل كوكيل ويب لـ $PORT
     staticModes:
-      default: افتراضي: مجرد تقديم الملفات الثابتة
-      smart: ذكي: إخفاء .html إذا أمكن
-      index: الفهرس: تقديم index.html الجذري
-      autoindex: فهرسة تلقائية: عرض قائمة الملفات
+      default: مجرد تقديم الملفات الثابتة
+      smart: إخفاء .html إذا أمكن
+      index: تقديم index.html الجذري
+      autoindex: عرض قائمة الملفات
       with404: أو عرض صفحة خطأ 404 مخصصة
     phpModes:
-      default: افتراضي: مجرد تقديم ملفات PHP
-      smart: ذكي: إخفاء .php إذا أمكن
-      index: الفهرس: تقديم index.php الجذري
-      indexSafe: الفهرس الآمن: تقديم index.php الجذري بأمان. عدم تنفيذ PHP لملفات الوسائط
-      always: دائم: تقديم index.php الجذري كـ PATH_INFO. يستخدم للبرمجيات القديمة لـ PHP
+      default: مجرد تقديم ملفات PHP
+      smart: إخفاء .php إذا أمكن
+      index: تقديم index.php الجذري
+      indexSafe: تقديم index.php الجذري بأمان. عدم تنفيذ PHP لملفات الوسائط
+      always: تقديم index.php الجذري كـ PATH_INFO. يستخدم للبرمجيات القديمة لـ PHP
     deleteSubfolderPrompt: هل أنت متأكد أنك تريد حذف تكوين المسار لـ {0}
     inputSubfolderPrompt: الرجاء إدخال مسار URL للتطابق مع التكوين الجديد (يجب أن يبدأ بـ '/' ولا يحتوي على فراغات)
     inputSubfolderNotValid: إدخال المسار غير صالح
