@@ -25,7 +25,7 @@ welcome:
   emailConfirmationBtn: Volver a enviar el correo de confirmación
   emailConfirmationSent: ¡La confirmación de correo electrónico a <strong>{0}</strong> ha sido enviada!
   changeCountryBtn: Cambiar de país
-  keepUsingEnglish: Keep using English
+  keepUsingEnglish: Seguir usando inglés
 notification:
   freeUserGuideTitle: ¡Bienvenido a Bordo!
   freeUserGuideHint: "Gracias por elegirnos como tu plataforma en la nube \U0001F973 Si aún no lo has hecho, prueba leyendo nuestra <a href=\"{0}\" target=\"_blank\">Guía de Inicio</a>. ¿Necesitas nuestra experiencia completa? Intenta <a href=\"{1}\">mejorar tu plan</a> para eliminar el firewall de API, los banners de dominio gratuito y desbloquear <a href=\"{2}\" target=\"_blank\">más funciones</a>!"
@@ -222,102 +222,101 @@ hostNginx:
   tabEdit: Editar Interactivamente
   tabPreview: Vista Previa de los Cambios
   labels:
-    subfolderConfig: Configuration for URL starting with
-    rootConfig: Main Configuration for all paths
-    rootPath: Root Path
-    rootPathHint: "Root path is also known as the file path for static files. \nThis path is relative to $HOME.\n"
-    rootIsAlias: Root path is Alias path
-    rootIsAliasHint: "When URL path is matched, that will be appended to root path. \nChecking \"root path as alias path\" will prevent that.\n"
-    cacheExpires: Cache Expiration
-    cacheExpiresHint: "Static files including CSS and JS will be cached in browser for 7 days by default. \nSet this to \"no cache\" if this behavior is annoying.\n"
+    subfolderConfig: Configuración para URL que comienza con
+    rootConfig: Configuración Principal para todas las rutas
+    rootPath: Ruta Raíz
+    rootPathHint: "La ruta raíz también se conoce como la ruta de archivos para archivos estáticos. \nEsta ruta es relativa a $HOME.\n"
+    rootIsAlias: La ruta raíz es una ruta alias
+    rootIsAliasHint: "Cuando se haga coincidir la ruta URL, se añadirá a la ruta raíz. \nActivar \"ruta raíz como ruta alias\" evitará eso.\n"
+    cacheExpires: Expiración de Caché
+    cacheExpiresHint: "Los archivos estáticos, incluidos CSS y JS, se almacenarán en caché en el navegador durante 7 días por defecto. \nEstablezca esto en \"sin caché\" si este comportamiento resulta molesto.\n"
     cacheExpirations:
-      off: "no cache"
-      1d: "1 day"
-      7d: "7 days"
-      30d: "30 days"
-      max: "never expire"
-    backendType: Backend Type
+      off: "sin caché"
+      1d: "1 día"
+      7d: "7 días"
+      30d: "30 días"
+      max: "nunca expira"
+    backendType: Tipo de Backend
     backendTypeHint: |
-      Your backend type.
-      Web traffic will be forwarded to your backend if static files is not found.
+      Su tipo de backend.
+      El tráfico web se redirigirá a su backend si no se encuentran archivos estáticos.
     backendTypes:
-      static: No Backend
-      php: PHP Daemon
-      app: App Laucher
-      gls: Shell Command
-      proxy: Forward to Port
-      deny: Deny Requests
-    staticMode: Static Mode
+      static: Sin Backend
+      php: Daemon PHP
+      app: Lanzador de Aplicaciones
+      gls: Comando Shell
+      proxy: Redirigir a un Puerto
+      deny: Denegar Solicitudes
+    staticMode: Modo Estático
     staticModes:
-      default: Default
-      smart: Smart
-      autoindex: Auto-index
-      index: Root Index
-    static404Path: 404 HTML File Path
-    phpMode: PHP Mode
+      default: Predeterminado
+      smart: Inteligente
+      autoindex: Autoíndice
+      index: Índice Raíz
+    static404Path: Ruta del Archivo HTML 404
+    phpMode: Modo PHP
     phpModes:
-      default: Default
-      smart: Smart
-      index: Root Index - Standard
-      indexSafe: Root Index - Safe
-      always: Root Index - Always
-    proxyPort: Forward to Port
-    appMode: Launcher Language
-    appEntry: Script Path
-    appBin: Launcher Path
+      default: Predeterminado
+      smart: Inteligente
+      index: Índice Raíz - Estándar
+      indexSafe: Índice Raíz - Seguro
+      always: Índice Raíz - Siempre
+    proxyPort: Redirigir a un Puerto
+    appMode: Lenguaje del Lanzador
+    appEntry: Ruta del Script
+    appBin: Ruta del Lanzador
     appModes:
-      default: Auto
+      default: Automático
       node: Node
       python: Python
       ruby: Ruby
-    glsCmd: Command to Run
-    glsBg: Run in Background?
-    appEnv: Environment Keys
-    appDev: Development Mode?
-    appRoot: Working Directory
-    addSubfolderConfig: Add a new path config
+    glsCmd: Comando a Ejecutar
+    glsBg: ¿Ejecutar en Segundo Plano?
+    appEnv: Variables de Entorno
+    appDev: ¿Modo de Desarrollo?
+    appRoot: Directorio de Trabajo
+    addSubfolderConfig: Agregar una nueva configuración de ruta
   hints:
-    root: "If web path starts with: {0} \nServe files at this path: {1}\n"
+    root: "Si la ruta web comienza con: {0} \nServir archivos en esta ruta: {1}\n"
     proxy: |
-      Act as a web proxy to localhost:{0}
+      Actuar como un proxy web hacia localhost:{0}
     app: |
-      Launch a {0} server from: {3}
-      With the main script at: {1}/{0}
+      Iniciar un servidor {0} desde: {3Below} Con el script principal en: {1}/{0}
     gls: |
-      Launch a shell command: {0}
-      From this path: {1}
-      With $PORT automatically set
-      Then act as a web proxy to $PORT
+      Ejecutar un comando shell: {0}
+      Desde esta ruta: {1}
+      Con $PORT configurado automáticamente
+      Luego actuar como un proxy web hacia $PORT
     staticModes:
-      default: Just serve static files
-      smart: Hide .html if possible
-      index: Serve root index.html
-      autoindex: Show list of files
+      default: Solo servir archivos estáticos
+      smart: Ocultar .html si es posible
+      index: Servir index.html raíz
+      autoindex: Mostrar lista de archivos
       with404: or show custom 404 error page
     phpModes:
-      default: Just serve PHP files
-      smart: Hide .php if possible
-      index: Serve root index.php
-      indexSafe: Serve root index.php safely Do not execute PHP for media files
-      always: Serve root index.php as PATH_INFO Used for legacy PHP software
-    deleteSubfolderPrompt: Are you sure want to delete path config for {0}
-    inputSubfolderPrompt: Please input the URL path to match with the new config (must start with '/' and no spaces)
-    inputSubfolderNotValid: Path input is not valid
-    inputSubfolderNotUnique: Path value must unique with other path entries
+      default: Solo servir archivos PHP
+      smart: Ocultar .php si es posible
+      index: Servir index.php raíz
+      indexSafe: Servir index.php raíz de forma segura. No ejecutar PHP para archivos multimedia
+      always: Servir index.php raíz como PATH_INFO. Utilizado para software PHP heredado
+    deleteSubfolderPrompt: ¿Está seguro de que desea eliminar la configuración de ruta para {0}
+    inputSubfolderPrompt: Por favor, introduzca la ruta URL para coincidir con la nueva configuración (debe comenzar con '/' y sin espacios)
+    inputSubfolderNotValid: La ruta introducida no es válida
+    inputSubfolderNotUnique: El valor de la ruta debe ser único respecto a otras entradas
 hostDB:
-  title: Manage Database
+  title: Gestionar Base de Datos
   description: |-
-    <p>This page helps you see database lists and create or drop databases that linked to this domain</p>
+    <p>Esta página le ayuda a ver las listas de bases de datos y a crear o eliminar aquellas vinculadas a este dominio</p>
     <p>
-    We support creating MariaDB (MySQL-compatible), PostgreSQL and Valkey (Redis-compatible) databases.
-    To access it, connect to localhost with port 3306, 5432 and 6379 respectively. You can also use our web
-    editor to manage its content.
+    Soportamos la creación de bases de datos MariaDB (compatible con MySQL), PostgreSQL y Valkey (compatible con Redis).
+    Para acceder a ellas, conéctese a localhost con los puertos 3306, 5432 y 6379, respectivamente. También puede usar nuestro editor web
+    para administrar su contenido.
     </p> <p>
-    MariaDB and PostgreSQL uses the same username and password across all databases in a domain, while Valkey uses
-    the database name as the username and unique password for each database. Also, since our database is shared across
-    a single server, administrative queries inside the database is limited. Refer to our documentation for more details.
+    MariaDB y PostgreSQL usan el mismo nombre de usuario y contraseña en todas las bases de datos de un dominio, mientras que Valkey utiliza
+    el nombre de la base de datos como nombre de usuario y una contraseña única para cada base de datos. Además, dado que nuestra base de datos es compartida en
+    un solo servidor, las consultas administrativas dentro de ella están limitadas. Consulte nuestra documentación para más detalles.
     </p>
-  helpText: Help on configuration
+  helpText: Ayuda sobre la configuración
 hostDNS:
   title: Configurador de Servidor DNS
   description: |-
