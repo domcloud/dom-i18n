@@ -195,68 +195,88 @@ hostNginx:
   tabEdit: Editar Interativamente
   tabPreview: Pré-visualizar Alterações
   labels:
-    subfolderConfig: Configuração de Subpasta
-    rootConfig: Configuração Principal
-    rootPath: Caminho Root
-    rootIsAlias: Root é um alias
-    resolveType: Tipo de Resolução
-    resolveTypes:
-      static: Estático
-      php: PHP-FPM
-      app: Aplicativo Phusion
-      gls: Aplicativo Genérico
-      socat: Encaminhamento de Porta
-      deny: Negar Solicitação
-    staticMode: Modo Estático
+    subfolderConfig: Configuration for URL starting with
+    rootConfig: Main Configuration for all paths
+    rootPath: Root Path
+    rootPathHint: "Root path is also known as the file path for static files. \nThis path is relative to $HOME.\n"
+    rootIsAlias: Root path is Alias path
+    rootIsAliasHint: "When URL path is matched, that will be appended to root path. \nChecking \"root path as alias path\" will prevent that.\n"
+    cacheExpires: Cache Expiration
+    cacheExpiresHint: "Static files including CSS and JS will be cached in browser for 7 days by default. \nSet this to \"no cache\" if this behavior is annoying.\n"
+    cacheExpirations:
+      off: "no cache"
+      1d: "1 day"
+      7d: "7 days"
+      30d: "30 days"
+      max: "never expire"
+    backendType: Backend Type
+    backendTypeHint: |
+      Your backend type.
+      Web traffic will be forwarded to your backend if static files is not found.
+    backendTypes:
+      static: No Backend
+      php: PHP Daemon
+      app: App Laucher
+      gls: Shell Command
+      proxy: Forward to Port
+      deny: Deny Requests
+    staticMode: Static Mode
     staticModes:
-      default: Padrão
-      smart: Inteligente
-      autoindex: Autoindex
+      default: Default
+      smart: Smart
+      autoindex: Auto-index
       index: Root Index
-    static404Path: Caminho do Arquivo HTML 404
-    phpMode: Modo PHP
+    static404Path: 404 HTML File Path
+    phpMode: PHP Mode
     phpModes:
-      default: Padrão
-      smart: Inteligente
-      indexSafe: Root Index - Seguro
-      index: Root Index - Padrão
-      always: Root Index - Sempre
-    socatPort: Encaminhamento de Porta
-    appMode: Modo Aplicativo
-    appEntry: Arquivo de Entrada do Aplicativo
-    appBin: Caminho binário do Aplicativo
+      default: Default
+      smart: Smart
+      index: Root Index - Standard
+      indexSafe: Root Index - Safe
+      always: Root Index - Always
+    proxyPort: Forward to Port
+    appMode: Launcher Language
+    appEntry: Script Path
+    appBin: Launcher Path
     appModes:
-      default: Automático
+      default: Auto
       node: Node
       python: Python
       ruby: Ruby
-    glsCmd: Comando do Aplicativo
+    glsCmd: Command to Run
     glsBg: Run in Background?
-    appEnv: Chaves de Ambiente
-    appDev: Modo de Desenvolvimento?
-    appRoot: Diretório de Trabalho
-    addSubfolderConfig: Adicionar Configuração de Subpasta
+    appEnv: Environment Keys
+    appDev: Development Mode?
+    appRoot: Working Directory
+    addSubfolderConfig: Add a new path config
   hints:
-    root: Resolve {1} para arquivos estáticos de {0}
-    socat: Encaminha solicitações do cliente para a porta {0}
-    app: Executa o script {0} de {1} com {2} de {3}
-    gls: Executa "{0}" de {1} para a porta especificada $PORT
+    root: "If web path starts with: {0} \nServe files at this path: {1}\n"
+    proxy: |
+      Act as a web proxy to localhost:{0}
+    app: |
+      Launch a {0} server from: {3}
+      With the main script at: {1}/{0}
+    gls: |
+      Launch a shell command: {0}
+      From this path: {1}
+      With $PORT automatically set
+      Then act as a web proxy to $PORT
     staticModes:
-      default: Servir arquivos estáticos
-      smart: Tentar encontrar arquivos HTML, se possível
-      index: Servir root index.html, se nenhum arquivo for encontrado
-      autoindex: Permitir listagem de arquivos do servidor, se index.html não for encontrado
-      with404: Ou exibir uma página de erro 404 personalizada
+      default: Just serve static files
+      smart: Hide .html if possible
+      index: Serve root index.html
+      autoindex: Show list of files
+      with404: or show custom 404 error page
     phpModes:
-      default: Servir arquivos PHP terminando com .php ou index.php
-      smart: Tentar encontrar arquivos PHP sem .php
-      indexSafe: Servir root index.php mas não tentar quando o arquivo for buscado pelo cliente
-      index: Servir root index.php se nenhum arquivo estático for encontrado
-      always: Permitir solicitações no estilo PATH_INFO para processar PHP
-    deleteSubfolderPrompt: Tem certeza de que deseja excluir a configuração de subpasta para {0}?
-    inputSubfolderPrompt: Insira a subpasta (começando com '/' e sem espaços)
-    inputSubfolderNotValid: Entrada de subpasta não é válida
-    inputSubfolderNotUnique: O valor da subpasta deve ser exclusivo em relação a outros itens de subpasta
+      default: Just serve PHP files
+      smart: Hide .php if possible
+      index: Serve root index.php
+      indexSafe: Serve root index.php safely Do not execute PHP for media files
+      always: Serve root index.php as PATH_INFO Used for legacy PHP software
+    deleteSubfolderPrompt: Are you sure want to delete path config for {0}
+    inputSubfolderPrompt: Please input the URL path to match with the new config (must start with '/' and no spaces)
+    inputSubfolderNotValid: Path input is not valid
+    inputSubfolderNotUnique: Path value must unique with other path entries
 hostDB:
   title: Manage Database
   description: |-

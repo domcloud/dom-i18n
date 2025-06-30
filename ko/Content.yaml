@@ -193,68 +193,88 @@ hostNginx:
   tabEdit: 상호작용으로 편집
   tabPreview: 변경 미리보기
   labels:
-    subfolderConfig: 서브폴더 구성
-    rootConfig: 루트 구성
-    rootPath: 루트 경로
-    rootIsAlias: 루트는 별칭입니다
-    resolveType: 해결 유형
-    resolveTypes:
-      static: 정적
-      php: PHP-FPM
-      app: Phusion App
-      gls: 일반 앱
-      socat: 포트 전달
-      deny: 요청 거부
-    staticMode: 정적 모드
+    subfolderConfig: Configuration for URL starting with
+    rootConfig: Main Configuration for all paths
+    rootPath: Root Path
+    rootPathHint: "Root path is also known as the file path for static files. \nThis path is relative to $HOME.\n"
+    rootIsAlias: Root path is Alias path
+    rootIsAliasHint: "When URL path is matched, that will be appended to root path. \nChecking \"root path as alias path\" will prevent that.\n"
+    cacheExpires: Cache Expiration
+    cacheExpiresHint: "Static files including CSS and JS will be cached in browser for 7 days by default. \nSet this to \"no cache\" if this behavior is annoying.\n"
+    cacheExpirations:
+      off: "no cache"
+      1d: "1 day"
+      7d: "7 days"
+      30d: "30 days"
+      max: "never expire"
+    backendType: Backend Type
+    backendTypeHint: |
+      Your backend type.
+      Web traffic will be forwarded to your backend if static files is not found.
+    backendTypes:
+      static: No Backend
+      php: PHP Daemon
+      app: App Laucher
+      gls: Shell Command
+      proxy: Forward to Port
+      deny: Deny Requests
+    staticMode: Static Mode
     staticModes:
-      default: 기본값
-      smart: 스마트
-      autoindex: 자동 인덱스
-      index: 루트 인덱스
-    static404Path: 404 HTML 파일 경로
-    phpMode: PHP 모드
+      default: Default
+      smart: Smart
+      autoindex: Auto-index
+      index: Root Index
+    static404Path: 404 HTML File Path
+    phpMode: PHP Mode
     phpModes:
-      default: 기본값
-      smart: 스마트
-      indexSafe: 루트 인덱스 - 안전
-      index: 루트 인덱스 - 표준
-      always: 루트 인덱스 - 항상
-    socatPort: 포트 전달
-    appMode: 앱 모드
-    appEntry: 앱 시작 파일
-    appBin: 앱 바이너리 경로
+      default: Default
+      smart: Smart
+      index: Root Index - Standard
+      indexSafe: Root Index - Safe
+      always: Root Index - Always
+    proxyPort: Forward to Port
+    appMode: Launcher Language
+    appEntry: Script Path
+    appBin: Launcher Path
     appModes:
-      default: 자동
-      node: 노드
-      python: 파이썬
-      ruby: 루비
-    glsCmd: 앱 명령
+      default: Auto
+      node: Node
+      python: Python
+      ruby: Ruby
+    glsCmd: Command to Run
     glsBg: Run in Background?
-    appEnv: 환경 키
-    appDev: 개발 모드?
-    appRoot: 작업 디렉토리
-    addSubfolderConfig: 서브폴더 구성 추가
+    appEnv: Environment Keys
+    appDev: Development Mode?
+    appRoot: Working Directory
+    addSubfolderConfig: Add a new path config
   hints:
-    root: '{0}에서 {1}로 정적 파일을 해결합니다'
-    socat: 클라이언트 요청을 포트 {0}으로 전달합니다
-    app: '{1}에서 {0} 스크립트를 {2}을 사용하여 {3}에서 호출합니다'
-    gls: '"{0}"를 {1}에서 지정된 $PORT로 실행합니다'
+    root: "If web path starts with: {0} \nServe files at this path: {1}\n"
+    proxy: |
+      Act as a web proxy to localhost:{0}
+    app: |
+      Launch a {0} server from: {3}
+      With the main script at: {1}/{0}
+    gls: |
+      Launch a shell command: {0}
+      From this path: {1}
+      With $PORT automatically set
+      Then act as a web proxy to $PORT
     staticModes:
-      default: 정적 파일을 제공
-      smart: 가능한 경우 HTML 파일을 찾으려고 시도
-      index: 파일을 찾을 수 없는 경우 루트 index.html을 제공
-      autoindex: index.html을 찾을 수 없는 경우 서버 파일 목록을 허용
-      with404: 또는 사용자 정의 404 오류 페이지 표시
+      default: Just serve static files
+      smart: Hide .html if possible
+      index: Serve root index.html
+      autoindex: Show list of files
+      with404: or show custom 404 error page
     phpModes:
-      default: index.php 또는 .php로 끝나는 PHP 파일 제공
-      smart: .php 없이 PHP 파일을 찾으려고 시도
-      indexSafe: 루트 index.php를 제공하지만 클라이언트가 파일을 찾으려고 할 때는 시도하지 않음
-      index: 정적 파일을 찾을 수 없는 경우 루트 index.php 제공
-      always: PHP를 처리하기 위해 PATH_INFO 스타일의 요청 허용
-    deleteSubfolderPrompt: 정말로 {0}의 서브폴더 구성을 삭제하시겠습니까?
-    inputSubfolderPrompt: 서브폴더를 입력하세요 ('/'로 시작하고 공백이 없어야 합니다)
-    inputSubfolderNotValid: 서브폴더 입력이 유효하지 않습니다
-    inputSubfolderNotUnique: 서브폴더 값은 다른 서브폴더 항목과 고유해야 합니다
+      default: Just serve PHP files
+      smart: Hide .php if possible
+      index: Serve root index.php
+      indexSafe: Serve root index.php safely Do not execute PHP for media files
+      always: Serve root index.php as PATH_INFO Used for legacy PHP software
+    deleteSubfolderPrompt: Are you sure want to delete path config for {0}
+    inputSubfolderPrompt: Please input the URL path to match with the new config (must start with '/' and no spaces)
+    inputSubfolderNotValid: Path input is not valid
+    inputSubfolderNotUnique: Path value must unique with other path entries
 hostDB:
   title: Manage Database
   description: |-

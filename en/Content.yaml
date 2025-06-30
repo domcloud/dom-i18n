@@ -308,10 +308,10 @@ hostNginx:
       default: Just serve PHP files
       smart: Hide .php if possible
       index: Serve root index.php
-      indexSafe: 
+      indexSafe: |
         Serve root index.php safely
         Do not execute PHP for media files
-      always: 
+      always: |
         Serve root index.php as PATH_INFO
         Used for legacy PHP software
     deleteSubfolderPrompt: Are you sure want to delete path config for {0}

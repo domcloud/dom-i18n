@@ -292,7 +292,7 @@ hostNginx:
       smart: Ocultar .html si es posible
       index: Servir index.html raíz
       autoindex: Mostrar lista de archivos
-      with404: or show custom 404 error page
+      with404: o mostrar página de error 404 personalizada
     phpModes:
       default: Solo servir archivos PHP
       smart: Ocultar .php si es posible
