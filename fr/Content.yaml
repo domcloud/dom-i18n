@@ -85,87 +85,73 @@ hostCreate:
   attachDeployKeyOpenConfig: Ouvrir la configuration des clés de déploiement du dépôt
   attachDeployKeyConfirm: J'ai ajouté cette clé publique
 hostConnection:
-  title: Check Connection
+  title: Vérifier la connexion
   description: |2-
             <p>
-    This page checks if this website is accessible from the
-    internet.
+    Cette page vérifie si ce site est accessible depuis Internet.
     </p>
     <p>
-    There are three prerequisites for a website to be accessible
-    from the internet:
+    Il y a trois conditions prérequises pour qu'un site soit accessible sur Internet :
     </p>
     <ul>
-    <li>The DNS server must be available</li>
-    <li>The returned IP address must be correct</li>
-    <li>The server's content must be accessible</li>
+    <li>Le serveur DNS doit être disponible</li>
+    <li>L'adresse IP renvoyée doit être correcte</li>
+    <li>Le contenu du serveur doit être accessible</li>
     </ul>
     <p>
-    If one of the prerequisites above fails, this website may
-    not be accessible from the internet.
+    Si l'une de ces conditions échoue, ce site pourrait ne pas être accessible depuis Internet.
     </p>
-  dnsOffTitle: No name server
-  dnsOffContent: This website does not have a name server. It maybe externally configured.
-  dnsNotExistTitle: Domain not exist
-  dnsNotExistContent: This domain is not found or may not be registered. Have you purchase it?
-  dnsManagedTitle: DNS managed
-  dnsManagedContent: This website's DNS is managed by {0}.
-  dnsMixedTitle: DNS is mixed
+  dnsOffTitle: Pas de serveur de noms
+  dnsOffContent: Ce site ne possède pas de serveur de noms. Il est peut-être configuré de manière externe.
+  dnsNotExistTitle: Le domaine n'existe pas
+  dnsNotExistContent: Ce domaine est introuvable ou peut ne pas être enregistré. L'avez-vous acheté ?
+  dnsManagedTitle: DNS géré
+  dnsManagedContent: Le DNS de ce site est géré par {0}.
+  dnsMixedTitle: DNS mixte
   dnsMixedContent: |-
-    This website's DNS has a mixed
-    configuration. Ensure that the name server
-    is configured properly. Do not mix our
-    records with other records!
-  dnsExternalTitle: DNS managed externally
-  dnsExternalContent: This website's DNS is handled by a third party.
-  pingNoIpTitle: IP Address not found
-  pingNoIpContent: The DNS server does not return an IP address.
-  pingNoIp6Title: No IPv6
-  pingNoIp6Content: ' This website''s DNS has no IPv6 address. It maybe unavailable for IPv6 users.'
-  pingNoIp6Hint: Please add an AAAA record with value
-  pingWrongIpTitle: Incorrect IP Address
+    Le DNS de ce site présente une configuration mixte. Assurez-vous que le serveur de noms est correctement configuré. Ne mélangez pas nos enregistrements avec d'autres enregistrements !
+  dnsExternalTitle: DNS géré par un tiers
+  dnsExternalContent: Le DNS de ce site est géré par un tiers.
+  pingNoIpTitle: Adresse IP introuvable
+  pingNoIpContent: Le serveur DNS ne renvoie pas d'adresse IP.
+  pingNoIp6Title: Pas d'IPv6
+  pingNoIp6Content: Le DNS de ce site ne possède pas d'adresse IPv6. Il peut être indisponible pour les utilisateurs IPv6.
+  pingNoIp6Hint: Veuillez ajouter un enregistrement AAAA avec la valeur
+  pingWrongIpTitle: Adresse IP incorrecte
   pingWrongIpContent: |-
-    This website's DNS returned an incorrect IP address.
-    It may not serve the correct content, or it's behind a proxy.
-  pingWrongIpCurrent: Current IP addresses
-  pingWrongIpExpect: Correct IP addresses
-  pingNoWwwTitle: www.* subdomain IP address not found
+    Le DNS de ce site a renvoyé une adresse IP incorrecte. Il se peut que le contenu ne soit pas correct, ou qu'il soit derrière un proxy.
+  pingWrongIpCurrent: Adresses IP actuelles
+  pingWrongIpExpect: Adresses IP correctes
+  pingNoWwwTitle: Adresse IP du sous-domaine www.* introuvable
   pingNoWwwContent: |-
-    Some people may not be able to access this
-    website if they prefix it with www. Setup a
-    www subdomain redirect is recommended.
-  pingNoWwwFix: Setup www.* subdomain redirect
-  pingOkTitle: IP Address OK
-  pingOkContent: This website's DNS returned the correct IP address.
-  webNoHttpTitle: Website is not accessible
-  webNoHttpContent: This website is not accessible via HTTP.
-  webNoHttpsTitle: HTTPS not available
+    Certaines personnes pourraient ne pas accéder à ce site si elles ajoutent www. Il est recommandé de configurer une redirection pour le sous-domaine www.
+  pingNoWwwFix: Configurer la redirection du sous-domaine www.*
+  pingOkTitle: Adresse IP OK
+  pingOkContent: Le DNS de ce site a renvoyé l'adresse IP correcte.
+  webNoHttpTitle: Le site n'est pas accessible
+  webNoHttpContent: Ce site n'est pas accessible via HTTP.
+  webNoHttpsTitle: HTTPS non disponible
   webNoHttpsContent: |-
-    This website may not have HTTPS certificate
-    installed, or it's expired, or not configured properly.
-  pingNoHttpsFix: Install HTTPS certificate
-  webBadHttpTitle: Website is returning an error
+    Ce site ne possède peut-être pas de certificat HTTPS installé, ou il est expiré, ou mal configuré.
+  pingNoHttpsFix: Installer un certificat HTTPS
+  webBadHttpTitle: Le site renvoie une erreur
   webBadHttpContent: |-
-    This website returns 500 or 403 error,
-    it may not be configured properly (check NGINX/App settings!).
-  webBadRedirectTitle: Website is has bad redirects
+    Ce site renvoie une erreur 500 ou 403, il se peut qu'il ne soit pas correctement configuré (vérifiez les paramètres NGINX/App !).
+  webBadRedirectTitle: Le site a de mauvaises redirections
   webBadRedirectContent: |-
-    This website is redirecting visitors to outside the domain,
-    it may not be configured properly (check Base URL settings!).
-  webInfiniteRedirectTitle: Website has infinite redirects
+    Ce site redirige les visiteurs vers un domaine externe, il se peut qu'il ne soit pas correctement configuré (vérifiez les paramètres de Base URL).
+  webInfiniteRedirectTitle: Le site a des redirections infinies
   webInfiniteRedirectContent: |-
-    This website currently serving infinite HTTPS requests,
-    it may already behind a HTTPS proxy.
-  webInfiniteRedirectFix: Disable HTTPS redirect
-  webBadWwwTitle: www.* subdomain is not accessible
-  webBadWwwContent: This website's www subdomain is either not accessible or returning error.
-  webInsecureTitle: Website is not fully secure
-  webInsecureContent: |2-
-     This website doesn't redirect HTTP to HTTPS,
-    which is fine but not recommended.
-  webInsecureContentFix: Force HTTPS redirect
-  webOkTitle: Website is OK
-  webOkContent: This website is accessible via HTTP and HTTPS.
+    Ce site effectue actuellement des requêtes HTTPS infinies, il se peut qu'il soit déjà derrière un proxy HTTPS.
+  webInfiniteRedirectFix: Désactiver la redirection HTTPS
+  webBadWwwTitle: Le sous-domaine www.* n'est pas accessible
+  webBadWwwContent: Le sous-domaine www de ce site est soit inaccessible, soit renvoie une erreur.
+  webInsecureTitle: Le site n'est pas entièrement sécurisé
+  webInsecureContent: |-
+     Ce site ne redirige pas HTTP vers HTTPS, ce qui est acceptable mais non recommandé.
+  webInsecureContentFix: Forcer la redirection HTTPS
+  webOkTitle: Le site est OK
+  webOkContent: Ce site est accessible via HTTP et HTTPS.
 hostFirewall:
   title: Check Firewall
   description: |
