@@ -5,9 +5,9 @@
 	'invoiceDomainTransferOf' => 'Transfer Domain {0}',
 	'invoiceTeamPurchaseOf' => 'Pembelian Paket Web {0}',
 	'invoiceTeamAddons' => 'Team Add-ons',
-	'invoiceForMonths' => ' untuk {0} bulan',
-	'invoiceForYears' => ' untuk {0} tahun',
-	'invoiceForYearsAndMonths' => ' untuk {0} tahun dan {1} bulan',
+	'invoiceForMonths' => ' untuk {0}',
+	'invoiceForYears' => ' untuk {0}',
+	'invoiceForYearsAndMonths' => ' untuk {0} dan {1}',
 	'invoiceDataTransferAddonsFor' => 'Tambahan data transfer sebanyak {0} GB',
 	'invoiceTip' => 'Convenience Fee',
 	

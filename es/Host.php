@@ -5,9 +5,9 @@
 	'invoiceDomainTransferOf' => 'Transferencia de dominio de {0}',
 	'invoiceTeamPurchaseOf' => 'Compra del plan web {0}',
 	'invoiceTeamAddons' => 'Complementos del equipo',
-	'invoiceForMonths' => ' durante {0} meses',
-	'invoiceForYears' => ' durante {0} años',
-	'invoiceForYearsAndMonths' => ' durante {0} años y {1} meses',
+	'invoiceForMonths' => ' durante {0}',
+	'invoiceForYears' => ' durante {0}',
+	'invoiceForYearsAndMonths' => ' durante {0} y {1}',
 	'invoiceDataTransferAddonsFor' => 'Transferencia de datos adicional de {0} GB',
 	'invoiceTip' => 'Tarifa de conveniencia',
 

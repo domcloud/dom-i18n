@@ -110,9 +110,9 @@ invoiceDomainExtendOf: '{0} のドメイン延長'
 invoiceDomainTransferOf: '{0} のドメイン転送'
 invoiceTeamPurchaseOf: '{0} プランのチーム購入'
 invoiceTeamAddons: チームアドオン
-invoiceForMonths: ' {0, plural, =1{# か月} other{# か月}} の間'
-invoiceForYears: ' {0, plural, =1{# 年} other{# 年}} の間'
-invoiceForYearsAndMonths: ' {0, plural, =1{# 年} other{# 年}} と {1, plural, =1{# か月} other{# か月}} の間'
+invoiceForMonths: ' {0} の間'
+invoiceForYears: ' {0} の間'
+invoiceForYearsAndMonths: ' {0} と {1} の間'
 invoiceDataTransferAddonsFor: '{0} GBの追加データ転送'
 invoiceTip: 手数料
 slaveID: スレーブID
