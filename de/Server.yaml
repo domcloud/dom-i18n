@@ -1,15 +1,15 @@
-listTitle: Self-Hosted Server List
-newOrder: Add a server
-startingHint: Read about creating your own self-hosted instance
-name: Server Domain Name
-nameHint: The URL to your server bridge API
-description: Server Nice Name
-descriptionHint: The long description of this server
-secret: Bridge Secret
-secretHint: The secret that set on file /home/bridge/public_html/.env
-openHost: Open Host Settings
-emptyList: No servers listed
-createTitle: Create a new server
-createTitleHint: Please fill in your server information
-updateTitle: Update this server
-updateTitleHint: Update your server information, leave blank for secret password to not modify it.
+listTitle: Selbst gehostete Server-Liste
+newOrder: Einen Server hinzufügen
+startingHint: Lies mehr darüber, wie du deine eigene selbst gehostete Instanz erstellst
+name: Server-Domain-Name
+nameHint: Die URL zu deiner Server-Bridge-API
+description: Server-Nice-Name
+descriptionHint: Die lange Beschreibung dieses Servers
+secret: Bridge-Geheimnis
+secretHint: Das Geheimnis, das in die Datei /home/bridge/public_html/.env geschrieben wurde
+openHost: Einstellungen für offenen Host
+emptyList: Keine Server aufgelistet
+createTitle: Neuen Server erstellen
+createTitleHint: Bitte fülle deine Serverinformationen aus
+updateTitle: Diesen Server aktualisieren
+updateTitleHint: Aktualisiere deine Serverinformationen, lasse das geheime Passwort leer, um es nicht zu ändern.
